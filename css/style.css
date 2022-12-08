@@ -371,7 +371,7 @@ a{
     margin-top: 20px;
     margin-left: 10px;
 }
-.box_contacts_text, .box_address, .phone-number, .email_text, .instagram_text, .Copyright_text {
+.box_contacts_text, .box_address, .phone-number_new, .email_text, .instagram_text, .Copyright_text {
     color: rgb(242, 247, 251);
     font-family: "Muller Regular";
 }
