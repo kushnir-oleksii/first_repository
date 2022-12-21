@@ -683,17 +683,18 @@ h1 {
 .images {
     width: 1400px;
     display: flex;
+    margin-top: 90px;
 }
 .image_one {
-    margin-top: 90px;
+    
     margin-left: 198px;
 }
 .image_two {
-    margin-top: 90px;
+    
     margin-left: 69px;
 }
 .image_three {
-    margin-top: 91px;
+    margin-top: 1px;
     margin-left: 70px;
 }
 .footer {
@@ -1269,14 +1270,71 @@ h1 {
         margin-top: 16px;
         margin-right: 30px;
     }
-    .box_make, .images {
-        display: none;
+    .box_make {
+        margin: 500px auto 0px;
     }
     .footer {
         width: 992px;
     }
     .footer_contacts {
         right: 20px;
+    }
+    .do_i_provode_box {
+        width: 991px;
+        margin: 90 auto;
+        padding-left: 0;
+        text-align: center;
+    }
+    .therapeutic_header_box {
+        left: 147px;
+    }
+    .threatment_box {
+        left: 0px;
+    }
+    .elipse3 {
+        left: 350px;
+    }
+    .elipse4, .elipse5 {
+        left: 383px;
+    }
+    .elipse6, .elipse9 {
+        left: 596px;
+    }
+    .elipse7 {
+        left: 336px;
+    }
+    .elipse8 {
+        left: 643px;
+    }
+    .rectanle35_box {
+        left: 411px;
+    }
+    .prosthetics_header_box, .prosthetics_box, .children_header_box, .nostress_box, .plasmo_header_box, .plasmo_box {
+        left: 670px;
+    }
+    .surgical_box {
+        left: 50px;
+    }
+    .surgical_header_box {
+        left: 180px;
+    }
+    .prof_header_box {
+        left:20px;
+    }
+    .with_help_box {
+        left: 40px;
+    }
+    .sooner_box {
+        display: none;
+    }
+    .images {
+        width: 991px;
+        margin-top: 90px;
+        justify-content: center;
+        align-items: center;
+    }
+    .image_one {
+        margin-left: 0;
     }
 
 
