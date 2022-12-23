@@ -1346,7 +1346,7 @@ h1 {
     .images {
         width: 450px;
         display: flex;
-        margin-top: 30px;
+        margin: 30px auto 0px;
         justify-content: space-around;
         align-items: center;
     }
