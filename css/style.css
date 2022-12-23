@@ -199,8 +199,8 @@ h1 {
     position: absolute;
     width: 530px;
     height: 158px;
-    margin-top: 185px;
-    margin-left: 110px;
+    top: 185px;
+    left: 110px;
 }
 .dental_text {
     color: #46B1DE;
@@ -1340,18 +1340,163 @@ h1 {
 
 }
 @media(max-width: 480px) {
-    .do_i_provode_box, .elipse3, .elipse4, .elipse6,.rectanle35_box {
-        display: none;
+    .images {
+        width: 450px;
+        display: flex;
+        margin-top: 30px;
+        justify-content: space-around;
+        align-items: center;
     }
+    .image_one, .image_one_img, .image_two, .image_two_img, .image_three_img {
+        width: 120px;
+        margin-left: 0;
+        
+    }
+     
+    .image_three {
+        width: 120px;
+        margin-top: 1px;
+        margin-left: 0;
+        
+    }
+    .box_make {
+        margin: 200px auto 0px;
+        width: 422.5px;
+        height: 132.5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box_make_inside {
+        width: 410.5px;
+        height: 123.5px;
+        margin: 0px;
+
+    }
+    .box_appointment{
+        width: 381.5px;
+        height: 21px;
+        margin: 14.5px 16.5px 3.5px 12.5px;
+    }
+    .make_text {
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .fill {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .fill_text {
+        font-size: 8px;
+        line-height: 11px;
+    }
+    .form {
+        width: 410,5px;
+        margin-top: 22px;
+    }
+    .your_name_img_box {
+        display: flex;
+        width: 21.5px;
+        height: 15px;
+        border-right: 1px solid #000000;
+       margin-top: 10px;
+       margin-bottom: 6,5px;
+       margin-left: 9px;
+       padding: 2px 5.425px 1px 5px;
+    
+    }
+    .img_your_name {
+        width: 11,075px;
+        height: 12px;
+    }
+    
+     .box_form_phone {        
+        width: 116.5px;
+        height: 28.5px;
+        border-radius: 4px;
+    }
+    
+    .button_sign {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        width: 90px;
+        height: 28.5px;
+        margin-top: 1px;
+        margin-left: 33.5px;
+        border-radius: 4px;
+    }
+    
+    .form_your_name {
+        height: 33.5px;
+        width: 116.5px;   
+        margin-left: 9px;
+        margin-right: 34.5px;
+    }
+    .box_your_name, .form_phone_number {
+        width: 116.5px;
+        height: 33.5px;
+        border-radius: 4px;
+        font-size: 9.5px;
+        line-height: 13.5px;
+    }
+    .form_phone_number {
+        padding-left: 33.5px;
+        padding-top: 7px;
+        padding-bottom: 8px;
+    }
+    .box_your_name {
+        padding-left: 25.5px;
+        padding-top: 8px;
+        padding-bottom: 7px;
+    
+    }
+    .box_form_phone_image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 22px;
+        height: 15px;
+        border-right: 1px solid #000000;
+        top: 8px;
+        bottom: 7px;
+        left: 160px;
+        padding-left: 5px;
+        padding-top: 1.5px;
+        padding-bottom: 1.5px;
+       
+    }
+    .form_phone_image {
+        width: 12px;
+        height: 12px;
+        
+    }
+    
+    
+    .sign_up {
+        font-weight: 600;
+        font-size: 9.5px;
+        line-height: 10px;
+            }
+    .sign_up_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 10px;
+    }
+    
     .first_screen {
         width: 320px;
         height: 568px;
-        margin: 0 auto;
-        
-       
-        
+        margin: 0 auto;  
+        background-position: right bottom;
     }
     .top_menu {
+        width: 320px;
         left: 0;
         top: 30px;
         margin: 0px;
@@ -1451,7 +1596,7 @@ h1 {
     .image_lady {
         width: 208px;
         height: 173.59px;
-        left: 48px;
+        right: 64px;
         bottom: 6px;
     }
     .i_will_conduct {
@@ -1835,5 +1980,191 @@ h1 {
     .copyright_text {
         font-size: 11.1548px;
         line-height: 15px;
+    }
+    .do_i_provode_box {
+        width: 450px;
+        margin: 10px auto;
+        padding-left: 0;
+        text-align: center;
+    }
+    .what_do_text {
+        font-size: 17px;
+        line-height: 20px;
+        
+    }
+    .services_bold_text {
+        font-size: 17px;
+        line-height: 20px;
+    }
+    .therapeutic_header_box {
+        display: flex;
+        top: 2350px;
+        left: 60px;
+        width: 120px;
+        height: 13.5px;
+        justify-content: center;
+        align-items: center;
+    }
+    .threatment_box {
+        display: flex;
+        width: 169px;
+        height: 40px;
+        top: 2365px;
+        left: 20px;
+    }
+    .elipse3 {            
+        width: 151px;
+        height: 151px;
+        left: 169px;
+        top: 2350px;       
+        border-radius: 50%;
+        margin-bottom: 0px;
+    }
+    .elipse4, .elipse6, .elipse7, .elipse8, .elipse5, .elipse9 {
+        display: flex;
+        width: 12px;
+        height: 12px;        
+        justify-content: center;
+        align-items: center;        
+    }
+    .elipse4 {
+        left: 183px;
+        top: 2370px;
+    }
+    .elipse5 {
+        left: 183px;
+        top: 2470px;
+    }
+    .elipse6 {
+        left: 293px;
+        top: 2370px;
+    }
+    .elipse9 {
+        left: 293px;
+        top: 2470px;
+
+    }
+    .elipse7 {
+        top: 2420px;
+        left: 163px;
+    }
+    .elipse8 {
+        top: 2420px;
+        left: 313px;
+    }
+    .rectanle35_box {
+        width: 90px;
+        height: 81px;
+        left: 200px;
+        top: 2380px;
+    }
+    .rectanle35_img {
+        width: 90px;
+        height: 81px;
+    }
+    .plasmo_header_box  {
+        display: flex;
+        width: 100px;
+        height: 13.5px;
+        top: 2485px;
+        left: 300px;
+    }
+    .plasmo_box {
+        display: flex;
+        width: 160px;
+        height: 40px;
+        top: 2500px;
+        left: 300px;
+
+    }
+    .nostress_box {
+        display: flex;
+        width: 148px;
+        height: 37px;
+        left: 330px;
+        top: 2425px;
+    }
+    .children_header_box {
+        display: flex;
+        width: 130px;
+        height: 13.5px;
+        top: 2410px;
+        left: 330px;
+
+    }
+    .prosthetics_header_box {
+        display: flex;
+        top: 2350px;
+        width: 85px;
+        height: 13.5px;
+        left: 320px;
+    }
+    .prosthetics_box{
+        display: flex;
+        width: 145px;
+        height: 42px;
+        top: 2365px;
+        left: 320px;
+    }    
+   
+    .surgical_box {
+        display: flex;
+        top: 2425px;
+        left: 10px;
+        width: 142px;
+        height: 43.5px;
+    }
+    .surgical_header_box {
+        display: flex;
+        width: 100px;
+        height: 13.5px;
+        top: 2410px;
+        left: 67px;
+    }
+    .prof_header_box {
+        display: flex;
+        width: 190px;
+        height: 13.5px;
+        left: 263px;
+        top: 2485px;
+        left:20px;
+    }
+    .with_help_box {
+        display: flex;
+        width: 150px;
+        height: 40px;
+        top: 2500px;
+        left: 42px;
+    }
+    .sooner_box {
+        display: none;
+    }
+    .therapeutic_header_text, .prosthetics_header_text, .surgical_header_text, .children_header_text, .prof_header_text, .plasmo_header_text {
+        
+        font-size: 10px;
+        line-height: 13.5px;
+        
+    }
+    .threatment_text, .prosthetics_text, .surgical_text, .nostress_text, .with_help_text, .plasmo_text {
+        
+        font-size: 8px;
+        line-height: 9.5px;
+    }
+    .plus4{
+        display: flex;
+        width: 5.5px;
+        height: 12.5px;
+        margin: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    .plus4_text {
+        font-family: "Sofia Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 70%;
+        color: #FFFFFF;
+    
     }
 }
