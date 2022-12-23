@@ -1059,6 +1059,9 @@ h1 {
 
 }
 @media(max-width: 480px) {
+    .languages {
+        display: none;
+    }
     .first_screen {
         width: 320px;
         height: 568px;
@@ -1069,6 +1072,7 @@ h1 {
         
     }
     .top_menu {
+        width: 320px;
         left: 0;
         top: 30px;
         margin: 0px;
@@ -1127,9 +1131,13 @@ h1 {
         margin-left: 3px;
         
     }
-    .phone_logo, .phone_image {
+    .phone_logo {
         width: 15px;
         height: 15px;
+    }
+    .phone_image {
+        width: 11.25px;
+        height: 11.25px;
     }
     .phone_number {
         width: 109px;
