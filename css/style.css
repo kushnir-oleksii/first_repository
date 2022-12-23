@@ -1340,6 +1340,9 @@ h1 {
 
 }
 @media(max-width: 480px) {
+    .languages {
+        display: none;
+    }
     .images {
         width: 450px;
         display: flex;
