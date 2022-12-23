@@ -1555,9 +1555,13 @@ h1 {
         margin-left: 3px;
         
     }
-    .phone_logo, .phone_image {
+    .phone_logo {
         width: 15px;
         height: 15px;
+    }
+    .phone_image {
+        width: 11.25px;
+        height: 11.25px;
     }
     .phone_number {
         width: 109px;
@@ -1696,6 +1700,8 @@ h1 {
         position: absolute;
         top: 30px;
         left: 8px;
+        right: 8.72px;
+        bottom: 473.09px;
     }
     .footer_zub {
         width: 55.33px;
