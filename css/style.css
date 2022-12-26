@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 a {
     text-decoration: none;
     color: #1B1D1F;
@@ -30,209 +31,355 @@ h1 {
    
 }
 
-.first_screen {
-    background-image: url(../images/Rectangle\ 1.png);
-    width: 1400px;   
-    height: 663px;   
-    background-repeat: no-repeat;
-    background-size:cover;
-    position: relative;
-    left: 0px;
-    top: 0px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.image_lady {
-    position: absolute;
-    bottom: 0px;
-    right: 110px;
-    
-}
-.top_menu {
-    position: absolute;
-    
-    width: 1080px;
-    height: 91px;
-    top: 60px;
-    left: 110px;
-    display: flex;
+    .images {
+        width: 450px;
+        display: flex;
+        margin: 30px auto 0px;
+        justify-content: space-around;
+        align-items: center;
     }
-.logo, .footer_logo {
-    width: 425.22px;
-    height: 91px;
-    display: flex;
-}
-.zub {
-    width: 77.57px;
-    height: 80.56px;
-    margin: 1.49px 0px 8.95px 0px;
-}
-.zub_image, .footer_zub_image {
-    margin: 1.37px 3.31px 0.46px 3.3px;
+    .image_one, .image_one_img, .image_two, .image_two_img, .image_three_img {
+        width: 120px;
+        margin-left: 0;
+        
+    }
+     
+    .image_three {
+        width: 120px;
+        margin-top: 1px;
+        margin-left: 0;
+        
+    }
+    .box_make {
+        margin: 200px auto 0px;
+        width: 422.5px;
+        height: 132.5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+	  background:  #FFFFFF;
+        border: 1px solid #D9D9D9;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+    }
+    .box_make_inside {
+        width: 410.5px;
+        height: 123.5px;
+        margin: 0px;
+	  background: #FFFFFF;
+    	  border: 1px solid #D9D9D9;
+   	  backdrop-filter: blur(2px);
+    	  border-radius: 10px;
 
-}
-
-.Drnikola {
-    width: 315px;
-    height: 53px;
-    margin-left: 7.43px;
-}
-.box_tesla {
-    width: 315px;
-    height: 91px;
+    }
+    .box_appointment{
+	  display: flex;
+	  justify-content: center;
+    	  align-items: center;
+        width: 381.5px;
+        height: 21px;
+        margin: 14.5px 16.5px 3.5px 12.5px;
+    }
+    .make_text {
+ 	  font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+	  color: #1B1D1F;
+        text-transform: uppercase;
+    }
+    .fill {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+	  margin-left: 6px;
+        margin-right: 14px;
+    }
+    .fill_text {
+	  font-family: "Roboto";
+    	  font-style: normal;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 11px;
+	  color: #1B1D1F;
+    }
+    .form {
+	  display: flex;
+    	  position: relative;
+        width: 410.5px;
+        margin-top: 22px;
+    }
+    .your_name_img_box {
+        position: absolute;
+        display: flex;
+        width: 21.5px;
+        height: 15px;
+        border-right: 1px solid #000000;
+       margin-top: 10px;
+       margin-bottom: 6,5px;
+       margin-left: 9px;
+       padding: 2px 5.425px 1px 5px;
     
-}
-.Drnikola_text {
-    font-family: "Sofia Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 38px;
-    color: #46B1DE;
-    line-height: 53px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.dentist {
-    width: 84px;
-    height: 38px;
-    margin-left: 7.46px;
-    margin-top: -12.72px;
-}
-.dentist_text {
-    font-family: "Sofia Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26.852px;
-    color: #46B1DE;
-      
+    }
+    .img_your_name {
+        width: 11,075px;
+        height: 12px;
+    }
     
-}
-.frame7 {
-    display: inline-block;
-    width: 350px;
-    height: 19px;
-    margin-left: 77.78px;
-    margin-top: 18px;
-}
-.spisok_menu {
-    list-style: none;
-    display: inline-flex;
-}
-.spisok_menu_services, .spisok_menu_contacts {
-    margin-left: 80px;
-}
-.phone {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 174px;
-    height: 24px;
-    margin-left: 53px;
-    margin-top: 16px;
-}
-.phone_logo {
-    width: 24px;
-    height: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.phone_number {
-    width: 145px;
-    height: 19px;
-    margin-left: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.languages {
-    position: absolute;
-    display: flex;
-    left: 1213px;
-    top: 77px;
-    width: 77px;
-    height: 23px;
-    align-items: center;
-}
-.languages_line, .footer_languages_line {
-    width: 22px;
-    height: 0px;
-    margin-left: 2px;
-    border: 1px solid #1B1D1F;
-    transform: rotate(90deg);
-}
-.languages_ua {
-    width: 27px;
-    height: 23px;
+     .box_form_phone {
+	  position: relative;   
+        display: flex;
+        justify-content: center;
+        align-items: center;     
+        width: 116.5px;
+        height: 28.5px;
+        border-radius: 4px;
+	  background: rgba(217, 217, 217, 0.71);
+    }
     
-}
-.languages_ua_text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 23px;
-    color: #000000;
-}
-.languages_en {
-    width: 26px;
-    height: 23px;
-}
-.languages_en_text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    color: #000000;
-}
-
-.exactly_text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 34px;
-    line-height: 130%;
-    color: #46B1DE;
-}
-
-.box_professional {
-    position: absolute;
-    width: 530px;
-    height: 158px;
-    top: 185px;
-    left: 110px;
-}
-.dental_text {
-    color: #46B1DE;
-}
-.i_will_conduct {
-    position: absolute;
-    left: 110px;
-    bottom: 224px;
-}
-.i_will_conduct_text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 140%;
-    color: #1B1D1F;
+    .button_sign {
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+        width: 90px;
+        height: 28.5px;
+        margin-top: 1px;
+        margin-left: 33.5px;
+        border-radius: 4px;
+        background: #46B1DE;
+    }
     
-}
-.box_call_button {
-    position: absolute;
-    width: 180px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 110px;
-    top: 487px;
-    background: linear-gradient(97.59deg, #46B1DE 9.8%, #0591CC 95.1%);
-    box-shadow: 0px 2px 10px #46B1DE;
-    border-radius: 8px;
-    text-align: center;
-}
+    .form_your_name {
+        height: 33.5px;
+        width: 116.5px;   
+        margin-left: 9px;
+        margin-right: 34.5px;
+    }
+    .box_your_name, .form_phone_number {
+        width: 116.5px;
+        height: 33.5px;
+        border-radius: 4px;
+        background: rgba(217, 217, 217, 0.71);
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 9.5px;
+        line-height: 13.5px;
+        color: rgba(27, 29, 31, 0.51);
+        
+    }
+    .form_phone_number {
+        padding-left: 33.5px;
+        padding-top: 7px;
+        padding-bottom: 8px;
+    }
+    .box_your_name {
+        padding-left: 25.5px;
+        padding-top: 8px;
+        padding-bottom: 7px;
+    
+    }
+    .box_form_phone_image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 22px;
+        height: 15px;
+        border-right: 1px solid #000000;
+        top: 8px;
+        bottom: 7px;
+        left: 160px;
+        padding-left: 5px;
+        padding-top: 1.5px;
+        padding-bottom: 1.5px;
+       
+    }
+    .form_phone_image {
+        width: 12px;
+        height: 12px;
+        
+    }
+    
+    
+    .sign_up {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 9.5px;
+        line-height: 10px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .sign_up_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 10px;
+    }
+    
+    .first_screen {
+        background-image: url(../images/Rectangle\ 1.png);
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        background-size:cover;
+        position: relative;
+        width: 320px;
+        height: 568px;
+        margin: 0 auto;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          
+    }
+    .top_menu {
+        position: absolute;
+        display: flex;
+        width: 320px;
+        height: 91px;
+        left: 0;
+        top: 30px;
+        margin: 0px;
+    }
+    .zub {
+        width: 33.39px;
+        height: 34.67px;
+        margin: 1.49px 0px 8.95px 0px;
+    }
+    .zub_image {
+        width: 33.39px;
+        height: 34.67px;
+        margin: 1.37px 3.31px 0.46px 3.3px;
+    }
+    .Drnikola {
+        width: 130px;
+        height: 23px;
+        margin-left: 0px; 
+    }
+    .box_tesla {
+        width: 130px;
+        height: 39.16px;
+        margin-left: 3.21px;
+    }
+    
+    .Drnikola_text {
+        font-family: "Sofia Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16.6926px;
+        line-height: 140%;
+        color: #46B1DE;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+   
+    .logo {
+        display: flex;
+        width: 183px;
+        height: 39.16px;
+    }
+    .dentist {
+        
+        width: 36px;
+        height: 16px;
+        margin-left: 0px;
+        margin-top: -6.67px;
+    }
+    .dentist_text {
+        font-family: "Sofia Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11.5564px;
+        line-height: 140%;
+        color: #46B1DE;
+    }
+    .phone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 127px;
+        height: 15px;
+        margin-top: 4px;
+        margin-left: 3px;
+        
+    }
+    .phone_logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .phone_image {
+        width: 15px;
+        height: 15px;
+    }
+    .phone_number {
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+        width: 109px;
+        height: 14px;
+        margin-left: 2px;
+        text-align: center;
+        margin-bottom: 1px;
+    }
+    .phone_number_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #1B1D1F;
+    }
+    .frame7 {
+        display: none;
+    }
+    .languages {
+        display: none;
+    }
+    .i_will_conduct {
+       display: none;
+    }
+    .box_professional {
+        position: absolute;
+        width: 284px;
+        height: 89px;
+        margin: 0;
+        text-align: center;
+        top: 116px;
+        right: 18px;
+        left: 18px;
+    }
+    .professional_text, .dental_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 130%;
+    }
+    .dental_text {
+    color: #46B1DE;
+    }
+    .image_lady {
+        position: absolute;
+        width: 208px;
+        height: 173.59px;
+        right: 64px;
+        bottom: 6px;
+    }
+    
+    .box_call_button {
+        position: absolute;
+        width: 100px;
+        height: 35px;
+        left: 10px;
+        top: 288px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(97.59deg, #46B1DE 9.8%, #0591CC 95.1%);
+        box-shadow: 0px 2px 10px #46B1DE;
+        border-radius: 8px;
+        text-align: center;
+    }
 .call_button_text {
     font-family: "Roboto";
     font-style: normal;
@@ -242,22 +389,23 @@ h1 {
     color: #FFFFFF;
     
 }
-.box_services_button {
-    position: absolute;
-    width: 180px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 410px;
-    top: 487px;
-    background: #FFFFFF;
-    box-shadow: 0px 2px 10px #DDE0DC;
-    border-radius: 8px;
-    mix-blend-mode: normal;
-    border: 1px solid #DDE0DC;
-    text-align: center;
-}
+    .box_services_button {
+        width: 100px;
+        height: 35px;
+        left:210px;
+        top: 288px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 10px #DDE0DC;
+        border-radius: 8px;
+        mix-blend-mode: normal;
+        border: 1px solid #DDE0DC;
+        text-align: center;
+
+    }
 .services_button_text {
     font-family: "Roboto";
     font-style: normal;
@@ -267,28 +415,31 @@ h1 {
     color: #46B1DE;
     
 }
-.years, .percent, .month {
-    position: absolute;
-    display: flex;
-    width: 280px;
-    height: 120px;
-    top: 601px;
-    background:  #FFFFFF;
-    border: 1px solid #D8E1E1;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-
-}
-.years {
-    left: 210px;
-}
-.percent {
-    left: 560px;
-}
-.month {
-    left: 910px;
-}
-.years_number {
+    .years, .percent, .month {
+        position: absolute;
+        display: flex;
+        width: 280px;
+        height: 120px;
+        
+        background:  #FFFFFF;
+        border: 1px solid #D8E1E1;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+    
+    }
+    .years {
+        left: 20px;
+        top: 570px;
+    }
+    .percent {
+        left: 20px;
+        top: 700px;
+    }
+    .month {
+        left: 20px;
+        top: 830px
+    }
+    .years_number {
     width: 93px;
     height: 120px;
     display: flex;
@@ -352,32 +503,44 @@ h1 {
     margin: 33px 12px 39px 7px;
 
 }
-.why {
-    width: 1400px;
-    height: 44px;
-    margin-top: 148px;
-    
-}
-.why_box_text {
-    padding-left: 354px;
-}
-.why_you_text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 34px;
-    line-height: 130%;
-    color: #1B1D1F;
-}
-.over {
-    display: flex;
-    width: 1400px;
-    height: 44px;
-    margin-top: 5px;
-    justify-content: center;
-    align-items: center;
-    
-}
+    .why_box_text {
+        padding-left: 0;
+        text-align: center;
+    }
+    .why {
+        width: 320px;
+        height: max-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 420px 65px 0px 65px;
+    }
+    .why_you_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 130%;
+        color: #1B1D1F;
+    }
+    .exactly_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 130%;
+        color: #46B1DE;
+    }
+    .over {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 320px;
+        height: max-content;
+        margin-top: 35px;
+        margin-left: 65px;
+        
+    }
 .over_text {
     font-family: "Roboto";
     font-style: normal;
@@ -389,37 +552,37 @@ h1 {
     
     
 }
-.large_box {
-    display: flex;
-    flex-wrap: wrap;
-    width: 1020px;
-    height: 396px;
-    margin-left: 190px;
-    margin-top: 50px;
-    background: #A1C7D4;
+    .large_box {
+display: flex;
+        width: 320px; 
+        height: max-content;      
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px auto;
+background: #A1C7D4;
     border-radius: 12px;
-    
-}
-
+                
+    }
+    .column_one, .column_two, .column_three {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
 .box_one, .box_two, .box_three, .box_four, .box_five, .box_six {
     width: 300px;
     height: 176px;
     background: #FFFFFF;
     border-radius: 8px;
 }
-.column_one {
-    margin: 16px 40px 16px 20px;    
-}
-.column_two {
-    margin-top: 16px;
-    margin-right: 40px;
-}
-.column_three {
-    margin-top: 16px;
-}
-.box_one, .box_three, .box_five {
-    margin-bottom: 12px;
-}
+    .box_one, .box_three, .box_five {
+        margin-top: 10px;
+        margin-bottom: 12px;
+    }
+    .box_six {
+        margin-bottom: 10px;
+    }
 .box_one_for_two_box {
     display: flex;
 }
@@ -518,1180 +681,8 @@ h1 {
     margin-left: 16px;
     margin-right: 4px;
 }
-.box_make {
-    display: flex;
-    width: 845px;
-    height: 265px;
-    margin-top: 88px;
-    margin-left: 265px;
-    background:  #FFFFFF;
-    border: 1px solid #D9D9D9;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    
-}
-
-.box_make_inside {
-    width: 821px;
-    height: 247px;
-    background: #FFFFFF;
-    border: 1px solid #D9D9D9;
-    backdrop-filter: blur(2px);
-    border-radius: 10px;
-    margin: 10px 9px 8px 15px;
-}
-.box_appointment {
-    display: flex;
-    width: 763px;
-    height: 42px;
-    margin: 29px 33px 7px 25px;
-    justify-content: center;
-    align-items: center;
-}
-.make_text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 42px;
-    color: #1B1D1F;
-    text-transform: uppercase;
-}
-.fill {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 6px;
-    margin-right: 14px;
-}
-.fill_text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    color: #1B1D1F;
-    
-}
-.form {
-    display: flex;
-    position: relative;
-    width: 821px;
-    margin-top: 44px;
-}
-.your_name_img_box {
-    position: absolute;
-    width: 43px;
-    height: 30px;
-    border-right: 2px solid #000000;
-   margin-top: 14px;
-   margin-bottom: 13px;
-   margin-left: 18px;
-   padding: 4px 10.85px 2px 10px;
-
-}
-.img_your_name {
-    width: 22.15px;
-    height: 24px;
-}
-
- .box_form_phone {
-    position: relative;
-    width: 233px;
-    height: 57px;
-    background: rgba(217, 217, 217, 0.71);
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.button_sign {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 16px 35px;
-    width: 180px;
-    height: 57px;
-    margin-top: 1px;
-    margin-left: 67px;
-    background: #46B1DE;
-    border-radius: 8px;
-}
-
-
-
-
-.form_your_name {
-    height: 57px;
-    width: 233px;   
-    margin-left: 18px;
-    margin-right: 69px;
-}
-.box_your_name, .form_phone_number {
-    width: 233px;
-    height: 57px;
-    background: rgba(217, 217, 217, 0.71);
-    border-radius: 8px;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 19px;
-    line-height: 27px;
-    color: rgba(27, 29, 31, 0.51);
-}
-.form_phone_number {
-    padding-left: 67px;
-    padding-top: 14px;
-    padding-bottom: 16px;
-}
-.box_your_name {
-    padding-left: 51px;
-    padding-top: 16px;
-    padding-bottom: 14px;
-
-}
-.box_form_phone_image {
-    position: absolute;
-    width: 44px;
-    height: 30px;
-    border-right: 2px solid #000000;
-    top: 13px;
-    bottom: 14px;
-    left: 320px;
-    padding-left: 10px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-   
-}
-.form_phone_image {
-    width: 24px;
-    height: 24px;
-    
-}
-
-
-.sign_up {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 19px;
-    line-height: 140%;
-    text-align: center;
-    color: #FFFFFF;
-}
-.images {
-    width: 1400px;
-    display: flex;
-    margin-top: 90px;
-}
-.image_one {
-    
-    margin-left: 198px;
-}
-.image_two {
-    
-    margin-left: 69px;
-}
-.image_three {
-    margin-top: 1px;
-    margin-left: 70px;
-}
-.footer {
-    position: relative;
-    width: 1400px;
-    height: 400px;
-    margin-top: 91px;
-    background: linear-gradient(91.75deg, #A1C7D4 18.06%, #0680AA 98.16%);
-    
-}
-.footer_zub {
-    width: 77.57px;
-    height: 80.56px;
-    margin-top: 1.49px;
-}
-.footer_logo {
-    position: absolute;
-    top: 60px;
-    bottom: 249px;
-    left: 113px;
-    right: 861.78px;
-}
-.footer_box_tesla {
-    width: 302px;
-    height: 91px;
-    margin-left: 7.46px;
-}
-.footer_Drnikola {
-    width: 302px;
-    height: 54px;
-
-}
-.footer_Drnikola_text {
-    font-family: "Sofia Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 38.7869px;
-    line-height: 140%;
-    color: #0F2D4A;
-}
-.footer_dentist {
-    width: 84px;
-    height: 38px;
-    margin-top: -16px;
-}
-.footer_dentist_text {
-    font-family: "Sofia Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26.8525px;
-    line-height: 140%;
-    color: #0F2D4A;
-}
-.home_footer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 20px;
-    width: 76px;
-    height: 74px;
-    position: absolute;
-    left: 116px;
-    top: 181px;
-}
-.home_box {
-    width: 54px;
-    height: 27px;
-}
-.home_box_text, .footer_services_box_text, .mon_fri_text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 27px;
-    color: #0F2D4A;
-}
-.footer_services_box {
-    width: 76px;
-    height: 27px;
-}
-.footer_languages {
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    width: 73px;
-    height: 23px;
-    top: 282px;
-    left: 113px;
-}
-.box_work {
-    width: 140px;
-    position: absolute;
-    top: 218px;
-    left: 352px;
-}
-.working {
-    width: 137px;
-    height: 23px;
-    margin-left: 3px;
-    text-align: center;
-    
-}
-.working_text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 23px;
-    
-    color: #0F2D4A;
-}
-.mon_fri {
-    width: 128px;
-    height: 54px;
-    margin-top: 7px;
-}
-.footer_contacts {
-    position: absolute;
-    width: 316px;
-    height: 329px;
-    right: 174px;
-    top: 60px;
-}
-.footer_contacts_box {
-    width: 183px;
-    height: 40px;
-    margin-left: 6px;
-    text-align: center;
-}
-.footer_contacts_text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 34px;
-    line-height: 40px;
-    
-    color: #FFFFFF;
-}
-.footer_nikola {
-    width: 289px;
-    height: 27px;
-    margin-left: 6px;
-    margin-top: 20px;
-}
-.footer_nikola_text, .street_text, .footer_phone_text, .instagram_text, .email_text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 27px;
-    color: #FFFFFF;
-}
-.footer_street {
-    width: 213px;
-    height: 27px;
-    margin-left: 6px;
-    margin-top: 15px;
-}
-.footer_phone {
-    display: flex;
-    width: 225px;
-    height: 28px;
-    margin-top: 20px;
-}
-.footer_phone_box {
-    width: 28px;
-    height: 28px;
-}
-.footer_phone_img {
-    margin: 2.63px 3.06px 3.39px 2.96px;
-}
-.footer_phone_number {
-    width: 182px;
-    height: 27px;
-    margin-bottom: 1px;
-    margin-left: 15px;
-    text-align: center;
-}
-
-.media {
-    display: flex;
-}
-.viber, .telegram, .whatsapp {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 28px;
-    height: 28px;
-    
-}
-.viber {
-    margin-top: 10px;
-    margin-left: 3px;
-}
-.viber_link {
-    width: 28px;
-    height: 28px;
-}
-.telegram {
-    margin-top: 8px;
-    margin-left: 22px;
-}
-.whatsapp {
-    margin-top: 10px;
-    margin-left: 31px;
-}
-.instagram {
-    display: flex;
-    width: 140px;
-    height: 27px;
-    margin-top: 13px;
-    margin-left: 3px;
-}
-.instagram_img {
-    width: 27px;
-    height: 27px;    
-}
-.instagram_box {
-    width: 100px;
-    height: 27px;
-    margin-left: 13px;
-    text-align: center;
-}
-.email {
-    display: flex;
-    width: 250px;
-    height: 32px;
-    margin-left: 1px;
-    margin-top: 15px;
-}
-.email_img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 32px;
-    height: 32px;
-    
-}
-.email_box {
-    width: 212px;
-    height: 27px;
-    margin-top: 3px;
-    text-align: center;
-    margin-left: 6px;
-}
-.copyright {
-    display: flex;
-    width: 109px;
-    height: 17px;
-    margin-left: 206px;
-    margin-top: 10px;
-}
-.copyright_img_box {
-    width: 10px;
-    height: 17px;
-    margin-right: -2px;
-    
-}
-.copyright_img {
-    margin-top: 4px;
-
-}
-.copyright_text_box {
-    width: 101px;
-    height: 17px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.copyright_text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 130%;
-    color: #FFFFFF;
-}
-.do_i_provode_box {
-    width: 1400px;
-    height: 40px;
-    padding-left: 426px;
-    margin-top: 90px;
-    
-}
-.what_do_text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 34px;
-    line-height: 40px;
-    color: #1B1D1F;
-}
-.services_bold_text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 34px;
-    line-height: 40px;
-    color: #46B1DE;
-    
-}
-.elipse3 { 
-    position: absolute;   
-    width: 302px;
-    height: 302px;
-    left: 549px;
-    top: 1533px;
-    border: 1px solid #1B1D1F;
-    border-radius: 50%;
-    margin-bottom: 202px;
-}
-.elipse4, .elipse6, .elipse7, .elipse8, .elipse5, .elipse9 {
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    background-color: #46B1DE;
-    border-radius: 50%;
-    
-}
-.elipse4 {
-    left: 582px;
-    top: 1560px;
-}
-.elipse6 {
-    left: 795px;
-    top: 1560px;
-}
-.elipse7 {
-    left: 535px;
-    top: 1672px;
-}
-.elipse8 {
-    left: 842px;
-    top: 1672px;
-}
-.elipse5 {
-    left: 582px;
-    top: 1781px;
-}
-.elipse9 {
-    left: 795px;
-    top: 1781px;
-}
-.plus4{
-    width: 11px;
-    height: 25px;
-    margin-left: 6px;
-    margin-right: 7px;
-    margin-top: 0px;
-}
-.plus4_text {
-    font-family: "Sofia Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 140%;
-    color: #FFFFFF;
-
-}
-.rectanle35_box {
-    width: 180px;
-    height: 162px;
-    position: absolute;
-    left: 610px;
-    top: 1603px;
-}
-.therapeutic_header_box {
-    position: absolute;
-    width: 187px;
-    height: 27px;
-    top: 1530px;
-    left: 346px;
-}
-.therapeutic_header_text, .prosthetics_header_text, .surgical_header_text, .children_header_text, .prof_header_text, .plasmo_header_text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 135%;
-    color: #46B1DE;
-}
-.threatment_box {
-    position: absolute;
-    width: 338px;
-    height: 80px;
-    top: 1562px;
-    left: 195px;
-    text-align: right;
-}
-.threatment_text, .prosthetics_text, .surgical_text, .nostress_text, .with_help_text, .plasmo_text {
-    font-family: "Roboto";
-    color: #1B1D1F;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-}
-.prosthetics_header_box {
-    position: absolute;
-    width: 133px;
-    height: 27px;
-    top: 1530px;
-    left: 852px;
-}
-.prosthetics_box {
-    width: 290px;
-    height: 83px;
-    position: absolute;
-    top: 1562px;
-    left: 855px;
-}
-.surgical_header_box {
-    position: absolute;
-    width: 151px;
-    height: 27px;
-    top: 1673px;
-    left: 329px;
-}
-.surgical_box {
-    position: absolute;
-    width: 283px;
-    height: 87px;
-    top: 1705px;
-    left: 202px;
-    text-align: right;
-}
-.children_header_box {
-    width: 223px;
-    height: 27px;
-    position: absolute;
-    top: 1670px;
-    left: 910px;
-}
-.nostress_box {
-    width: 291px;
-    height: 74px;
-    position: absolute;
-    top: 1702px;
-    left: 914px;
-}
-.prof_header_box {
-    position: absolute;
-    width: 317px;
-    height: 27px;
-    left: 263px;
-    top: 1821px;
-}
-.with_help_box {
-    width: 295px;
-    height: 80px;
-    text-align: right;
-    position: absolute;
-    top: 1853px;
-    left: 284px;
-}
-.plasmo_header_box {
-    width: 170px;
-    height: 27px;
-    position: absolute;
-    top: 1821px;
-    left: 815px;
-}
-.plasmo_box {
-    width: 308px;
-    height: 77px;
-    position: absolute;
-    top: 1853px;
-    left: 815px;
-}
-.sooner_box {
-       
-    width: 597px;
-    height: 103px;
-    display: flex;
-    margin-top: 512px;
-    margin-left: 436px;
-    
-}
-.sooner_box_img {
-    width: 105px;
-    height: 103px;
-    
-}
-.sooner_box_text {
-    width: 478px;
-    height: 33px;
-    margin-top: 45px;
-    margin-left: 16px;
-    margin-bottom: 25px;
-}
-.sooner_box_text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 20px;
-    line-height: 140%;
-    color: #46B1DE;
-}
-@media(max-width: 992px) {
-    .first_screen {
-        width: 991px;
-        margin: 0 auto;
-    }
-    .image_lady {
-        right: 0;
-    }
-    .top_menu {
-        width: 920px;
-        margin: 5px auto;
-        left: 0;
-        right: 0;
-    }
-    .frame7 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-left: 0;
-        width: 70px;
-        margin-top: 38px;
-        
-        
-    }
-    .spisok_menu {
-        display: flex;
-        flex-direction: column;
-    }
-    .spisok_menu_services, .spisok_menu_contacts {
-        margin-left: 0;
-        padding-top: 5px;
-        
-    }
-    .languages {
-               
-       left: 850px;
-    }
-    .years {
-        left: 39.25px;
-    }
-    .percent {
-        left: 358.5px;
-    }
-    .month {
-        left: 677.75px;
-    }
-    .why_box_text {
-        padding-left: 0;
-    }
-    .why {
-        width: 991px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .over {
-        width: 992px;
-    }
-    .large_box {
-        margin: 30px auto;
-        width: 990px;   
-        height: max-content;
-        
-    }
-    .box_one, .box_two, .box_three, .box_four, .box_five, .box_six {
-        width: 290px;
-    }
-    .column_one {
-        margin-right: 30px; 
-        margin-left: 30px;   
-    }
-    .column_two {
-        margin-top: 16px;
-        margin-right: 30px;
-    }
-    .box_make {
-        margin: 500px auto 0px;
-    }
     .footer {
-        width: 992px;
-    }
-    .footer_contacts {
-        right: 20px;
-    }
-    .do_i_provode_box {
-        width: 991px;
-        margin: 90 auto;
-        padding-left: 0;
-        text-align: center;
-    }
-    .therapeutic_header_box {
-        left: 147px;
-    }
-    .threatment_box {
-        left: 0px;
-    }
-    .elipse3 {
-        left: 350px;
-    }
-    .elipse4, .elipse5 {
-        left: 383px;
-    }
-    .elipse6, .elipse9 {
-        left: 596px;
-    }
-    .elipse7 {
-        left: 336px;
-    }
-    .elipse8 {
-        left: 643px;
-    }
-    .rectanle35_box {
-        left: 411px;
-    }
-    .prosthetics_header_box, .prosthetics_box, .children_header_box, .nostress_box, .plasmo_header_box, .plasmo_box {
-        left: 670px;
-    }
-    .surgical_box {
-        left: 50px;
-    }
-    .surgical_header_box {
-        left: 180px;
-    }
-    .prof_header_box {
-        left:20px;
-    }
-    .with_help_box {
-        left: 40px;
-    }
-    .sooner_box {
-        display: none;
-    }
-    .images {
-        width: 991px;
-        margin-top: 90px;
-        justify-content: center;
-        align-items: center;
-    }
-    .image_one {
-        margin-left: 0;
-    }
-
-
-}
-@media(max-width: 480px) {
-    .languages {
-        display: none;
-    }
-    .images {
-        width: 450px;
-        display: flex;
-        margin: 30px auto 0px;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .image_one, .image_one_img, .image_two, .image_two_img, .image_three_img {
-        width: 120px;
-        margin-left: 0;
-        
-    }
-     
-    .image_three {
-        width: 120px;
-        margin-top: 1px;
-        margin-left: 0;
-        
-    }
-    .box_make {
-        margin: 200px auto 0px;
-        width: 422.5px;
-        height: 132.5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .box_make_inside {
-        width: 410.5px;
-        height: 123.5px;
-        margin: 0px;
-
-    }
-    .box_appointment{
-        width: 381.5px;
-        height: 21px;
-        margin: 14.5px 16.5px 3.5px 12.5px;
-    }
-    .make_text {
-        font-size: 16px;
-        line-height: 21px;
-    }
-    .fill {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .fill_text {
-        font-size: 8px;
-        line-height: 11px;
-    }
-    .form {
-        width: 410,5px;
-        margin-top: 22px;
-    }
-    .your_name_img_box {
-        display: flex;
-        width: 21.5px;
-        height: 15px;
-        border-right: 1px solid #000000;
-       margin-top: 10px;
-       margin-bottom: 6,5px;
-       margin-left: 9px;
-       padding: 2px 5.425px 1px 5px;
-    
-    }
-    .img_your_name {
-        width: 11,075px;
-        height: 12px;
-    }
-    
-     .box_form_phone {        
-        width: 116.5px;
-        height: 28.5px;
-        border-radius: 4px;
-    }
-    
-    .button_sign {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0px;
-        width: 90px;
-        height: 28.5px;
-        margin-top: 1px;
-        margin-left: 33.5px;
-        border-radius: 4px;
-    }
-    
-    .form_your_name {
-        height: 33.5px;
-        width: 116.5px;   
-        margin-left: 9px;
-        margin-right: 34.5px;
-    }
-    .box_your_name, .form_phone_number {
-        width: 116.5px;
-        height: 33.5px;
-        border-radius: 4px;
-        font-size: 9.5px;
-        line-height: 13.5px;
-    }
-    .form_phone_number {
-        padding-left: 33.5px;
-        padding-top: 7px;
-        padding-bottom: 8px;
-    }
-    .box_your_name {
-        padding-left: 25.5px;
-        padding-top: 8px;
-        padding-bottom: 7px;
-    
-    }
-    .box_form_phone_image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        width: 22px;
-        height: 15px;
-        border-right: 1px solid #000000;
-        top: 8px;
-        bottom: 7px;
-        left: 160px;
-        padding-left: 5px;
-        padding-top: 1.5px;
-        padding-bottom: 1.5px;
-       
-    }
-    .form_phone_image {
-        width: 12px;
-        height: 12px;
-        
-    }
-    
-    
-    .sign_up {
-        font-weight: 600;
-        font-size: 9.5px;
-        line-height: 10px;
-            }
-    .sign_up_box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40px;
-        height: 10px;
-    }
-    
-    .first_screen {
-        width: 320px;
-        height: 568px;
-        margin: 0 auto;  
-        background-position: right bottom;
-    }
-    .top_menu {
-        width: 320px;
-        left: 0;
-        top: 30px;
-        margin: 0px;
-    }
-    .zub_image {
-        width: 33.39px;
-        height: 34.67px;
-    }
-    .box_tesla {
-        width: 130px;
-        height: 39.16px;
-        margin-left: 3.21px;
-    }
-    .Drnikola {
-        width: 130px;
-        height: 23px;
-        margin-left: 0px;
-        
-
-    }
-    .Drnikola_text {
-        font-family: "Sofia Sans";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16.6926px;
-        line-height: 140%;
-        color: #46B1DE;
-    }
-    .zub {
-        width: 33.39px;
-        height: 34.67px;
-    }
-    .logo {
-        width: 183px;
-        height: 39.16px;
-    }
-    .dentist {
-        
-        width: 36px;
-        height: 16px;
-        margin-left: 0px;
-        margin-top: -6.67px;
-    }
-    .dentist_text {
-        font-family: "Sofia Sans";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 11.5564px;
-        line-height: 140%;
-        color: #46B1DE;
-    }
-    .phone {
-        width: 127px;
-        height: 15px;
-        margin-top: 4px;
-        margin-left: 3px;
-        
-    }
-    .phone_logo {
-        width: 15px;
-        height: 15px;
-    }
-    .phone_image {
-        width: 11.25px;
-        height: 11.25px;
-    }
-    .phone_number {
-        width: 109px;
-        height: 14px;
-        margin-left: 2px;
-        text-align: center;
-        margin-bottom: 1px;
-    }
-    .phone_number_text {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 14px;
-        color: #1B1D1F;
-    }
-    .frame7 {
-        display: none;
-    }
-    .box_professional {
-        width: 284px;
-        height: 89px;
-        margin: 0;
-        text-align: center;
-        top: 116px;
-        right: 18px;
-        left: 18px;
-    }
-    .professional_text, .dental_text {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 22px;
-        line-height: 130%;
-    }
-    .image_lady {
-        width: 208px;
-        height: 173.59px;
-        right: 64px;
-        bottom: 6px;
-    }
-    .i_will_conduct {
-       display: none;
-    }
-    .box_call_button {
-        width: 100px;
-        height: 35px;
-        left: 10px;
-        top: 288px;
-    }
-    .box_services_button {
-        width: 100px;
-        height: 35px;
-        left:210px;
-        top: 288px;
-
-    }
-    .years, .percent, .month {
-        position: absolute;
-        display: flex;
-        width: 280px;
-        height: 120px;
-        
-        background:  #FFFFFF;
-        border: 1px solid #D8E1E1;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 8px;
-    
-    }
-    .years {
-        left: 20px;
-        top: 570px;
-    }
-    .percent {
-        left: 20px;
-        top: 700px;
-    }
-    .month {
-        left: 20px;
-        top: 830px
-    }
-    .why_box_text {
-        padding-left: 0;
-        text-align: center;
-    }
-    .why {
-        width: 320px;
-        height: max-content;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 420px 65px 0px 65px;
-    }
-    .why_you_text, .exactly_text {
-       
-        font-size: 24px;
-        
-    }
-    .over {
-        width: 320px;
-        height: max-content;
-        margin-top: 35px;
-        margin-left: 65px;
-        
-    }
-    .large_box {
-        width: 320px; 
-        height: max-content;      
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        margin: 10px auto;
-                
-    }
-    .column_one, .column_two, .column_three {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-    }
-    .box_one, .box_three, .box_five {
-        margin-top: 10px;
-    }
-    .box_six {
-        margin-bottom: 10px;
-    }
-    .footer {
+        position: relative;
         width: 320px;
         height: 568px;
         margin: 10px auto;
@@ -1705,6 +696,7 @@ h1 {
         left: 8px;
         right: 8.72px;
         bottom: 473.09px;
+        display: flex;
     }
     .footer_zub {
         width: 55.33px;
@@ -1747,17 +739,28 @@ h1 {
         color: #0F2D4A;
     }
     .home_footer {
+display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
         width: 54px;
         height: 52.26px;
         top: 116.3px;
         left: 10.14px;
         gap: 14.29px;
+position: absolute;
     }
     .home_box {
         width: 38px;
         height: 19px;
         
     }
+.home_box_text, .footer_services_box_text, .mon_fri_text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    color: #0F2D4A;
+}
     .home_box_text{
         font-size: 14px;
         line-height: 19px;
@@ -1778,6 +781,9 @@ h1 {
         top: 189px;
         left: 10px;
         display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
     
         
     }
@@ -1789,6 +795,10 @@ h1 {
         height: 16px;
     }
     .languages_ua_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        color: #000000;
         font-size: 14px;
         line-height: 16px;
     }
@@ -1807,10 +817,15 @@ h1 {
         align-items: center;
     }
     .languages_en_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
         font-size: 14px;
         line-height: 16px;
+        color: #000000;
     }
     .box_work {
+        position: absolute;
         width: 99.52px;
         height: 59.31px;
         top: 142.69px;
@@ -1820,11 +835,16 @@ h1 {
         width: 98px;
         height: 17px;
         margin-left: 2.52px;
+        text-align: center;
 
     }
     .working_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
         font-size: 14.2648px;
         line-height: 17px;
+        color: #0F2D4A;
     }
     .mon_fri {
         width: 69px;
@@ -1836,6 +856,7 @@ h1 {
         line-height: 135%;
     }
     .footer_contacts {
+        position: absolute;
         width: 266px;
         height: 282.72;
         top: 249px;
@@ -1845,16 +866,27 @@ h1 {
         width: 108px;
         height: 25px;
         margin-left: 2px;
+        text-align: center;
     }
     .footer_contacts_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
         font-size: 21px;
         line-height: 25px;
+        color: #FFFFFF;
     }
     .footer_nikola {
         width: 247.98px;
         height: 23px;
         margin-top: 26.48px;
         margin-left: 0px;
+    }
+    .footer_nikola_text, .street_text, .footer_phone_text, .instagram_text, .email_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        color: #FFFFFF;
     }
     .footer_nikola_text {
         font-size: 17.1613px;
@@ -1871,6 +903,7 @@ h1 {
         line-height: 23px;
     }
     .footer_phone {
+        display: flex;
         width: 193.07px;
         height: 24.03px;
         margin-top: 25.91px;
@@ -1891,6 +924,7 @@ h1 {
         height: 23px;
         margin-left: 12.87px;
         margin-bottom: 1.03px;
+        text-align: center;
 
     }
     .footer_phone_text {
@@ -1900,12 +934,14 @@ h1 {
     .media {
         display: none;
     }
+
     .instagram {
         width: 123.57px;
         height: 23.86px;
         margin-top: 11.15px;
         margin-left: 2.57px;
         margin-bottom: 0.69px;
+	  display: flex;
 
     }
     .instagram_img {
@@ -1923,21 +959,32 @@ h1 {
         width: 85.81px;
         height: 23px;
         margin-left: 0px;
-        margin-top: 0.86px;       
+        margin-top: 0.86px;
+        text-align: center;       
 
     }
+.footer_nikola_text, .street_text, .footer_phone_text, .instagram_text, .email_text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    color: #FFFFFF;
+}
     .instagram_text {
         font-size: 17.1613px;
         line-height: 23px;
 
     }
     .email {
+        display: flex;
         width: 223.1px;
         height: 27.46px;
         margin-left: 0px;
         margin-top: 12.18px;
     }
     .email_img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 27.46px;
         height: 27.46px;
 
@@ -1947,6 +994,7 @@ h1 {
         height: 23px;
         margin-left: 13.73px;
         margin-top: 0.86px;
+        text-align: center;
     }
     .email_text {
         font-size: 17.1613px;
@@ -1987,8 +1035,12 @@ h1 {
         text-align: center;
     }
     .copyright_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
         font-size: 11.1548px;
         line-height: 15px;
+        color: #FFFFFF;
     }
     .do_i_provode_box {
         width: 450px;
@@ -1997,15 +1049,24 @@ h1 {
         text-align: center;
     }
     .what_do_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
         font-size: 17px;
         line-height: 20px;
+        color: #1B1D1F;
         
     }
     .services_bold_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
         font-size: 17px;
         line-height: 20px;
+        color: #46B1DE;
     }
     .therapeutic_header_box {
+        position: absolute;
         display: flex;
         top: 2350px;
         left: 60px;
@@ -2015,26 +1076,33 @@ h1 {
         align-items: center;
     }
     .threatment_box {
+        text-align: right;
+        position: absolute;
         display: flex;
         width: 169px;
         height: 40px;
         top: 2365px;
         left: 20px;
+        text-align: right;
     }
-    .elipse3 {            
+    .elipse3 {    
+        position: absolute;        
         width: 151px;
         height: 151px;
         left: 169px;
         top: 2350px;       
         border-radius: 50%;
-        margin-bottom: 0px;
+        border: 1px solid #1B1D1F;
     }
     .elipse4, .elipse6, .elipse7, .elipse8, .elipse5, .elipse9 {
+        position: absolute;
         display: flex;
         width: 12px;
         height: 12px;        
         justify-content: center;
-        align-items: center;        
+        align-items: center; 
+        background-color: #46B1DE;
+        border-radius: 50%;       
     }
     .elipse4 {
         left: 183px;
@@ -2062,6 +1130,7 @@ h1 {
         left: 313px;
     }
     .rectanle35_box {
+        position: absolute;
         width: 90px;
         height: 81px;
         left: 200px;
@@ -2070,8 +1139,9 @@ h1 {
     .rectanle35_img {
         width: 90px;
         height: 81px;
-    }
+}
     .plasmo_header_box  {
+        position: absolute;
         display: flex;
         width: 100px;
         height: 13.5px;
@@ -2079,6 +1149,7 @@ h1 {
         left: 300px;
     }
     .plasmo_box {
+        position: absolute;
         display: flex;
         width: 160px;
         height: 40px;
@@ -2092,8 +1163,10 @@ h1 {
         height: 37px;
         left: 330px;
         top: 2425px;
+        position: absolute;
     }
     .children_header_box {
+        position: absolute;
         display: flex;
         width: 130px;
         height: 13.5px;
@@ -2102,6 +1175,7 @@ h1 {
 
     }
     .prosthetics_header_box {
+        position: absolute;
         display: flex;
         top: 2350px;
         width: 85px;
@@ -2109,6 +1183,7 @@ h1 {
         left: 320px;
     }
     .prosthetics_box{
+        position: absolute;
         display: flex;
         width: 145px;
         height: 42px;
@@ -2117,13 +1192,16 @@ h1 {
     }    
    
     .surgical_box {
+        position: absolute;
         display: flex;
         top: 2425px;
         left: 10px;
         width: 142px;
         height: 43.5px;
+        text-align: right;
     }
     .surgical_header_box {
+        position: absolute;
         display: flex;
         width: 100px;
         height: 13.5px;
@@ -2131,6 +1209,7 @@ h1 {
         left: 67px;
     }
     .prof_header_box {
+        position: absolute;
         display: flex;
         width: 190px;
         height: 13.5px;
@@ -2139,6 +1218,8 @@ h1 {
         left:20px;
     }
     .with_help_box {
+        text-align: right;
+        position: absolute;
         display: flex;
         width: 150px;
         height: 40px;
@@ -2149,13 +1230,19 @@ h1 {
         display: none;
     }
     .therapeutic_header_text, .prosthetics_header_text, .surgical_header_text, .children_header_text, .prof_header_text, .plasmo_header_text {
-        
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
         font-size: 10px;
         line-height: 13.5px;
+        color: #46B1DE;
         
     }
     .threatment_text, .prosthetics_text, .surgical_text, .nostress_text, .with_help_text, .plasmo_text {
-        
+        font-family: "Roboto";
+        color: #1B1D1F;
+        font-style: normal;
+        font-weight: 400;
         font-size: 8px;
         line-height: 9.5px;
     }
@@ -2176,4 +1263,2064 @@ h1 {
         color: #FFFFFF;
     
     }
-}
+    @media(min-width: 480px){
+
+        .first_screen {
+    
+            width: 991px;
+            height: 663px;
+            margin: 0 auto;
+            background-position: left top;
+        }
+    li, .phone_number_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+        .image_lady {
+            width: 572px;
+            height: 464px;
+            bottom: 0px;
+            right: 0;
+        }
+        .top_menu {
+            width: 920px;
+            margin: 5px auto;
+            left: 0;
+            right: 0;
+            top: 60px;
+        }
+    .footer_phone_img {
+        width: 23px;
+        height: 23px;
+        margin: 2.63px 3.06px 3.39px 2.96px;
+    }
+    .logo, .footer_logo {
+        width: 425.22px;
+        height: 91px;
+        display: flex;
+    }
+    .footer_logo {
+         bottom: 249px;
+        left: 113px;
+        right: 861.78px;
+    }
+    .zub {
+        width: 77.57px;
+        height: 80.56px;
+        margin: 1.49px 0px 8.95px 0px;
+    }
+    .zub_image, .footer_zub_image {
+        margin: 1.37px 3.31px 0.46px 3.3px;
+    
+    }
+    .zub_image {
+         width: 70.96px;
+        height: 78.72px;
+    
+    }
+    .Drnikola {
+        width: 315px;
+        height: 53px;
+        margin-left: 7.43px;
+    }
+    .box_tesla {
+        width: 315px;
+        height: 91px;
+        
+    }
+    .Drnikola_text {
+        font-family: "Sofia Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 38px;
+        color: #46B1DE;
+        line-height: 53px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .dentist {
+        width: 84px;
+        height: 38px;
+        margin-left: 7.46px;
+        margin-top: -12.72px;
+    }
+    .dentist_text {
+        font-family: "Sofia Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26.852px;
+        color: #46B1DE;
+          
+        
+    }
+        .frame7 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 0;
+            width: 70px;
+            height: 19px;
+            margin-top: 38px;       
+        }
+        .spisok_menu {
+            display: flex;
+            flex-direction: column;
+        }
+        .spisok_menu_services, .spisok_menu_contacts {
+            margin-left: 0;
+            padding-top: 5px;
+            
+        }
+        .phone {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 174px;
+            height: 24px;
+            margin-left: 53px;
+            margin-top: 16px;
+        }
+        .phone_logo {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .phone_number {
+            width: 145px;
+            height: 19px;
+            margin-left: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .languages {
+            position: absolute;
+              display: flex;               
+            left: 850px;
+            top: 77px;
+            width: 77px;
+            height: 23px;
+            align-items: center;
+        } 
+        .languages_line, .footer_languages_line {
+        width: 22px;
+        height: 0px;
+        margin-left: 2px;
+        border: 1px solid #1B1D1F;
+        transform: rotate(90deg);
+    }
+        .languages_ua {
+        width: 27px;
+        height: 23px;
+        
+    }
+    .languages_ua_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 23px;
+        color: #000000;
+    }
+    .languages_en {
+        width: 26px;
+        height: 23px;
+    }
+    .languages_en_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        color: #000000;
+    }
+    .exactly_text {
+        font-size: 34px;
+        line-height: 130%;
+     }
+    .box_professional {
+        position: absolute;
+        width: 530px;
+        height: 158px;
+        top: 185px;
+        left: 110px;
+    text-align: left;
+    }
+    .professional_text, .dental_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 700;
+           font-size: 40px;
+        line-height: 52px;
+        letter-spacing: 0.1em;
+        }
+    .i_will_conduct {
+        display: flex;
+        position: absolute;
+        left: 110px;
+        bottom: 224px;
+    }
+    .box_call_button {
+    position: absolute;
+        width: 180px;
+        height: 60px;
+        left: 110px;
+        top: 487px;
+    }
+    .box_services_button {
+    position: absolute;
+        width: 180px;
+        height: 60px;
+        left: 410px;
+        top: 487px;
+    }
+        .years {
+            top: 601px;
+            left: 39.25px;
+        }
+        .percent {
+            top: 601px;
+            left: 358.5px;
+        }
+        .month {
+            top: 601px;
+            left: 677.75px;
+        }
+        .why_box_text {
+            padding-left: 0;
+        }
+        .why {
+            width: 991px;
+            height: 44px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 148px auto 0px;
+        }
+        .why_you_text {
+            font-size: 34px;
+            line-height: 130%;
+        }
+    .over {
+                width: 992px;
+                height: 44px;
+                margin: 5px auto;
+            }
+        
+        .large_box {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 30px auto;
+            width: 990px;   
+            height: max-content;
+            flex-direction: row;
+            justify-content: space-around;
+            
+        }
+    .column_one, .column_two, .column_three {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+        }
+    .column_three {
+        margin-top: 16px;
+    }
+    
+        .box_one, .box_two, .box_three, .box_four, .box_five, .box_six {
+            width: 290px;
+        }
+    .box_one, .box_three, .box_five {
+            
+    margin-bottom: 12px;
+        }
+        
+        
+        .box_make {
+            margin: 500px auto 0px;
+            width: 845px;
+            height: 265px;
+        }
+        .box_make_inside {
+        width: 821px;
+        height: 247px;
+        margin: 10px 9px 8px 15px;
+    }
+    .box_appointment {
+        display: flex;
+        width: 763px;
+        height: 42px;
+        margin: 29px 33px 7px 25px;
+        justify-content: center;
+        align-items: center;
+    }
+        .make_text {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .fill_text {
+        font-size: 16px;
+        line-height: 22px;
+        
+    }
+    .form {
+        display: flex;
+        position: relative;
+        width: 821px;
+        margin-top: 44px;
+    }
+    .your_name_img_box {
+        position: absolute;
+        width: 43px;
+        height: 30px;
+        border-right: 2px solid #000000;
+       margin-top: 14px;
+       margin-bottom: 13px;
+       margin-left: 18px;
+       padding: 4px 10.85px 2px 10px;
+    
+    }
+    .img_your_name {
+        width: 22.15px;
+        height: 24px;
+    }
+    
+     .box_form_phone {
+        position: relative;
+        width: 233px;
+        height: 57px;
+        background: rgba(217, 217, 217, 0.71);
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .button_sign {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 35px;
+        width: 180px;
+        height: 57px;
+        margin-top: 1px;
+        margin-left: 67px;
+        background: #46B1DE;
+        border-radius: 8px;
+    }
+     .sign_up_box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 74px;
+            height: 27px;
+        }
+    
+    
+    
+    
+    .form_your_name {
+        height: 57px;
+        width: 233px;   
+        margin-left: 18px;
+        margin-right: 69px;
+    }
+    .box_your_name, .form_phone_number {
+        width: 233px;
+        height: 57px;
+        background: rgba(217, 217, 217, 0.71);
+        border-radius: 8px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 27px;
+        color: rgba(27, 29, 31, 0.51);
+    }
+    .form_phone_number {
+        padding-left: 67px;
+        padding-top: 14px;
+        padding-bottom: 16px;
+    }
+    .box_your_name {
+        padding-left: 51px;
+        padding-top: 16px;
+        padding-bottom: 14px;
+    
+    }
+    .box_form_phone_image {
+        position: absolute;
+        width: 44px;
+        height: 30px;
+        border-right: 2px solid #000000;
+        top: 13px;
+        bottom: 14px;
+        left: 320px;
+        padding-left: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+       
+    }
+    .form_phone_image {
+        width: 24px;
+        height: 24px;
+        
+    }
+    
+    
+    .sign_up {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 140%;
+        text-align: center;
+        color: #FFFFFF;
+    }
+        
+        .do_i_provode_box {
+    height: 40px;
+            width: 991px;
+            margin: 90px auto;
+            padding-left: 0;
+            text-align: center;
+        }
+        .what_do_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 40px;
+        color: #1B1D1F;
+    }
+    .services_bold_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 40px;
+        color: #46B1DE;
+        
+    }
+    .footer {
+    position: relative;
+            width: 992px;
+    height: 400px;
+    margin-top: 91px;
+        background: linear-gradient(91.75deg, #A1C7D4 18.06%, #0680AA 98.16%);
+        
+        }
+    .footer_zub {
+        width: 77.57px;
+        height: 80.56px;
+        margin-top: 1.49px;
+    }
+    .footer_box_tesla {
+        width: 302px;
+        height: 91px;
+        margin-left: 7.46px;
+    }
+    .footer_Drnikola {
+        width: 302px;
+        height: 54px;
+    
+    }
+    .footer_Drnikola_text {
+        font-family: "Sofia Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 38.7869px;
+        line-height: 140%;
+        color: #0F2D4A;
+    }
+    .footer_dentist {
+        width: 84px;
+        height: 38px;
+        margin-top: -16px;
+    }
+    .footer_dentist_text {
+        font-family: "Sofia Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26.8525px;
+        line-height: 140%;
+        color: #0F2D4A;
+    }
+    .home_footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 20px;
+        width: 76px;
+        height: 74px;
+        position: absolute;
+        left: 116px;
+        top: 181px;
+    }
+    .home_box {
+        width: 54px;
+        height: 27px;
+    }
+    .home_box_text, .footer_services_box_text, .mon_fri_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+        color: #0F2D4A;
+    }
+    .footer_services_box {
+        width: 76px;
+        height: 27px;
+    }
+    .footer_languages {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        width: 73px;
+        height: 23px;
+        top: 282px;
+        left: 113px;
+    }
+    .box_work {
+        width: 140px;
+        position: absolute;
+        top: 218px;
+        left: 352px;
+    }
+    .working {
+        width: 137px;
+        height: 23px;
+        margin-left: 3px;
+        text-align: center;
+        
+    }
+    .working_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 23px;
+        
+        color: #0F2D4A;
+    }
+    .mon_fri {
+        width: 128px;
+        height: 54px;
+        margin-top: 7px;
+    }
+       .footer_contacts {
+        position: absolute;
+        width: 316px;
+        height: 329px;
+        right: 20px;
+        top: 60px;
+    }
+    .footer_contacts_box {
+        width: 183px;
+        height: 40px;
+        margin-left: 6px;
+        text-align: center;
+    }
+    .footer_contacts_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 40px;
+        
+        color: #FFFFFF;
+    }
+    .footer_nikola {
+        width: 289px;
+        height: 27px;
+        margin-left: 6px;
+        margin-top: 20px;
+    }
+    .footer_nikola_text, .street_text, .footer_phone_text, .instagram_text, .email_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+        color: #FFFFFF;
+    }
+    .footer_street {
+        width: 213px;
+        height: 27px;
+        margin-left: 6px;
+        margin-top: 15px;
+    }
+    .footer_phone {
+        display: flex;
+        width: 225px;
+        height: 28px;
+        margin-top: 20px;
+    }
+    .footer_phone_box {
+        width: 28px;
+        height: 28px;
+    }
+    .footer_phone_img {
+        margin: 2.63px 3.06px 3.39px 2.96px;
+    }
+    .footer_phone_number {
+        width: 182px;
+        height: 27px;
+        margin-bottom: 1px;
+        margin-left: 15px;
+        text-align: center;
+    }
+    .media {
+        display: flex;
+    }
+    .viber, .telegram, .whatsapp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 28px;
+        height: 28px;
+        
+    }
+    .viber {
+        margin-top: 10px;
+        margin-left: 3px;
+    }
+    .viber_link {
+        width: 28px;
+        height: 28px;
+    }
+    .telegram {
+        margin-top: 8px;
+        margin-left: 22px;
+    }
+    .whatsapp {
+        margin-top: 10px;
+        margin-left: 31px;
+    }
+    .instagram {
+        display: flex;
+        width: 140px;
+        height: 27px;
+        margin-top: 13px;
+        margin-left: 3px;
+    }
+    .instagram_img {
+        width: 27px;
+        height: 27px;    
+    }
+    .instagram_box {
+        width: 100px;
+        height: 27px;
+        margin-left: 13px;
+        text-align: center;
+    }
+    .email {
+        display: flex;
+        width: 250px;
+        height: 32px;
+        margin-left: 1px;
+        margin-top: 15px;
+    }
+    .email_img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        
+    }
+    .email_box {
+        width: 212px;
+        height: 27px;
+        margin-top: 3px;
+        text-align: center;
+        margin-left: 6px;
+    }
+    .copyright {
+        display: flex;
+        width: 109px;
+        height: 17px;
+        margin-left: 206px;
+        margin-top: 10px;
+    }
+    .copyright_img_box {
+        width: 10px;
+        height: 17px;
+        margin-right: -2px;
+        
+    }
+    .copyright_img {
+        margin-top: 4px;
+    
+    }
+    .copyright_text_box {
+        width: 101px;
+        height: 17px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .copyright_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 130%;
+        color: #FFFFFF;
+    }
+    
+        .therapeutic_header_box {
+            left: 147px;
+    width: 187px;
+        height: 27px;
+        top: 1530px;
+        }
+    .therapeutic_header_text, .prosthetics_header_text, .surgical_header_text, .children_header_text, .prof_header_text, .plasmo_header_text {
+        
+        font-size: 20px;
+        line-height: 135%;
+        
+    }
+    .threatment_text, .prosthetics_text, .surgical_text, .nostress_text, .with_help_text, .plasmo_text {
+        font-family: "Roboto";
+        color: #1B1D1F;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+        .threatment_box {
+     width: 338px;
+        height: 80px;
+        top: 1562px;
+            left: 25px;
+        }
+    .plus4{
+        width: 11px;
+        height: 25px;
+        margin-left: 6px;
+        margin-right: 7px;
+        margin-top: 0px;
+    }
+    .plus4_text {
+        font-family: "Sofia Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        color: #FFFFFF;
+    
+    }
+        .elipse3 {
+    width: 302px;
+        height: 302px;
+            left: 350px;
+    top: 1533px;
+    margin-bottom: 202px;
+        }
+    .elipse4, .elipse6 {
+    top: 1560px;
+    }
+    .elipse7, .elipse8 {
+    top: 1672px;
+    }
+    .elipse5, .elipse9 {
+    top: 1781px;
+    }
+        .elipse4, .elipse5 {
+            left: 383px;
+    width: 24px;
+        height: 24px;
+        }
+        .elipse6, .elipse9 {
+            left: 596px;
+    width: 24px;
+        height: 24px;
+        }
+        .elipse7 {
+            left: 336px;
+    width: 24px;
+        height: 24px;
+        }
+        .elipse8 {
+            left: 643px;
+    width: 24px;
+        height: 24px;
+        }
+        .rectanle35_box {
+    width: 180px;
+        height: 162px;
+            left: 411px;
+    top: 1603px;
+        }
+    .rectanle35_img {
+            width: 180px;
+            height: 162px;
+        }
+        .prosthetics_header_box, .prosthetics_box, .children_header_box, .nostress_box, .plasmo_header_box, .plasmo_box {
+            left: 670px;
+        }
+    .plasmo_box {
+        width: 308px;
+        height: 77px;
+        top: 1853px;
+        
+    }
+    .plasmo_header_box {
+        width: 170px;
+        height: 27px;
+        top: 1821px;    
+    }
+    .children_header_box {
+        width: 223px;
+        height: 27px;
+        top: 1670px;
+        }
+    .nostress_box {
+        width: 291px;
+        height: 74px;
+        top: 1702px;
+        
+    }
+    .prosthetics_header_box {
+        
+        width: 133px;
+        height: 27px;
+        top: 1530px;
+        
+    }
+    .prosthetics_box {
+        width: 290px;
+        height: 83px;
+        top: 1562px;
+        
+    }
+        .surgical_box {
+            left: 50px;
+    width: 283px;
+        height: 87px;
+        top: 1705px;
+        }
+        .surgical_header_box {
+    width: 151px;
+        height: 27px;
+        top: 1673px;
+            left: 180px;
+        }
+        .prof_header_box {
+            left:20px;
+    width: 317px;
+        height: 27px;
+    top: 1821px;
+        }
+        .with_help_box {
+     width: 295px;
+        height: 80px;
+    top: 1853px;
+            left: 40px;
+        }
+        .sooner_box {
+            display: none;
+        }
+        .images {
+            width: 991px;
+            margin-top: 90px;
+            justify-content: space-around;
+            align-items: center;
+        }
+    .image_one, .image_one_img, .image_two, .image_two_img, .image_three_img, .image_three {
+            width: 280px;
+            height: 128px;        
+            
+        }
+        
+    }
+    @media(min-width: 992px) {
+        .first_screen {
+            background-image: url(../images/Rectangle\ 1.png);
+            width: 1400px;   
+            height: 663px;   
+            background-repeat: no-repeat;
+            background-size:cover;
+            position: relative;
+            left: 0px;
+            top: 0px;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            margin: 0px;
+        }
+        
+        .image_lady {
+            position: absolute;
+            bottom: 0px;
+            right: 110px;
+            
+        }
+        .top_menu {
+            position: absolute;
+            margin: 0px;
+            width: 1080px;
+            height: 91px;
+            top: 60px;
+            left: 110px;
+            display: flex;
+            }
+        .logo, .footer_logo {
+            width: 425.22px;
+            height: 91px;
+            display: flex;
+        }
+        .zub {
+            width: 77.57px;
+            height: 80.56px;
+            margin: 1.49px 0px 8.95px 0px;
+        }
+        .zub_image, .footer_zub_image {
+            margin: 1.37px 3.31px 0.46px 3.3px;
+        
+        }
+        
+        .Drnikola {
+            width: 315px;
+            height: 53px;
+            margin-left: 7.43px;
+        }
+        .box_tesla {
+            width: 315px;
+            height: 91px;
+            
+        }
+        .Drnikola_text {
+            font-family: "Sofia Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 38px;
+            color: #46B1DE;
+            line-height: 53px;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        .dentist {
+            width: 84px;
+            height: 38px;
+            margin-left: 7.46px;
+            margin-top: -12.72px;
+        }
+        .dentist_text {
+            font-family: "Sofia Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 26.852px;
+            color: #46B1DE;
+              
+            
+        }
+        .frame7 {
+            display: inline-block;
+            width: 350px;
+            height: 19px;
+            margin-left: 77.78px;
+            margin-top: 18px;
+        }
+        .spisok_menu {
+            list-style: none;
+            display: inline-flex;
+            flex-direction: row;
+        }
+        .spisok_menu_services, .spisok_menu_contacts {
+            padding: 0px;
+            margin-left: 80px;
+        }
+        .phone {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 174px;
+            height: 24px;
+            margin-left: 53px;
+            margin-top: 16px;
+        }
+        .phone_logo {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .phone_number {
+            width: 145px;
+            height: 19px;
+            margin-left: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .languages {
+            position: absolute;
+            display: flex;
+            left: 1213px;
+            top: 77px;
+            width: 77px;
+            height: 23px;
+            align-items: center;
+        }
+        .languages_line, .footer_languages_line {
+            width: 22px;
+            height: 0px;
+            margin-left: 2px;
+            border: 1px solid #1B1D1F;
+            transform: rotate(90deg);
+        }
+        .languages_ua {
+            width: 27px;
+            height: 23px;
+            
+        }
+        .languages_ua_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 23px;
+            color: #000000;
+        }
+        .languages_en {
+            width: 26px;
+            height: 23px;
+        }
+        .languages_en_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            color: #000000;
+        }
+        
+        .exactly_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 34px;
+            line-height: 130%;
+            color: #46B1DE;
+        }
+        
+        .box_professional {
+            position: absolute;
+            width: 530px;
+            height: 158px;
+            top: 185px;
+            left: 110px;
+        }
+        .dental_text {
+            color: #46B1DE;
+        }
+        .i_will_conduct {
+            position: absolute;
+            left: 110px;
+            bottom: 224px;
+        }
+        .i_will_conduct_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: #1B1D1F;
+            
+        }
+        .box_call_button {
+            position: absolute;
+            width: 180px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: 110px;
+            top: 487px;
+            background: linear-gradient(97.59deg, #46B1DE 9.8%, #0591CC 95.1%);
+            box-shadow: 0px 2px 10px #46B1DE;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .call_button_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 19px;
+            line-height: 140%;
+            color: #FFFFFF;
+            
+        }
+        .box_services_button {
+            position: absolute;
+            width: 180px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: 410px;
+            top: 487px;
+            background: #FFFFFF;
+            box-shadow: 0px 2px 10px #DDE0DC;
+            border-radius: 8px;
+            mix-blend-mode: normal;
+            border: 1px solid #DDE0DC;
+            text-align: center;
+        }
+        .services_button_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 19px;
+            line-height: 140%;
+            color: #46B1DE;
+            
+        }
+        .years, .percent, .month {
+            position: absolute;
+            display: flex;
+            width: 280px;
+            height: 120px;
+            top: 601px;
+            background:  #FFFFFF;
+            border: 1px solid #D8E1E1;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 8px;
+        
+        }
+        .years {
+            left: 210px;
+        }
+        .percent {
+            left: 560px;
+        }
+        .month {
+            left: 910px;
+        }
+        .years_number {
+            width: 93px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .years_number_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 65px;
+            color: #46B1DE;
+            
+        }
+        .years_box_text {
+            display: flex;
+            width: 146px;
+            height: 64px;
+            margin: 35px 34px 21px 7px;
+        }
+        .years_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #1B1D1F;
+        
+        }
+        .percent_number {
+            width: 133px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 4px;
+        }
+        .percent_box_text {
+            display: flex;
+            width: 114px;
+            height: 32px;
+            margin: 46px 26px 42px 3px;
+        }
+        .month_number {
+            display: flex;
+            width: 96px;
+            height: 120px;
+            justify-content: center;
+            align-items: center;
+        }
+        .month_box_text {
+            display: flex;
+            width: 165px;
+            height: 48px;
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #1B1D1F;
+            margin: 33px 12px 39px 7px;
+        
+        }
+        .why {
+            width: 1400px;
+            height: 44px;
+            margin: 148px 0px 0px 0px;
+            
+        }
+        .why_box_text {
+            padding-left: 354px;
+            padding-right: 394px;
+        }
+        .why_you_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 34px;
+            line-height: 130%;
+            color: #1B1D1F;
+        }
+        .over {
+            display: flex;
+            width: 1400px;
+            height: 44px;
+            margin: 5px 0px 0px 0px;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .over_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: #000000;
+            text-align: center;
+            
+            
+        }
+        .large_box {
+            display: flex;
+            flex-wrap: wrap;
+            width: 1020px;
+            height: 396px;
+           margin: 50px 190px 0px 190px;
+            background: #A1C7D4;
+            border-radius: 12px;
+            
+            
+        }
+        
+        .box_one, .box_two, .box_three, .box_four, .box_five, .box_six {
+            width: 300px;
+            height: 176px;
+            background: #FFFFFF;
+            border-radius: 8px;
+        }
+        .box_six {
+            margin-bottom: 0px;
+        }
+        .column_one {
+            margin: 16px 40px 16px 20px;    
+        }
+        .column_two {
+            margin-top: 16px;
+            margin-right: 40px;
+            margin-bottom: 16px;
+        }
+        .column_three {
+            margin: 16px 20px 16px 0px;
+        }
+        .box_one, .box_three, .box_five {
+            margin-bottom: 12px;
+            margin-top: 0px;
+        }
+        .box_one_for_two_box {
+            display: flex;
+        }
+        .box_one_number {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 56px;
+            text-align: center;
+        }
+        .one_number_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 47px;
+            color: #46B1DE;
+                
+        }
+        .box_one_number_text {
+            width: 193px;
+            height: 38px;
+            margin: 10px 31px 25px -4px;
+        }
+        .modern {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 21px;
+            color: #46B1DE;
+        }
+        .one_text {
+            width: 267px;
+            height: 57px;
+            margin-left: 20px;
+            margin-right: 13px;
+        
+        }
+        .exclusively {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #1B1D1F;
+        }
+        .box_one_interest {
+            width: 212px;
+            height: 38px;
+            margin: 10px 12px 25px -4px;
+        }
+        .box_one_professional {
+            width: 224px;
+            height: 38px;
+            margin: 10px 0px 25px -4px;
+        
+        }
+        .box_three_text {
+            width: 225px;
+            height: 38px;
+            margin-left: 18px;
+            margin-right: 57px;
+        }
+        .box_four_number_text {
+            width: 206px;
+            height: 38px;
+            margin: 10px 18px 25px -4px;
+        }
+        .box_four_text {
+            width: 233px;
+            height: 38px;
+            margin-left: 18px;
+            margin-right: 49px;
+        }
+        .box_five_number_text {
+            width: 217px;
+            height: 38px;
+            margin: 10px 6px 25px -3px;
+        }
+        .box_five_text {
+            width: 267px;
+            height: 57px;
+            margin-left: 18px;
+            margin-right: 15px;
+        }
+        .box_six_number_text {
+            width: 218px;
+            height: 38px;
+            margin: 10px 5px 25px -3px;
+        }
+        .box_six_text {
+            width: 280px;
+            height: 57px;
+            margin-left: 16px;
+            margin-right: 4px;
+        }
+        .box_make {
+            display: flex;
+            width: 845px;
+            height: 265px;
+            margin-top: 88px;
+            margin-left: 265px;
+            background:  #FFFFFF;
+            border: 1px solid #D9D9D9;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            
+        }
+        
+        .box_make_inside {
+            width: 821px;
+            height: 247px;
+            background: #FFFFFF;
+            border: 1px solid #D9D9D9;
+            backdrop-filter: blur(2px);
+            border-radius: 10px;
+            margin: 10px 9px 8px 15px;
+        }
+        .box_appointment {
+            display: flex;
+            width: 763px;
+            height: 42px;
+            margin: 29px 33px 7px 25px;
+            justify-content: center;
+            align-items: center;
+        }
+        .make_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 42px;
+            color: #1B1D1F;
+            text-transform: uppercase;
+        }
+        .fill {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 6px;
+            margin-right: 14px;
+        }
+        .fill_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: #1B1D1F;
+            
+        }
+        .form {
+            display: flex;
+            position: relative;
+            width: 821px;
+            margin-top: 44px;
+        }
+        .your_name_img_box {
+            position: absolute;
+            width: 43px;
+            height: 30px;
+            border-right: 2px solid #000000;
+           margin-top: 14px;
+           margin-bottom: 13px;
+           margin-left: 18px;
+           padding: 4px 10.85px 2px 10px;
+        
+        }
+        .img_your_name {
+            width: 22.15px;
+            height: 24px;
+        }
+        
+         .box_form_phone {
+            position: relative;
+            width: 233px;
+            height: 57px;
+            background: rgba(217, 217, 217, 0.71);
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .button_sign {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 16px 35px;
+            width: 180px;
+            height: 57px;
+            margin-top: 1px;
+            margin-left: 67px;
+            background: #46B1DE;
+            border-radius: 8px;
+        }
+        
+        
+        
+        
+        .form_your_name {
+            height: 57px;
+            width: 233px;   
+            margin-left: 18px;
+            margin-right: 69px;
+        }
+        .box_your_name, .form_phone_number {
+            width: 233px;
+            height: 57px;
+            background: rgba(217, 217, 217, 0.71);
+            border-radius: 8px;
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 19px;
+            line-height: 27px;
+            color: rgba(27, 29, 31, 0.51);
+        }
+        .form_phone_number {
+            padding-left: 67px;
+            padding-top: 14px;
+            padding-bottom: 16px;
+        }
+        .box_your_name {
+            padding-left: 51px;
+            padding-top: 16px;
+            padding-bottom: 14px;
+        
+        }
+        .box_form_phone_image {
+            position: absolute;
+            width: 44px;
+            height: 30px;
+            border-right: 2px solid #000000;
+            top: 13px;
+            bottom: 14px;
+            left: 320px;
+            padding-left: 10px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+           
+        }
+        .form_phone_image {
+            width: 24px;
+            height: 24px;
+            
+        }
+        
+        
+        .sign_up {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 19px;
+            line-height: 140%;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        .images {
+            width: 1400px;
+            display: flex;
+            margin-top: 90px;
+            margin-left: 0px;
+            justify-content: normal;
+        }
+        .image_one {
+            
+            margin-left: 198px;
+        }
+        .image_two {
+            
+            margin-left: 69px;
+        }
+        .image_three {
+            margin-top: 1px;
+            margin-left: 70px;
+        }
+        .footer {
+            position: relative;
+            width: 1400px;
+            height: 400px;
+            margin-left: 0px;
+            margin-top: 91px;
+            background: linear-gradient(91.75deg, #A1C7D4 18.06%, #0680AA 98.16%);
+            
+        }
+        .footer_zub {
+            width: 77.57px;
+            height: 80.56px;
+            margin-top: 1.49px;
+        }
+        .footer_logo {
+            position: absolute;
+            top: 60px;
+            bottom: 249px;
+            left: 113px;
+            right: 861.78px;
+        }
+        .footer_box_tesla {
+            width: 302px;
+            height: 91px;
+            margin-left: 7.46px;
+        }
+        .footer_Drnikola {
+            width: 302px;
+            height: 54px;
+        
+        }
+        .footer_Drnikola_text {
+            font-family: "Sofia Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 38.7869px;
+            line-height: 140%;
+            color: #0F2D4A;
+        }
+        .footer_dentist {
+            width: 84px;
+            height: 38px;
+            margin-top: -16px;
+        }
+        .footer_dentist_text {
+            font-family: "Sofia Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 26.8525px;
+            line-height: 140%;
+            color: #0F2D4A;
+        }
+        .home_footer {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 20px;
+            width: 76px;
+            height: 74px;
+            position: absolute;
+            left: 116px;
+            top: 181px;
+        }
+        .home_box {
+            width: 54px;
+            height: 27px;
+        }
+        .home_box_text, .footer_services_box_text, .mon_fri_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 27px;
+            color: #0F2D4A;
+        }
+        .footer_services_box {
+            width: 76px;
+            height: 27px;
+        }
+        .footer_languages {
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            width: 73px;
+            height: 23px;
+            top: 282px;
+            left: 113px;
+        }
+        .box_work {
+            width: 140px;
+            position: absolute;
+            top: 218px;
+            left: 352px;
+        }
+        .working {
+            width: 137px;
+            height: 23px;
+            margin-left: 3px;
+            text-align: center;
+            
+        }
+        .working_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 23px;
+            
+            color: #0F2D4A;
+        }
+        .mon_fri {
+            width: 128px;
+            height: 54px;
+            margin-top: 7px;
+        }
+        .footer_contacts {
+            position: absolute;
+            width: 316px;
+            height: 329px;
+            right: 174px;
+            top: 60px;
+        }
+        .footer_contacts_box {
+            width: 183px;
+            height: 40px;
+            margin-left: 6px;
+            text-align: center;
+        }
+        .footer_contacts_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 34px;
+            line-height: 40px;
+            
+            color: #FFFFFF;
+        }
+        .footer_nikola {
+            width: 289px;
+            height: 27px;
+            margin-left: 6px;
+            margin-top: 20px;
+        }
+        .footer_nikola_text, .street_text, .footer_phone_text, .instagram_text, .email_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 27px;
+            color: #FFFFFF;
+        }
+        .footer_street {
+            width: 213px;
+            height: 27px;
+            margin-left: 6px;
+            margin-top: 15px;
+        }
+        .footer_phone {
+            display: flex;
+            width: 225px;
+            height: 28px;
+            margin-top: 20px;
+        }
+        .footer_phone_box {
+            width: 28px;
+            height: 28px;
+        }
+        .footer_phone_img {
+            margin: 2.63px 3.06px 3.39px 2.96px;
+        }
+        .footer_phone_number {
+            width: 182px;
+            height: 27px;
+            margin-bottom: 1px;
+            margin-left: 15px;
+            text-align: center;
+        }
+        
+        .media {
+            display: flex;
+        }
+        .viber, .telegram, .whatsapp {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 28px;
+            height: 28px;
+            
+        }
+        .viber {
+            margin-top: 10px;
+            margin-left: 3px;
+        }
+        .viber_link {
+            width: 28px;
+            height: 28px;
+        }
+        .telegram {
+            margin-top: 8px;
+            margin-left: 22px;
+        }
+        .whatsapp {
+            margin-top: 10px;
+            margin-left: 31px;
+        }
+        .instagram {
+            display: flex;
+            width: 140px;
+            height: 27px;
+            margin-top: 13px;
+            margin-left: 3px;
+        }
+        .instagram_img {
+            width: 27px;
+            height: 27px;    
+        }
+        .instagram_box {
+            width: 100px;
+            height: 27px;
+            margin-left: 13px;
+            text-align: center;
+        }
+        .email {
+            display: flex;
+            width: 250px;
+            height: 32px;
+            margin-left: 1px;
+            margin-top: 15px;
+        }
+        .email_img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 32px;
+            height: 32px;
+            
+        }
+        .email_box {
+            width: 212px;
+            height: 27px;
+            margin-top: 3px;
+            text-align: center;
+            margin-left: 6px;
+        }
+        .copyright {
+            display: flex;
+            width: 109px;
+            height: 17px;
+            margin-left: 206px;
+            margin-top: 10px;
+        }
+        .copyright_img_box {
+            width: 10px;
+            height: 17px;
+            margin-right: -2px;
+            
+        }
+        .copyright_img {
+            margin-top: 4px;
+        
+        }
+        .copyright_text_box {
+            width: 101px;
+            height: 17px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .copyright_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 130%;
+            color: #FFFFFF;
+        }
+        .do_i_provode_box {
+            width: 1400px;
+            height: 40px;
+            padding-left: 426px;
+            margin-top: 90px;
+            text-align: left;
+            margin-left: 0px;
+            margin-bottom: 0px;
+            
+        }
+        .what_do_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 34px;
+            line-height: 40px;
+            color: #1B1D1F;
+        }
+        .services_bold_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 34px;
+            line-height: 40px;
+            color: #46B1DE;
+            
+        }
+        .elipse3 { 
+            position: absolute;   
+            width: 302px;
+            height: 302px;
+            left: 549px;
+            top: 1533px;
+            border: 1px solid #1B1D1F;
+            border-radius: 50%;
+            margin-bottom: 202px;
+        }
+        .elipse4, .elipse6, .elipse7, .elipse8, .elipse5, .elipse9 {
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            background-color: #46B1DE;
+            border-radius: 50%;
+            
+        }
+        .elipse4 {
+            left: 582px;
+            top: 1560px;
+        }
+        .elipse6 {
+            left: 795px;
+            top: 1560px;
+        }
+        .elipse7 {
+            left: 535px;
+            top: 1672px;
+        }
+        .elipse8 {
+            left: 842px;
+            top: 1672px;
+        }
+        .elipse5 {
+            left: 582px;
+            top: 1781px;
+        }
+        .elipse9 {
+            left: 795px;
+            top: 1781px;
+        }
+        .plus4{
+            width: 11px;
+            height: 25px;
+            margin-left: 6px;
+            margin-right: 7px;
+            margin-top: 0px;
+        }
+        .plus4_text {
+            font-family: "Sofia Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 140%;
+            color: #FFFFFF;
+        
+        }
+        .rectanle35_box {
+            width: 180px;
+            height: 162px;
+            position: absolute;
+            left: 610px;
+            top: 1603px;
+        }
+        .therapeutic_header_box {
+            position: absolute;
+            width: 187px;
+            height: 27px;
+            top: 1530px;
+            left: 346px;
+        }
+        .therapeutic_header_text, .prosthetics_header_text, .surgical_header_text, .children_header_text, .prof_header_text, .plasmo_header_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 135%;
+            color: #46B1DE;
+        }
+        .threatment_box {
+            position: absolute;
+            width: 338px;
+            height: 80px;
+            top: 1562px;
+            left: 195px;
+            text-align: right;
+        }
+        .threatment_text, .prosthetics_text, .surgical_text, .nostress_text, .with_help_text, .plasmo_text {
+            font-family: "Roboto";
+            color: #1B1D1F;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+        }
+        .prosthetics_header_box {
+            position: absolute;
+            width: 133px;
+            height: 27px;
+            top: 1530px;
+            left: 852px;
+        }
+        .prosthetics_box {
+            width: 290px;
+            height: 83px;
+            position: absolute;
+            top: 1562px;
+            left: 855px;
+        }
+        .surgical_header_box {
+            position: absolute;
+            width: 151px;
+            height: 27px;
+            top: 1673px;
+            left: 329px;
+        }
+        .surgical_box {
+            position: absolute;
+            width: 283px;
+            height: 87px;
+            top: 1705px;
+            left: 202px;
+            text-align: right;
+        }
+        .children_header_box {
+            width: 223px;
+            height: 27px;
+            position: absolute;
+            top: 1670px;
+            left: 910px;
+        }
+        .nostress_box {
+            width: 291px;
+            height: 74px;
+            position: absolute;
+            top: 1702px;
+            left: 914px;
+        }
+        .prof_header_box {
+            position: absolute;
+            width: 317px;
+            height: 27px;
+            left: 263px;
+            top: 1821px;
+        }
+        .with_help_box {
+            width: 295px;
+            height: 80px;
+            text-align: right;
+            position: absolute;
+            top: 1853px;
+            left: 284px;
+        }
+        .plasmo_header_box {
+            width: 170px;
+            height: 27px;
+            position: absolute;
+            top: 1821px;
+            left: 815px;
+        }
+        .plasmo_box {
+            width: 308px;
+            height: 77px;
+            position: absolute;
+            top: 1853px;
+            left: 815px;
+        }
+        .sooner_box {
+               
+            width: 597px;
+            height: 103px;
+            display: flex;
+            margin-top: 512px;
+            margin-left: 436px;
+            
+        }
+        .sooner_box_img {
+            width: 105px;
+            height: 103px;
+            
+        }
+        .sooner_box_text {
+            width: 478px;
+            height: 33px;
+            margin-top: 45px;
+            margin-left: 16px;
+            margin-bottom: 25px;
+        }
+        .sooner_box_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 20px;
+            line-height: 140%;
+            color: #46B1DE;
+        }
+    }
