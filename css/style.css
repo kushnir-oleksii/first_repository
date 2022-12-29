@@ -993,6 +993,19 @@ position: absolute;
         font-size: 17.1613px;
         line-height: 23px;
     }
+    .footer_phone_text::after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 15.49px;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+    }
+    .footer_phone_text:hover:after {
+        width: 156px;
+    }
     .media {
         display: none;
     }
@@ -1049,6 +1062,19 @@ position: absolute;
         bottom: 0.69px;
 
     }
+    .instagram_text::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 7px;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+    }
+    .instagram_text:hover:after {
+        width: 72px;
+    }
     .email {
         display: flex;
         width: 223.1px;
@@ -1088,6 +1114,19 @@ position: absolute;
         height: 27.46px;
         top: 0.86px;
         bottom: 4px;
+    }
+    .email_text::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 12px;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+    }
+    .email_text:hover:after {
+        width: 161px;
     }
     .copyright {
         display: flex;
@@ -1361,6 +1400,7 @@ position: absolute;
             margin: 0 auto;
             background-position: left top;
         }
+        
     li, .phone_number_text {
         font-family: "Roboto";
         font-style: normal;
@@ -1368,6 +1408,7 @@ position: absolute;
         font-size: 16px;
         line-height: 19px;
     }
+    
     .phone_number_text {
         width: 145px;
     }
@@ -1468,6 +1509,7 @@ position: absolute;
         .spisok_menu {
             display: flex;
             flex-direction: column;
+            list-style: none;
         }
         .spisok_menu_services, .spisok_menu_contacts {
             margin-left: 0;
@@ -1998,6 +2040,19 @@ position: absolute;
         height: 28px;
         
     }
+    .footer_phone_text::after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 21.99px;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+    }
+    .footer_phone_text:hover:after {
+        width: 182px;
+    }
     .footer_phone_img {
         margin: 2.63px 3.06px 3.39px 2.96px;
     }
@@ -2074,6 +2129,19 @@ position: absolute;
         top: 0px;
         bottom: 0px;    
     }
+    .instagram_text::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 8.5px;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+    }
+    .instagram_text:hover:after {
+        width: 84px;
+    }
     .email {
         display: flex;
         width: 250px;
@@ -2096,6 +2164,19 @@ position: absolute;
         height: 32px;
         top: 0px;
         bottom: 2px;
+    }
+    .email_text::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 12px;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+    }
+    .email_text:hover:after {
+        width: 190px;
     }
     .email_box {
         width: 212px;
@@ -3169,6 +3250,7 @@ position: absolute;
             line-height: 27px;
             color: #FFFFFF;
         }
+        
         .footer_street {
             width: 213px;
             height: 27px;
@@ -3207,6 +3289,7 @@ position: absolute;
             bottom: 2.39px;
 
         }
+        
         
         .media {
             display: flex;
@@ -3264,6 +3347,7 @@ position: absolute;
             top: 0px;
             bottom: 0px;    
         }
+        
         .email {
             display: flex;
             width: 250px;
