@@ -2674,11 +2674,50 @@ position: absolute;
         .years {
             left: 210px;
         }
+        .years {
+            animation-duration: 0.4s;
+            animation-name: years-animation;
+        }
+        @keyframes years-animation {
+            from {
+                left: 0px;
+            }
+            to {
+                left: 210px;
+            }
+            
+        }
         .percent {
             left: 560px;
         }
+        .percent {
+            animation-duration: 0.4s;
+            animation-name: percent-animation;
+        }
+        @keyframes percent-animation {
+            from {
+                left: 0px;
+            }
+            to {
+                left: 560px;
+            }
+            
+        }
         .month {
             left: 910px;
+        }
+        .month {
+            animation-duration: 0.4s;
+            animation-name: month-animation;
+        }
+        @keyframes month-animation {
+            from {
+                left: 0px;
+            }
+            to {
+                left: 910px;
+            }
+            
         }
         .years_number {
             width: 93px;
