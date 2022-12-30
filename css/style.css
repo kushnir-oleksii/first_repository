@@ -2594,6 +2594,25 @@ position: absolute;
             top: 185px;
             left: 110px;
         }
+        .box_professional {
+            animation-duration: 1s;
+            animation-name: box_professional-animation;
+        }
+        @keyframes box_professional-animation {
+            from {
+                top: 255px;
+                opacity: 0;
+                visibility: hidden;
+            }
+            to {
+                top: 185px;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.3s, visibility 0.3s;
+               
+            }    
+        }
+
         .dental_text {
             color: #46B1DE;
         }
@@ -2601,6 +2620,23 @@ position: absolute;
             position: absolute;
             left: 110px;
             bottom: 224px;
+        }
+        .i_will_conduct {
+            animation-duration: 1s;
+            animation-name: i_will_conduct-animation;
+        }
+        @keyframes i_will_conduct-animation {
+            from {
+                bottom: 154px;
+                opacity: 0;
+                visibility: hidden;
+            }
+            to {
+                bottom: 224px;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.3s, visibility 0.3s;
+            }            
         }
         .i_will_conduct_text {
             font-family: "Roboto";
@@ -2625,6 +2661,24 @@ position: absolute;
             border-radius: 8px;
             text-align: center;
         }
+        .box_call_button,.box_services_button {
+            animation-duration: 1s;
+            animation-name: box_call_button-animation;
+        }
+        @keyframes box_call_button-animation {
+            from {
+                top: 557px;
+                opacity: 0;
+                visibility: hidden;
+            }
+            to {
+                top: 487x;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.3s, visibility 0.3s;
+            }            
+        }
+        
         .call_button_text {
             font-family: "Roboto";
             font-style: normal;
@@ -2650,6 +2704,7 @@ position: absolute;
             border: 1px solid #DDE0DC;
             text-align: center;
         }
+        
         .services_button_text {
             font-family: "Roboto";
             font-style: normal;
@@ -2675,15 +2730,21 @@ position: absolute;
             left: 210px;
         }
         .years {
-            animation-duration: 0.4s;
+            animation-duration: 1.4s;
             animation-name: years-animation;
+            
         }
         @keyframes years-animation {
             from {
                 left: 0px;
+                opacity: 0;
+                visibility: hidden;
             }
             to {
                 left: 210px;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.3s, visibility 0.3s;
             }
             
         }
@@ -2691,15 +2752,21 @@ position: absolute;
             left: 560px;
         }
         .percent {
-            animation-duration: 0.4s;
+            animation-duration: 1.4s;
             animation-name: percent-animation;
+            
         }
         @keyframes percent-animation {
             from {
                 left: 0px;
+                opacity: 0;
+                visibility: hidden;
             }
             to {
                 left: 560px;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.3s, visibility 0.3s
             }
             
         }
@@ -2707,15 +2774,21 @@ position: absolute;
             left: 910px;
         }
         .month {
-            animation-duration: 0.4s;
+            animation-duration: 1.4s;
             animation-name: month-animation;
+            
         }
         @keyframes month-animation {
             from {
                 left: 0px;
+                opacity: 0;
+                visibility: hidden;
             }
             to {
                 left: 910px;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.3s, visibility 0.3s
             }
             
         }
