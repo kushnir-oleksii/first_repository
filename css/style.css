@@ -54,6 +54,129 @@ h1 {
    src: url("../Fonts/SofiaSans-Regular.woff2") format("woff2");
    
 }
+.burger_box {
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 9px;
+    top: 59px;
+    right: 7px;
+    cursor: pointer;
+       
+    
+}
+#burger_menu {
+    position: fixed;
+    top: 59px;
+    right: 7px;
+    opacity: 0;
+    width: 15px;
+    height: 9px;
+    margin: 0;
+    padding: 0;
+}
+.button_burger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 59px;
+    right: 7px;
+    width: 15px;
+    height: 9px;
+}
+.button_burger > span,
+.button_burger > span::before,
+.button_burger > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  transition: 0.5s;
+}
+.button_burger > span::before {
+  content: " ";
+  top: -4px;
+}
+.button_burger > span::after {
+  content: "";
+  top: 4px;
+}
+#burger_menu:checked ~ .button_burger > span {
+    transform: rotate(45deg);
+  }
+  
+  #burger_menu:checked ~ .button_burger > span::before {
+    top: 0;
+    transform: rotate(0);
+    background-color: #46B1DE;
+  }
+  
+  #burger_menu:checked ~ .button_burger > span::after {
+    top: 0;
+    transform: rotate(90deg);
+    background-color: #46B1DE;
+  }
+  
+
+/* .burger_line {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 15px;
+    height: 1px;
+    background: white;
+      
+} */
+/* .burger_line {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 15px;
+    height: 1px;
+    background: yellow;
+    top: 4px;
+    
+    
+} */
+/* .burger_line:active {
+    width: 0px;
+} */
+/* .burger_box::before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 1px;
+    background: black;
+    transition-duration: 0.3s;
+    
+}
+.burger_box:active:before{
+    transform: rotate(45deg);
+    top: 4px;
+} */
+/* .burger_line:focus::before {
+    transform: rotate(-45deg);
+    background-color: red;
+} */
+
+/* .burger_box::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 1px;
+    background: green;
+    top: 8px;
+    transition-duration: 0.3s;
+    
+}
+.burger_box:checked:after {
+    transform: rotate(-45deg);
+    top: 4px;
+}  */
+
+
 
     .images {
         width: 450px;
@@ -1201,8 +1324,9 @@ position: absolute;
         width: 120px;
         height: 13.5px;
         justify-content: center;
-        align-items: center;
+               
     }
+   
     .threatment_box {
         text-align: right;
         position: absolute;
@@ -1212,7 +1336,9 @@ position: absolute;
         top: 2365px;
         left: 20px;
         text-align: right;
+        
     }
+    
     .elipse3 {    
         position: absolute;        
         width: 151px;
@@ -1391,7 +1517,7 @@ position: absolute;
         color: #FFFFFF;
     
     }
-    @media(min-width: 480px){
+    @media(min-width: 480px) {
 
         .first_screen {
     
@@ -1408,9 +1534,38 @@ position: absolute;
         font-size: 16px;
         line-height: 19px;
     }
-    
+    .burger_box {
+        display: block;
+        position: absolute;
+        width: 15px;
+        height: 9px;
+        top: 110px;
+        right: 245px;
+        cursor: pointer;
+    }
+    #burger_menu {
+        position: fixed;
+        top: 110px;
+        right: 245px;
+        opacity: 0;
+        width: 15px;
+        height: 9px;
+        margin: 0;
+        padding: 0;
+    }
+    .button_burger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 110px;
+        right: 245px;
+        width: 15px;
+        height: 9px;
+    }
     .phone_number_text {
         width: 145px;
+        
     }
     .phone_number_text::before {
        
@@ -2384,6 +2539,12 @@ position: absolute;
         }
         
     }
+    @media(min-width: 768px){
+
+        .burger_box {
+            display: none;
+        }
+    }
     @media(min-width: 992px) {
         .first_screen {
             background-image: url(../images/Rectangle\ 1.png);
@@ -2459,8 +2620,9 @@ position: absolute;
             font-weight: 400;
             font-size: 26.852px;
             color: #46B1DE;
-              
-            
+        }
+        .burger_box {
+            display: none;
         }
         .frame7 {
             display: inline-block;
@@ -2595,7 +2757,7 @@ position: absolute;
             left: 110px;
         }
         .box_professional {
-            animation-duration: 1s;
+            animation-duration: 2s;
             animation-name: box_professional-animation;
         }
         @keyframes box_professional-animation {
@@ -2622,7 +2784,7 @@ position: absolute;
             bottom: 224px;
         }
         .i_will_conduct {
-            animation-duration: 1s;
+            animation-duration: 2s;
             animation-name: i_will_conduct-animation;
         }
         @keyframes i_will_conduct-animation {
@@ -2635,7 +2797,7 @@ position: absolute;
                 bottom: 224px;
                 opacity: 1;
                 visibility: visible;
-                transition: opacity 0.3s, visibility 0.3s;
+                transition: opacity 0.5s, visibility 0.5s;
             }            
         }
         .i_will_conduct_text {
@@ -2662,7 +2824,7 @@ position: absolute;
             text-align: center;
         }
         .box_call_button,.box_services_button {
-            animation-duration: 1s;
+            animation-duration: 1.5s;
             animation-name: box_call_button-animation;
         }
         @keyframes box_call_button-animation {
@@ -2670,6 +2832,7 @@ position: absolute;
                 top: 557px;
                 opacity: 0;
                 visibility: hidden;
+        
             }
             to {
                 top: 487x;
@@ -2730,9 +2893,12 @@ position: absolute;
             left: 210px;
         }
         .years {
-            animation-duration: 1.4s;
+            
+            animation-duration: 2s;
             animation-name: years-animation;
             
+            
+                       
         }
         @keyframes years-animation {
             from {
@@ -2752,13 +2918,14 @@ position: absolute;
             left: 560px;
         }
         .percent {
-            animation-duration: 1.4s;
+            
+            animation-duration: 2s;
             animation-name: percent-animation;
             
         }
         @keyframes percent-animation {
             from {
-                left: 0px;
+                left: 350px;
                 opacity: 0;
                 visibility: hidden;
             }
@@ -2774,13 +2941,15 @@ position: absolute;
             left: 910px;
         }
         .month {
-            animation-duration: 1.4s;
+            
+            animation-duration: 2s;
             animation-name: month-animation;
+            
             
         }
         @keyframes month-animation {
             from {
-                left: 0px;
+                left: 700px;
                 opacity: 0;
                 visibility: hidden;
             }
@@ -3551,6 +3720,7 @@ position: absolute;
             border-radius: 50%;
             margin-bottom: 202px;
         }
+        
         .elipse4, .elipse6, .elipse7, .elipse8, .elipse5, .elipse9 {
             position: absolute;
             width: 24px;
@@ -3559,29 +3729,67 @@ position: absolute;
             border-radius: 50%;
             
         }
+        .circle_animation {
+            position: relative;   
+            width: 302px;
+            height: 302px;
+            left: 549px;
+            top: 53px;
+            border: 1px solid #1B1D1F;
+            border-radius: 50%;
+            margin-bottom: 202px;
+            z-index: 10;
+
+        }
+        .elipse3_inside { 
+            position: absolute;   
+            width: 302px;
+            height: 302px;
+            top: 50%;
+            left: 50%;
+            /* border: 1px solid #1B1D1F; */
+            border-radius: 50%;
+            margin-bottom: 202px;
+            transform: translate(-50%,-50%);
+            animation:go 1.5s linear infinite;
+            animation-fill-mode: forwards;
+            animation-delay: 5s;
+        }
+        @keyframes go {
+            0% {
+                width: 0;
+                height: 0;
+            }
+            100% {
+                width: 100%;
+                height: 100%;
+            }
+            
+        }
         .elipse4 {
-            left: 582px;
-            top: 1560px;
+            left: 10.92%;
+            top: 8.94%;
+            
         }
         .elipse6 {
-            left: 795px;
-            top: 1560px;
+            left: 81.45%;
+            top: 8.94%;
         }
         .elipse7 {
-            left: 535px;
-            top: 1672px;
+            left: -3.94%;
+            top: 46%;
         }
         .elipse8 {
-            left: 842px;
-            top: 1672px;
+            left: 96.68%;
+            top: 46%;
         }
         .elipse5 {
-            left: 582px;
-            top: 1781px;
+            left: 10.92%;
+            top: 82.12%;
         }
         .elipse9 {
-            left: 795px;
-            top: 1781px;
+            left: 81.457%;
+            top: 82.12%;
         }
         .plus4{
             width: 11px;
@@ -3605,6 +3813,7 @@ position: absolute;
             position: absolute;
             left: 610px;
             top: 1603px;
+            z-index: 1;
         }
         .therapeutic_header_box {
             position: absolute;
@@ -3612,6 +3821,25 @@ position: absolute;
             height: 27px;
             top: 1530px;
             left: 346px;
+            align-items: center;
+            animation:animation-therapeutic_header_box 1.5s linear infinite;
+            animation-fill-mode: forwards;
+            animation-delay: 5s;
+        }
+        @keyframes animation-therapeutic_header_box {
+            from {
+                left: 151px;
+                top: 1480px;
+                opacity: 0;
+                visibility: hidden;
+            }
+            to {
+                left: 346px;
+                top: 1530px;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.3s, visibility 0.3s
+            }
         }
         .therapeutic_header_text, .prosthetics_header_text, .surgical_header_text, .children_header_text, .prof_header_text, .plasmo_header_text {
             font-family: "Roboto";
@@ -3621,6 +3849,9 @@ position: absolute;
             line-height: 135%;
             color: #46B1DE;
         }
+        .threatment_text {
+            width: 338px;
+        }
         .threatment_box {
             position: absolute;
             width: 338px;
@@ -3628,6 +3859,24 @@ position: absolute;
             top: 1562px;
             left: 195px;
             text-align: right;
+            animation:animation-therapeutic_box 1.5s linear infinite;
+            animation-fill-mode: forwards;
+            animation-delay: 5s;
+        }
+        @keyframes animation-therapeutic_box {
+            from {
+                left: 0px;
+                top: 1512px;
+                opacity: 0;
+                visibility: hidden;
+            }
+            to {
+                left: 195px;
+                top: 1562px;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.3s, visibility 0.3s
+            }
         }
         .threatment_text, .prosthetics_text, .surgical_text, .nostress_text, .with_help_text, .plasmo_text {
             font-family: "Roboto";
@@ -3642,14 +3891,50 @@ position: absolute;
             width: 133px;
             height: 27px;
             top: 1530px;
-            left: 852px;
+            left: 855px;
+            animation:animation-prosthetics_header_box 1.5s linear infinite;
+            animation-fill-mode: forwards;
+            animation-delay: 5s;
+        }
+        @keyframes animation-prosthetics_header_box {
+            from {
+                left: 1110px;
+                top: 1480px;
+                opacity: 0;
+                visibility: hidden;
+            }
+            to {
+                left: 855px;
+                top: 1530px;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.3s, visibility 0.3s
+            }
         }
         .prosthetics_box {
             width: 290px;
-            height: 83px;
+            height: 80px;
             position: absolute;
             top: 1562px;
             left: 855px;
+            animation:animation-prosthetics_box 1.5s linear infinite;
+            animation-fill-mode: forwards;
+            animation-delay: 5s;
+        }
+        @keyframes animation-prosthetics_box {
+            from {
+                left: 1110px;
+                top: 1512px;
+                opacity: 0;
+                visibility: hidden;
+            }
+            to {
+                left: 855px;
+                top: 1562px;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.3s, visibility 0.3s
+            }
         }
         .surgical_header_box {
             position: absolute;
@@ -3657,6 +3942,24 @@ position: absolute;
             height: 27px;
             top: 1673px;
             left: 329px;
+            animation:animation-surgical_header_box 1.5s linear infinite;
+            animation-fill-mode: forwards;
+            animation-delay: 5s;            
+        }
+        @keyframes animation-surgical_header_box {
+            from {
+                left: 127px;
+                top: 1673px;
+                opacity: 0;
+                visibility: hidden;
+            }
+            to {
+                left: 329px;
+                top: 1673x;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.3s, visibility 0.3s
+            }
         }
         .surgical_box {
             position: absolute;
@@ -3665,6 +3968,24 @@ position: absolute;
             top: 1705px;
             left: 202px;
             text-align: right;
+            animation:animation-surgical_box 1.5s linear infinite;
+            animation-fill-mode: forwards;
+            animation-delay: 5s;
+        }
+        @keyframes animation-surgical_box {
+            from {
+                left: 0px;
+                top: 1705px;
+                opacity: 0;
+                visibility: hidden;
+            }
+            to {
+                left: 202px;
+                top: 1705px;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.3s, visibility 0.3s
+            }
         }
         .children_header_box {
             width: 223px;
@@ -3672,6 +3993,24 @@ position: absolute;
             position: absolute;
             top: 1670px;
             left: 910px;
+            animation:animation-children_header_box 1.5s linear infinite;
+            animation-fill-mode: forwards;
+            animation-delay: 5s;
+        }
+        @keyframes animation-children_header_box {
+            from {
+                left: 1109px;
+                top: 1670px;
+                opacity: 0;
+                visibility: hidden;
+            }
+            to {
+                left: 910px;
+                top: 1670px;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.3s, visibility 0.3s
+            }
         }
         .nostress_box {
             width: 291px;
@@ -3679,6 +4018,24 @@ position: absolute;
             position: absolute;
             top: 1702px;
             left: 914px;
+            animation:animation-nostress_box 1.5s linear infinite;
+            animation-fill-mode: forwards;
+            animation-delay: 5s;
+        }
+        @keyframes animation-nostress_box {
+            from {
+                left: 1109px;
+                top: 1702px;
+                opacity: 0;
+                visibility: hidden;
+            }
+            to {
+                left: 914px;
+                top: 1702px;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.3s, visibility 0.3s
+            }
         }
         .prof_header_box {
             position: absolute;
@@ -3686,6 +4043,24 @@ position: absolute;
             height: 27px;
             left: 263px;
             top: 1821px;
+            animation:animation-prof_header_box 1.5s linear infinite;
+            animation-fill-mode: forwards;
+            animation-delay: 5s;
+        }
+        @keyframes animation-prof_header_box {
+            from {
+                left: 0px;
+                top: 1907px;
+                opacity: 0;
+                visibility: hidden;
+            }
+            to {
+                left: 264px;
+                top: 1821px;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.3s, visibility 0.3s
+            }
         }
         .with_help_box {
             width: 295px;
@@ -3694,6 +4069,24 @@ position: absolute;
             position: absolute;
             top: 1853px;
             left: 284px;
+            animation:animation-with_help_box 1.5s linear infinite;
+            animation-fill-mode: forwards;
+            animation-delay: 5s;
+        }
+        @keyframes animation-with_help_box {
+            from {
+                left: 21px;
+                top: 1933px;
+                opacity: 0;
+                visibility: hidden;
+            }
+            to {
+                left: 284px;
+                top: 1853px;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.3s, visibility 0.3s
+            }
         }
         .plasmo_header_box {
             width: 170px;
@@ -3701,6 +4094,24 @@ position: absolute;
             position: absolute;
             top: 1821px;
             left: 815px;
+            animation:animation-plasmo_header_box 1.5s linear infinite;
+            animation-fill-mode: forwards;
+            animation-delay: 5s;
+        }
+        @keyframes animation-plasmo_header_box {
+            from {
+                left: 1092px;
+                top: 1883px;
+                opacity: 0;
+                visibility: hidden;
+            }
+            to {
+                left: 815px;
+                top: 1821px;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.3s, visibility 0.3s
+            }
         }
         .plasmo_box {
             width: 308px;
@@ -3708,13 +4119,31 @@ position: absolute;
             position: absolute;
             top: 1853px;
             left: 815px;
+            animation:animation-plasmo_box 1.5s linear infinite;
+            animation-fill-mode: forwards;
+            animation-delay: 5s;
+        }
+        @keyframes animation-plasmo_box {
+            from {
+                left: 1092px;
+                top: 1915px;
+                opacity: 0;
+                visibility: hidden;
+            }
+            to {
+                left: 815px;
+                top: 1853px;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.3s, visibility 0.3s
+            }
         }
         .sooner_box {
                
             width: 597px;
             height: 103px;
             display: flex;
-            margin-top: 512px;
+            margin-top: 59px;
             margin-left: 436px;
             
         }
