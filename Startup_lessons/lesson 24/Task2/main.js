@@ -1,10 +1,15 @@
-let a = [1];
-let b = [1, 2, 3];
+let a = [1, -2, 44, 44];
+let b = [4, 2];
+
 
 function srav(a,b) {
-    for (let i = 0; i < a.length; i++){
-        for (let j = 0; j < b.length; j++){
-            if (a[i] > b[j]) {
+    for (let i = 0; i < a.length; i++)
+    
+    {
+        for (let j = 0; j < b.length; j++)
+        
+            {
+            if (a[i] > b[j] ) {
                 return "a > b"
             }
             else if (a[i] < b[j]){
@@ -13,7 +18,7 @@ function srav(a,b) {
             else if (a[i] = b[j]){
                 return "a = b"
             }
-            
+
         } 
 }
 }

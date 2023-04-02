@@ -1,6 +1,6 @@
 let number = prompt ("Please enter the number", 1);
 
-while (!(+number) || (number < 0) )
+while (!(+number >= 0) )
 {
     alert (number = prompt("Your number is incorect, please enter corect number"));
  } 
