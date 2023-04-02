@@ -2,27 +2,27 @@ let a = [1, -2, 44, 44];
 let b = [4, 2];
 
 
-function srav(a,b) {
-    for (let i = 0; i < a.length; i++)
+// function srav(a,b) {
+//     for (let i = 0; i < a.length; i++)
     
-    {
-        for (let j = 0; j < b.length; j++)
+//     {
+//         for (let j = 0; j < b.length; j++)
         
-            {
-            if (a[i] > b[j] ) {
-                return "a > b"
-            }
-            else if (a[i] < b[j]){
-                return "a < b"
-            }
-            else if (a[i] = b[j]){
-                return "a = b"
-            }
+//             {
+//             if (a[i] > b[j] ) {
+//                 return "a > b"
+//             }
+//             else if (a[i] < b[j]){
+//                 return "a < b"
+//             }
+//             else if (a[i] = b[j]){
+//                 return "a = b"
+//             }
 
-        } 
-}
-}
-console.log(srav(a,b));
+//         } 
+// }
+// }
+// console.log(srav(a,b));
 
 // var a = [1, 2, 3, 4, 5],
 //     b = [1, 2, 3, 4, 5, 6];
