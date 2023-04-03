@@ -1,4 +1,3 @@
-
 let users = [
     {id: 1, age: 17},
     {id: 2, age: 18},
@@ -14,7 +13,9 @@ let result = users.filter(function(users){
                 return true;
                 
 }) 
+
 console.log(result);
+
 // console.log(users.filter(users => users.age > 18 && users.age < 21));
 
 // let numbers = [-2, 5, 1, -5, -1, 1, 3, 4, -1];
