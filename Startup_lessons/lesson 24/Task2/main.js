@@ -1,9 +1,33 @@
-let a = [1,1,2];
-let b = [3,1,5];
-function srav(a,b) {
-for (let i = 0; i < a.length; i++){
-    return c = a[i];}
-    console.log (c)}
+let a = [5, 3, -4, 25, 32, -16, 6];
+let b = [21, -30, 9, 5, 12, -19, 5];
+
+function srav(New_A, New_B) {
+    let maxLength = 0;
+    let sumNew_a = 0;
+    let sumNew_b = 0;
+    New_A.length >= New_B.length
+    ? (maxLength = New_A.length)
+    : (maxLength = New_B.length);
+    for (let i =0; i < maxLength; i++){
+        if(New_A[i]) {
+            sumNew_a += New_A[i];
+        }
+        if (New_B[i]) {
+            sumNew_b += New_B[i];
+        }
+    }
+    if (sumNew_a > sumNew_b) {
+        return console.log("a > b");
+    } else if (sumNew_a < sumNew_b) {
+    return console.log("b > a");
+    }
+    return console.log("a = b");
+}
+srav(a, b);
+
+// for (let i = 0; i < a.length; i++){
+//     return c = a[i];}
+//     console.log (c)}
 //     {
 //             if (a.indexOf[i] > b.indexOf[i] ) {
 //             return "a > b"
@@ -18,7 +42,7 @@ for (let i = 0; i < a.length; i++){
 //          } 
 //     }   
 // }
-console.log(srav(a,b));
+// console.log(srav(a,b));
 
 
 // var a = ['a', 'b', 'c', 'd'];
