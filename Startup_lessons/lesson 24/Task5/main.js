@@ -10,9 +10,10 @@ let users = [
 
 let result = users.filter(function(users){
     if (users.age > 18 && users.age < 21)
-                return true;
+                return true; 
                 
-}) 
+    }
+) 
 
 console.log(result);
 
