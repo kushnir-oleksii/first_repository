@@ -3,11 +3,11 @@ let user = {
     surname: 'Davis',
     age: 25,
     get userInfo(){
-        let data = [];
+        let newArray= [];
         for (let key in this){
-            data.push (key + ': ' + this[key]);
+            newArray.push (key + ': ' + this[key]);
         }
-        console.log(data.join(', '))
+        console.log(newArray.join(', '))
     },
     
 }
