@@ -1,5 +1,5 @@
 let a = [5, 3, -4, 25, 32, -16, 6];
-let b = [21, -30, 9, 5, 12, -19, 5];
+let b = [21, -30, 9, 5, 12, -19, 25];
 
 function srav(New_A, New_B) {
     let maxLength = 0;
@@ -19,11 +19,13 @@ function srav(New_A, New_B) {
     if (sumNew_a > sumNew_b) {
         return console.log("a > b");
     } else if (sumNew_a < sumNew_b) {
-    return console.log("b > a");
+    return console.log("a < b");
     }
-    return console.log("a = b");
+    return console.log("a == b");
 }
 srav(a, b);
+
+
 
 // for (let i = 0; i < a.length; i++){
 //     return c = a[i];}
