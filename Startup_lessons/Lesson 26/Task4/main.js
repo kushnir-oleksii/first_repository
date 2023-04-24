@@ -4,13 +4,13 @@ class User{
     this.#name = name;
     this.login = login;
     this.age = age;
+    }
+  getName(isAdmin)  {
+    if (!isAdmin) {
+      return console.log('Permission denied');
+    }
+    return console.log(this.#name || this.login);
   }
-  getName(isAdmin)
-  {if (!isAdmin) {
-    return console.log('Permission denied');
-  }
-  return console.log(this.#name || this.login);
-}
   ChangeName (newName, password) {
     if (password = '123'){
       let oldName = this.#name//нова змінна яка зберігає старе ім'я, яке  вже є в класі
@@ -32,9 +32,6 @@ class Admin extends User {
   }
 }
  
-
-
-
 let user1 = new User('Mike', 'MK_18', 18);
 let user2 = new User('', 'NRG', 22);
 let user3 = new User('', 'RTR', 22);

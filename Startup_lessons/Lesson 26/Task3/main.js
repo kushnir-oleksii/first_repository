@@ -5,12 +5,12 @@ class User{
     this.login = login;
     this.age = age;
   }
-  getName(isAdmin)
-  {if (!isAdmin) {
+  getName(isAdmin)  {
+    if (!isAdmin) {
     return console.log('Permission denied');
+    }
+    return console.log(this.#name || this.login);
   }
-  return console.log(this.#name || this.login);
-}
   ChangeName (newName, password) {
     if (password = '123'){
       let oldName = this.#name//нова змінна яка зберігає старе ім'я, яке  вже є в класі

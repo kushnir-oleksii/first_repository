@@ -5,13 +5,13 @@ class User{
       this.login = login;
       this.age = age;
     }
-    getName(isAdmin)
-    {if (!isAdmin) {
+    getName(isAdmin){
+      if (!isAdmin) {
       return console.log('Permission denied');
-    }
+      }
     return console.log(this.#name || this.login);
-  }
-}  
+    }
+  }  
     
     // {
     //   if (!isAdmin) {
