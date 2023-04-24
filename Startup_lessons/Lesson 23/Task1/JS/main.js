@@ -17,3 +17,14 @@ let car = {
   car.ferrari.type = "benzin";
   console.log(car);
   car.signal();
+
+  // // lecturer remarks
+  // let car = {
+  //   model: 'BMW',
+  //   year: 2021,
+  //   color: 'black',
+  //   signal(){
+  //   alert('fa! fa!');
+  //   }
+  //   }
+  //   car.signal();
