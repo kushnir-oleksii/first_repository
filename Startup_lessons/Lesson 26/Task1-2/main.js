@@ -13,6 +13,39 @@ class User{
     }
   }  
     
+
+ 
+  
+  let user1 = new User('Mike', 'MK_18', 18);
+  let user2 = new User('', 'NRG', 22);
+  let user3 = new User('', 'RTR', 22);
+//   getName(isAdmin);
+  console.log(user1.login);// MK_18
+  console.log(user1.age);// 18
+  console.log(user2.login);// NRG
+  console.log(user2.age);// 22
+user1.getName(true);// Mike
+user2.getName(true);// NRG
+user2.getName(false);//Permission denied
+user1.getName(false);//Permission denied
+// user1.#name = '112';//error
+user3.getName(true);//RTR
+// user1.getName(true)
+
+// console.log(user1.getName(true)); // Mike
+// console.log(user2.getName(true)); // NRG
+// console.log(user2.getName(false)); // Permission denied
+// console.log(user1.getName(false)); // Permission denied
+
+     //   {
+    //   if (!isAdmin) {
+    //     return console.log('Permission denied');
+    //   }
+    //   else if (this.name = '') {
+    //         return console.log(this.login);
+    //   }
+    //   return console.log(this.#name);
+    // }
     // {
     //   if (!isAdmin) {
     //     return console.log('Permission denied');
@@ -35,24 +68,3 @@ class User{
     // }
     
   // }
-  
-  let user1 = new User('Mike', 'MK_18', 18);
-  let user2 = new User('', 'NRG', 22);
-  let user3 = new User('', 'RTR', 22);
-//   getName(isAdmin);
-  console.log(user1.login);// MK_18
-  console.log(user1.age);// 18
-  console.log(user2.login);// NRG
-  console.log(user2.age);// 22
-user1.getName(true);// Mike
-user2.getName(true);// NRG
-user2.getName(false);//Permission denied
-user1.getName(false);//Permission denied
-// user1.#name = '112';//error
-user3.getName(true);//RTR
-// user1.getName(true)
-
-// console.log(user1.getName(true)); // Mike
-// console.log(user2.getName(true)); // NRG
-// console.log(user2.getName(false)); // Access denied
-// console.log(user1.getName(false)); // Access denied

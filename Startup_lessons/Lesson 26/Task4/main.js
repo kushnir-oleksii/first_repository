@@ -28,7 +28,7 @@ class Admin extends User {
     super(name, login, age);
   }
   getUserName(user){
-    return user.getName(true);
+    return user.getName(true);//щоб метод приймав юзера,треба додати аргумент в його визначення, тобто getUserName(user). А щоб admin.getUserName(user1) виводив ім'я юзера, в нашому випадку Mike, потрібно всередині метода getUserName(user) викликати метод getName() об'єкту user і повернути його значення
   }
 }
  
