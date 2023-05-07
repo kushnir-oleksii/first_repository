@@ -1,10 +1,41 @@
-// console.log(document);
-// console.log(document.body.firstChild.nextSibling.innerHTML);
-// console.log(document.body.firstChild);
-// console.log(document.body.firstChild.nextSibling);
-// document.body.firstChild.nextSibling.innerHTML = 'Title<span> text in tag</span>';
-// const h2 = document.querySelector('.dom h2:nth-of-type(2)');
-// h2.textContent = 'новый текст';
-
-document.body.children[0].children[3].innerHTML = 'DOM method description';
-console.log(document.body.children[0].children[3]);
+function count(expression) {
+    function getValues(expression) {
+      let values = [...expression];
+      debugger;
+      return values;
+    }
+    
+      let values = getValues(expression);
+      switch (values[1]) {
+        case "+":
+         return showResult(sum(values));
+          
+        case "-":
+        return  showResult(subtract(values));
+          
+        case "*":
+        return  showResult(multiply(values));
+          
+        case "/":
+        return  showResult(divide(values));
+          
+      }
+      function showResult(value){
+        alert(value)
+      }
+    }
+   
+    function subtract(values) {
+      return values[0] - values[2];
+    }
+    function sum(values) {
+        return +values[0] + +values[2];// якщо ставити просто +, не перевіряючи що це числа, то буде прийматися як string і просто два числа в строку запише: 52
+      }
+    function multiply(values) {
+      return values[0] * values[2];
+    }
+    function divide(values) {
+      return values[0] / values[2];
+    }
+        
+    count('5+2'); 

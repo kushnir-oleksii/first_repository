@@ -1,60 +1,164 @@
-// Існує такий заголовок
-// <h1>Document Object Model <span>DOM</span></h1>
-
-// За допомогою JavaScript створіть посилання:
-// <a id="link" href="https://dom.spec.whatwg.org/"></a>
-
-// та вставте заголовок всередину посилання, у Вас повинно вийти так:
-// <a id="link" href="https://dom.spec.whatwg.org/">
-//    <h1>Document Object Model <span>DOM</span></h1>
-// </a>
-
-// const link = document.getElementById('link');
-// const h1 = document.createElement('h1');
-// const span = document.createElement('span');
-// span.textContent = 'DOM';
-// h1.textContent = 'Document Object Model ';
-// h1.appendChild(span);
-// link.appendChild(h1);
-
-// const h1 = document.querySelector('h1');
-// const link = document.getElementById('link');
-
-// // Создаем новый элемент a
-// const a = document.createElement('a');
-// a.href = 'href="https://dom.spec.whatwg.org';
-// a.id = 'link';
-
-// // Клонируем заголовок и добавляем его в a
-// const clonedH1 = h1.cloneNode(true);
-// a.appendChild(clonedH1);
-
-// // Заменяем старую ссылку на новую
-// link.parentNode.replaceChild(a, link);
-
-// const h1 = document.querySelector('h1');
-// const link = document.getElementById('link');
-
-// // Создаем новый элемент h1 внутри ссылки
-// const newH1 = document.createElement('h1');
-// newH1.appendChild(h1.cloneNode(true));
-
-// // Вставляем новый элемент h1 внутрь ссылки
-// link.appendChild(newH1);
+/*function MakeUsers(name, age){
+    this.name = name;
+    this.age = age;
+}
+let user = new MakeUsers('Mike');//Forgot to pass the second parameter
+function showMovie (user){
+    try{
+        if (user.age == undefined){
+            throw new SyntaxError('Age not determined');
+        }
+        if(user.age >= 18){//undefined
+            return 'You can watch this movie';
+        } else {
+            return 'Sorry, you are too young';
+    }
+    } catch(error){
+            return error.name + ': ' + error.message;
+    } finally {
+        console.log('Welcome to our site');
+    }
+}
+function message(message) {
+    console.log(message);//Welcome to our site
+}
+message(showMovie (user));//SyntaxError: Age not determined*/
 
 
-// let h1 = document.querySelector ('h1')// Робимо прив'язку до нашого тексту всередині html і потім змоги до неї звернутися
-// let link = document.createElement('a');// Створюємо новий елемент a
-// link.innerHTML = h1.outerHTML ;//outerHTML — повертає повний вміст вузла та його нащадків (HTML теги разом з текстом).
-// link.setAttribute('id', 'link');
-// link.setAttribute('href', 'https://dom.spec.whatwg.org');
-// document.body.appendChild(link);
-// console.log(document)
 
 
-let link = document.createElement('a');
-link.innerHTML = '<h1>Document Object Model <span>DOM</span></h1>';
-link.setAttribute('id', 'link');
-link.setAttribute('href', 'https://dom.spec.whatwg.org');
-document.body.appendChild(link);
-console.log(document);
+/*function MakeUsers(name, age){
+    this.name = name;
+    this.age = age;
+}
+let user = new MakeUsers('Mike');//Forgot to pass the second parameter
+function showMovie (user){
+    try{
+        if (user.age == undefined){
+            throw new SyntaxError('Age not determined');
+        }
+        if(user.age >= 18){//undefined
+            return 'You can watch this movie';
+        } else {
+            return 'Sorry, you are too young';
+    }
+    } catch(error){
+            return error.name + ': ' + error.message;
+    } finally {
+        console.log('Welcome to our site');
+    }
+}
+function message(message) {
+    console.log(message);//Welcome to our site
+}
+message(showMovie (user));//SyntaxError: Age not determined*/
+
+
+// function MakeUsers(name, age){
+//     this.name = name;
+//     this.age = age;
+// }
+
+// let user;
+
+// try {
+//     user = new MakeUsers('Mike'); // Forgot to pass the second parameter
+//     showMovie(user);
+// } catch (error) {
+//     console.log(error.message);
+//     const age = prompt('Please enter your age:');
+//     user = new MakeUsers('Mike', age);
+//     showMovie(user);
+// }
+
+// function showMovie(user){
+//     if(user.age >= 18){
+//         console.log('You can watch this movie');
+//     } else {
+//         console.log('Sorry, you are too young');
+//     }
+// }
+
+
+// function MakeUsers(name, age){
+//     this.name = name;
+//     this.age = age;
+// }
+
+// try {
+//     let name = prompt('Введите ваше имя:');
+//     let age = prompt('Введите ваш возраст:');
+
+//     if (!+age) {
+//         throw new Error('Возраст должен быть числом!');
+//     }
+
+//     let user = new MakeUsers(name, age);
+//     showMovie(user);
+// } catch (error) {
+//     console.log(error.message);
+// }
+
+// function showMovie(user){
+//     if(user.age >= 18){
+//         console.log('You can watch this movie');
+//     } else {
+//         console.log('Sorry, you are too young');
+//     }
+// }
+
+function MakeUsers(name, age){
+    this.name = name;
+    this.age = age;
+}
+
+let user;
+let user1 = new MakeUsers ('vasyl')
+try {
+    let age = prompt("Enter your age");
+    if (!+age) throw new Error("Age is not a number or age is not entered");
+    user = new MakeUsers('Mike', age);
+    
+} catch (error) {
+    console.log(error);
+    let age = prompt("Please enter your age again");
+    user = new MakeUsers('Mike', age);
+}
+
+function showMovie(user){
+    if(user.age >= 18){
+        console.log("You can watch this movie");
+    } else {
+        console.log("Sorry, you are too young");
+    }
+}
+
+showMovie(user);
+
+// function MakeUsers(name, age){
+//     this.name = name;
+//     this.age = age;
+// }
+
+// try {
+//     let name = prompt('Введите ваше имя:');
+//     let age = parseInt(prompt('Введите ваш возраст:'));
+
+//     if (!+age) {
+//         throw new Error('Возраст должен быть числом!');
+//     }
+//     let user = new MakeUsers(name, age);
+//     showMovie(user);
+// } catch (error) {
+//     console.log(error.message);
+// }
+
+// function showMovie(user){
+//     if(user.age >= 18){
+//         console.log('You can watch this movie');
+//     } else {
+//         console.log('Sorry, you are too young');
+//     }
+// }
+
+
