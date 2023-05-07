@@ -94,7 +94,7 @@ describe("validateEmail", function () {
 })
 
 describe("validateEmail", function () {
-  it("Not more than one @", function () {
+  it("There is no dot directly before @ and you need a dot after @ in emails", function () {
     assert.equal(validateEmail2("ema.lgma@il.com"), true, "one @ ");
   })
 })
