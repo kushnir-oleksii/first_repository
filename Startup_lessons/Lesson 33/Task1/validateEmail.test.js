@@ -1,3 +1,41 @@
+let assert = chai.assert;
+describe (" validate division 10/2", function (){
+  it('10/2 equal 5', function(){
+    assert.equal(task1(10/2), true);
+  })
+})
+
+describe("validateEmail", function () {
+  it("not an empty string", function () {
+    assert.equal(validateEmail(""), false);
+  });
+  it("typeof string", function () {
+    assert.equal(validateEmail(222), false, "number error");
+    assert.equal(validateEmail(true), false, "boolean error");
+    assert.equal(validateEmail({}), false, "object error");
+  });
+  it("not an empty string", function () {
+    assert.equal(validateEmail("     "), false);
+  });
+    it("Lenth of email more than 5 characters", function(){
+    assert.isFalse(validateEmail("l.ua"), false)
+  })
+  
+})
+describe("validateEmail", function () {
+  it("Not more than one @", function () {
+    assert.equal(validateEmail1("emalgma@il.com"),true, "one @ ");
+  })
+})
+
+describe("validateEmail", function () {
+  it("There is no dot directly before @ and you need a dot after @ in emails", function () {
+    assert.equal(validateEmail2("ema.lgma@il.com"), true, "one @ ");
+  })
+})
+
+
+
 // describe("validateEmail", function() {
 //     it('not an empty string', function() {
   
@@ -64,40 +102,6 @@
 //   })
  
 // });
-
-let assert = chai.assert;
-describe("validateEmail", function () {
-  it("not an empty string", function () {
-    assert.equal(validateEmail(""), false);
-  });
-  it("typeof string", function () {
-    assert.equal(validateEmail(222), false, "number error");
-    assert.equal(validateEmail(true), false, "boolean error");
-    assert.equal(validateEmail({}), false, "object error");
-  });
-  it("not an empty string", function () {
-    assert.equal(validateEmail("     "), false);
-  });
-    it("Lenth of email more than 5 characters", function(){
-    assert.isFalse(validateEmail("l.ua"), false)
-  })
-  // it("Not more than one @", function () {
-  //   assert.equal(validateEmail("emalgma@il.com"),true, "one @ ");
-  // })
-
-  
-})
-describe("validateEmail", function () {
-  it("Not more than one @", function () {
-    assert.equal(validateEmail1("emalgma@il.com"),true, "one @ ");
-  })
-})
-
-describe("validateEmail", function () {
-  it("There is no dot directly before @ and you need a dot after @ in emails", function () {
-    assert.equal(validateEmail2("ema.lgma@il.com"), true, "one @ ");
-  })
-})
 
 //   describe ('valid data', function(){
 //     it("Don't have the @ or @ the first character", function () {
