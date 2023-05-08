@@ -1,3 +1,58 @@
+function getData(url) {
+  fetch(url)
+  .then((response) => {
+      if (response.ok) {
+        return response.json();
+      }
+      throw new Error(`Error: ${response.status}`);
+    })
+    .then(data => {
+      let objectsStartWithA = data.filter(obj => obj.title.split('')[0] == 'a');
+      let objectsStartWithAB = objectsStartWithA.filter(obj => {
+        let title =obj.title.split('');
+    return title[0] + title[1] == 'ab';});
+     
+
+      let addAButton = document.querySelector('.add-a');
+        addAButton.addEventListener('click', function() {
+          reset ();
+          objectsStartWithA.forEach(obj => {
+            userA.innerHTML += JSON.stringify(obj) + `<br>`
+        })
+        });
+
+      let addAButtonAB = document.querySelector('.add-ab');
+        addAButtonAB.addEventListener('click', function() {
+          reset ();
+          objectsStartWithAB.forEach(obj => {
+            userAB.innerHTML += JSON.stringify(obj) + `<br>`;
+        })});
+
+      let addAButtonAll = document.querySelector('.add-all');
+        addAButtonAll.addEventListener('click', function() {
+          reset ();
+          objectsStartWithA.forEach(obj => {
+            userA.innerHTML += JSON.stringify(obj) + `<br>`
+        });
+        objectsStartWithAB.forEach(obj => {
+          userAB.innerHTML += JSON.stringify(obj) + `<br>`;
+      })
+    });
+
+      
+    })
+    .catch((error) => console.log(error.message));;
+}
+function reset() {
+  userA.innerHTML = '';
+  userAB.innerHTML = ''
+}
+let userA = document.querySelector('.user-a');
+let userAB = document.querySelector('.user-ab');
+getData('https://jsonplaceholder.typicode.com/todos');
+
+
+
 // function getData() {
 //     fetch('https://jsonplaceholder.typicode.com/todos')
 //       .then(response => response.json())
@@ -93,55 +148,4 @@
 // getData('https://jsonplaceholder.typicode.com/todos');
 
 
-function getData(url) {
-  fetch(url)
-  .then((response) => {
-      if (response.ok) {
-        return response.json();
-      }
-      throw new Error(`Error: ${response.status}`);
-    })
-    .then(data => {
-      let objectsStartWithA = data.filter(obj => obj.title.split('')[0] == 'a');
-      let objectsStartWithAB = objectsStartWithA.filter(obj => {
-        let title =obj.title.split('');
-    return title[0] + title[1] == 'ab';});
-     
 
-      let addAButton = document.querySelector('.add-a');
-        addAButton.addEventListener('click', function() {
-          reset ();
-          objectsStartWithA.forEach(obj => {
-            userA.innerHTML += JSON.stringify(obj) + `<br>`
-        })
-        });
-
-      let addAButtonAB = document.querySelector('.add-ab');
-        addAButtonAB.addEventListener('click', function() {
-          reset ();
-          objectsStartWithAB.forEach(obj => {
-            userAB.innerHTML += JSON.stringify(obj) + `<br>`;
-        })});
-
-      let addAButtonAll = document.querySelector('.add-all');
-        addAButtonAll.addEventListener('click', function() {
-          reset ();
-          objectsStartWithA.forEach(obj => {
-            userA.innerHTML += JSON.stringify(obj) + `<br>`
-        });
-        objectsStartWithAB.forEach(obj => {
-          userAB.innerHTML += JSON.stringify(obj) + `<br>`;
-      })
-    });
-
-      
-    })
-    .catch(error => console.log(error));
-}
-function reset() {
-  userA.innerHTML = '';
-  userAB.innerHTML = ''
-}
-let userA = document.querySelector('.user-a');
-let userAB = document.querySelector('.user-ab');
-getData('https://jsonplaceholder.typicode.com/todos');
