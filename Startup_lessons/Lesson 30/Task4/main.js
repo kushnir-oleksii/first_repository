@@ -1,3 +1,100 @@
+function MakeUsers(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  
+  let user = new MakeUsers('Mike');
+  
+  function showMovie(user) {
+    try {
+      if (user.age === undefined) {
+        throw new Error('Age not determined');
+      }
+  
+      if (user.age >= 18) {
+        console.log('You can watch this movie');
+      } else {
+        console.log('Sorry, you are too young');
+      }
+    } catch (error) {
+      console.error(error.name + ': ' + error.message);
+      
+      let newAge = prompt('Please enter your age:');
+      while (isNaN(newAge)) {
+        newAge = prompt('Invalid input. Please enter your age as a number:');
+      }
+      
+      user.age = Number(newAge);
+      showMovie(user);
+    } finally {
+      console.log('Welcome to our site');
+    }
+  }
+  
+  showMovie(user);
+
+
+// function MakeUsers(name, age){
+//     this.name = name;
+//     this.age = age;
+// }
+
+// let user;
+// let user1 = new MakeUsers ('vasyl')
+// try {
+//     let age = prompt("Enter your age");
+//     if (!+age) throw new Error("Age is not a number or age is not entered");
+//     user = new MakeUsers('Mike', age);
+    
+// } catch (error) {
+//     console.log(error);
+//     let age = prompt("Please enter your age again");
+//     user = new MakeUsers('Mike', age);
+// }
+
+// function showMovie(user){
+//     if(user.age >= 18){
+//         console.log("You can watch this movie");
+//     } else {
+//         console.log("Sorry, you are too young");
+//     }
+// }
+
+// showMovie(user);
+
+// function MakeUsers(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+  
+//   let user = new MakeUsers('Mike');
+  
+//   function showMovie(user) {
+//     try {
+//       if (user.age === undefined) {
+//         throw new Error('Age not determined');
+//       }
+  
+//       if (user.age >= 18) {
+//         console.log('You can watch this movie');
+//       } else {
+//         console.log('Sorry, you are too young');
+//       }
+//     } catch (error) {
+//       console.error(error.name + ': ' + error.message);
+//       const newAge = prompt('Please enter your age:'); // Попросить пользователя ввести возраст с помощью prompt
+//       user.age = Number(newAge); // Преобразовать введенный возраст в число и присвоить свойству age объекта user
+//       showMovie(user); // Вызвать функцию showMovie с обновленными данными
+//     } finally {
+//       console.log('Welcome to our site');
+//     }
+//   }
+  
+//   showMovie(user);
+
+
+  
+  
 /*function MakeUsers(name, age){
     this.name = name;
     this.age = age;
@@ -107,33 +204,6 @@ message(showMovie (user));//SyntaxError: Age not determined*/
 //     }
 // }
 
-function MakeUsers(name, age){
-    this.name = name;
-    this.age = age;
-}
-
-let user;
-let user1 = new MakeUsers ('vasyl')
-try {
-    let age = prompt("Enter your age");
-    if (!+age) throw new Error("Age is not a number or age is not entered");
-    user = new MakeUsers('Mike', age);
-    
-} catch (error) {
-    console.log(error);
-    let age = prompt("Please enter your age again");
-    user = new MakeUsers('Mike', age);
-}
-
-function showMovie(user){
-    if(user.age >= 18){
-        console.log("You can watch this movie");
-    } else {
-        console.log("Sorry, you are too young");
-    }
-}
-
-showMovie(user);
 
 // function MakeUsers(name, age){
 //     this.name = name;
