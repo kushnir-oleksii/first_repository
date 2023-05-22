@@ -1,0 +1,4806 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  
+a {
+    text-decoration: none;
+    color: #1B1D1F;
+}
+
+li, .phone_number_text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+.link_spisok_menu:hover {
+     color: #46B1DE;
+}
+.box_your_name:focus {
+    border: 2px solid #46B1DE;
+}
+.form_phone_number:focus {
+    border: 2px solid #46B1DE;
+}
+.home_box_text:hover{
+    color: white;
+}
+.footer_services_box_text:hover {
+    color: white;
+}
+.footer_languages_ua_text:hover {
+    color: white;
+}
+.footer_languages_en_text:hover {
+    color: white;
+}
+
+h1 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0.1em;
+}
+@font-face {
+   font-family: "Sofia Sans";
+   font-display: swap;
+   font-style: normal;
+   src: url("../Fonts/SofiaSans-Regular.woff2") format("woff2");
+   
+}
+.burger_box {
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 9px;
+    top: 59px;
+    right: 7px;
+    cursor: pointer;
+       
+    
+}
+#burger_menu {
+    position: fixed;
+    top: 59px;
+    right: 7px;
+    opacity: 0;
+    width: 15px;
+    height: 9px;
+    margin: 0;
+    padding: 0;
+}
+.button_burger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 59px;
+    right: 7px;
+    width: 15px;
+    height: 9px;
+}
+.button_burger > span,
+.button_burger > span::before,
+.button_burger > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  transition: 0.5s;
+}
+.button_burger > span::before {
+  content: " ";
+  top: -4px;
+}
+.button_burger > span::after {
+  content: "";
+  top: 4px;
+}
+#burger_menu:checked ~ .button_burger > span {
+    transform: rotate(45deg);
+  }
+  
+  #burger_menu:checked ~ .button_burger > span::before {
+    top: 0;
+    transform: rotate(0);
+    background-color: #46B1DE;
+  }
+  
+  #burger_menu:checked ~ .button_burger > span::after {
+    top: 0;
+    transform: rotate(90deg);
+    background-color: #46B1DE;
+  }
+  
+
+/* .burger_line {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 15px;
+    height: 1px;
+    background: white;
+      
+} */
+/* .burger_line {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 15px;
+    height: 1px;
+    background: yellow;
+    top: 4px;
+    
+    
+} */
+/* .burger_line:active {
+    width: 0px;
+} */
+/* .burger_box::before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 1px;
+    background: black;
+    transition-duration: 0.3s;
+    
+}
+.burger_box:active:before{
+    transform: rotate(45deg);
+    top: 4px;
+} */
+/* .burger_line:focus::before {
+    transform: rotate(-45deg);
+    background-color: red;
+} */
+
+/* .burger_box::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 1px;
+    background: green;
+    top: 8px;
+    transition-duration: 0.3s;
+    
+}
+.burger_box:checked:after {
+    transform: rotate(-45deg);
+    top: 4px;
+}  */
+
+
+
+    .images {
+        width: 450px;
+        display: flex;
+        margin: 30px auto 0px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .image_one, .image_one_img, .image_two, .image_two_img, .image_three_img {
+        width: 120px;
+        margin-left: 0;
+        
+    }
+     
+    .image_three {
+        width: 120px;
+        margin-top: 1px;
+        margin-left: 0;
+        
+    }
+    .box_make {
+        margin: 200px auto 0px;
+        width: 422.5px;
+        height: 132.5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+	  background:  #FFFFFF;
+        border: 1px solid #D9D9D9;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+    }
+    .box_make_inside {
+        width: 410.5px;
+        height: 123.5px;
+        margin: 0px;
+	  background: #FFFFFF;
+    	  border: 1px solid #D9D9D9;
+   	  backdrop-filter: blur(2px);
+    	  border-radius: 10px;
+
+    }
+    .box_appointment{
+	  display: flex;
+	  justify-content: center;
+    	  align-items: center;
+        width: 381.5px;
+        height: 21px;
+        margin: 14.5px 16.5px 3.5px 12.5px;
+    }
+    .make_text {
+ 	  font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+	  color: #1B1D1F;
+        text-transform: uppercase;
+    }
+    .fill {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+	  margin-left: 6px;
+        margin-right: 14px;
+    }
+    .fill_text {
+	  font-family: "Roboto";
+    	  font-style: normal;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 11px;
+	  color: #1B1D1F;
+    }
+    .form {
+	  display: flex;
+    	  position: relative;
+        width: 410.5px;
+        margin-top: 22px;
+    }
+    .your_name_img_box {
+        position: absolute;
+        display: flex;
+        width: 21.5px;
+        height: 15px;
+        border-right: 1px solid #000000;
+       margin-top: 10px;
+       margin-bottom: 6,5px;
+       margin-left: 9px;
+       padding: 2px 5.425px 1px 5px;
+    
+    }
+    .img_your_name {
+        width: 11,075px;
+        height: 12px;
+    }
+    
+     .box_form_phone {
+	  position: relative;   
+        display: flex;
+        justify-content: center;
+        align-items: center;     
+        width: 116.5px;
+        height: 28.5px;
+        border-radius: 4px;
+	  background: rgba(217, 217, 217, 0.71);
+    }
+    
+    .button_sign {
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+        width: 90px;
+        height: 28.5px;
+        margin-top: 1px;
+        margin-left: 33.5px;
+        border-radius: 4px;
+        background: #46B1DE;
+    }
+    
+    .form_your_name {
+        height: 33.5px;
+        width: 116.5px;   
+        margin-left: 9px;
+        margin-right: 34.5px;
+    }
+    .box_your_name, .form_phone_number {
+        width: 116.5px;
+        height: 33.5px;
+        border-radius: 4px;
+        background: rgba(217, 217, 217, 0.71);
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 9.5px;
+        line-height: 13.5px;
+        color: rgba(27, 29, 31, 0.51);
+        
+    }
+    .form_phone_number {
+        padding-left: 33.5px;
+        padding-top: 7px;
+        padding-bottom: 8px;
+    }
+    .box_your_name {
+        padding-left: 25.5px;
+        padding-top: 8px;
+        padding-bottom: 7px;
+    
+    }
+    .box_form_phone_image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 22px;
+        height: 15px;
+        border-right: 1px solid #000000;
+        top: 8px;
+        bottom: 7px;
+        left: 160px;
+        padding-left: 5px;
+        padding-top: 1.5px;
+        padding-bottom: 1.5px;
+       
+    }
+    .form_phone_image {
+        width: 12px;
+        height: 12px;
+        
+    }
+    
+    
+    .sign_up {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 9.5px;
+        line-height: 10px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .sign_up_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 10px;
+    }
+    
+    .first_screen {
+        background-image: url(../images/Rectangle1.png);
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        background-size:cover;
+        position: relative;
+        width: 320px;
+        height: 568px;
+        margin: 0 auto;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          
+    }
+    .top_menu {
+        position: absolute;
+        display: flex;
+        width: 320px;
+        height: 91px;
+        left: 0;
+        top: 30px;
+        margin: 0px;
+    }
+    .zub {
+        width: 33.39px;
+        height: 34.67px;
+        margin: 1.49px 0px 8.95px 0px;
+    }
+    .zub_image {
+        width: 33.39px;
+        height: 34.67px;
+        margin: 1.37px 3.31px 0.46px 3.3px;
+    }
+    .Drnikola {
+        width: 130px;
+        height: 23px;
+        margin-left: 0px; 
+    }
+    .box_tesla {
+        width: 130px;
+        height: 39.16px;
+        margin-left: 3.21px;
+    }
+    
+    .Drnikola_text {
+        font-family: "Sofia Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16.6926px;
+        line-height: 140%;
+        color: #46B1DE;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+   
+    .logo {
+        display: flex;
+        width: 183px;
+        height: 39.16px;
+    }
+    .dentist {
+        
+        width: 36px;
+        height: 16px;
+        margin-left: 0px;
+        margin-top: -6.67px;
+    }
+    .dentist_text {
+        font-family: "Sofia Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11.5564px;
+        line-height: 140%;
+        color: #46B1DE;
+    }
+    .phone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 109px;
+        height: 15px;
+        margin-top: 4px;
+        margin-left: 21px;
+        
+    }
+    .phone_logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .phone_image {
+        width: 15px;
+        height: 15px;
+    }
+    .phone_number {
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+        width: 109px;
+        height: 14px;
+        margin-left: 2px;
+        text-align: center;
+        margin-bottom: 1px;
+        position: relative;
+    }
+    .phone_number_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #1B1D1F;
+        width: 109px;
+    }
+    .phone_number_text::before {
+        content: "";
+        position: absolute;
+        background-image: url(../images/Vector.svg);
+        left: -20px;
+        background-size: 15px 15px;
+        width: 15px;
+        height: 15px;
+    }
+    .frame7 {
+        display: none;
+    }
+    .languages {
+        display: none;
+    }
+    .i_will_conduct {
+       display: none;
+    }
+    .box_professional {
+        position: absolute;
+        width: 284px;
+        height: 89px;
+        margin: 0;
+        text-align: center;
+        top: 116px;
+        right: 18px;
+        left: 18px;
+    }
+    .professional_text, .dental_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 130%;
+    }
+    .dental_text {
+    color: #46B1DE;
+    }
+    .image_lady {
+        position: absolute;
+        width: 208px;
+        height: 173.59px;
+        right: 64px;
+        bottom: 6px;
+    }
+    
+    .box_call_button {
+        position: absolute;
+        width: 100px;
+        height: 35px;
+        left: 10px;
+        top: 288px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(97.59deg, #46B1DE 9.8%, #0591CC 95.1%);
+        box-shadow: 0px 2px 10px #46B1DE;
+        border-radius: 8px;
+        text-align: center;
+    }
+.call_button_text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 140%;
+    color: #FFFFFF;
+    
+}
+    .box_services_button {
+        width: 100px;
+        height: 35px;
+        left:210px;
+        top: 288px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 10px #DDE0DC;
+        border-radius: 8px;
+        mix-blend-mode: normal;
+        border: 1px solid #DDE0DC;
+        text-align: center;
+
+    }
+.services_button_text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 140%;
+    color: #46B1DE;
+    
+}
+    .years, .percent, .month {
+        position: absolute;
+        display: flex;
+        width: 280px;
+        height: 120px;
+        
+        background:  #FFFFFF;
+        border: 1px solid #D8E1E1;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+    
+    }
+    .years {
+        left: 20px;
+        top: 570px;
+    }
+    .percent {
+        left: 20px;
+        top: 700px;
+    }
+    .month {
+        left: 20px;
+        top: 830px
+    }
+    .years_number {
+    width: 93px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.years_number_text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 65px;
+    color: #46B1DE;
+    
+}
+.years_box_text {
+    display: flex;
+    width: 146px;
+    height: 64px;
+    margin: 35px 34px 21px 7px;
+}
+.years_text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #1B1D1F;
+
+}
+.percent_number {
+    width: 133px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4px;
+}
+.percent_box_text {
+    display: flex;
+    width: 114px;
+    height: 32px;
+    margin: 46px 26px 42px 3px;
+}
+.month_number {
+    display: flex;
+    width: 96px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+}
+.month_box_text {
+    display: flex;
+    width: 165px;
+    height: 48px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #1B1D1F;
+    margin: 33px 12px 39px 7px;
+
+}
+    .why_box_text {
+        padding-left: 0;
+        text-align: center;
+    }
+    .why {
+        width: 320px;
+        height: max-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 420px 65px 0px 65px;
+    }
+    .why_you_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 130%;
+        color: #1B1D1F;
+    }
+    .exactly_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 130%;
+        color: #46B1DE;
+    }
+    .over {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 320px;
+        height: max-content;
+        margin-top: 35px;
+        margin-left: 65px;
+        
+    }
+.over_text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #000000;
+    text-align: center;
+    
+    
+}
+    .large_box {
+display: flex;
+        width: 320px; 
+        height: max-content;      
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px auto;
+background: #A1C7D4;
+    border-radius: 12px;
+                
+    }
+    .column_one, .column_two, .column_three {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+.box_one, .box_two, .box_three, .box_four, .box_five, .box_six {
+    width: 300px;
+    height: 176px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+    .box_one, .box_three, .box_five {
+        margin-top: 10px;
+        margin-bottom: 12px;
+    }
+    .box_six {
+        margin-bottom: 10px;
+    }
+.box_one_for_two_box {
+    display: flex;
+}
+.box_one_number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 56px;
+    text-align: center;
+}
+.one_number_text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    color: #46B1DE;
+        
+}
+.box_one_number_text {
+    width: 193px;
+    height: 38px;
+    margin: 10px 31px 25px -4px;
+}
+.modern {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #46B1DE;
+}
+.one_text {
+    width: 267px;
+    height: 57px;
+    margin-left: 20px;
+    margin-right: 13px;
+
+}
+.exclusively {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1B1D1F;
+}
+.box_one_interest {
+    width: 212px;
+    height: 38px;
+    margin: 10px 12px 25px -4px;
+}
+.box_one_professional {
+    width: 224px;
+    height: 38px;
+    margin: 10px 0px 25px -4px;
+
+}
+.box_three_text {
+    width: 225px;
+    height: 38px;
+    margin-left: 18px;
+    margin-right: 57px;
+}
+.box_four_number_text {
+    width: 206px;
+    height: 38px;
+    margin: 10px 18px 25px -4px;
+}
+.box_four_text {
+    width: 233px;
+    height: 38px;
+    margin-left: 18px;
+    margin-right: 49px;
+}
+.box_five_number_text {
+    width: 217px;
+    height: 38px;
+    margin: 10px 6px 25px -3px;
+}
+.box_five_text {
+    width: 267px;
+    height: 57px;
+    margin-left: 18px;
+    margin-right: 15px;
+}
+.box_six_number_text {
+    width: 218px;
+    height: 38px;
+    margin: 10px 5px 25px -3px;
+}
+.box_six_text {
+    width: 280px;
+    height: 57px;
+    margin-left: 16px;
+    margin-right: 4px;
+}
+    .footer {
+        position: relative;
+        width: 320px;
+        height: 568px;
+        margin: 10px auto;
+        background: linear-gradient(180deg, #A1C7D4 0%, #0680AA 100%);
+    }
+    .footer_logo {
+        width: 303.28px;
+        height: 64.91px;
+        position: absolute;
+        top: 30px;
+        left: 8px;
+        right: 8.72px;
+        bottom: 473.09px;
+        display: flex;
+    }
+    .footer_zub {
+        width: 55.33px;
+        height: 57.46px;
+        margin: 1.06px 5.32px 6.38px 0px;
+    }
+    .footer_zub_image {
+        width: 50.61px;
+        height: 56.15px;
+        margin: 0.98px 2.36px 0.33px 2.36px;
+    }
+    .footer_box_tesla {
+        width: 210px;
+        height: 55.73px;
+        margin-left: 0px;
+    }
+    .footer_Drnikola {
+        width: 210px;
+        height: 38px;
+    }
+    .footer_Drnikola_text {
+        font-family: "Sofia Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 27px;
+        line-height: 140%;
+        color: #0F2D4A;
+    }
+    .footer_dentist {
+        width: 60px;
+        height: 27px;
+        margin: -9.27px 182.63px 9.18px 0px;
+    }
+    .footer_dentist_text {
+        font-family: "Sofia Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19.1523px;
+        line-height: 140%;
+        color: #0F2D4A;
+    }
+    .home_footer {
+display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+        width: 54px;
+        height: 52.26px;
+        top: 116.3px;
+        left: 10.14px;
+        gap: 14.29px;
+position: absolute;
+    }
+    .home_box {
+        width: 38px;
+        height: 19px;
+        
+    }
+.home_box_text, .footer_services_box_text, .mon_fri_text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    color: #0F2D4A;
+}
+    .home_box_text{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .footer_services_box {
+        width: 54px;
+        height: 19px;
+        
+    }
+    .footer_services_box_text {
+        font-size: 14.2648px;
+        line-height: 19px;
+        
+    }
+    .footer_languages {
+        width: 53px;
+        height: 16px;
+        top: 189px;
+        left: 10px;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+    
+        
+    }
+    .languages_ua {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 19px;
+        height: 16px;
+        margin-left: 0px;
+        margin-right: 16px;
+    }
+    .footer_languages_ua_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        color: #000000;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .languages_line, .footer_languages_line {
+        width: 13px;
+        height: 0px;
+        margin-left: 0px;
+        border: 1px solid #1B1D1F;
+        transform: rotate(90deg);
+    }
+    .languages_en {
+        width: 18px;
+        height: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .footer_languages_en_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+    }
+    .footer_languages_en_text::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        left: -9px;
+        height: 13px;
+        background: #1B1D1F;
+        top: 1.5px;
+        
+    }
+    .box_work {
+        position: absolute;
+        width: 99.52px;
+        height: 59.31px;
+        top: 142.69px;
+        left: 180.52px;
+    }
+    .working {
+        width: 98px;
+        height: 17px;
+        margin-left: 2.52px;
+        text-align: center;
+
+    }
+    .working_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14.2648px;
+        line-height: 17px;
+        color: #0F2D4A;
+    }
+    .mon_fri {
+        width: 69px;
+        height: 38px;
+        margin-top: 4.31px;
+    }
+    .mon_fri_text {
+        font-size: 14.2648px;
+        line-height: 135%;
+    }
+    .footer_contacts {
+        position: absolute;
+        width: 266px;
+        height: 282.72px;
+        top: 249px;
+        right: 44px;
+    }
+    .footer_contacts_box {
+        width: 108px;
+        height: 25px;
+        margin-left: 2px;
+        text-align: center;
+    }
+    .footer_contacts_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 25px;
+        color: #FFFFFF;
+    }
+    .footer_nikola {
+        width: 247.98px;
+        height: 23px;
+        margin-top: 26.48px;
+        margin-left: 0px;
+    }
+    .footer_nikola_text, .street_text, .footer_phone_text, .instagram_text, .email_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        color: #FFFFFF;
+    }
+    .footer_nikola_text {
+        font-size: 17.1613px;
+        line-height: 23px;
+    }
+    .footer_street {
+        width: 182.77px;
+        height: 23px;
+        margin-left: 0px;
+        margin-top: 13.04px;
+    }
+    .street_text {
+        font-size: 17.1613px;
+        line-height: 23px;
+    }
+    .footer_phone {
+        position: relative;
+        display: flex;
+        width: 193.07px;
+        height: 24.03px;
+        margin-top: 25.91px;
+        margin-left: 21.41px;
+    }
+    .footer_phone_box {
+        width: 24.03px;
+        height: 24.03px;
+
+    }
+    .footer_phone_img {
+        width: 18.87px;
+        height: 18.87px;
+        margin: 2.25px 2.62px 2.91px 2.54px;
+    }
+    .footer_phone_number {
+        width: 156.17px;
+        height: 23px;
+        margin-left: 15.49px;
+        margin-bottom: 1.03px;
+        text-align: center;
+
+    }
+    .footer_phone_number::before {
+        content: "";
+        position: absolute;
+        background-image: url(../images/1.svg);
+        left: -18.87px;
+        background-size: 18.87px 18.87px;
+        width: 18.87px;
+        height: 18.87px;
+        top: 2.26px;
+        bottom: 1.88px;
+
+    }
+    
+    .footer_phone_text {
+        font-size: 17.1613px;
+        line-height: 23px;
+    }
+    .footer_phone_text::after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 15.49px;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+    }
+    .footer_phone_text:hover:after {
+        width: 156px;
+    }
+    .media {
+        display: none;
+    }
+
+    .instagram {
+        width: 123.57px;
+        height: 23.86px;
+        margin-top: 11.15px;
+        margin-left: 12.57px;
+        margin-bottom: 0.69px;
+	  display: flex;
+
+    }
+    .instagram_img {
+        width: 23.17px;
+        height: 23.17px;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 14.59px;
+    }
+    .inst_img {
+        width: 23.17px;
+        height: 23.17px;
+    }
+    .instagram_box {
+        width: 85.81px;
+        height: 23px;
+        margin-left: 27.16px;
+        margin-top: 0.86px;
+        text-align: center;    
+        position: relative;   
+
+    }
+.footer_nikola_text, .street_text, .footer_phone_text, .instagram_text, .email_text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+    .instagram_text {
+        font-size: 17.1613px;
+        line-height: 23px;
+
+    }
+    .instagram_text::before{
+        content: "";
+        position: absolute;
+        background-image: url(../images/);
+        left: -37.76px;
+        background-size: 23.17px 23.17px;
+        width: 23.17px;
+        height: 23.17px;
+        top: -0.86px;
+        bottom: 0.69px;
+
+    }
+    .instagram_text::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 7px;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+    }
+    .instagram_text:hover:after {
+        width: 72px;
+    }
+    .email {
+        display: flex;
+        width: 223.1px;
+        height: 27.46px;
+        margin-left: 0px;
+        margin-top: 12.18px;
+    }
+    .email_img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 27.46px;
+        height: 27.46px;
+        margin-left: 0px;
+
+    }
+    .email_box {
+        width: 181.91px;
+        height: 23px;
+        margin-left: 40.43px;
+        margin-top: 0.86px;
+        text-align: center;
+        position: relative;
+    }
+    .email_text {
+        font-size: 17.1613px;
+        line-height: 23px;
+        
+    }
+    .email_text::before {
+        content: "";
+        position: absolute;
+        background-image: url(../images/email.png);
+        left: -40.83px;
+        background-size: 27.46px 27.46px;
+        width: 27.46px;
+        height: 27.46px;
+        top: 0.86px;
+        bottom: 4px;
+    }
+    .email_text::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 12px;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+    }
+    .email_text:hover:after {
+        width: 161px;
+    }
+    .copyright {
+        display: flex;
+        width: 93.53px;
+        height: 15px;
+        margin-top: 32.61px;
+        margin-left: 172.46px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .copyright_img_box {
+        display: flex;
+        width: 8.58px;
+        height: 8.58px;
+        margin-right: -2.66px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 3.43px;
+        margin-bottom: 2.99px;
+    }
+    .copyright_img {
+        width: 8.58px;
+        height: 8.58px;
+        margin-top: 0px;
+    }
+    .copyright_text_box {
+        display: flex;
+        width: 86.66px;
+        height: 15px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .copyright_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11.1548px;
+        line-height: 15px;
+        color: #FFFFFF;
+    }
+    .do_i_provode_box {
+        width: 450px;
+        margin: 10px auto;
+        padding-left: 0;
+        text-align: center;
+    }
+    .what_do_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 20px;
+        color: #1B1D1F;
+        
+    }
+    .services_bold_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 20px;
+        color: #46B1DE;
+    }
+    .therapeutic_header_box {
+        position: absolute;
+        display: flex;
+        top: 2350px;
+        left: 60px;
+        width: 120px;
+        height: 13.5px;
+        justify-content: center;
+               
+    }
+   
+    .threatment_box {
+        text-align: right;
+        position: absolute;
+        display: flex;
+        width: 169px;
+        height: 40px;
+        top: 2365px;
+        left: 20px;
+        text-align: right;
+        
+    }
+    
+    .elipse3 {    
+        position: absolute;        
+        width: 151px;
+        height: 151px;
+        left: 169px;
+        top: 2350px;       
+        border-radius: 50%;
+        border: 1px solid #1B1D1F;
+    }
+    .elipse4, .elipse6, .elipse7, .elipse8, .elipse5, .elipse9 {
+        position: absolute;
+        display: flex;
+        width: 12px;
+        height: 12px;        
+        justify-content: center;
+        align-items: center; 
+        background-color: #46B1DE;
+        border-radius: 50%;       
+    }
+    .elipse4 {
+        left: 183px;
+        top: 2370px;
+    }
+    .elipse5 {
+        left: 183px;
+        top: 2470px;
+    }
+    .elipse6 {
+        left: 293px;
+        top: 2370px;
+    }
+    .elipse9 {
+        left: 293px;
+        top: 2470px;
+
+    }
+    .elipse7 {
+        top: 2420px;
+        left: 163px;
+    }
+    .elipse8 {
+        top: 2420px;
+        left: 313px;
+    }
+    .rectanle35_box {
+        position: absolute;
+        width: 90px;
+        height: 81px;
+        left: 200px;
+        top: 2380px;
+    }
+    .rectanle35_img {
+        width: 90px;
+        height: 81px;
+}
+    .plasmo_header_box  {
+        position: absolute;
+        display: flex;
+        width: 100px;
+        height: 13.5px;
+        top: 2485px;
+        left: 300px;
+    }
+    .plasmo_box {
+        position: absolute;
+        display: flex;
+        width: 160px;
+        height: 40px;
+        top: 2500px;
+        left: 300px;
+
+    }
+    .nostress_box {
+        display: flex;
+        width: 148px;
+        height: 37px;
+        left: 330px;
+        top: 2425px;
+        position: absolute;
+    }
+    .children_header_box {
+        position: absolute;
+        display: flex;
+        width: 130px;
+        height: 13.5px;
+        top: 2410px;
+        left: 330px;
+
+    }
+    .prosthetics_header_box {
+        position: absolute;
+        display: flex;
+        top: 2350px;
+        width: 85px;
+        height: 13.5px;
+        left: 320px;
+    }
+    .prosthetics_box{
+        position: absolute;
+        display: flex;
+        width: 145px;
+        height: 42px;
+        top: 2365px;
+        left: 320px;
+    }    
+   
+    .surgical_box {
+        position: absolute;
+        display: flex;
+        top: 2425px;
+        left: 10px;
+        width: 142px;
+        height: 43.5px;
+        text-align: right;
+    }
+    .surgical_header_box {
+        position: absolute;
+        display: flex;
+        width: 100px;
+        height: 13.5px;
+        top: 2410px;
+        left: 67px;
+    }
+    .prof_header_box {
+        position: absolute;
+        display: flex;
+        width: 190px;
+        height: 13.5px;
+        left: 263px;
+        top: 2485px;
+        left:20px;
+    }
+    .with_help_box {
+        text-align: right;
+        position: absolute;
+        display: flex;
+        width: 150px;
+        height: 40px;
+        top: 2500px;
+        left: 42px;
+    }
+    .sooner_box {
+        display: none;
+    }
+    .therapeutic_header_text, .prosthetics_header_text, .surgical_header_text, .children_header_text, .prof_header_text, .plasmo_header_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 13.5px;
+        color: #46B1DE;
+        
+    }
+    .threatment_text, .prosthetics_text, .surgical_text, .nostress_text, .with_help_text, .plasmo_text {
+        font-family: "Roboto";
+        color: #1B1D1F;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 9.5px;
+    }
+    .plus4{
+        display: flex;
+        width: 5.5px;
+        height: 12.5px;
+        margin: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    .plus4_text {
+        font-family: "Sofia Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 70%;
+        color: #FFFFFF;
+    
+    }
+    @media(min-width: 480px) {
+
+        .first_screen {
+    
+            width: 768px;
+            height: 663px;
+            margin: 0 auto;
+            background-position: left top;
+        }
+        .languages {
+            display: none;
+        }
+    .therapeutic_header_box {
+        top: 2150px;
+        left: 200px;
+    }    
+    .threatment_box{
+        left: 155px;
+        top: 2165px;
+    }
+    .surgical_header_box {
+        left: 217px;
+        top: 2210px;
+    }
+    .surgical_box {
+        left: 150px;
+        top: 2225px;
+    }
+    .prof_header_box {
+        top: 2275px;
+        left: 145px;
+    }
+    .with_help_box {
+        top: 2290px;
+        left: 172px;
+    }
+    .prof_header_box {
+        top: 2275px;
+        left: 160px;
+    }
+    .prosthetics_header_box {
+        top:2150px;
+        left: 460px;
+    }
+    .prosthetics_box {
+        top: 2165px;
+        left: 460px;
+    }
+    .children_header_box {
+        top: 2210px;
+        left: 470px;
+    }
+    .nostress_box {
+        top: 2225px;
+        left: 470px;
+    }
+    .plasmo_header_box {
+        top: 2275px;
+        left: 450px;
+    }
+    .plasmo_box {
+        top: 2290px;
+        left: 450px;
+    }
+        
+    .elipse4 {
+        top: 2170px;
+        left: 323px;
+    }
+    .elipse6 {
+        top: 2170px;
+        left: 433px;
+    }
+    .elipse7 {
+        top: 2220px;
+        left: 303px;
+    }
+    .elipse8 {
+        top: 2220px;
+        left: 453px;
+    }
+    .elipse5 {
+        top:2270px;
+        left: 323px;
+    }
+    .elipse9 {
+        top: 2270px;
+        left: 433px;
+    }
+    li, .phone_number_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .burger_box {
+        display: block;
+        position: absolute;
+        width: 15px;
+        height: 9px;
+        top: 110px;
+        right: 245px;
+        cursor: pointer;
+    }
+    #burger_menu {
+        position: fixed;
+        top: 110px;
+        right: 245px;
+        opacity: 0;
+        width: 15px;
+        height: 9px;
+        margin: 0;
+        padding: 0;
+    }
+    .button_burger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 110px;
+        right: 60px;
+        width: 15px;
+        height: 9px;
+    }
+    .phone_number_text {
+        width: 145px;
+        
+    }
+    .phone_number_text::before {
+       
+        left: -23px;
+        background-size: 18px 18px;
+        width: 18px;
+        height: 18px;
+
+    }
+        .image_lady {
+            width: 572px;
+            height: 464px;
+            bottom: 0px;
+            right: 0;
+        }
+        .top_menu {
+            width: 768px;
+            margin: 5px auto;
+            left: 0;
+            right: 0;
+            top: 60px;
+        }
+    
+    .logo {
+        width: 425.22px;
+        height: 91px;
+        display: flex;
+    }
+    
+    .zub {
+        width: 77.57px;
+        height: 80.56px;
+        margin: 1.49px 0px 8.95px 0px;
+    }
+    .zub_image {
+        margin: 1.37px 3.31px 0.46px 3.3px;
+    
+    }
+    .zub_image {
+         width: 70.96px;
+        height: 78.72px;
+    
+    }
+    .Drnikola {
+        width: 315px;
+        height: 53px;
+        margin-left: 7.43px;
+    }
+    .box_tesla {
+        width: 315px;
+        height: 91px;
+        
+    }
+    .Drnikola_text {
+        font-family: "Sofia Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 38px;
+        color: #46B1DE;
+        line-height: 53px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .dentist {
+        width: 84px;
+        height: 38px;
+        margin-left: 7.46px;
+        margin-top: -12.72px;
+    }
+    .dentist_text {
+        font-family: "Sofia Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26.852px;
+        color: #46B1DE;
+          
+        
+    }
+        .frame7 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 0;
+            width: 70px;
+            height: 19px;
+            margin-top: 38px;       
+        }
+        .spisok_menu {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+        }
+        .spisok_menu_services, .spisok_menu_contacts {
+            margin-left: 0;
+            padding-top: 5px;
+            
+        }
+        .phone {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 174px;
+            height: 24px;
+            margin-left: 53px;
+            margin-top: 16px;
+        }
+        .phone_logo {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .phone_number {
+            width: 145px;
+            height: 19px;
+            margin-left: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    
+    
+    .exactly_text {
+        font-size: 34px;
+        line-height: 130%;
+     }
+    .box_professional {
+        position: absolute;
+        width: 530px;
+        height: 158px;
+        top: 185px;
+        left: 110px;
+    text-align: left;
+    }
+    .professional_text, .dental_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 700;
+           font-size: 40px;
+        line-height: 52px;
+        letter-spacing: 0.1em;
+        }
+    .i_will_conduct {
+        display: flex;
+        position: absolute;
+        left: 110px;
+        bottom: 224px;
+    }
+    .box_call_button {
+    position: absolute;
+        width: 180px;
+        height: 60px;
+        left: 110px;
+        top: 487px;
+    }
+    .box_services_button {
+    position: absolute;
+        width: 180px;
+        height: 60px;
+        left: 410px;
+        top: 487px;
+    }
+        .years {
+            top: 601px;
+            left: 10px;
+            width: 220px;
+        }
+        .years_number_text {
+            font-size: 55px;
+        }
+        .years_text {
+            font-size: 12px;
+        }
+        .month_text {
+            font-size: 12px;
+        }
+        .percent {
+            top: 601px;
+            left: 274px;
+            width: 220px;
+        }
+        .month {
+            top: 601px;
+            left: 538px;
+            width: 220px;
+        }
+        .why {
+            margin: 90px auto 10px;
+        }
+        .over {
+            margin: 35px auto 10px;
+        }
+        
+        
+    
+        
+        
+        .box_make {
+            margin: 250px auto 0px;
+            width: 750px;
+            height: 265px;
+        }
+        .box_make_inside {
+        width: 720px;
+        height: 247px;
+        margin: 10px 9px 8px 10px;
+    }
+    .box_appointment {
+        display: flex;
+        width: 700px;
+        height: 42px;
+        margin: 29px 33px 7px 25px;
+        justify-content: center;
+        align-items: center;
+    }
+        .make_text {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .fill_text {
+        font-size: 16px;
+        line-height: 22px;
+        
+    }
+    .form {
+        display: flex;
+        position: relative;
+        width: 750px;
+        margin-top: 44px;
+    }
+    .your_name_img_box {
+        position: absolute;
+        width: 43px;
+        height: 30px;
+        border-right: 2px solid #000000;
+       margin-top: 14px;
+       margin-bottom: 13px;
+       margin-left: 18px;
+       padding: 4px 10.85px 2px 10px;
+    
+    }
+    .img_your_name {
+        width: 22.15px;
+        height: 24px;
+    }
+    
+     .box_form_phone {
+        position: relative;
+        width: 200px;
+        height: 57px;
+        background: rgba(217, 217, 217, 0.71);
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .button_sign {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 35px;
+        width: 180px;
+        height: 57px;
+        margin-top: 1px;
+        margin-left: 50px;
+        background: #46B1DE;
+        border-radius: 8px;
+    }
+     .sign_up_box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 74px;
+            height: 27px;
+        }
+    
+    
+    
+    
+    .form_your_name {
+        height: 57px;
+        width: 200px;   
+        margin-left: 18px;
+        margin-right: 50px;
+    }
+    .box_your_name, .form_phone_number {
+        width: 200px;
+        height: 57px;
+        background: rgba(217, 217, 217, 0.71);
+        border-radius: 8px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 27px;
+        color: rgba(27, 29, 31, 0.51);
+    }
+    .form_phone_number {
+        padding-left: 57px;
+        padding-top: 14px;
+        padding-bottom: 16px;
+    }
+    .box_your_name {
+        padding-left: 51px;
+        padding-top: 16px;
+        padding-bottom: 14px;
+    
+    }
+    .box_form_phone_image {
+        position: absolute;
+        width: 44px;
+        height: 30px;
+        border-right: 2px solid #000000;
+        top: 13px;
+        bottom: 14px;
+        left: 260px;
+        padding-left: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+       
+    }
+    .form_phone_image {
+        width: 24px;
+        height: 24px;
+        
+    }
+    
+    
+    .sign_up {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 140%;
+        text-align: center;
+        color: #FFFFFF;
+    }
+        
+    .elipse3{
+        top: 2150px;
+        left: 308.5px;
+        
+    }
+    .rectanle35_box{
+        top: 2180px;
+        left: 339px;
+    }
+    
+    .home_box {
+        width: 54px;
+        height: 27px;
+    }
+    .home_box_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+        color: #0F2D4A;
+    }
+    
+    
+    
+    
+     
+    
+    .instagram_text, .email_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+        color: #FFFFFF;
+    }
+    
+    
+    .media {
+        display: flex;
+    }
+    .viber, .telegram, .whatsapp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 28px;
+        height: 28px;
+        
+    }
+    .viber {
+        margin-top: 10px;
+        margin-left: 3px;
+    }
+    .viber_link {
+        width: 28px;
+        height: 28px;
+    }
+    .telegram {
+        margin-top: 8px;
+        margin-left: 22px;
+    }
+    .whatsapp {
+        margin-top: 10px;
+        margin-left: 31px;
+    }
+    .instagram {
+        display: flex;
+        width: 140px;
+        height: 27px;
+        margin-top: 13px;
+        margin-left: 3px;
+        position: relative;
+    }
+    .instagram_img {
+        width: 27px;
+        height: 27px;    
+        
+    }
+    .instagram_box {
+        width: 100px;
+        height: 27px;
+        margin-left: 40px;
+        text-align: center;
+    }
+    .instagram_text::before{
+        content: "";
+        position: absolute;
+        background-image: url(../images/icons8-instagram1.svg);
+        left: -40px;
+        background-size: 27px 27px;
+        width: 27px;
+        height: 27px;
+        top: 0px;
+        bottom: 0px;    
+    }
+    .instagram_text::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 8.5px;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+    }
+    .instagram_text:hover:after {
+        width: 84px;
+    }
+    .email {
+        display: flex;
+        width: 250px;
+        height: 32px;
+        margin-left: 1px;
+        margin-top: 15px;
+    }
+    .email_img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        
+    }
+    .email_text::before {
+        left: -38px;
+        background-size: 32px 32px;
+        width: 32px;
+        height: 32px;
+        top: 0px;
+        bottom: 2px;
+    }
+    .email_text::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 12px;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+    }
+    .email_text:hover:after {
+        width: 190px;
+    }
+    .email_box {
+        width: 212px;
+        height: 27px;
+        margin-top: 3px;
+        text-align: center;
+        margin-left: 38px;
+    }
+    .copyright {
+        display: flex;
+        width: 109px;
+        height: 17px;
+        margin-left: 206px;
+        margin-top: 10px;
+    }
+    .copyright_img_box {
+        width: 10px;
+        height: 17px;
+        margin-right: -2px;
+        
+    }
+    .copyright_img {
+        margin-top: 4px;
+    
+    }
+    .copyright_text_box {
+        width: 101px;
+        height: 17px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .copyright_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 130%;
+        color: #FFFFFF;
+    }
+    
+        
+        .images {
+            width: 768px;
+            margin-top: 90px;
+            justify-content: space-around;
+            align-items: center;
+        }
+    .image_one, .image_one_img, .image_two, .image_two_img, .image_three_img, .image_three {
+            width: 220px;
+            height: 100px;        
+            
+        }
+        
+    }
+    @media(min-width: 768px){
+
+        .burger_box {
+            display: none;
+        }
+        
+
+        .first_screen {
+    
+            width: 991px;
+            height: 663px;
+            margin: 0 auto;
+            background-position: left top;
+        }
+        
+    li, .phone_number_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    
+    .phone_number_text {
+        width: 145px;
+        
+    }
+    .phone_number_text::before {
+       
+        left: -23px;
+        background-size: 18px 18px;
+        width: 18px;
+        height: 18px;
+
+    }
+        .image_lady {
+            width: 572px;
+            height: 464px;
+            bottom: 0px;
+            right: 0;
+        }
+        .top_menu {
+            width: 920px;
+            margin: 5px auto;
+            left: 0;
+            right: 0;
+            top: 60px;
+        }
+    .footer_phone_img {
+        width: 23px;
+        height: 23px;
+        margin: 2.63px 3.06px 3.39px 2.96px;
+    }
+    .logo, .footer_logo {
+        width: 425.22px;
+        height: 91px;
+        display: flex;
+    }
+    .footer_logo {
+        bottom: 249px;
+        left: 113px;
+        right: 861.78px;
+    }
+    .zub {
+        width: 77.57px;
+        height: 80.56px;
+        margin: 1.49px 0px 8.95px 0px;
+    }
+    .zub_image, .footer_zub_image {
+        margin: 1.37px 3.31px 0.46px 3.3px;
+    
+    }
+    .zub_image {
+         width: 70.96px;
+        height: 78.72px;
+    
+    }
+    .Drnikola {
+        width: 315px;
+        height: 53px;
+        margin-left: 7.43px;
+    }
+    .box_tesla {
+        width: 315px;
+        height: 91px;
+        
+    }
+    .Drnikola_text {
+        font-family: "Sofia Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 38px;
+        color: #46B1DE;
+        line-height: 53px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .dentist {
+        width: 84px;
+        height: 38px;
+        margin-left: 7.46px;
+        margin-top: -12.72px;
+    }
+    .dentist_text {
+        font-family: "Sofia Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26.852px;
+        color: #46B1DE;
+          
+        
+    }
+        .frame7 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 0;
+            width: 70px;
+            height: 19px;
+            margin-top: 38px;       
+        }
+        .spisok_menu {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+        }
+        .spisok_menu_services, .spisok_menu_contacts {
+            margin-left: 0;
+            padding-top: 5px;
+            
+        }
+        .phone {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 174px;
+            height: 24px;
+            margin-left: 53px;
+            margin-top: 16px;
+        }
+        .phone_logo {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .phone_number {
+            width: 145px;
+            height: 19px;
+            margin-left: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .languages {
+            position: absolute;
+              display: flex;               
+            left: 850px;
+            top: 77px;
+            width: 77px;
+            height: 23px;
+            align-items: center;
+        } 
+        .languages_line, .footer_languages_line {
+        width: 22px;
+        height: 0px;
+        margin-left: 2px;
+        border: 1px solid #1B1D1F;
+        transform: rotate(90deg);
+    }
+        .languages_ua {
+        width: 27px;
+        height: 23px;
+        margin-right: 13px;
+        
+    }
+    .languages_ua_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 23px;
+        color: #000000;
+    }
+    .languages_en {
+        position: relative;
+        width: 26px;
+        height: 23px;
+        margin-left: 12px;
+    }
+    .languages_en_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        color: #000000;
+    }
+    .languages_en_text::before{
+        content: "";
+        position: absolute;
+        width: 1px;
+        left: -11px;
+        height: 22px;
+        background: #1B1D1F;
+    }
+    .footer_languages_en_text {
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .footer_languages_en_text::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        left: -12px;
+        height: 22px;
+        background: #1B1D1F;
+        top: 0px;
+    }
+    .footer_languages_ua_text {
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .exactly_text {
+        font-size: 34px;
+        line-height: 130%;
+     }
+    .box_professional {
+        position: absolute;
+        width: 530px;
+        height: 158px;
+        top: 185px;
+        left: 110px;
+    text-align: left;
+    }
+    .professional_text, .dental_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 700;
+           font-size: 40px;
+        line-height: 52px;
+        letter-spacing: 0.1em;
+        }
+    .i_will_conduct {
+        display: flex;
+        position: absolute;
+        left: 110px;
+        bottom: 224px;
+    }
+    .box_call_button {
+    position: absolute;
+        width: 180px;
+        height: 60px;
+        left: 110px;
+        top: 487px;
+    }
+    .box_services_button {
+    position: absolute;
+        width: 180px;
+        height: 60px;
+        left: 410px;
+        top: 487px;
+    }
+        .years {
+            top: 601px;
+            left: 39.25px;
+        }
+        .percent {
+            top: 601px;
+            left: 358.5px;
+        }
+        .month {
+            top: 601px;
+            left: 677.75px;
+        }
+        .why_box_text {
+            padding-left: 0;
+        }
+        .why {
+            width: 991px;
+            height: 44px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 148px auto 0px;
+        }
+        .why_you_text {
+            font-size: 34px;
+            line-height: 130%;
+        }
+    .over {
+                width: 992px;
+                height: 44px;
+                margin: 5px auto;
+            }
+        
+        .large_box {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 30px auto;
+            width: 990px;   
+            height: max-content;
+            flex-direction: row;
+            justify-content: space-around;
+            
+        }
+    .column_one, .column_two, .column_three {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+        }
+    .column_three {
+        margin-top: 16px;
+    }
+    
+        .box_one, .box_two, .box_three, .box_four, .box_five, .box_six {
+            width: 290px;
+        }
+    .box_one, .box_three, .box_five {
+            
+    margin-bottom: 12px;
+        }
+        
+        
+        .box_make {
+            margin: 500px auto 0px;
+            width: 845px;
+            height: 265px;
+        }
+        .box_make_inside {
+        width: 821px;
+        height: 247px;
+        margin: 10px 9px 8px 15px;
+    }
+    .box_appointment {
+        display: flex;
+        width: 763px;
+        height: 42px;
+        margin: 29px 33px 7px 25px;
+        justify-content: center;
+        align-items: center;
+    }
+        .make_text {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .fill_text {
+        font-size: 16px;
+        line-height: 22px;
+        
+    }
+    .form {
+        display: flex;
+        position: relative;
+        width: 821px;
+        margin-top: 44px;
+    }
+    .your_name_img_box {
+        position: absolute;
+        width: 43px;
+        height: 30px;
+        border-right: 2px solid #000000;
+       margin-top: 14px;
+       margin-bottom: 13px;
+       margin-left: 18px;
+       padding: 4px 10.85px 2px 10px;
+    
+    }
+    .img_your_name {
+        width: 22.15px;
+        height: 24px;
+    }
+    
+     .box_form_phone {
+        position: relative;
+        width: 233px;
+        height: 57px;
+        background: rgba(217, 217, 217, 0.71);
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .button_sign {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 35px;
+        width: 180px;
+        height: 57px;
+        margin-top: 1px;
+        margin-left: 67px;
+        background: #46B1DE;
+        border-radius: 8px;
+    }
+     .sign_up_box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 74px;
+            height: 27px;
+        }
+    
+    
+    
+    
+    .form_your_name {
+        height: 57px;
+        width: 233px;   
+        margin-left: 18px;
+        margin-right: 69px;
+    }
+    .box_your_name, .form_phone_number {
+        width: 233px;
+        height: 57px;
+        background: rgba(217, 217, 217, 0.71);
+        border-radius: 8px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 27px;
+        color: rgba(27, 29, 31, 0.51);
+    }
+    .form_phone_number {
+        padding-left: 67px;
+        padding-top: 14px;
+        padding-bottom: 16px;
+    }
+    .box_your_name {
+        padding-left: 51px;
+        padding-top: 16px;
+        padding-bottom: 14px;
+    
+    }
+    .box_form_phone_image {
+        position: absolute;
+        width: 44px;
+        height: 30px;
+        border-right: 2px solid #000000;
+        top: 13px;
+        bottom: 14px;
+        left: 320px;
+        padding-left: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+       
+    }
+    .form_phone_image {
+        width: 24px;
+        height: 24px;
+        
+    }
+    
+    
+    .sign_up {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 140%;
+        text-align: center;
+        color: #FFFFFF;
+    }
+        
+        .do_i_provode_box {
+            height: 40px;
+            width: 991px;
+            margin: 90px auto;
+            padding-left: 0;
+            text-align: center;
+        }
+        .what_do_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 40px;
+        color: #1B1D1F;
+    }
+    .services_bold_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 40px;
+        color: #46B1DE;
+        
+    }
+    .footer {
+    position: relative;
+            width: 992px;
+    height: 400px;
+    margin-top: 91px;
+        background: linear-gradient(91.75deg, #A1C7D4 18.06%, #0680AA 98.16%);
+        
+        }
+    .footer_zub {
+        width: 77.57px;
+        height: 80.56px;
+        margin-top: 1.49px;
+    }
+    .footer_box_tesla {
+        width: 302px;
+        height: 91px;
+        margin-left: 7.46px;
+    }
+    .footer_Drnikola {
+        width: 302px;
+        height: 54px;
+    
+    }
+    .footer_Drnikola_text {
+        font-family: "Sofia Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 38.7869px;
+        line-height: 140%;
+        color: #0F2D4A;
+    }
+    .footer_dentist {
+        width: 84px;
+        height: 38px;
+        margin-top: -16px;
+    }
+    .footer_dentist_text {
+        font-family: "Sofia Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26.8525px;
+        line-height: 140%;
+        color: #0F2D4A;
+    }
+    .home_footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 20px;
+        width: 76px;
+        height: 74px;
+        position: absolute;
+        left: 116px;
+        top: 181px;
+    }
+    .home_box {
+        width: 54px;
+        height: 27px;
+    }
+    .home_box_text, .footer_services_box_text, .mon_fri_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+        color: #0F2D4A;
+    }
+    .footer_services_box {
+        width: 76px;
+        height: 27px;
+    }
+    .footer_languages {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        width: 73px;
+        height: 23px;
+        top: 282px;
+        left: 113px;
+    }
+    .box_work {
+        width: 140px;
+        position: absolute;
+        top: 218px;
+        left: 352px;
+    }
+    .working {
+        width: 137px;
+        height: 23px;
+        margin-left: 3px;
+        text-align: center;
+        
+    }
+    .working_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 23px;
+        
+        color: #0F2D4A;
+    }
+    .mon_fri {
+        width: 128px;
+        height: 54px;
+        margin-top: 7px;
+    }
+       .footer_contacts {
+        position: absolute;
+        width: 316px;
+        height: 329px;
+        right: 20px;
+        top: 60px;
+    }
+    .footer_contacts_box {
+        width: 183px;
+        height: 40px;
+        margin-left: 6px;
+        text-align: center;
+    }
+    .footer_contacts_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 40px;
+        
+        color: #FFFFFF;
+    }
+    .footer_nikola {
+        width: 289px;
+        height: 27px;
+        margin-left: 6px;
+        margin-top: 20px;
+    }
+    .footer_nikola_text, .street_text, .footer_phone_text, .instagram_text, .email_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+        color: #FFFFFF;
+    }
+    .footer_street {
+        width: 213px;
+        height: 27px;
+        margin-left: 6px;
+        margin-top: 15px;
+    }
+    .footer_phone {
+        display: flex;
+        width: 225px;
+        height: 28px;
+        margin-top: 20px;
+        margin-left: 21.99px;
+    }
+    .footer_phone_box {
+        width: 28px;
+        height: 28px;
+        
+    }
+    .footer_phone_text::after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 21.99px;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+    }
+    .footer_phone_text:hover:after {
+        width: 182px;
+    }
+    .footer_phone_img {
+        margin: 2.63px 3.06px 3.39px 2.96px;
+    }
+    .footer_phone_number {
+        width: 182px;
+        height: 27px;
+        margin-bottom: 1px;
+        margin-left: 21.99px;
+        text-align: center;
+    }
+    .footer_phone_number::before {
+        left: -21.99px;
+        background-size: 21.99px 21.99px;
+        width: 21.99px;
+        height: 21.99px;
+        top: 2.63px;
+        bottom: 2.39px;
+
+    }
+    .media {
+        display: flex;
+    }
+    .viber, .telegram, .whatsapp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 28px;
+        height: 28px;
+        
+    }
+    .viber {
+        margin-top: 10px;
+        margin-left: 3px;
+    }
+    .viber_link {
+        width: 28px;
+        height: 28px;
+    }
+    .telegram {
+        margin-top: 8px;
+        margin-left: 22px;
+    }
+    .whatsapp {
+        margin-top: 10px;
+        margin-left: 31px;
+    }
+    .instagram {
+        display: flex;
+        width: 140px;
+        height: 27px;
+        margin-top: 13px;
+        margin-left: 3px;
+        position: relative;
+    }
+    .instagram_img {
+        width: 27px;
+        height: 27px;    
+        
+    }
+    .instagram_box {
+        width: 100px;
+        height: 27px;
+        margin-left: 40px;
+        text-align: center;
+    }
+    .instagram_text::before{
+        content: "";
+        position: absolute;
+        background-image: url(../images/icons8-instagram1.svg);
+        left: -40px;
+        background-size: 27px 27px;
+        width: 27px;
+        height: 27px;
+        top: 0px;
+        bottom: 0px;    
+    }
+    .instagram_text::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 8.5px;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+    }
+    .instagram_text:hover:after {
+        width: 84px;
+    }
+    .email {
+        display: flex;
+        width: 250px;
+        height: 32px;
+        margin-left: 1px;
+        margin-top: 15px;
+    }
+    .email_img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        
+    }
+    .email_text::before {
+        left: -38px;
+        background-size: 32px 32px;
+        width: 32px;
+        height: 32px;
+        top: 0px;
+        bottom: 2px;
+    }
+    .email_text::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 12px;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+    }
+    .email_text:hover:after {
+        width: 190px;
+    }
+    .email_box {
+        width: 212px;
+        height: 27px;
+        margin-top: 3px;
+        text-align: center;
+        margin-left: 38px;
+    }
+    .copyright {
+        display: flex;
+        width: 109px;
+        height: 17px;
+        margin-left: 206px;
+        margin-top: 10px;
+    }
+    .copyright_img_box {
+        width: 10px;
+        height: 17px;
+        margin-right: -2px;
+        
+    }
+    .copyright_img {
+        margin-top: 4px;
+    
+    }
+    .copyright_text_box {
+        width: 101px;
+        height: 17px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .copyright_text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 130%;
+        color: #FFFFFF;
+    }
+    
+        .therapeutic_header_box {
+            left: 147px;
+    width: 187px;
+        height: 27px;
+        top: 1530px;
+        }
+    .therapeutic_header_text, .prosthetics_header_text, .surgical_header_text, .children_header_text, .prof_header_text, .plasmo_header_text {
+        
+        font-size: 20px;
+        line-height: 135%;
+        
+    }
+    .threatment_text, .prosthetics_text, .surgical_text, .nostress_text, .with_help_text, .plasmo_text {
+        font-family: "Roboto";
+        color: #1B1D1F;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+        .threatment_box {
+     width: 338px;
+        height: 80px;
+        top: 1562px;
+            left: 25px;
+        }
+    .plus4{
+        width: 11px;
+        height: 25px;
+        margin-left: 6px;
+        margin-right: 7px;
+        margin-top: 0px;
+    }
+    .plus4_text {
+        font-family: "Sofia Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        color: #FFFFFF;
+    
+    }
+        .elipse3 {
+    width: 302px;
+        height: 302px;
+            left: 350px;
+    top: 1533px;
+    margin-bottom: 202px;
+        }
+    .elipse4, .elipse6 {
+    top: 1560px;
+    }
+    .elipse7, .elipse8 {
+    top: 1672px;
+    }
+    .elipse5, .elipse9 {
+    top: 1781px;
+    }
+        .elipse4, .elipse5 {
+            left: 383px;
+    width: 24px;
+        height: 24px;
+        }
+        .elipse6, .elipse9 {
+            left: 596px;
+    width: 24px;
+        height: 24px;
+        }
+        .elipse7 {
+            left: 336px;
+    width: 24px;
+        height: 24px;
+        }
+        .elipse8 {
+            left: 643px;
+    width: 24px;
+        height: 24px;
+        }
+        .rectanle35_box {
+    width: 180px;
+        height: 162px;
+            left: 411px;
+    top: 1603px;
+        }
+    .rectanle35_img {
+            width: 180px;
+            height: 162px;
+        }
+        .prosthetics_header_box, .prosthetics_box, .children_header_box, .nostress_box, .plasmo_header_box, .plasmo_box {
+            left: 670px;
+        }
+    .plasmo_box {
+        width: 308px;
+        height: 77px;
+        top: 1853px;
+        
+    }
+    .plasmo_header_box {
+        width: 170px;
+        height: 27px;
+        top: 1821px;    
+    }
+    .children_header_box {
+        width: 223px;
+        height: 27px;
+        top: 1670px;
+        }
+    .nostress_box {
+        width: 291px;
+        height: 74px;
+        top: 1702px;
+        
+    }
+    .prosthetics_header_box {
+        
+        width: 133px;
+        height: 27px;
+        top: 1530px;
+        
+    }
+    .prosthetics_box {
+        width: 290px;
+        height: 83px;
+        top: 1562px;
+        
+    }
+        .surgical_box {
+            left: 50px;
+    width: 283px;
+        height: 87px;
+        top: 1705px;
+        }
+        .surgical_header_box {
+    width: 151px;
+        height: 27px;
+        top: 1673px;
+            left: 180px;
+        }
+        .prof_header_box {
+            left:20px;
+    width: 317px;
+        height: 27px;
+    top: 1821px;
+        }
+        .with_help_box {
+     width: 295px;
+        height: 80px;
+    top: 1853px;
+            left: 40px;
+        }
+        .sooner_box {
+            display: none;
+        }
+        .images {
+            width: 991px;
+            margin-top: 90px;
+            justify-content: space-around;
+            align-items: center;
+        }
+    .image_one, .image_one_img, .image_two, .image_two_img, .image_three_img, .image_three {
+            width: 280px;
+            height: 128px;        
+            
+        }
+    }
+    @media(min-width: 992px) {
+        .first_screen {
+            background-image: url(../images/Rectangle1.png);
+            width: 1400px;   
+            height: 663px;   
+            background-repeat: no-repeat;
+            background-size:cover;
+            position: relative;
+            left: 0px;
+            top: 0px;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            margin: 0px;
+        }
+        
+        .image_lady {
+            position: absolute;
+            bottom: 0px;
+            right: 110px;
+            
+        }
+        .top_menu {
+            position: absolute;
+            margin: 0px;
+            width: 1080px;
+            height: 91px;
+            top: 60px;
+            left: 110px;
+            display: flex;
+            }
+        .logo, .footer_logo {
+            width: 425.22px;
+            height: 91px;
+            display: flex;
+        }
+        .zub {
+            width: 77.57px;
+            height: 80.56px;
+            margin: 1.49px 0px 8.95px 0px;
+        }
+        .zub_image, .footer_zub_image {
+            margin: 1.37px 3.31px 0.46px 3.3px;
+        
+        }
+        
+        .Drnikola {
+            width: 315px;
+            height: 53px;
+            margin-left: 7.43px;
+        }
+        .box_tesla {
+            width: 315px;
+            height: 91px;
+            
+        }
+        .Drnikola_text {
+            font-family: "Sofia Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 38px;
+            color: #46B1DE;
+            line-height: 53px;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        .dentist {
+            width: 84px;
+            height: 38px;
+            margin-left: 7.46px;
+            margin-top: -12.72px;
+        }
+        .dentist_text {
+            font-family: "Sofia Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 26.852px;
+            color: #46B1DE;
+        }
+        .burger_box {
+            display: none;
+        }
+        .frame7 {
+            display: inline-block;
+            width: 350px;
+            height: 19px;
+            margin-left: 77.78px;
+            margin-top: 18px;
+        }
+        .spisok_menu {
+            list-style: none;
+            display: inline-flex;
+            flex-direction: row;
+        }
+        .spisok_menu_services, .spisok_menu_contacts {
+            padding: 0px;
+            margin-left: 80px;
+        }
+        .phone {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 145px;
+            height: 24px;
+            margin-left: 53px;
+            margin-top: 16px;
+        }
+        .phone_logo {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .phone_number {
+            width: 145px;
+            height: 19px;
+            margin-left: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .phone_number_text {
+            width: 145px;
+
+        }
+        .languages {
+            position: absolute;
+            display: flex;
+            left: 1213px;
+            top: 77px;
+            width: 77px;
+            height: 23px;
+            align-items: center;
+        }
+        .languages_line, .footer_languages_line {
+            width: 22px;
+            height: 0px;
+            margin-left: 2px;
+            border: 1px solid #1B1D1F;
+            transform: rotate(90deg);
+        }
+        .languages_ua {
+            width: 27px;
+            height: 23px;
+            margin-right: 13px;
+            
+        }
+        .languages_ua_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 23px;
+            color: #000000;
+        }
+        .languages_en {
+            position: relative;
+            width: 26px;
+            height: 23px;
+            margin-left: 12px;
+        }
+        .languages_en_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            color: #000000;
+            
+            
+        }
+        .languages_en_text::before{
+            content: "";
+            position: absolute;
+            width: 1px;
+            left: -11px;
+            height: 22px;
+            background: #1B1D1F;
+        }
+        .footer_languages_en_text {
+            font-size: 20px;
+            line-height: 23px;
+        }
+        .footer_languages_en_text::before {
+            content: "";
+            position: absolute;
+            width: 1px;
+            left: -12px;
+            height: 22px;
+            background: #1B1D1F;
+            top: 0px;
+        }
+        .footer_languages_ua_text {
+            font-size: 20px;
+            line-height: 23px;
+        }
+        
+        .exactly_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 34px;
+            line-height: 130%;
+            color: #46B1DE;
+        }
+        
+        .box_professional {
+            position: absolute;
+            width: 530px;
+            height: 158px;
+            top: 185px;
+            left: 110px;
+        }
+        .box_professional {
+            animation-duration: 2s;
+            animation-name: box_professional-animation;
+        }
+        @keyframes box_professional-animation {
+            from {
+                top: 255px;
+                opacity: 0;
+                visibility: hidden;
+            }
+            to {
+                top: 185px;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.3s, visibility 0.3s;
+               
+            }    
+        }
+
+        .dental_text {
+            color: #46B1DE;
+        }
+        .i_will_conduct {
+            position: absolute;
+            left: 110px;
+            bottom: 224px;
+        }
+        .i_will_conduct {
+            animation-duration: 2s;
+            animation-name: i_will_conduct-animation;
+        }
+        @keyframes i_will_conduct-animation {
+            from {
+                bottom: 154px;
+                opacity: 0;
+                visibility: hidden;
+            }
+            to {
+                bottom: 224px;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.5s, visibility 0.5s;
+            }            
+        }
+        .i_will_conduct_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: #1B1D1F;
+            
+        }
+        .box_call_button {
+            position: absolute;
+            width: 180px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: 110px;
+            top: 487px;
+            background: linear-gradient(97.59deg, #46B1DE 9.8%, #0591CC 95.1%);
+            box-shadow: 0px 2px 10px #46B1DE;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .box_call_button,.box_services_button {
+            animation-duration: 1.5s;
+            animation-name: box_call_button-animation;
+        }
+        @keyframes box_call_button-animation {
+            from {
+                top: 557px;
+                opacity: 0;
+                visibility: hidden;
+        
+            }
+            to {
+                top: 487x;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.3s, visibility 0.3s;
+            }            
+        }
+        
+        .call_button_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 19px;
+            line-height: 140%;
+            color: #FFFFFF;
+            
+        }
+        .box_services_button {
+            position: absolute;
+            width: 180px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: 410px;
+            top: 487px;
+            background: #FFFFFF;
+            box-shadow: 0px 2px 10px #DDE0DC;
+            border-radius: 8px;
+            mix-blend-mode: normal;
+            border: 1px solid #DDE0DC;
+            text-align: center;
+        }
+        
+        .services_button_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 19px;
+            line-height: 140%;
+            color: #46B1DE;
+            
+        }
+        .years, .percent, .month {
+            position: absolute;
+            display: flex;
+            width: 280px;
+            height: 120px;
+            top: 601px;
+            background:  #FFFFFF;
+            border: 1px solid #D8E1E1;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 8px;
+        
+        }
+        .years {
+            left: 210px;
+        }
+        .years {
+            
+            animation-duration: 2s;
+            animation-name: years-animation;
+            
+            
+                       
+        }
+        @keyframes years-animation {
+            from {
+                left: 0px;
+                opacity: 0;
+                visibility: hidden;
+            }
+            to {
+                left: 210px;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.3s, visibility 0.3s;
+            }
+            
+        }
+        .percent {
+            left: 560px;
+        }
+        .percent {
+            
+            animation-duration: 2s;
+            animation-name: percent-animation;
+            
+        }
+        @keyframes percent-animation {
+            from {
+                left: 350px;
+                opacity: 0;
+                visibility: hidden;
+            }
+            to {
+                left: 560px;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.3s, visibility 0.3s
+            }
+            
+        }
+        .month {
+            left: 910px;
+        }
+        .month {
+            
+            animation-duration: 2s;
+            animation-name: month-animation;
+            
+            
+        }
+        @keyframes month-animation {
+            from {
+                left: 700px;
+                opacity: 0;
+                visibility: hidden;
+            }
+            to {
+                left: 910px;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.3s, visibility 0.3s
+            }
+            
+        }
+        .years_number {
+            width: 93px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .years_number_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 65px;
+            color: #46B1DE;
+            
+        }
+        .years_box_text {
+            display: flex;
+            width: 146px;
+            height: 64px;
+            margin: 35px 34px 21px 7px;
+        }
+        .years_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #1B1D1F;
+        
+        }
+        .percent_number {
+            width: 133px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 4px;
+        }
+        .percent_box_text {
+            display: flex;
+            width: 114px;
+            height: 32px;
+            margin: 46px 26px 42px 3px;
+        }
+        .month_number {
+            display: flex;
+            width: 96px;
+            height: 120px;
+            justify-content: center;
+            align-items: center;
+        }
+        .month_box_text {
+            display: flex;
+            width: 165px;
+            height: 48px;
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #1B1D1F;
+            margin: 33px 12px 39px 7px;
+        
+        }
+        .why {
+            width: 1400px;
+            height: 44px;
+            margin: 148px 0px 0px 0px;
+            
+        }
+        .why_box_text {
+            padding-left: 354px;
+            padding-right: 394px;
+        }
+        .why_you_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 34px;
+            line-height: 130%;
+            color: #1B1D1F;
+        }
+        .over {
+            display: flex;
+            width: 1400px;
+            height: 44px;
+            margin: 5px 0px 0px 0px;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .over_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: #000000;
+            text-align: center;
+            
+            
+        }
+        .large_box {
+            display: flex;
+            flex-wrap: wrap;
+            width: 1020px;
+            height: 396px;
+           margin: 50px 190px 0px 190px;
+            background: #A1C7D4;
+            border-radius: 12px;
+            
+            
+        }
+        
+        .box_one, .box_two, .box_three, .box_four, .box_five, .box_six {
+            width: 300px;
+            height: 176px;
+            background: #FFFFFF;
+            border-radius: 8px;
+        }
+        .box_six {
+            margin-bottom: 0px;
+        }
+        .column_one {
+            margin: 16px 40px 16px 20px;    
+        }
+        .column_two {
+            margin-top: 16px;
+            margin-right: 40px;
+            margin-bottom: 16px;
+        }
+        .column_three {
+            margin: 16px 20px 16px 0px;
+        }
+        .box_one, .box_three, .box_five {
+            margin-bottom: 12px;
+            margin-top: 0px;
+        }
+        .box_one_for_two_box {
+            display: flex;
+        }
+        .box_one_number {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 56px;
+            text-align: center;
+        }
+        .one_number_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 47px;
+            color: #46B1DE;
+                
+        }
+        .box_one_number_text {
+            width: 193px;
+            height: 38px;
+            margin: 10px 31px 25px -4px;
+        }
+        .modern {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 21px;
+            color: #46B1DE;
+        }
+        .one_text {
+            width: 267px;
+            height: 57px;
+            margin-left: 20px;
+            margin-right: 13px;
+        
+        }
+        .exclusively {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #1B1D1F;
+        }
+        .box_one_interest {
+            width: 212px;
+            height: 38px;
+            margin: 10px 12px 25px -4px;
+        }
+        .box_one_professional {
+            width: 224px;
+            height: 38px;
+            margin: 10px 0px 25px -4px;
+        
+        }
+        .box_three_text {
+            width: 225px;
+            height: 38px;
+            margin-left: 18px;
+            margin-right: 57px;
+        }
+        .box_four_number_text {
+            width: 206px;
+            height: 38px;
+            margin: 10px 18px 25px -4px;
+        }
+        .box_four_text {
+            width: 233px;
+            height: 38px;
+            margin-left: 18px;
+            margin-right: 49px;
+        }
+        .box_five_number_text {
+            width: 217px;
+            height: 38px;
+            margin: 10px 6px 25px -3px;
+        }
+        .box_five_text {
+            width: 267px;
+            height: 57px;
+            margin-left: 18px;
+            margin-right: 15px;
+        }
+        .box_six_number_text {
+            width: 218px;
+            height: 38px;
+            margin: 10px 5px 25px -3px;
+        }
+        .box_six_text {
+            width: 280px;
+            height: 57px;
+            margin-left: 16px;
+            margin-right: 4px;
+        }
+        .box_make {
+            display: flex;
+            width: 845px;
+            height: 265px;
+            margin-top: 88px;
+            margin-left: 265px;
+            background:  #FFFFFF;
+            border: 1px solid #D9D9D9;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            
+        }
+        
+        .box_make_inside {
+            width: 821px;
+            height: 247px;
+            background: #FFFFFF;
+            border: 1px solid #D9D9D9;
+            backdrop-filter: blur(2px);
+            border-radius: 10px;
+            margin: 10px 9px 8px 15px;
+        }
+        .box_appointment {
+            display: flex;
+            width: 763px;
+            height: 42px;
+            margin: 29px 33px 7px 25px;
+            justify-content: center;
+            align-items: center;
+        }
+        .make_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 42px;
+            color: #1B1D1F;
+            text-transform: uppercase;
+        }
+        .fill {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 6px;
+            margin-right: 14px;
+        }
+        .fill_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: #1B1D1F;
+            
+        }
+        .form {
+            display: flex;
+            position: relative;
+            width: 821px;
+            margin-top: 44px;
+        }
+        .your_name_img_box {
+            position: absolute;
+            width: 43px;
+            height: 30px;
+            border-right: 2px solid #000000;
+           margin-top: 14px;
+           margin-bottom: 13px;
+           margin-left: 18px;
+           padding: 4px 10.85px 2px 10px;
+        
+        }
+        .img_your_name {
+            width: 22.15px;
+            height: 24px;
+        }
+        
+         .box_form_phone {
+            position: relative;
+            width: 233px;
+            height: 57px;
+            background: rgba(217, 217, 217, 0.71);
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .button_sign {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 16px 35px;
+            width: 180px;
+            height: 57px;
+            margin-top: 1px;
+            margin-left: 67px;
+            background: #46B1DE;
+            border-radius: 8px;
+        }
+        
+        
+        
+        
+        .form_your_name {
+            height: 57px;
+            width: 233px;   
+            margin-left: 18px;
+            margin-right: 69px;
+        }
+        .box_your_name, .form_phone_number {
+            width: 233px;
+            height: 57px;
+            background: rgba(217, 217, 217, 0.71);
+            border-radius: 8px;
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 19px;
+            line-height: 27px;
+            color: rgba(27, 29, 31, 0.51);
+        }
+        .form_phone_number {
+            padding-left: 67px;
+            padding-top: 14px;
+            padding-bottom: 16px;
+        }
+        .box_your_name {
+            padding-left: 51px;
+            padding-top: 16px;
+            padding-bottom: 14px;
+        
+        }
+        .box_form_phone_image {
+            position: absolute;
+            width: 44px;
+            height: 30px;
+            border-right: 2px solid #000000;
+            top: 13px;
+            bottom: 14px;
+            left: 320px;
+            padding-left: 10px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+           
+        }
+        .form_phone_image {
+            width: 24px;
+            height: 24px;
+            
+        }
+        
+        
+        .sign_up {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 19px;
+            line-height: 140%;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        .images {
+            width: 1400px;
+            display: flex;
+            margin-top: 90px;
+            margin-left: 0px;
+            justify-content: normal;
+        }
+        .image_one {
+            
+            margin-left: 198px;
+        }
+        .image_two {
+            
+            margin-left: 69px;
+        }
+        .image_three {
+            margin-top: 1px;
+            margin-left: 70px;
+        }
+        .footer {
+            position: relative;
+            width: 1400px;
+            height: 400px;
+            margin-left: 0px;
+            margin-top: 91px;
+            background: linear-gradient(91.75deg, #A1C7D4 18.06%, #0680AA 98.16%);
+            
+        }
+        .footer_zub {
+            width: 77.57px;
+            height: 80.56px;
+            margin-top: 1.49px;
+        }
+        .footer_logo {
+            position: absolute;
+            top: 60px;
+            bottom: 249px;
+            left: 113px;
+            right: 861.78px;
+        }
+        .footer_box_tesla {
+            width: 302px;
+            height: 91px;
+            margin-left: 7.46px;
+        }
+        .footer_Drnikola {
+            width: 302px;
+            height: 54px;
+        
+        }
+        .footer_Drnikola_text {
+            font-family: "Sofia Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 38.7869px;
+            line-height: 140%;
+            color: #0F2D4A;
+        }
+        .footer_dentist {
+            width: 84px;
+            height: 38px;
+            margin-top: -16px;
+        }
+        .footer_dentist_text {
+            font-family: "Sofia Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 26.8525px;
+            line-height: 140%;
+            color: #0F2D4A;
+        }
+        .home_footer {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 20px;
+            width: 76px;
+            height: 74px;
+            position: absolute;
+            left: 116px;
+            top: 181px;
+        }
+        .home_box {
+            width: 54px;
+            height: 27px;
+        }
+        .home_box_text, .footer_services_box_text, .mon_fri_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 27px;
+            color: #0F2D4A;
+        }
+        .footer_services_box {
+            width: 76px;
+            height: 27px;
+        }
+        .footer_languages {
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            width: 73px;
+            height: 23px;
+            top: 282px;
+            left: 113px;
+        }
+        .box_work {
+            width: 140px;
+            position: absolute;
+            top: 218px;
+            left: 352px;
+        }
+        .working {
+            width: 137px;
+            height: 23px;
+            margin-left: 3px;
+            text-align: center;
+            
+        }
+        .working_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 23px;
+            
+            color: #0F2D4A;
+        }
+        .mon_fri {
+            width: 128px;
+            height: 54px;
+            margin-top: 7px;
+        }
+        .footer_contacts {
+            position: absolute;
+            width: 316px;
+            height: 329px;
+            right: 174px;
+            top: 60px;
+        }
+        .footer_contacts_box {
+            width: 183px;
+            height: 40px;
+            margin-left: 6px;
+            text-align: center;
+        }
+        .footer_contacts_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 34px;
+            line-height: 40px;
+            
+            color: #FFFFFF;
+        }
+        .footer_nikola {
+            width: 289px;
+            height: 27px;
+            margin-left: 6px;
+            margin-top: 20px;
+        }
+        .footer_nikola_text, .street_text, .footer_phone_text, .instagram_text, .email_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 27px;
+            color: #FFFFFF;
+        }
+        
+        .footer_street {
+            width: 213px;
+            height: 27px;
+            margin-left: 6px;
+            margin-top: 15px;
+        }
+        .footer_phone {
+            display: flex;
+            width: 225px;
+            height: 28px;
+            margin-top: 20px;
+            margin-left: 21.99px;
+        }
+        .footer_phone_box {
+            width: 28px;
+            height: 28px;
+            margin-left: 0px;
+            
+        }
+       
+        .footer_phone_number {
+            width: 182px;
+            height: 27px;
+            margin-bottom: 1px;
+            display: flex;
+            text-align: center;
+            margin-left: 21.99px;
+        }
+        
+        .footer_phone_number::before {
+            left: -21.99px;
+            background-size: 21.99px 21.99px;
+            width: 21.99px;
+            height: 21.99px;
+            top: 2.63px;
+            bottom: 2.39px;
+
+        }
+        
+        
+        .media {
+            display: flex;
+        }
+        .viber, .telegram, .whatsapp {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 28px;
+            height: 28px;
+            
+        }
+        .viber {
+            margin-top: 10px;
+            margin-left: 3px;
+        }
+        .viber_link {
+            width: 28px;
+            height: 28px;
+        }
+        .telegram {
+            margin-top: 8px;
+            margin-left: 22px;
+        }
+        .whatsapp {
+            margin-top: 10px;
+            margin-left: 31px;
+        }
+        .instagram {
+            position: relative;
+            display: flex;
+            width: 140px;
+            height: 27px;
+            margin-top: 13px;
+            margin-left: 3px;
+        }
+        .instagram_img {
+            width: 27px;
+            height: 27px;    
+        }
+        .instagram_box {
+            width: 100px;
+            height: 27px;
+            margin-left: 40px;
+            text-align: center;
+        }
+        .instagram_text::before{
+            content: "";
+            position: absolute;
+            background-image: url(../images/icons8-instagram1.svg);
+            left: -40px;
+            background-size: 27px 27px;
+            width: 27px;
+            height: 27px;
+            top: 0px;
+            bottom: 0px;    
+        }
+        
+        .email {
+            display: flex;
+            width: 250px;
+            height: 32px;
+            margin-left: 1px;
+            margin-top: 15px;
+        }
+        .email_img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 32px;
+            height: 32px;
+            
+        }
+        .email_box {
+            width: 212px;
+            height: 27px;
+            margin-top: 3px;
+            text-align: center;
+            margin-left: 38px;
+        }
+        .copyright {
+            display: flex;
+            width: 109px;
+            height: 17px;
+            margin-left: 206px;
+            margin-top: 10px;
+        }
+        .copyright_img_box {
+            width: 10px;
+            height: 17px;
+            margin-right: -2px;
+            
+        }
+        .copyright_img {
+            margin-top: 4px;
+        
+        }
+        .copyright_text_box {
+            width: 101px;
+            height: 17px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .copyright_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 130%;
+            color: #FFFFFF;
+        }
+        .do_i_provode_box {
+            width: 1400px;
+            height: 40px;
+            padding-left: 426px;
+            margin-top: 90px;
+            text-align: left;
+            margin-left: 0px;
+            margin-bottom: 0px;
+            
+        }
+        .what_do_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 34px;
+            line-height: 40px;
+            color: #1B1D1F;
+        }
+        .services_bold_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 34px;
+            line-height: 40px;
+            color: #46B1DE;
+            
+        }
+        .elipse3 { 
+            position: absolute;   
+            width: 302px;
+            height: 302px;
+            left: 549px;
+            top: 1533px;
+            border: 1px solid #1B1D1F;
+            border-radius: 50%;
+            margin-bottom: 202px;
+        }
+        
+        .elipse4, .elipse6, .elipse7, .elipse8, .elipse5, .elipse9 {
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            background-color: #46B1DE;
+            border-radius: 50%;
+            
+        }
+        .circle_animation {
+            position: relative;   
+            width: 302px;
+            height: 302px;
+            left: 549px;
+            top: 53px;
+            border: 1px solid #1B1D1F;
+            border-radius: 50%;
+            margin-bottom: 202px;
+            z-index: 10;
+
+        }
+        .elipse3_inside { 
+            position: absolute;   
+            width: 302px;
+            height: 302px;
+            top: 50%;
+            left: 50%;
+            /* border: 1px solid #1B1D1F; */
+            border-radius: 50%;
+            margin-bottom: 202px;
+            transform: translate(-50%,-50%);
+            animation:go 1.5s linear infinite;
+            animation-fill-mode: forwards;
+            animation-delay: 5s;
+        }
+        @keyframes go {
+            0% {
+                width: 0;
+                height: 0;
+            }
+            100% {
+                width: 100%;
+                height: 100%;
+            }
+            
+        }
+        .elipse4 {
+            left: 10.92%;
+            top: 8.94%;
+            
+        }
+        .elipse6 {
+            left: 81.45%;
+            top: 8.94%;
+        }
+        .elipse7 {
+            left: -3.94%;
+            top: 46%;
+        }
+        .elipse8 {
+            left: 96.68%;
+            top: 46%;
+        }
+        .elipse5 {
+            left: 10.92%;
+            top: 82.12%;
+        }
+        .elipse9 {
+            left: 81.457%;
+            top: 82.12%;
+        }
+        .plus4{
+            width: 11px;
+            height: 25px;
+            margin-left: 6px;
+            margin-right: 7px;
+            margin-top: 0px;
+        }
+        .plus4_text {
+            font-family: "Sofia Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 140%;
+            color: #FFFFFF;
+        
+        }
+        .rectanle35_box {
+            width: 180px;
+            height: 162px;
+            position: absolute;
+            left: 610px;
+            top: 1603px;
+            z-index: 1;
+        }
+        .therapeutic_header_box {
+            position: absolute;
+            width: 187px;
+            height: 27px;
+            top: 1530px;
+            left: 346px;
+            align-items: center;
+            animation:animation-therapeutic_header_box 1.5s linear infinite;
+            animation-fill-mode: forwards;
+            animation-delay: 5s;
+        }
+        @keyframes animation-therapeutic_header_box {
+            from {
+                left: 151px;
+                top: 1480px;
+                opacity: 0;
+                visibility: hidden;
+            }
+            to {
+                left: 346px;
+                top: 1530px;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.3s, visibility 0.3s
+            }
+        }
+        .therapeutic_header_text, .prosthetics_header_text, .surgical_header_text, .children_header_text, .prof_header_text, .plasmo_header_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 135%;
+            color: #46B1DE;
+        }
+        .threatment_text {
+            width: 338px;
+        }
+        .threatment_box {
+            position: absolute;
+            width: 338px;
+            height: 80px;
+            top: 1562px;
+            left: 195px;
+            text-align: right;
+            animation:animation-therapeutic_box 1.5s linear infinite;
+            animation-fill-mode: forwards;
+            animation-delay: 5s;
+        }
+        @keyframes animation-therapeutic_box {
+            from {
+                left: 0px;
+                top: 1512px;
+                opacity: 0;
+                visibility: hidden;
+            }
+            to {
+                left: 195px;
+                top: 1562px;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.3s, visibility 0.3s
+            }
+        }
+        .threatment_text, .prosthetics_text, .surgical_text, .nostress_text, .with_help_text, .plasmo_text {
+            font-family: "Roboto";
+            color: #1B1D1F;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+        }
+        .prosthetics_header_box {
+            position: absolute;
+            width: 133px;
+            height: 27px;
+            top: 1530px;
+            left: 855px;
+            animation:animation-prosthetics_header_box 1.5s linear infinite;
+            animation-fill-mode: forwards;
+            animation-delay: 5s;
+        }
+        @keyframes animation-prosthetics_header_box {
+            from {
+                left: 1110px;
+                top: 1480px;
+                opacity: 0;
+                visibility: hidden;
+            }
+            to {
+                left: 855px;
+                top: 1530px;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.3s, visibility 0.3s
+            }
+        }
+        .prosthetics_box {
+            width: 290px;
+            height: 80px;
+            position: absolute;
+            top: 1562px;
+            left: 855px;
+            animation:animation-prosthetics_box 1.5s linear infinite;
+            animation-fill-mode: forwards;
+            animation-delay: 5s;
+        }
+        @keyframes animation-prosthetics_box {
+            from {
+                left: 1110px;
+                top: 1512px;
+                opacity: 0;
+                visibility: hidden;
+            }
+            to {
+                left: 855px;
+                top: 1562px;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.3s, visibility 0.3s
+            }
+        }
+        .surgical_header_box {
+            position: absolute;
+            width: 151px;
+            height: 27px;
+            top: 1673px;
+            left: 329px;
+            animation:animation-surgical_header_box 1.5s linear infinite;
+            animation-fill-mode: forwards;
+            animation-delay: 5s;            
+        }
+        @keyframes animation-surgical_header_box {
+            from {
+                left: 127px;
+                top: 1673px;
+                opacity: 0;
+                visibility: hidden;
+            }
+            to {
+                left: 329px;
+                top: 1673x;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.3s, visibility 0.3s
+            }
+        }
+        .surgical_box {
+            position: absolute;
+            width: 283px;
+            height: 87px;
+            top: 1705px;
+            left: 202px;
+            text-align: right;
+            animation:animation-surgical_box 1.5s linear infinite;
+            animation-fill-mode: forwards;
+            animation-delay: 5s;
+        }
+        @keyframes animation-surgical_box {
+            from {
+                left: 0px;
+                top: 1705px;
+                opacity: 0;
+                visibility: hidden;
+            }
+            to {
+                left: 202px;
+                top: 1705px;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.3s, visibility 0.3s
+            }
+        }
+        .children_header_box {
+            width: 223px;
+            height: 27px;
+            position: absolute;
+            top: 1670px;
+            left: 910px;
+            animation:animation-children_header_box 1.5s linear infinite;
+            animation-fill-mode: forwards;
+            animation-delay: 5s;
+        }
+        @keyframes animation-children_header_box {
+            from {
+                left: 1109px;
+                top: 1670px;
+                opacity: 0;
+                visibility: hidden;
+            }
+            to {
+                left: 910px;
+                top: 1670px;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.3s, visibility 0.3s
+            }
+        }
+        .nostress_box {
+            width: 291px;
+            height: 74px;
+            position: absolute;
+            top: 1702px;
+            left: 914px;
+            animation:animation-nostress_box 1.5s linear infinite;
+            animation-fill-mode: forwards;
+            animation-delay: 5s;
+        }
+        @keyframes animation-nostress_box {
+            from {
+                left: 1109px;
+                top: 1702px;
+                opacity: 0;
+                visibility: hidden;
+            }
+            to {
+                left: 914px;
+                top: 1702px;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.3s, visibility 0.3s
+            }
+        }
+        .prof_header_box {
+            position: absolute;
+            width: 317px;
+            height: 27px;
+            left: 263px;
+            top: 1821px;
+            animation:animation-prof_header_box 1.5s linear infinite;
+            animation-fill-mode: forwards;
+            animation-delay: 5s;
+        }
+        @keyframes animation-prof_header_box {
+            from {
+                left: 0px;
+                top: 1907px;
+                opacity: 0;
+                visibility: hidden;
+            }
+            to {
+                left: 264px;
+                top: 1821px;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.3s, visibility 0.3s
+            }
+        }
+        .with_help_box {
+            width: 295px;
+            height: 80px;
+            text-align: right;
+            position: absolute;
+            top: 1853px;
+            left: 284px;
+            animation:animation-with_help_box 1.5s linear infinite;
+            animation-fill-mode: forwards;
+            animation-delay: 5s;
+        }
+        @keyframes animation-with_help_box {
+            from {
+                left: 21px;
+                top: 1933px;
+                opacity: 0;
+                visibility: hidden;
+            }
+            to {
+                left: 284px;
+                top: 1853px;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.3s, visibility 0.3s
+            }
+        }
+        .plasmo_header_box {
+            width: 170px;
+            height: 27px;
+            position: absolute;
+            top: 1821px;
+            left: 815px;
+            animation:animation-plasmo_header_box 1.5s linear infinite;
+            animation-fill-mode: forwards;
+            animation-delay: 5s;
+        }
+        @keyframes animation-plasmo_header_box {
+            from {
+                left: 1092px;
+                top: 1883px;
+                opacity: 0;
+                visibility: hidden;
+            }
+            to {
+                left: 815px;
+                top: 1821px;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.3s, visibility 0.3s
+            }
+        }
+        .plasmo_box {
+            width: 308px;
+            height: 77px;
+            position: absolute;
+            top: 1853px;
+            left: 815px;
+            animation:animation-plasmo_box 1.5s linear infinite;
+            animation-fill-mode: forwards;
+            animation-delay: 5s;
+        }
+        @keyframes animation-plasmo_box {
+            from {
+                left: 1092px;
+                top: 1915px;
+                opacity: 0;
+                visibility: hidden;
+            }
+            to {
+                left: 815px;
+                top: 1853px;
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.3s, visibility 0.3s
+            }
+        }
+        .sooner_box {
+               
+            width: 597px;
+            height: 103px;
+            display: flex;
+            margin-top: 59px;
+            margin-left: 436px;
+            
+        }
+        .sooner_box_img {
+            width: 105px;
+            height: 103px;
+            
+        }
+        .sooner_box_text {
+            width: 478px;
+            height: 33px;
+            margin-top: 45px;
+            margin-left: 16px;
+            margin-bottom: 25px;
+        }
+        .sooner_box_text {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 20px;
+            line-height: 140%;
+            color: #46B1DE;
+        }
+    }

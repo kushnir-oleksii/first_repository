@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@font-face {
+    font-family: "Sofia Sans";
+    font-display: swap;
+    font-style: normal;
+    src: url("../Fonts/SofiaSans-Regular.woff2") format("woff2");
+    
+ }
+.h1,.professional_text,.dental_text {
+    font-family: "Roboto";
+    font-style: normal;    
+}
+.phone_number_text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+};
+.image_lady {
+    position: absolute;
+};
+.dentist_text {
+    font-family: "Sofia Sans";
+    font-style: normal;
+    font-weight: 400;
+};
+li {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+};
