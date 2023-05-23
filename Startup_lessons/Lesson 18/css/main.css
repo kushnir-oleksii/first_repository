@@ -2135,7 +2135,75 @@ li {
   line-height: 20px;
   color: #1B1D1F;
 }
+@media (min-width: 768px) {
+  .what_do_text {
+    font-size: 34px;
+    line-height: 40px;
+  }
+}
 
+.services_bold_text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+  color: #46B1DE;
+}
+@media (min-width: 768px) {
+  .services_bold_text {
+    font-size: 34px;
+    line-height: 40px;
+  }
+}
+
+.therapeutic_header_box {
+  position: absolute;
+  display: flex;
+  top: 2350px;
+  left: 60px;
+  width: 120px;
+  height: 13.5px;
+  justify-content: center;
+}
+@media (min-width: 480px) {
+  .therapeutic_header_box {
+    top: 2150px;
+    left: 200px;
+  }
+}
+@media (min-width: 768px) {
+  .therapeutic_header_box {
+    left: 147px;
+    width: 187px;
+    height: 27px;
+    top: 1530px;
+  }
+}
+@media (min-width: 992px) {
+  .therapeutic_header_box {
+    left: 346px;
+    animation: animation-therapeutic_header_box 1.5s linear infinite;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+  }
+}
+
+@keyframes animation-therapeutic_header_box {
+  from {
+    left: 151px;
+    top: 1480px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    left: 346px;
+    top: 1530px;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+}
 .box_make {
   margin: 200px auto 0px;
   width: 422.5px;
