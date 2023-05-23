@@ -1705,6 +1705,41 @@ $forthColor : #000000;
         line-height: 130%;
     }
 };
+.viber, .telegram, .whatsapp {
+    @media(min-width: 480px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 28px;
+        height: 28px;
+    };        
+};
+.viber {
+    @media(min-width: 480px){
+        margin-top: 10px;
+        margin-left: 3px;
+    }    
+};
+.viber_link {
+    @media(min-width: 480px){
+        width: 28px;
+        height: 28px;
+    }     
+};
+.telegram {
+    @media(min-width: 480px){
+        margin-top: 8px;
+        margin-left: 22px;
+    } 
+};
+.whatsapp {
+    @media(min-width: 480px){
+        margin-top: 10px;
+        margin-left: 31px;
+    } 
+};
+
+
 
 .do_i_provode_box {
     width: 450px;
@@ -2312,6 +2347,46 @@ $forthColor : #000000;
         line-height: 19px; 
     };
 };
+
+.circle_animation {
+    @media(min-width: 992px){
+        position: relative;   
+        width: 302px;
+        height: 302px;
+        left: 549px;
+        top: 53px;
+        border: 1px solid #1B1D1F;
+        border-radius: 50%;
+        margin-bottom: 202px;
+        z-index: 10; 
+    };    
+};
+.elipse3_inside { 
+    @media(min-width: 992px){
+        position: absolute;   
+    width: 302px;
+    height: 302px;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    margin-bottom: 202px;
+    transform: translate(-50%,-50%);
+    animation:go 1.5s linear infinite;
+    animation-fill-mode: forwards;
+    animation-delay: 5s; 
+    };
+}
+@keyframes go {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+    }
+    
+};
 .plus4{
     display: flex;
     width: 5.5px;
@@ -2515,9 +2590,62 @@ $forthColor : #000000;
     };
 };
 
-
-
-
+.link_spisok_menu:hover {
+    color: $mainColor;
+}
+.spisok_menu {
+    @media(min-width: 480px){
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }; 
+    @media(min-width: 992px){
+        list-style: none;
+        display: inline-flex;
+        flex-direction: row;
+    };    
+};
+.spisok_menu_services, .spisok_menu_contacts {
+    @media(min-width: 480px){
+        margin-left: 0;
+        padding-top: 5px;
+    };
+    @media(min-width: 992px){
+        padding: 0px;
+        margin-left: 80px;
+    };    
+};
+.languages_ua_text {
+    @media(min-width: 992px){
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 23px;
+        color: $forthColor;
+    };
+    
+};
+.languages_en_text {
+    @media(min-width: 992px){
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        color: $forthColor; 
+    };     
+};
+.languages_en_text::before{
+    @media(min-width: 992px){
+        content: "";
+        position: absolute;
+        width: 1px;
+        left: -11px;
+        height: 22px;
+        background: #1B1D1F; 
+    };    
+};
 
 
 .box_make {
