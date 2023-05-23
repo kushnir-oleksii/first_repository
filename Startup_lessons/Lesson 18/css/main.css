@@ -2127,6 +2127,15 @@ li {
   }
 }
 
+.what_do_text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #1B1D1F;
+}
+
 .box_make {
   margin: 200px auto 0px;
   width: 422.5px;
