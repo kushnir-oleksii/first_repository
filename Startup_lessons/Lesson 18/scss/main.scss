@@ -1750,6 +1750,7 @@ $forthColor : #000000;
         height: 40px;
         width: 991px;
         padding-left: 0;
+        margin: 90px auto;
     };
     @media(min-width: 992px){
         width: 1400px;
@@ -1786,10 +1787,11 @@ $forthColor : #000000;
     }; 
 };
 
-.prosthetics_header_box, .prosthetics_box, .children_header_box, .nostress_box, .plasmo_header_box, .plasmo_box {    
+.prosthetics_header_box, .prosthetics_box, .children_header_box, .nostress_box, .plasmo_header_box, .plasmo_box 
+{    
     @media(min-width: 768px){
-        left: 670px;
-    };
+        left: 670px;       
+    };   
 }
 .therapeutic_header_box {
     position: absolute;
@@ -1840,11 +1842,16 @@ $forthColor : #000000;
     top: 2365px;
     left: 20px;
     text-align: right;
+    @media(min-width: 480px){
+        left: 155px;
+        top: 2165px;        
+    };
     @media(min-width: 768px){
         width: 338px;
         height: 80px;
         top: 1562px;
         left: 25px;
+        
     };    
     @media(min-width: 992px){
         left: 195px;
@@ -1884,6 +1891,7 @@ $forthColor : #000000;
         width: 170px;
         height: 27px;
         top: 1821px;
+        left: 670px;
     };       
     @media(min-width: 992px){
         width: 170px;
@@ -1926,6 +1934,7 @@ $forthColor : #000000;
         width: 308px;
         height: 77px;
         top: 1853px;
+        left: 670px;
     };       
     @media(min-width: 992px){
         width: 308px;
@@ -1968,6 +1977,7 @@ $forthColor : #000000;
         width: 291px;
         height: 74px;
         top: 1702px;
+        left: 670px;
     };       
     @media(min-width: 992px){
         width: 291px;
@@ -2010,6 +2020,7 @@ $forthColor : #000000;
         width: 223px;
         height: 27px;
         top: 1670px;
+        left: 670px;
     };       
     @media(min-width: 992px){
         width: 223px;
@@ -2052,6 +2063,7 @@ $forthColor : #000000;
         width: 133px;
         height: 27px;
         top: 1530px;
+        left: 670px;
     };       
     @media(min-width: 992px){
         width: 133px;
@@ -2093,6 +2105,7 @@ $forthColor : #000000;
         width: 290px;
         height: 83px;
         top: 1562px;
+        left : 670px;
     };       
     @media(min-width: 992px){
         width: 290px;
@@ -2511,6 +2524,7 @@ $forthColor : #000000;
         left: 383px;
         width: 24px;
         height: 24px;
+        top: 1781px;
     };  
     @media(min-width: 992px){
         left: 10.92%;
@@ -2616,7 +2630,7 @@ $forthColor : #000000;
     };    
 };
 .languages_ua_text {
-    @media(min-width: 992px){
+    @media(min-width: 768px){
         font-family: "Roboto";
         font-style: normal;
         font-weight: 600;
@@ -2627,7 +2641,7 @@ $forthColor : #000000;
     
 };
 .languages_en_text {
-    @media(min-width: 992px){
+    @media(min-width: 768px){
         font-family: "Roboto";
         font-style: normal;
         font-weight: 400;
@@ -2637,14 +2651,14 @@ $forthColor : #000000;
     };     
 };
 .languages_en_text::before{
-    @media(min-width: 992px){
+    @media(min-width: 768px){
         content: "";
         position: absolute;
         width: 1px;
         left: -11px;
         height: 22px;
         background: #1B1D1F; 
-    };    
+    }; 
 };
 
 

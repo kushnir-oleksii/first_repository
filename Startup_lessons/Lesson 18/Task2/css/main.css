@@ -1,0 +1,7 @@
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 50px 0 50px;
+  border-color: #46B1DE transparent transparent transparent;
+}

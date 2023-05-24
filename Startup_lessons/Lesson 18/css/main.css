@@ -2151,6 +2151,7 @@ li {
     height: 40px;
     width: 991px;
     padding-left: 0;
+    margin: 90px auto;
   }
 }
 @media (min-width: 992px) {
@@ -2258,6 +2259,12 @@ li {
   left: 20px;
   text-align: right;
 }
+@media (min-width: 480px) {
+  .threatment_box {
+    left: 155px;
+    top: 2165px;
+  }
+}
 @media (min-width: 768px) {
   .threatment_box {
     width: 338px;
@@ -2310,6 +2317,7 @@ li {
     width: 170px;
     height: 27px;
     top: 1821px;
+    left: 670px;
   }
 }
 @media (min-width: 992px) {
@@ -2359,6 +2367,7 @@ li {
     width: 308px;
     height: 77px;
     top: 1853px;
+    left: 670px;
   }
 }
 @media (min-width: 992px) {
@@ -2408,6 +2417,7 @@ li {
     width: 291px;
     height: 74px;
     top: 1702px;
+    left: 670px;
   }
 }
 @media (min-width: 992px) {
@@ -2457,6 +2467,7 @@ li {
     width: 223px;
     height: 27px;
     top: 1670px;
+    left: 670px;
   }
 }
 @media (min-width: 992px) {
@@ -2506,6 +2517,7 @@ li {
     width: 133px;
     height: 27px;
     top: 1530px;
+    left: 670px;
   }
 }
 @media (min-width: 992px) {
@@ -2554,6 +2566,7 @@ li {
     width: 290px;
     height: 83px;
     top: 1562px;
+    left: 670px;
   }
 }
 @media (min-width: 992px) {
@@ -3049,6 +3062,7 @@ li {
     left: 383px;
     width: 24px;
     height: 24px;
+    top: 1781px;
   }
 }
 @media (min-width: 992px) {
@@ -3190,7 +3204,7 @@ li {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .languages_ua_text {
     font-family: "Roboto";
     font-style: normal;
@@ -3201,7 +3215,7 @@ li {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .languages_en_text {
     font-family: "Roboto";
     font-style: normal;
@@ -3212,7 +3226,7 @@ li {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .languages_en_text::before {
     content: "";
     position: absolute;
