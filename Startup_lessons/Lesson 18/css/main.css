@@ -46,6 +46,381 @@ li {
   line-height: 19px;
 }
 
+.why {
+  margin: 435px 65px 0px 65px;
+}
+@media (min-width: 480px) {
+  .why {
+    margin: 90px auto 10px;
+  }
+}
+@media (min-width: 768px) {
+  .why {
+    margin: 148px auto 0px;
+  }
+}
+@media (min-width: 992px) {
+  .why {
+    margin: 148px 0px 0px 0px;
+  }
+}
+
+.years {
+  top: 590px;
+}
+@media (min-width: 480px) {
+  .years {
+    top: 601px;
+  }
+}
+
+.percent {
+  top: 720px;
+}
+@media (min-width: 480px) {
+  .percent {
+    top: 601px;
+  }
+}
+
+.month {
+  top: 850px;
+}
+@media (min-width: 480px) {
+  .month {
+    top: 601px;
+  }
+}
+
+.do_i_provode_box {
+  margin: 30px auto;
+}
+@media (min-width: 480px) {
+  .do_i_provode_box {
+    margin: 10px auto;
+  }
+}
+@media (min-width: 768px) {
+  .do_i_provode_box {
+    margin: 90px auto;
+  }
+}
+@media (min-width: 992px) {
+  .do_i_provode_box {
+    margin-top: 90px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+.therapeutic_header_box {
+  top: 2380px;
+}
+@media (min-width: 480px) {
+  .therapeutic_header_box {
+    top: 2150px;
+  }
+}
+@media (min-width: 768px) {
+  .therapeutic_header_box {
+    top: 1530px;
+  }
+}
+
+.threatment_box {
+  top: 2395px;
+}
+@media (min-width: 768px) {
+  .threatment_box {
+    top: 1562px;
+  }
+}
+
+.prosthetics_header_box {
+  top: 2380px;
+}
+@media (min-width: 992px) {
+  .prosthetics_header_box {
+    top: 1530px;
+  }
+}
+
+.prosthetics_box {
+  top: 2395px;
+}
+@media (min-width: 992px) {
+  .prosthetics_box {
+    top: 1562px;
+  }
+}
+
+.surgical_box {
+  top: 2455px;
+}
+@media (min-width: 992px) {
+  .surgical_box {
+    top: 1705px;
+  }
+}
+
+.surgical_header_box {
+  top: 2440px;
+}
+@media (min-width: 992px) {
+  .surgical_header_box {
+    top: 1673px;
+  }
+}
+
+.children_header_box {
+  top: 2440px;
+}
+@media (min-width: 992px) {
+  .children_header_box {
+    top: 1670px;
+  }
+}
+
+.nostress_box {
+  top: 2455px;
+}
+@media (min-width: 992px) {
+  .nostress_box {
+    top: 1702px;
+  }
+}
+
+.prof_header_box {
+  top: 2515px;
+}
+@media (min-width: 992px) {
+  .prof_header_box {
+    top: 1821px;
+  }
+}
+
+.with_help_box {
+  top: 2530px;
+}
+@media (min-width: 992px) {
+  .with_help_box {
+    top: 1853px;
+  }
+}
+
+.plasmo_header_box {
+  top: 2515px;
+}
+@media (min-width: 992px) {
+  .plasmo_header_box {
+    top: 1821px;
+  }
+}
+
+.plasmo_box {
+  top: 2530px;
+}
+@media (min-width: 480px) {
+  .plasmo_box {
+    top: 2290px;
+  }
+}
+@media (min-width: 768px) {
+  .plasmo_box {
+    top: 1853px;
+  }
+}
+@media (min-width: 992px) {
+  .plasmo_box {
+    top: 1853px;
+  }
+}
+
+.elipse3 {
+  top: 2380px;
+}
+@media (min-width: 480px) {
+  .elipse3 {
+    top: 2150px;
+  }
+}
+@media (min-width: 768px) {
+  .elipse3 {
+    top: 1533px;
+  }
+}
+
+.rectanle35_box {
+  top: 2410px;
+}
+@media (min-width: 480px) {
+  .rectanle35_box {
+    top: 2180px;
+  }
+}
+@media (min-width: 768px) {
+  .rectanle35_box {
+    top: 1603px;
+  }
+}
+
+.elipse4 {
+  top: 2400px;
+}
+@media (min-width: 480px) {
+  .elipse4 {
+    top: 2170px;
+  }
+}
+@media (min-width: 768px) {
+  .elipse4 {
+    top: 1560px;
+  }
+}
+@media (min-width: 992px) {
+  .elipse4 {
+    top: 8.94%;
+  }
+}
+
+.elipse5 {
+  top: 2500px;
+}
+@media (min-width: 480px) {
+  .elipse5 {
+    top: 2270px;
+  }
+}
+@media (min-width: 768px) {
+  .elipse5 {
+    top: 1781px;
+  }
+}
+@media (min-width: 992px) {
+  .elipse5 {
+    top: 82.12%;
+  }
+}
+
+.elipse6 {
+  top: 2400px;
+}
+@media (min-width: 480px) {
+  .elipse6 {
+    top: 2170px;
+  }
+}
+@media (min-width: 768px) {
+  .elipse6 {
+    top: 1560px;
+  }
+}
+@media (min-width: 992px) {
+  .elipse6 {
+    top: 8.94%;
+  }
+}
+
+.elipse9 {
+  top: 2500px;
+}
+@media (min-width: 480px) {
+  .elipse9 {
+    top: 2270px;
+  }
+}
+@media (min-width: 768px) {
+  .elipse9 {
+    top: 1781px;
+  }
+}
+@media (min-width: 992px) {
+  .elipse9 {
+    top: 82.12%;
+  }
+}
+
+.elipse7 {
+  top: 2450px;
+}
+@media (min-width: 480px) {
+  .elipse7 {
+    top: 2220px;
+  }
+}
+@media (min-width: 768px) {
+  .elipse7 {
+    top: 1672px;
+  }
+}
+@media (min-width: 992px) {
+  .elipse7 {
+    top: 46%;
+  }
+}
+
+.elipse8 {
+  top: 2450px;
+}
+@media (min-width: 480px) {
+  .elipse8 {
+    top: 2220px;
+  }
+}
+@media (min-width: 768px) {
+  .elipse8 {
+    top: 1672px;
+  }
+}
+@media (min-width: 992px) {
+  .elipse8 {
+    top: 46%;
+  }
+}
+
+.box_make {
+  margin: 210px auto 0px;
+}
+@media (min-width: 480px) {
+  .box_make {
+    margin: 250px auto 0px;
+  }
+}
+@media (min-width: 768px) {
+  .box_make {
+    margin: 500px auto 0px;
+  }
+}
+@media (min-width: 992px) {
+  .box_make {
+    margin-top: 88px;
+    margin-left: 265px;
+  }
+}
+
+.footer {
+  margin: 30px auto;
+}
+@media (min-width: 768px) {
+  .footer {
+    margin-top: 91px;
+  }
+}
+
+.images {
+  margin: 30px auto 0px;
+}
+@media (min-width: 480px) {
+  .images {
+    margin-top: 90px;
+  }
+}
+@media (min-width: 768px) {
+  .images {
+    margin-top: 90px;
+  }
+}
+
 .link_spisok_menu:hover {
   color: #46B1DE;
 }
@@ -708,19 +1083,12 @@ li {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
 }
-@media (min-width: 992px) {
-  .years, .percent, .month {
-    top: 601px;
-  }
-}
 
 .years {
   left: 20px;
-  top: 570px;
 }
 @media (min-width: 480px) {
   .years {
-    top: 601px;
     left: 10px;
     width: 220px;
   }
@@ -757,7 +1125,6 @@ li {
 }
 .percent {
   left: 20px;
-  top: 700px;
 }
 @media (min-width: 480px) {
   .percent {
@@ -798,7 +1165,6 @@ li {
 }
 .month {
   left: 20px;
-  top: 830px;
 }
 @media (min-width: 480px) {
   .month {
@@ -932,25 +1298,17 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 420px 65px 0px 65px;
-}
-@media (min-width: 480px) {
-  .why {
-    margin: 90px auto 10px;
-  }
 }
 @media (min-width: 768px) {
   .why {
     width: 991px;
     height: 44px;
-    margin: 148px auto 0px;
   }
 }
 @media (min-width: 992px) {
   .why {
     width: 1400px;
     height: 44px;
-    margin: 148px 0px 0px 0px;
   }
 }
 
@@ -1224,14 +1582,12 @@ li {
   position: relative;
   width: 320px;
   height: 568px;
-  margin: 10px auto;
   background: linear-gradient(180deg, #A1C7D4 0%, #0680AA 100%);
 }
 @media (min-width: 768px) {
   .footer {
     width: 992px;
     height: 400px;
-    margin-top: 91px;
     background: linear-gradient(91.75deg, #A1C7D4 18.06%, #0680AA 98.16%);
   }
 }
@@ -1239,8 +1595,7 @@ li {
   .footer {
     width: 1400px;
     height: 400px;
-    margin-left: 0px;
-    margin-top: 91px;
+    margin-left: 0;
   }
 }
 
@@ -2142,7 +2497,6 @@ li {
 
 .do_i_provode_box {
   width: 450px;
-  margin: 10px auto;
   padding-left: 0;
   text-align: center;
 }
@@ -2151,7 +2505,6 @@ li {
     height: 40px;
     width: 991px;
     padding-left: 0;
-    margin: 90px auto;
   }
 }
 @media (min-width: 992px) {
@@ -2159,10 +2512,7 @@ li {
     width: 1400px;
     height: 40px;
     padding-left: 426px;
-    margin-top: 90px;
     text-align: left;
-    margin-left: 0px;
-    margin-bottom: 0px;
   }
 }
 
@@ -2205,7 +2555,6 @@ li {
 .therapeutic_header_box {
   position: absolute;
   display: flex;
-  top: 2350px;
   left: 60px;
   width: 120px;
   height: 13.5px;
@@ -2255,7 +2604,6 @@ li {
   display: flex;
   width: 169px;
   height: 40px;
-  top: 2365px;
   left: 20px;
   text-align: right;
 }
@@ -2403,7 +2751,6 @@ li {
   width: 148px;
   height: 37px;
   left: 330px;
-  top: 2425px;
   position: absolute;
 }
 @media (min-width: 480px) {
@@ -2453,7 +2800,6 @@ li {
   display: flex;
   width: 130px;
   height: 13.5px;
-  top: 2410px;
   left: 330px;
 }
 @media (min-width: 480px) {
@@ -2501,7 +2847,6 @@ li {
 .prosthetics_header_box {
   position: absolute;
   display: flex;
-  top: 2350px;
   width: 85px;
   height: 13.5px;
   left: 320px;
@@ -2552,7 +2897,6 @@ li {
   display: flex;
   width: 145px;
   height: 42px;
-  top: 2365px;
   left: 320px;
 }
 @media (min-width: 480px) {
@@ -2599,7 +2943,6 @@ li {
 .surgical_box {
   position: absolute;
   display: flex;
-  top: 2425px;
   left: 10px;
   width: 142px;
   height: 43.5px;
@@ -2652,7 +2995,6 @@ li {
   display: flex;
   width: 100px;
   height: 13.5px;
-  top: 2410px;
   left: 67px;
 }
 @media (min-width: 480px) {
@@ -2703,7 +3045,6 @@ li {
   width: 190px;
   height: 13.5px;
   left: 263px;
-  top: 2485px;
   left: 20px;
 }
 @media (min-width: 480px) {
@@ -2753,7 +3094,6 @@ li {
   display: flex;
   width: 150px;
   height: 40px;
-  top: 2500px;
   left: 42px;
 }
 @media (min-width: 480px) {
@@ -3238,7 +3578,6 @@ li {
 }
 
 .box_make {
-  margin: 200px auto 0px;
   width: 422.5px;
   height: 132.5px;
   display: flex;
@@ -3258,14 +3597,11 @@ li {
 }
 @media (min-width: 768px) {
   .box_make {
-    margin: 500px auto 0px;
     width: 845px;
   }
 }
 @media (min-width: 992px) {
   .box_make {
-    margin-top: 88px;
-    margin-left: 265px;
     background: #FFFFFF;
   }
 }
@@ -3660,14 +3996,12 @@ li {
 .images {
   width: 450px;
   display: flex;
-  margin: 30px auto 0px;
   justify-content: space-around;
   align-items: center;
 }
 @media (min-width: 480px) {
   .images {
     width: 768px;
-    margin-top: 90px;
     justify-content: space-around;
     align-items: center;
   }
@@ -3675,14 +4009,12 @@ li {
 @media (min-width: 768px) {
   .images {
     width: 991px;
-    margin-top: 90px;
   }
 }
 @media (min-width: 992px) {
   .images {
     width: 1400px;
     display: flex;
-    margin-top: 90px;
     margin-left: 0px;
     justify-content: normal;
   }

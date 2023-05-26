@@ -1,0 +1,323 @@
+.percent {
+  top: 720px;
+}
+@media (min-width: 480px) {
+  .percent {
+    top: 601px;
+  }
+}
+
+.month {
+  top: 850px;
+}
+@media (min-width: 480px) {
+  .month {
+    top: 601px;
+  }
+}
+
+.do_i_provode_box {
+  margin: 30px auto;
+}
+@media (min-width: 480px) {
+  .do_i_provode_box {
+    margin: 10px auto;
+  }
+}
+@media (min-width: 768px) {
+  .do_i_provode_box {
+    margin: 90px auto;
+  }
+}
+@media (min-width: 992px) {
+  .do_i_provode_box {
+    margin-top: 90px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+.therapeutic_header_box {
+  top: 2380px;
+}
+@media (min-width: 480px) {
+  .therapeutic_header_box {
+    top: 2150px;
+  }
+}
+@media (min-width: 768px) {
+  .therapeutic_header_box {
+    top: 1530px;
+  }
+}
+
+.threatment_box {
+  top: 2395px;
+}
+@media (min-width: 768px) {
+  .threatment_box {
+    top: 1562px;
+  }
+}
+
+.prosthetics_header_box {
+  top: 2380px;
+}
+@media (min-width: 992px) {
+  .prosthetics_header_box {
+    top: 1530px;
+  }
+}
+
+.prosthetics_box {
+  top: 2395px;
+}
+@media (min-width: 992px) {
+  .prosthetics_box {
+    top: 1562px;
+  }
+}
+
+.surgical_box {
+  top: 2455px;
+}
+@media (min-width: 992px) {
+  .surgical_box {
+    top: 1705px;
+  }
+}
+
+.surgical_header_box {
+  top: 2440px;
+}
+@media (min-width: 992px) {
+  .surgical_header_box {
+    top: 1673px;
+  }
+}
+
+.children_header_box {
+  top: 2440px;
+}
+@media (min-width: 992px) {
+  .children_header_box {
+    top: 1670px;
+  }
+}
+
+.nostress_box {
+  top: 2455px;
+}
+@media (min-width: 992px) {
+  .nostress_box {
+    top: 1702px;
+  }
+}
+
+.prof_header_box {
+  top: 2515px;
+}
+@media (min-width: 992px) {
+  .prof_header_box {
+    top: 1821px;
+  }
+}
+
+.with_help_box {
+  top: 2530px;
+}
+@media (min-width: 992px) {
+  .with_help_box {
+    top: 1853px;
+  }
+}
+
+.plasmo_header_box {
+  top: 2515px;
+}
+@media (min-width: 992px) {
+  .plasmo_header_box {
+    top: 1821px;
+  }
+}
+
+.plasmo_box {
+  top: 2530px;
+}
+@media (min-width: 480px) {
+  .plasmo_box {
+    top: 2290px;
+  }
+}
+@media (min-width: 768px) {
+  .plasmo_box {
+    top: 1853px;
+  }
+}
+@media (min-width: 992px) {
+  .plasmo_box {
+    top: 1853px;
+  }
+}
+
+.elipse3 {
+  top: 2380px;
+}
+@media (min-width: 480px) {
+  .elipse3 {
+    top: 2150px;
+  }
+}
+@media (min-width: 768px) {
+  .elipse3 {
+    top: 1533px;
+  }
+}
+
+.rectanle35_box {
+  top: 2410px;
+}
+@media (min-width: 480px) {
+  .rectanle35_box {
+    top: 2180px;
+  }
+}
+@media (min-width: 768px) {
+  .rectanle35_box {
+    top: 1603px;
+  }
+}
+
+.elipse4 {
+  top: 2400px;
+}
+@media (min-width: 480px) {
+  .elipse4 {
+    top: 2170px;
+  }
+}
+@media (min-width: 768px) {
+  .elipse4 {
+    top: 1560px;
+  }
+}
+@media (min-width: 992px) {
+  .elipse4 {
+    top: 8.94%;
+  }
+}
+
+.elipse5 {
+  top: 2500px;
+}
+@media (min-width: 480px) {
+  .elipse5 {
+    top: 2270px;
+  }
+}
+@media (min-width: 768px) {
+  .elipse5 {
+    top: 1781px;
+  }
+}
+@media (min-width: 992px) {
+  .elipse5 {
+    top: 82.12%;
+  }
+}
+
+.elipse6 {
+  top: 2400px;
+}
+@media (min-width: 480px) {
+  .elipse6 {
+    top: 2170px;
+  }
+}
+@media (min-width: 768px) {
+  .elipse6 {
+    top: 1560px;
+  }
+}
+@media (min-width: 992px) {
+  .elipse6 {
+    top: 8.94%;
+  }
+}
+
+.elipse9 {
+  top: 2500px;
+}
+@media (min-width: 480px) {
+  .elipse9 {
+    top: 2270px;
+  }
+}
+@media (min-width: 768px) {
+  .elipse9 {
+    top: 1781px;
+  }
+}
+@media (min-width: 992px) {
+  .elipse9 {
+    top: 82.12%;
+  }
+}
+
+.elipse7 {
+  top: 2450px;
+}
+@media (min-width: 480px) {
+  .elipse7 {
+    top: 2220px;
+  }
+}
+@media (min-width: 768px) {
+  .elipse7 {
+    top: 1672px;
+  }
+}
+@media (min-width: 992px) {
+  .elipse7 {
+    top: 46%;
+  }
+}
+
+.elipse8 {
+  top: 2450px;
+}
+@media (min-width: 480px) {
+  .elipse8 {
+    top: 2220px;
+  }
+}
+@media (min-width: 768px) {
+  .elipse8 {
+    top: 1672px;
+  }
+}
+@media (min-width: 992px) {
+  .elipse8 {
+    top: 46%;
+  }
+}
+
+.box_make {
+  margin: 210px auto 0px;
+}
+@media (min-width: 480px) {
+  .box_make {
+    margin: 250px auto 0px;
+  }
+}
+@media (min-width: 768px) {
+  .box_make {
+    margin: 500px auto 0px;
+  }
+}
+@media (min-width: 992px) {
+  .box_make {
+    margin-top: 88px;
+    margin-left: 265px;
+  }
+}
