@@ -2,10 +2,8 @@
 @import 'title';
 @import '_template';
 @import 'sectionMargin';
-$mainColor: #46B1DE;
-$secondColor:#1B1D1F;
-$thirdColor:#FFFFFF;
-$forthColor : #000000;
+@import '_colors';
+
 
 .link_spisok_menu:hover {
     color: $mainColor;
@@ -61,9 +59,7 @@ $forthColor : #000000;
     }
 };
 .button_burger {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %displayflexJustifycenterAligncenter;
     position: fixed;
     top: 59px;
     right: 7px;
@@ -152,14 +148,15 @@ $forthColor : #000000;
     }    
 };
 .professional_text,.dental_text {
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 130%; 
+    @extend %mainText;
     @media(min-width: 480px) {
         font-size: 40px;
         line-height: 52px;
         letter-spacing: 0.1em;
     }
+};
+.h1 {
+    @extend %mainText;
 };
 .dental_text{
     color: $mainColor;
@@ -263,11 +260,8 @@ $forthColor : #000000;
     };
 };
 .Drnikola_text {
-    font-family: "Sofia Sans";
-    font-style: normal;
-    font-weight: 400;
+    @extend %title_Drnikola_and_dentist_Text;
     font-size: 16.6926px;
-    line-height: 140%;
     color: $mainColor;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     @media(min-width: 480px){
@@ -298,17 +292,15 @@ $forthColor : #000000;
     }
 };
 .dentist_text {
+    @extend %title_Drnikola_and_dentist_Text;
     font-size: 11.5564px;
-    line-height: 140%;
     color: $mainColor;
     @media(min-width: 480px){
         font-size: 26.852px;
     }
 };
 .phone {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %displayflexJustifycenterAligncenter;
     width: 109px;
     height: 15px;
     margin-top: 4px;
@@ -324,9 +316,7 @@ $forthColor : #000000;
     }      
 };
 .phone_logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %displayflexJustifycenterAligncenter;
     @media(min-width: 480px){        
         width: 24px;
         height: 24px;
@@ -353,6 +343,7 @@ $forthColor : #000000;
     }
 };
 .phone_number_text {
+    @extend %title_Whyyou_Exactly_Phone_number_text;
     font-size: 12px;
     line-height: 14px;
     color: $secondColor;
@@ -753,6 +744,7 @@ $forthColor : #000000;
     }
 };
 .why_box_text {
+    @extend %title_Whyyou_Exactly_Phone_number_text;
     padding-left: 0;
     text-align: center;
     @media(min-width: 768px){
@@ -764,9 +756,7 @@ $forthColor : #000000;
     }
 };
 .why_you_text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
+    @extend %title_Whyyou_Exactly_Phone_number_text;
     font-size: 24px;
     line-height: 130%;
     color: $secondColor;
@@ -775,9 +765,6 @@ $forthColor : #000000;
     }    
 };
 .exactly_text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
     font-size: 24px;
     line-height: 130%;
     color: $mainColor;
@@ -786,7 +773,7 @@ $forthColor : #000000;
     } 
 };
 .over {
-    @extend %over;
+    @extend %over; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -804,7 +791,10 @@ $forthColor : #000000;
     }
     @media(min-width: 992px){
         width: 1400px;
-            height: 44px;
+        height: 44px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
     }
 };
 .over_text {
@@ -1048,9 +1038,7 @@ $forthColor : #000000;
     }
 };
 .footer_Drnikola_text {
-    font-family: "Sofia Sans";
-    font-style: normal;
-    font-weight: 400;
+    @extend %title_Drnikola_and_dentist_Text;
     font-size: 27px;
     line-height: 140%;
     color: #0F2D4A;
@@ -1070,11 +1058,8 @@ $forthColor : #000000;
     }
 };
 .footer_dentist_text {
-    font-family: "Sofia Sans";
-    font-style: normal;
-    font-weight: 400;
+    @extend %title_Drnikola_and_dentist_Text ;
     font-size: 19.1523px;
-    line-height: 140%;
     color: #0F2D4A;
     @media(min-width: 768px){
         font-size: 26.8525px;    
@@ -1752,9 +1737,7 @@ $forthColor : #000000;
     }
 };
 .what_do_text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
+    @extend %title_Whyyou_Exactly_Phone_number_text;
     font-size: 17px;
     line-height: 20px;
     color: $secondColor;
@@ -2191,7 +2174,6 @@ $forthColor : #000000;
     left: 263px;
     left:20px;
     @media(min-width: 480px){
-        // top: 2275px;
         left: 160px;
     };    
     @media(min-width: 768px){
@@ -2307,10 +2289,8 @@ $forthColor : #000000;
     };
 };
 .threatment_text, .prosthetics_text, .surgical_text, .nostress_text, .with_help_text, .plasmo_text {
-    font-family: "Roboto";
+    @extend %title_Whyyou_Exactly_Phone_number_text;
     color: $secondColor;
-    font-style: normal;
-    font-weight: 400;
     font-size: 8px;
     line-height: 9.5px;
     @media(min-width: 768px){
@@ -2599,12 +2579,10 @@ $forthColor : #000000;
 
 
 .box_make {
+    @extend %displayflexJustifycenterAligncenter;
     @extend %box_make;
     width: 422.5px;
     height: 132.5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background:  $thirdColor;
     border: 1px solid #D9D9D9;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -2646,9 +2624,7 @@ $forthColor : #000000;
     }
 };
 .box_appointment{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %displayflexJustifycenterAligncenter;
     width: 381.5px;
     height: 21px;
     margin: 14.5px 16.5px 3.5px 12.5px;
@@ -2656,8 +2632,6 @@ $forthColor : #000000;
         width: 700px;
         height: 42px;
         margin: 29px 33px 7px 25px;
-        justify-content: center;
-        align-items: center;
     }
     @media(min-width: 768px){
         width: 763px;
@@ -2679,9 +2653,7 @@ $forthColor : #000000;
     }     
  };
  .fill {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %displayflexJustifycenterAligncenter;
     margin-left: 6px;
     margin-right: 14px;   
     @media(min-width: 480px){
@@ -2689,17 +2661,12 @@ $forthColor : #000000;
         line-height: 22px;
     }    
     @media(min-width: 992px){
-        display: flex;
-        justify-content: center;
-        align-items: center;
         margin-left: 6px;
         margin-right: 14px;        
     }
 };
 .fill_text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
+    @extend %title_Whyyou_Exactly_Phone_number_text;
     font-size: 8px;
     line-height: 11px;
     color: $secondColor;
@@ -2760,10 +2727,8 @@ $forthColor : #000000;
     }
 };
 .box_form_phone {
-    position: relative;   
-    display: flex;
-    justify-content: center;
-    align-items: center;     
+    @extend %displayflexJustifycenterAligncenter;
+    position: relative;     
     width: 116.5px;
     height: 28.5px;
     border-radius: 4px;
@@ -2779,9 +2744,7 @@ $forthColor : #000000;
     }    
   };
   .button_sign {
-    display: flex;
-    justify-content: center;
-    align-items: center;        
+    @extend %displayflexJustifycenterAligncenter;        
     width: 90px;
     height: 28.5px;
     margin-top: 1px;
@@ -2867,13 +2830,11 @@ $forthColor : #000000;
     }
 };
 .box_form_phone_image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %displayflexJustifycenterAligncenter;
     position: absolute;
     width: 22px;
     height: 15px;
-    border-right: 1px solid #000000;
+    border-right: 1px solid $forthColor;
     top: 8px;
     bottom: 7px;
     left: 160px;
@@ -2883,7 +2844,7 @@ $forthColor : #000000;
     @media(min-width: 480px){
         width: 44px;
         height: 30px;
-        border-right: 2px solid #000000;
+        border-right: 2px solid $forthColor;
         top: 13px;
         bottom: 14px;
         left: 260px;
@@ -2917,9 +2878,7 @@ $forthColor : #000000;
     }
 };
 .sign_up_box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %displayflexJustifycenterAligncenter;
     width: 40px;
     height: 10px;
     @media(min-width: 480px){
@@ -2935,13 +2894,11 @@ $forthColor : #000000;
     @extend %imagesMargine;
     @media(min-width: 480px){
         width: 768px;
-       
         justify-content: space-around;
         align-items: center;
     }
     @media(min-width: 768px){
         width: 991px;
-              
     }
     @media(min-width: 992px){
         width: 1400px;

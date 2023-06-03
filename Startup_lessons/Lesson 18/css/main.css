@@ -11,6 +11,18 @@ a {
   color: #1B1D1F;
 }
 
+li {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.image_lady {
+  position: absolute;
+}
+
 @font-face {
   font-family: "Sofia Sans";
   font-display: swap;
@@ -20,30 +32,28 @@ a {
 .h1, .professional_text, .dental_text {
   font-family: "Roboto";
   font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 130%;
 }
 
-.phone_number_text {
+.fill_text, .threatment_text, .prosthetics_text, .surgical_text, .nostress_text, .with_help_text, .plasmo_text, .what_do_text, .why_you_text, .why_box_text, .phone_number_text {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
 }
 
-.image_lady {
-  position: absolute;
-}
-
-.dentist_text {
+.footer_dentist_text, .footer_Drnikola_text, .dentist_text, .Drnikola_text {
   font-family: "Sofia Sans";
   font-style: normal;
   font-weight: 400;
+  line-height: 140%;
 }
 
-li {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+.sign_up_box, .box_form_phone_image, .button_sign, .box_form_phone, .fill, .box_appointment, .box_make, .phone_logo, .phone, .button_burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .why {
@@ -547,9 +557,6 @@ li {
 }
 
 .button_burger {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: fixed;
   top: 59px;
   right: 7px;
@@ -644,11 +651,6 @@ li {
     visibility: visible;
     transition: opacity 0.3s, visibility 0.3s;
   }
-}
-.professional_text, .dental_text {
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 130%;
 }
 @media (min-width: 480px) {
   .professional_text, .dental_text {
@@ -787,11 +789,7 @@ li {
 }
 
 .Drnikola_text {
-  font-family: "Sofia Sans";
-  font-style: normal;
-  font-weight: 400;
   font-size: 16.6926px;
-  line-height: 140%;
   color: #46B1DE;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -831,7 +829,6 @@ li {
 
 .dentist_text {
   font-size: 11.5564px;
-  line-height: 140%;
   color: #46B1DE;
 }
 @media (min-width: 480px) {
@@ -841,9 +838,6 @@ li {
 }
 
 .phone {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 109px;
   height: 15px;
   margin-top: 4px;
@@ -863,11 +857,6 @@ li {
   }
 }
 
-.phone_logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 @media (min-width: 480px) {
   .phone_logo {
     width: 24px;
@@ -1384,9 +1373,6 @@ li {
 }
 
 .why_you_text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 24px;
   line-height: 130%;
   color: #1B1D1F;
@@ -1398,9 +1384,6 @@ li {
 }
 
 .exactly_text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 24px;
   line-height: 130%;
   color: #46B1DE;
@@ -1436,6 +1419,9 @@ li {
   .over {
     width: 1400px;
     height: 44px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
   }
 }
 
@@ -1727,9 +1713,6 @@ li {
 }
 
 .footer_Drnikola_text {
-  font-family: "Sofia Sans";
-  font-style: normal;
-  font-weight: 400;
   font-size: 27px;
   line-height: 140%;
   color: #0F2D4A;
@@ -1755,11 +1738,7 @@ li {
 }
 
 .footer_dentist_text {
-  font-family: "Sofia Sans";
-  font-style: normal;
-  font-weight: 400;
   font-size: 19.1523px;
-  line-height: 140%;
   color: #0F2D4A;
 }
 @media (min-width: 768px) {
@@ -2573,9 +2552,6 @@ li {
 }
 
 .what_do_text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 17px;
   line-height: 20px;
   color: #1B1D1F;
@@ -3211,10 +3187,7 @@ li {
 }
 
 .threatment_text, .prosthetics_text, .surgical_text, .nostress_text, .with_help_text, .plasmo_text {
-  font-family: "Roboto";
   color: #1B1D1F;
-  font-style: normal;
-  font-weight: 400;
   font-size: 8px;
   line-height: 9.5px;
 }
@@ -3572,9 +3545,6 @@ li {
 .box_make {
   width: 422.5px;
   height: 132.5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: #FFFFFF;
   border: 1px solid #D9D9D9;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -3630,9 +3600,6 @@ li {
 }
 
 .box_appointment {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 381.5px;
   height: 21px;
   margin: 14.5px 16.5px 3.5px 12.5px;
@@ -3642,8 +3609,6 @@ li {
     width: 700px;
     height: 42px;
     margin: 29px 33px 7px 25px;
-    justify-content: center;
-    align-items: center;
   }
 }
 @media (min-width: 768px) {
@@ -3671,9 +3636,6 @@ li {
 }
 
 .fill {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-left: 6px;
   margin-right: 14px;
 }
@@ -3685,18 +3647,12 @@ li {
 }
 @media (min-width: 992px) {
   .fill {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-left: 6px;
     margin-right: 14px;
   }
 }
 
 .fill_text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 8px;
   line-height: 11px;
   color: #1B1D1F;
@@ -3776,9 +3732,6 @@ li {
 
 .box_form_phone {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 116.5px;
   height: 28.5px;
   border-radius: 4px;
@@ -3799,9 +3752,6 @@ li {
 }
 
 .button_sign {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 90px;
   height: 28.5px;
   margin-top: 1px;
@@ -3910,9 +3860,6 @@ li {
 }
 
 .box_form_phone_image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   width: 22px;
   height: 15px;
@@ -3971,9 +3918,6 @@ li {
 }
 
 .sign_up_box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 40px;
   height: 10px;
 }
