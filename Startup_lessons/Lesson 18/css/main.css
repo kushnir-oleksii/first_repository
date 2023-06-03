@@ -95,11 +95,6 @@ li {
 .do_i_provode_box {
   margin: 30px auto;
 }
-@media (min-width: 480px) {
-  .do_i_provode_box {
-    margin: 10px auto;
-  }
-}
 @media (min-width: 768px) {
   .do_i_provode_box {
     margin: 90px auto;
@@ -108,8 +103,6 @@ li {
 @media (min-width: 992px) {
   .do_i_provode_box {
     margin-top: 90px;
-    margin-left: 0px;
-    margin-bottom: 0px;
   }
 }
 
@@ -130,6 +123,11 @@ li {
 .threatment_box {
   top: 2395px;
 }
+@media (min-width: 480px) {
+  .threatment_box {
+    top: 2165px;
+  }
+}
 @media (min-width: 768px) {
   .threatment_box {
     top: 1562px;
@@ -139,7 +137,12 @@ li {
 .prosthetics_header_box {
   top: 2380px;
 }
-@media (min-width: 992px) {
+@media (min-width: 480px) {
+  .prosthetics_header_box {
+    top: 2150px;
+  }
+}
+@media (min-width: 768px) {
   .prosthetics_header_box {
     top: 1530px;
   }
@@ -147,6 +150,11 @@ li {
 
 .prosthetics_box {
   top: 2395px;
+}
+@media (min-width: 480px) {
+  .prosthetics_box {
+    top: 2165px;
+  }
 }
 @media (min-width: 992px) {
   .prosthetics_box {
@@ -157,7 +165,12 @@ li {
 .surgical_box {
   top: 2455px;
 }
-@media (min-width: 992px) {
+@media (min-width: 480px) {
+  .surgical_box {
+    top: 2225px;
+  }
+}
+@media (min-width: 768px) {
   .surgical_box {
     top: 1705px;
   }
@@ -166,7 +179,12 @@ li {
 .surgical_header_box {
   top: 2440px;
 }
-@media (min-width: 992px) {
+@media (min-width: 480px) {
+  .surgical_header_box {
+    top: 2210px;
+  }
+}
+@media (min-width: 768px) {
   .surgical_header_box {
     top: 1673px;
   }
@@ -175,7 +193,12 @@ li {
 .children_header_box {
   top: 2440px;
 }
-@media (min-width: 992px) {
+@media (min-width: 480px) {
+  .children_header_box {
+    top: 2210px;
+  }
+}
+@media (min-width: 768px) {
   .children_header_box {
     top: 1670px;
   }
@@ -184,7 +207,12 @@ li {
 .nostress_box {
   top: 2455px;
 }
-@media (min-width: 992px) {
+@media (min-width: 480px) {
+  .nostress_box {
+    top: 2225px;
+  }
+}
+@media (min-width: 768px) {
   .nostress_box {
     top: 1702px;
   }
@@ -193,7 +221,12 @@ li {
 .prof_header_box {
   top: 2515px;
 }
-@media (min-width: 992px) {
+@media (min-width: 480px) {
+  .prof_header_box {
+    top: 2275px;
+  }
+}
+@media (min-width: 768px) {
   .prof_header_box {
     top: 1821px;
   }
@@ -202,7 +235,12 @@ li {
 .with_help_box {
   top: 2530px;
 }
-@media (min-width: 992px) {
+@media (min-width: 480px) {
+  .with_help_box {
+    top: 2290px;
+  }
+}
+@media (min-width: 768px) {
   .with_help_box {
     top: 1853px;
   }
@@ -211,7 +249,12 @@ li {
 .plasmo_header_box {
   top: 2515px;
 }
-@media (min-width: 992px) {
+@media (min-width: 480px) {
+  .plasmo_header_box {
+    top: 2275px;
+  }
+}
+@media (min-width: 768px) {
   .plasmo_header_box {
     top: 1821px;
   }
@@ -230,9 +273,23 @@ li {
     top: 1853px;
   }
 }
+
+.over {
+  margin-top: 30px;
+}
+@media (min-width: 480px) {
+  .over {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .over {
+    margin: 5px auto;
+  }
+}
 @media (min-width: 992px) {
-  .plasmo_box {
-    top: 1853px;
+  .over {
+    margin: 5px 0px 0px 0px;
   }
 }
 
@@ -383,12 +440,12 @@ li {
 }
 @media (min-width: 480px) {
   .box_make {
-    margin: 250px auto 0px;
+    margin: 220px auto 0px;
   }
 }
 @media (min-width: 768px) {
   .box_make {
-    margin: 500px auto 0px;
+    margin: 570px auto 0px;
   }
 }
 @media (min-width: 992px) {
@@ -1128,7 +1185,6 @@ li {
 }
 @media (min-width: 480px) {
   .percent {
-    top: 601px;
     left: 274px;
     width: 220px;
   }
@@ -1168,7 +1224,6 @@ li {
 }
 @media (min-width: 480px) {
   .month {
-    top: 601px;
     left: 538px;
     width: 220px;
   }
@@ -1362,26 +1417,25 @@ li {
   align-items: center;
   width: 320px;
   height: max-content;
-  margin-top: 35px;
   margin-left: 65px;
 }
 @media (min-width: 480px) {
   .over {
-    margin: 35px auto 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
   }
 }
 @media (min-width: 768px) {
   .over {
     width: 992px;
     height: 44px;
-    margin: 5px auto;
   }
 }
 @media (min-width: 992px) {
   .over {
     width: 1400px;
     height: 44px;
-    margin: 5px 0px 0px 0px;
   }
 }
 
@@ -2513,6 +2567,8 @@ li {
     height: 40px;
     padding-left: 426px;
     text-align: left;
+    margin-left: 0px;
+    margin-bottom: 0px;
   }
 }
 
@@ -2562,7 +2618,6 @@ li {
 }
 @media (min-width: 480px) {
   .therapeutic_header_box {
-    top: 2150px;
     left: 200px;
   }
 }
@@ -2571,7 +2626,6 @@ li {
     left: 147px;
     width: 187px;
     height: 27px;
-    top: 1530px;
   }
 }
 @media (min-width: 992px) {
@@ -2610,14 +2664,12 @@ li {
 @media (min-width: 480px) {
   .threatment_box {
     left: 155px;
-    top: 2165px;
   }
 }
 @media (min-width: 768px) {
   .threatment_box {
     width: 338px;
     height: 80px;
-    top: 1562px;
     left: 25px;
   }
 }
@@ -2651,12 +2703,10 @@ li {
   display: flex;
   width: 100px;
   height: 13.5px;
-  top: 2485px;
   left: 300px;
 }
 @media (min-width: 480px) {
   .plasmo_header_box {
-    top: 2275px;
     left: 450px;
   }
 }
@@ -2664,7 +2714,6 @@ li {
   .plasmo_header_box {
     width: 170px;
     height: 27px;
-    top: 1821px;
     left: 670px;
   }
 }
@@ -2673,7 +2722,6 @@ li {
     width: 170px;
     height: 27px;
     position: absolute;
-    top: 1821px;
     left: 815px;
     animation: animation-plasmo_header_box 1.5s linear infinite;
     animation-fill-mode: forwards;
@@ -2701,12 +2749,10 @@ li {
   display: flex;
   width: 160px;
   height: 40px;
-  top: 2500px;
   left: 300px;
 }
 @media (min-width: 480px) {
   .plasmo_box {
-    top: 2290px;
     left: 450px;
   }
 }
@@ -2714,7 +2760,6 @@ li {
   .plasmo_box {
     width: 308px;
     height: 77px;
-    top: 1853px;
     left: 670px;
   }
 }
@@ -2723,7 +2768,6 @@ li {
     width: 308px;
     height: 77px;
     position: absolute;
-    top: 1853px;
     left: 815px;
     animation: animation-plasmo_box 1.5s linear infinite;
     animation-fill-mode: forwards;
@@ -2755,7 +2799,6 @@ li {
 }
 @media (min-width: 480px) {
   .nostress_box {
-    top: 2225px;
     left: 470px;
   }
 }
@@ -2763,7 +2806,6 @@ li {
   .nostress_box {
     width: 291px;
     height: 74px;
-    top: 1702px;
     left: 670px;
   }
 }
@@ -2772,7 +2814,6 @@ li {
     width: 291px;
     height: 74px;
     position: absolute;
-    top: 1702px;
     left: 914px;
     animation: animation-nostress_box 1.5s linear infinite;
     animation-fill-mode: forwards;
@@ -2804,7 +2845,6 @@ li {
 }
 @media (min-width: 480px) {
   .children_header_box {
-    top: 2210px;
     left: 470px;
   }
 }
@@ -2812,7 +2852,6 @@ li {
   .children_header_box {
     width: 223px;
     height: 27px;
-    top: 1670px;
     left: 670px;
   }
 }
@@ -2821,7 +2860,6 @@ li {
     width: 223px;
     height: 27px;
     position: absolute;
-    top: 1670px;
     left: 910px;
     animation: animation-children_header_box 1.5s linear infinite;
     animation-fill-mode: forwards;
@@ -2853,7 +2891,6 @@ li {
 }
 @media (min-width: 480px) {
   .prosthetics_header_box {
-    top: 2150px;
     left: 460px;
   }
 }
@@ -2861,7 +2898,6 @@ li {
   .prosthetics_header_box {
     width: 133px;
     height: 27px;
-    top: 1530px;
     left: 670px;
   }
 }
@@ -2869,7 +2905,6 @@ li {
   .prosthetics_header_box {
     width: 133px;
     height: 27px;
-    top: 1530px;
     left: 855px;
     animation: animation-prosthetics_header_box 1.5s linear infinite;
     animation-fill-mode: forwards;
@@ -2917,7 +2952,6 @@ li {
   .prosthetics_box {
     width: 290px;
     height: 80px;
-    top: 1562px;
     left: 855px;
     animation: animation-prosthetics_box 1.5s linear infinite;
     animation-fill-mode: forwards;
@@ -2951,7 +2985,6 @@ li {
 @media (min-width: 480px) {
   .surgical_box {
     left: 150px;
-    top: 2225px;
   }
 }
 @media (min-width: 768px) {
@@ -2959,14 +2992,12 @@ li {
     left: 50px;
     width: 283px;
     height: 87px;
-    top: 1705px;
   }
 }
 @media (min-width: 992px) {
   .surgical_box {
     width: 283px;
     height: 87px;
-    top: 1705px;
     left: 202px;
     text-align: right;
     animation: animation-surgical_box 1.5s linear infinite;
@@ -3000,14 +3031,12 @@ li {
 @media (min-width: 480px) {
   .surgical_header_box {
     left: 217px;
-    top: 2210px;
   }
 }
 @media (min-width: 768px) {
   .surgical_header_box {
     width: 151px;
     height: 27px;
-    top: 1673px;
     left: 180px;
   }
 }
@@ -3016,7 +3045,6 @@ li {
     position: absolute;
     width: 151px;
     height: 27px;
-    top: 1673px;
     left: 329px;
     animation: animation-surgical_header_box 1.5s linear infinite;
     animation-fill-mode: forwards;
@@ -3049,7 +3077,6 @@ li {
 }
 @media (min-width: 480px) {
   .prof_header_box {
-    top: 2275px;
     left: 160px;
   }
 }
@@ -3058,7 +3085,6 @@ li {
     left: 20px;
     width: 317px;
     height: 27px;
-    top: 1821px;
   }
 }
 @media (min-width: 992px) {
@@ -3066,7 +3092,6 @@ li {
     width: 317px;
     height: 27px;
     left: 263px;
-    top: 1821px;
     animation: animation-prof_header_box 1.5s linear infinite;
     animation-fill-mode: forwards;
     animation-delay: 5s;
@@ -3098,7 +3123,6 @@ li {
 }
 @media (min-width: 480px) {
   .with_help_box {
-    top: 2290px;
     left: 172px;
   }
 }
@@ -3106,7 +3130,6 @@ li {
   .with_help_box {
     width: 295px;
     height: 80px;
-    top: 1853px;
     left: 40px;
   }
 }
@@ -3115,7 +3138,6 @@ li {
     width: 295px;
     height: 80px;
     text-align: right;
-    top: 1853px;
     left: 284px;
     animation: animation-with_help_box 1.5s linear infinite;
     animation-fill-mode: forwards;
@@ -3281,11 +3303,9 @@ li {
   width: 90px;
   height: 81px;
   left: 200px;
-  top: 2380px;
 }
 @media (min-width: 480px) {
   .rectanle35_box {
-    top: 2180px;
     left: 339px;
   }
 }
@@ -3294,7 +3314,6 @@ li {
     width: 180px;
     height: 162px;
     left: 411px;
-    top: 1603px;
   }
 }
 @media (min-width: 992px) {
@@ -3320,13 +3339,11 @@ li {
   width: 151px;
   height: 151px;
   left: 169px;
-  top: 2350px;
   border-radius: 50%;
   border: 1px solid #1B1D1F;
 }
 @media (min-width: 480px) {
   .elipse3 {
-    top: 2150px;
     left: 308.5px;
   }
 }
@@ -3335,7 +3352,6 @@ li {
     width: 302px;
     height: 302px;
     left: 350px;
-    top: 1533px;
     margin-bottom: 202px;
   }
 }
@@ -3364,17 +3380,14 @@ li {
 
 .elipse4 {
   left: 183px;
-  top: 2370px;
 }
 @media (min-width: 480px) {
   .elipse4 {
-    top: 2170px;
     left: 323px;
   }
 }
 @media (min-width: 768px) {
   .elipse4 {
-    top: 1560px;
     left: 383px;
     width: 24px;
     height: 24px;
@@ -3383,17 +3396,14 @@ li {
 @media (min-width: 992px) {
   .elipse4 {
     left: 10.92%;
-    top: 8.94%;
   }
 }
 
 .elipse5 {
   left: 183px;
-  top: 2470px;
 }
 @media (min-width: 480px) {
   .elipse5 {
-    top: 2270px;
     left: 323px;
   }
 }
@@ -3402,29 +3412,24 @@ li {
     left: 383px;
     width: 24px;
     height: 24px;
-    top: 1781px;
   }
 }
 @media (min-width: 992px) {
   .elipse5 {
     left: 10.92%;
-    top: 82.12%;
   }
 }
 
 .elipse6 {
   left: 293px;
-  top: 2370px;
 }
 @media (min-width: 480px) {
   .elipse6 {
-    top: 2170px;
     left: 433px;
   }
 }
 @media (min-width: 768px) {
   .elipse6 {
-    top: 1560px;
     left: 596px;
     width: 24px;
     height: 24px;
@@ -3433,23 +3438,19 @@ li {
 @media (min-width: 992px) {
   .elipse6 {
     left: 81.45%;
-    top: 8.94%;
   }
 }
 
 .elipse9 {
   left: 293px;
-  top: 2470px;
 }
 @media (min-width: 480px) {
   .elipse9 {
-    top: 2270px;
     left: 433px;
   }
 }
 @media (min-width: 768px) {
   .elipse9 {
-    top: 1781px;
     left: 596px;
     width: 24px;
     height: 24px;
@@ -3458,23 +3459,19 @@ li {
 @media (min-width: 992px) {
   .elipse9 {
     left: 81.457%;
-    top: 82.12%;
   }
 }
 
 .elipse7 {
-  top: 2420px;
   left: 163px;
 }
 @media (min-width: 480px) {
   .elipse7 {
-    top: 2220px;
     left: 303px;
   }
 }
 @media (min-width: 768px) {
   .elipse7 {
-    top: 1672px;
     left: 336px;
     width: 24px;
     height: 24px;
@@ -3483,23 +3480,19 @@ li {
 @media (min-width: 992px) {
   .elipse7 {
     left: -3.94%;
-    top: 46%;
   }
 }
 
 .elipse8 {
-  top: 2420px;
   left: 313px;
 }
 @media (min-width: 480px) {
   .elipse8 {
-    top: 2220px;
     left: 453px;
   }
 }
 @media (min-width: 768px) {
   .elipse8 {
-    top: 1672px;
     left: 643px;
     width: 24px;
     height: 24px;
@@ -3508,7 +3501,6 @@ li {
 @media (min-width: 992px) {
   .elipse8 {
     left: 96.68%;
-    top: 46%;
   }
 }
 
@@ -3590,7 +3582,6 @@ li {
 }
 @media (min-width: 480px) {
   .box_make {
-    margin: 250px auto 0px;
     width: 750px;
     height: 265px;
   }

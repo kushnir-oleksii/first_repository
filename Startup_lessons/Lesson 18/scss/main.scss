@@ -593,9 +593,10 @@ $forthColor : #000000;
 };
 .percent {
     left: 20px;
+    @extend %percent;
    
     @media(min-width: 480px){
-        top: 601px;
+        
         left: 274px;
         width: 220px;
     }
@@ -628,9 +629,8 @@ $forthColor : #000000;
 };
 .month {
     left: 20px;
-    
+    @extend %month;    
     @media(min-width: 480px){
-        top: 601px;
         left: 538px;
         width: 220px;
     }
@@ -786,25 +786,25 @@ $forthColor : #000000;
     } 
 };
 .over {
+    @extend %over;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 320px;
     height: max-content;
-    margin-top: 35px;
     margin-left: 65px;  
     @media(min-width: 480px){
-        margin: 35px auto 10px;
-    }  
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    } 
     @media(min-width: 768px){
         width: 992px;
         height: 44px;
-        margin: 5px auto;
     }
     @media(min-width: 992px){
         width: 1400px;
             height: 44px;
-            margin: 5px 0px 0px 0px;
     }
 };
 .over_text {
@@ -1733,8 +1733,8 @@ $forthColor : #000000;
 
 
 .do_i_provode_box {
+    @extend %do_i_provode_box;
     width: 450px;
-    // margin: 10px auto;
     padding-left: 0;
     text-align: center;
     @media(min-width: 768px){
@@ -1747,7 +1747,8 @@ $forthColor : #000000;
         height: 40px;
         padding-left: 426px;
         text-align: left;
-        
+        margin-left: 0px;
+        margin-bottom: 0px;
     }
 };
 .what_do_text {
@@ -1782,22 +1783,20 @@ $forthColor : #000000;
     };   
 }
 .therapeutic_header_box {
+    @extend %therapeutic_header_box;
     position: absolute;
     display: flex;
-    
     left: 60px;
     width: 120px;
     height: 13.5px;
     justify-content: center;
     @media(min-width: 480px){
-        top: 2150px;
         left: 200px;
     };    
     @media(min-width: 768px){
         left: 147px;
         width: 187px;
         height: 27px;
-        top: 1530px;
     };   
     @media(min-width: 992px){
         left: 346px;
@@ -1822,24 +1821,21 @@ $forthColor : #000000;
     }
 };
 .threatment_box {
+    @extend %threatment_box;
     text-align: right;
     position: absolute;
     display: flex;
     width: 169px;
     height: 40px;
-    
     left: 20px;
     text-align: right;
     @media(min-width: 480px){
         left: 155px;
-        top: 2165px;        
     };
     @media(min-width: 768px){
         width: 338px;
         height: 80px;
-        top: 1562px;
         left: 25px;
-        
     };    
     @media(min-width: 992px){
         left: 195px;
@@ -1865,27 +1861,24 @@ $forthColor : #000000;
     }
 };
 .plasmo_header_box  {
+    @extend %plasmo_header_box;
     position: absolute;
     display: flex;
     width: 100px;
     height: 13.5px;
-    top: 2485px;
     left: 300px;
     @media(min-width: 480px){
-        top: 2275px;
         left: 450px;
     };    
     @media(min-width: 768px){
         width: 170px;
         height: 27px;
-        top: 1821px;
         left: 670px;
     };       
     @media(min-width: 992px){
         width: 170px;
         height: 27px;
         position: absolute;
-        top: 1821px;
         left: 815px;
         animation:animation-plasmo_header_box 1.5s linear infinite;
         animation-fill-mode: forwards;
@@ -1908,27 +1901,24 @@ $forthColor : #000000;
     }
 };
 .plasmo_box {
+    @extend %plasmo_box;
     position: absolute;
     display: flex;
     width: 160px;
     height: 40px;
-    top: 2500px;
     left: 300px;
     @media(min-width: 480px){
-        top: 2290px;
         left: 450px;
     };    
     @media(min-width: 768px){
         width: 308px;
         height: 77px;
-        top: 1853px;
         left: 670px;
     };       
     @media(min-width: 992px){
         width: 308px;
         height: 77px;
         position: absolute;
-        top: 1853px;
         left: 815px;
         animation:animation-plasmo_box 1.5s linear infinite;
         animation-fill-mode: forwards;
@@ -1951,27 +1941,25 @@ $forthColor : #000000;
     }
 };
 .nostress_box {
+    @extend %nostress_box;
+
     display: flex;
     width: 148px;
     height: 37px;
     left: 330px;
-   
     position: absolute;
     @media(min-width: 480px){
-        top: 2225px;
         left: 470px;
     };    
     @media(min-width: 768px){
         width: 291px;
         height: 74px;
-        top: 1702px;
         left: 670px;
     };       
     @media(min-width: 992px){
         width: 291px;
         height: 74px;
         position: absolute;
-        top: 1702px;
         left: 914px;
         animation:animation-nostress_box 1.5s linear infinite;
         animation-fill-mode: forwards;
@@ -1994,27 +1982,24 @@ $forthColor : #000000;
     }
 };
 .children_header_box {
+    @extend %children_header_box;
     position: absolute;
     display: flex;
     width: 130px;
     height: 13.5px;
-    
     left: 330px;
     @media(min-width: 480px){
-        top: 2210px;
         left: 470px;
     };    
     @media(min-width: 768px){
         width: 223px;
         height: 27px;
-        top: 1670px;
         left: 670px;
     };       
     @media(min-width: 992px){
         width: 223px;
         height: 27px;
         position: absolute;
-        top: 1670px;
         left: 910px;
         animation:animation-children_header_box 1.5s linear infinite;
         animation-fill-mode: forwards;
@@ -2037,26 +2022,23 @@ $forthColor : #000000;
     }
 };
 .prosthetics_header_box {
+    @extend %prosthetics_header_box;
     position: absolute;
     display: flex;
-    
     width: 85px;
     height: 13.5px;
     left: 320px;
     @media(min-width: 480px){
-        top:2150px;
         left: 460px;
     };    
     @media(min-width: 768px){
-        width: 133px;
+        width: 133px; 
         height: 27px;
-        top: 1530px;
         left: 670px;
     };       
     @media(min-width: 992px){
         width: 133px;
         height: 27px;
-        top: 1530px;
         left: 855px;
         animation:animation-prosthetics_header_box 1.5s linear infinite;
         animation-fill-mode: forwards;
@@ -2079,11 +2061,11 @@ $forthColor : #000000;
     }
 };
 .prosthetics_box {
+    @extend %prosthetics_box;
     position: absolute;
     display: flex;
     width: 145px;
     height: 42px;
-    
     left: 320px;
     @media(min-width: 480px){
         top: 2165px;
@@ -2098,7 +2080,6 @@ $forthColor : #000000;
     @media(min-width: 992px){
         width: 290px;
         height: 80px;
-        top: 1562px;
         left: 855px;
         animation:animation-prosthetics_box 1.5s linear infinite;
         animation-fill-mode: forwards;
@@ -2121,27 +2102,24 @@ $forthColor : #000000;
     }
 };
 .surgical_box {
+    @extend %surgical_box;
     position: absolute;
     display: flex;
-    
     left: 10px;
     width: 142px;
     height: 43.5px;
     text-align: right;
     @media(min-width: 480px){
         left: 150px;
-        top: 2225px;
     };    
     @media(min-width: 768px){
         left: 50px;
         width: 283px;
         height: 87px;
-        top: 1705px;
     };       
     @media(min-width: 992px){
         width: 283px;
         height: 87px;
-        top: 1705px;
         left: 202px;
         text-align: right;
         animation:animation-surgical_box 1.5s linear infinite;
@@ -2165,27 +2143,24 @@ $forthColor : #000000;
     }
 };
 .surgical_header_box {
+    @extend %surgical_header_box;
     position: absolute;
     display: flex;
     width: 100px;
     height: 13.5px;
-    
     left: 67px;
     @media(min-width: 480px){
         left: 217px;
-        top: 2210px;
     };    
     @media(min-width: 768px){
         width: 151px;
         height: 27px;
-        top: 1673px;
         left: 180px;
     };       
     @media(min-width: 992px){
         position: absolute;
         width: 151px;
         height: 27px;
-        top: 1673px;
         left: 329px;
         animation:animation-surgical_header_box 1.5s linear infinite;
         animation-fill-mode: forwards;
@@ -2208,28 +2183,26 @@ $forthColor : #000000;
     }
 };
 .prof_header_box {
+    @extend %prof_header_box;
     position: absolute;
     display: flex;
     width: 190px;
     height: 13.5px;
     left: 263px;
-    
     left:20px;
     @media(min-width: 480px){
-        top: 2275px;
+        // top: 2275px;
         left: 160px;
     };    
     @media(min-width: 768px){
         left:20px;
         width: 317px;
         height: 27px;
-        top: 1821px;
     };       
     @media(min-width: 992px){
         width: 317px;
         height: 27px;
         left: 263px;
-        top: 1821px;
         animation:animation-prof_header_box 1.5s linear infinite;
         animation-fill-mode: forwards;
         animation-delay: 5s; 
@@ -2251,28 +2224,25 @@ $forthColor : #000000;
     }
 };
 .with_help_box {
+    @extend %with_help_box;
     text-align: right;
     position: absolute;
     display: flex;
     width: 150px;
     height: 40px;
-    
     left: 42px;
     @media(min-width: 480px){
-        top: 2290px;
         left: 172px;
     };    
     @media(min-width: 768px){
         width: 295px;
         height: 80px;
-        top: 1853px;
         left: 40px;
     };       
     @media(min-width: 992px){
         width: 295px;
         height: 80px;
         text-align: right;
-        top: 1853px;
         left: 284px;
         animation:animation-with_help_box 1.5s linear infinite;
         animation-fill-mode: forwards;
@@ -2417,20 +2387,18 @@ $forthColor : #000000;
 }
 
 .rectanle35_box {
+    @extend %rectanle35_box;
     position: absolute;
     width: 90px;
     height: 81px;
     left: 200px;
-    top: 2380px;
     @media(min-width: 480px){
-        top: 2180px;
         left: 339px;
     };    
     @media(min-width: 768px){
         width: 180px;
         height: 162px;
         left: 411px;
-        top: 1603px;
     };
     @media(min-width: 992px){
         left: 610px;
@@ -2446,23 +2414,21 @@ $forthColor : #000000;
     };
 };
 
-.elipse3 {    
+.elipse3 {   
+    @extend %elipse3; 
     position: absolute;        
     width: 151px;
     height: 151px;
-    left: 169px;
-    top: 2350px;       
+    left: 169px;      
     border-radius: 50%;
     border: 1px solid $secondColor;
     @media(min-width: 480px){
-        top: 2150px;
         left: 308.5px;
     };    
     @media(min-width: 768px){
         width: 302px;
         height: 302px;
         left: 350px;
-        top: 1533px;
         margin-bottom: 202px;
     };  
     @media(min-width: 992px){
@@ -2484,111 +2450,93 @@ $forthColor : #000000;
     };   
 };
 .elipse4 {
+    @extend %elipse4;
     left: 183px;
-    top: 2370px;
     @media(min-width: 480px){
-        top: 2170px;
         left: 323px;
     };    
     @media(min-width: 768px){
-        top: 1560px;
         left: 383px;
         width: 24px;
         height: 24px;
     };  
     @media(min-width: 992px){
         left: 10.92%;
-        top: 8.94%;
     };
 };
 .elipse5 {
+    @extend %elipse5 ;
     left: 183px;
-    top: 2470px;
     @media(min-width: 480px){
-        top:2270px;
         left: 323px;
     };    
     @media(min-width: 768px){
         left: 383px;
         width: 24px;
         height: 24px;
-        top: 1781px;
     };  
     @media(min-width: 992px){
         left: 10.92%;
-        top: 82.12%;
     };
 };
 .elipse6 {
+    @extend %elipse6;
     left: 293px;
-    top: 2370px;
     @media(min-width: 480px){
-        top: 2170px;
         left: 433px;
     };    
     @media(min-width: 768px){
-        top: 1560px;
         left: 596px;
         width: 24px;
         height: 24px;
     };  
     @media(min-width: 992px){
         left: 81.45%;
-        top: 8.94%
     };
 };
 .elipse9 {
+    @extend %elipse9;
     left: 293px;
-    top: 2470px;
     @media(min-width: 480px){
-        top: 2270px;
         left: 433px;
     };    
     @media(min-width: 768px){
-        top: 1781px;
         left: 596px;
         width: 24px;
         height: 24px;
     };  
     @media(min-width: 992px){
         left: 81.457%;
-        top: 82.12%;
     };
 };
 .elipse7 {
-    top: 2420px;
+    @extend %elipse7;
     left: 163px;
     @media(min-width: 480px){
-        top: 2220px;
         left: 303px;
     };    
     @media(min-width: 768px){
-        top: 1672px;
         left: 336px;
         width: 24px;
         height: 24px;
     };  
     @media(min-width: 992px){
         left: -3.94%;
-        top: 46%;
     };
 };
 .elipse8 {
-    top: 2420px;
+    @extend %elipse8;
     left: 313px;
     @media(min-width: 480px){
-        top: 2220px;
         left: 453px;
     };    
     @media(min-width: 768px){
-        top: 1672px;
         left: 643px;
         width: 24px;
         height: 24px;
     };  
     @media(min-width: 992px){
         left: 96.68%;
-        top: 46%;
     };
 };
 
@@ -2651,7 +2599,7 @@ $forthColor : #000000;
 
 
 .box_make {
-    
+    @extend %box_make;
     width: 422.5px;
     height: 132.5px;
     display: flex;
@@ -2662,12 +2610,10 @@ $forthColor : #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     @media(min-width: 480px){
-        margin: 250px auto 0px;
         width: 750px;
         height: 265px;
     }
     @media(min-width: 768px){
-      
         width: 845px;        
     }
     @media(min-width: 992px){ 
