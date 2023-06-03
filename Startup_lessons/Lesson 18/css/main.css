@@ -37,7 +37,7 @@ li {
   line-height: 130%;
 }
 
-.fill_text, .threatment_text, .prosthetics_text, .surgical_text, .nostress_text, .with_help_text, .plasmo_text, .what_do_text, .copyright_text, .footer_nikola_text, .street_text, .footer_phone_text, .instagram_text, .email_text, .footer_languages_en_text, .home_box_text, .footer_services_box_text, .mon_fri_text, .exclusively, .one_number_text, .over_text, .why_you_text, .why_box_text, .month_box_text, .years_text, .phone_number_text {
+.fill_text, .threatment_text, .prosthetics_text, .surgical_text, .nostress_text, .with_help_text, .plasmo_text, .what_do_text, .copyright_text, .footer_nikola_text, .street_text, .footer_phone_text, .instagram_text, .email_text, .footer_languages_en_text, .home_box_text, .footer_services_box_text, .mon_fri_text, .exclusively, .one_number_text, .over_text, .why_you_text, .why_box_text, .month_box_text, .years_text, .years_number_text, .phone_number_text {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -1247,9 +1247,6 @@ li {
 }
 
 .years_number_text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 65px;
   color: #46B1DE;
 }

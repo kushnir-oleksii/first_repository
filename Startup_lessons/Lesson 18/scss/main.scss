@@ -72,28 +72,28 @@
 };
 .button_burger > span{
     display: block;
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  background-color: black;
-  transition: 0.5s;
-  &::before {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    transition: 0.5s;
+    &::before {
     display: block;
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  background-color: black;
-  transition: 0.5s;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    transition: 0.5s;
     content: " ";
     top: -4px;
   }
   &::after {
     display: block;
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  background-color: black;
-  transition: 0.5s;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    transition: 0.5s;
     content: "";
     top: 4px;
   }
@@ -179,9 +179,9 @@
     };
     @media(min-width: 768px){
         width: 991px;
-            height: 663px;
-            margin: 0 auto;
-            background-position: left top;
+        height: 663px;
+        margin: 0 auto;
+        background-position: left top;
     };
     @media (min-width: 992px) {
         width: 1400px;   
@@ -647,9 +647,7 @@
     align-items: center;
 };
 .years_number_text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
+    @extend %title_Whyyou_Exactly_Phone_number_text;
     font-size: 65px;
     color: $mainColor;
     @media(min-width: 480px){
