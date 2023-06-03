@@ -37,7 +37,7 @@ li {
   line-height: 130%;
 }
 
-.fill_text, .threatment_text, .prosthetics_text, .surgical_text, .nostress_text, .with_help_text, .plasmo_text, .what_do_text, .why_you_text, .why_box_text, .phone_number_text {
+.fill_text, .threatment_text, .prosthetics_text, .surgical_text, .nostress_text, .with_help_text, .plasmo_text, .what_do_text, .copyright_text, .footer_nikola_text, .street_text, .footer_phone_text, .instagram_text, .email_text, .footer_languages_en_text, .home_box_text, .footer_services_box_text, .mon_fri_text, .exclusively, .one_number_text, .over_text, .why_you_text, .why_box_text, .month_box_text, .years_text, .phone_number_text {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -50,10 +50,16 @@ li {
   line-height: 140%;
 }
 
-.sign_up_box, .box_form_phone_image, .button_sign, .box_form_phone, .fill, .box_appointment, .box_make, .phone_logo, .phone, .button_burger {
+.sign_up_box, .box_form_phone_image, .button_sign, .box_form_phone, .fill, .box_appointment, .box_make, .elipse4, .elipse6, .elipse7, .elipse8, .elipse5, .elipse9, .plus4, .copyright_text_box, .copyright_img_box, .copyright, .email_img, .languages_en, .languages_ua, .footer_languages, .box_one_number, .why, .percent_number, .box_services_button, .box_call_button, .phone_number, .phone_logo, .phone, .button_burger {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.sign_up, .box_your_name, .form_phone_number, .therapeutic_header_text, .prosthetics_header_text, .surgical_header_text, .children_header_text, .prof_header_text, .plasmo_header_text, .services_bold_text, .footer_contacts_text, .working_text, .footer_languages_ua_text, .services_button_text, .call_button_text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
 }
 
 .why {
@@ -299,7 +305,7 @@ li {
 }
 @media (min-width: 992px) {
   .over {
-    margin: 5px 0px 0px 0px;
+    margin: 5px;
   }
 }
 
@@ -870,9 +876,6 @@ li {
 }
 
 .phone_number {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 109px;
   height: 14px;
   margin-left: 2px;
@@ -1041,9 +1044,6 @@ li {
   height: 35px;
   left: 10px;
   top: 288px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: linear-gradient(97.59deg, #46B1DE 9.8%, #0591CC 95.1%);
   box-shadow: 0px 2px 10px #46B1DE;
   border-radius: 8px;
@@ -1077,9 +1077,6 @@ li {
   }
 }
 .call_button_text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 600;
   font-size: 19px;
   line-height: 140%;
   color: #FFFFFF;
@@ -1091,9 +1088,6 @@ li {
   left: 210px;
   top: 288px;
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: #FFFFFF;
   box-shadow: 0px 2px 10px #DDE0DC;
   border-radius: 8px;
@@ -1111,9 +1105,6 @@ li {
 }
 
 .services_button_text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 600;
   font-size: 19px;
   line-height: 140%;
   color: #46B1DE;
@@ -1281,9 +1272,6 @@ li {
 }
 
 .years_text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   color: #1B1D1F;
@@ -1302,9 +1290,6 @@ li {
 .percent_number {
   width: 133px;
   height: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-left: 4px;
 }
 
@@ -1339,9 +1324,6 @@ li {
 .why {
   width: 320px;
   height: max-content;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 @media (min-width: 768px) {
   .why {
@@ -1426,9 +1408,6 @@ li {
 }
 
 .over_text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 140%;
   color: #000000;
@@ -1512,18 +1491,12 @@ li {
 }
 
 .box_one_number {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 80px;
   height: 56px;
   text-align: center;
 }
 
 .one_number_text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 40px;
   line-height: 47px;
   color: #46B1DE;
@@ -1552,9 +1525,6 @@ li {
 }
 
 .exclusively {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #1B1D1F;
@@ -1792,9 +1762,6 @@ li {
 }
 
 .home_box_text, .footer_services_box_text, .mon_fri_text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   color: #0F2D4A;
 }
 @media (min-width: 768px) {
@@ -1831,10 +1798,7 @@ li {
   height: 16px;
   top: 189px;
   left: 10px;
-  display: flex;
   position: absolute;
-  justify-content: center;
-  align-items: center;
 }
 @media (min-width: 768px) {
   .footer_languages {
@@ -1846,9 +1810,6 @@ li {
 }
 
 .languages_ua {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 19px;
   height: 16px;
   margin-left: 0px;
@@ -1863,9 +1824,6 @@ li {
 }
 
 .footer_languages_ua_text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 600;
   color: #000000;
   font-size: 14px;
   line-height: 16px;
@@ -1894,9 +1852,6 @@ li {
 .languages_en {
   width: 18px;
   height: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
 }
 @media (min-width: 768px) {
@@ -1908,9 +1863,6 @@ li {
 }
 
 .footer_languages_en_text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   color: #000000;
@@ -1970,9 +1922,6 @@ li {
 }
 
 .working_text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 600;
   font-size: 14.2648px;
   line-height: 17px;
   color: #0F2D4A;
@@ -2034,9 +1983,6 @@ li {
 }
 
 .footer_contacts_text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 600;
   font-size: 21px;
   line-height: 25px;
   color: #FFFFFF;
@@ -2064,9 +2010,6 @@ li {
 }
 
 .footer_nikola_text, .street_text, .footer_phone_text, .instagram_text, .email_text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   color: #FFFFFF;
 }
 
@@ -2331,9 +2274,6 @@ li {
 }
 
 .email_img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 27.46px;
   height: 27.46px;
   margin-left: 0px;
@@ -2412,13 +2352,10 @@ li {
 }
 
 .copyright {
-  display: flex;
   width: 93.53px;
   height: 15px;
   margin-top: 32.61px;
   margin-left: 172.46px;
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
 @media (min-width: 480px) {
@@ -2431,12 +2368,9 @@ li {
 }
 
 .copyright_img_box {
-  display: flex;
   width: 8.58px;
   height: 8.58px;
   margin-right: -2.66px;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   margin-top: 3.43px;
   margin-bottom: 2.99px;
@@ -2461,11 +2395,8 @@ li {
 }
 
 .copyright_text_box {
-  display: flex;
   width: 86.66px;
   height: 15px;
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
 @media (min-width: 480px) {
@@ -2476,9 +2407,6 @@ li {
 }
 
 .copyright_text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 11.1548px;
   line-height: 15px;
   color: #FFFFFF;
@@ -2564,9 +2492,6 @@ li {
 }
 
 .services_bold_text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 600;
   font-size: 17px;
   line-height: 20px;
   color: #46B1DE;
@@ -3172,9 +3097,6 @@ li {
 }
 
 .therapeutic_header_text, .prosthetics_header_text, .surgical_header_text, .children_header_text, .prof_header_text, .plasmo_header_text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 600;
   font-size: 10px;
   line-height: 13.5px;
   color: #46B1DE;
@@ -3239,12 +3161,9 @@ li {
   }
 }
 .plus4 {
-  display: flex;
   width: 5.5px;
   height: 12.5px;
   margin: 0px;
-  justify-content: center;
-  align-items: center;
 }
 @media (min-width: 768px) {
   .plus4 {
@@ -3336,11 +3255,8 @@ li {
 
 .elipse4, .elipse6, .elipse7, .elipse8, .elipse5, .elipse9 {
   position: absolute;
-  display: flex;
   width: 12px;
   height: 12px;
-  justify-content: center;
-  align-items: center;
   background-color: #46B1DE;
   border-radius: 50%;
 }
@@ -3804,9 +3720,6 @@ li {
   border-radius: 4px;
   background: rgba(217, 217, 217, 0.71);
   border-radius: 8px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 600;
   font-size: 9.5px;
   line-height: 13.5px;
   color: rgba(27, 29, 31, 0.51);
@@ -3902,9 +3815,6 @@ li {
 }
 
 .sign_up {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 600;
   font-size: 9.5px;
   line-height: 10px;
   text-align: center;

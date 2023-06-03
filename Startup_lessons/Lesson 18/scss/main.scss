@@ -327,9 +327,7 @@
     height: 15px;
 };
 .phone_number {
-    display: flex;
-    justify-content: center;
-    align-items: center;        
+    @extend %displayflexJustifycenterAligncenter;        
     width: 109px;
     height: 14px;
     margin-left: 2px;
@@ -467,10 +465,8 @@
     width: 100px;
     height: 35px;
     left: 10px;
-    top: 288px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    top: 288px; 
+    @extend %displayflexJustifycenterAligncenter;
     background: linear-gradient(97.59deg, #46B1DE 9.8%, #0591CC 95.1%);
     box-shadow: 0px 2px 10px $mainColor;
     border-radius: 8px;
@@ -491,7 +487,6 @@
         top: 557px;
         opacity: 0;
         visibility: hidden;
-
     }
     to {
         top: 487x;
@@ -501,9 +496,7 @@
     }            
 };
 .call_button_text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 600;
+    @extend %robotoNormal_600;
     font-size: 19px;
     line-height: 140%;
     color: $thirdColor;
@@ -515,9 +508,7 @@
     left:210px;
     top: 288px;
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %displayflexJustifycenterAligncenter;
     background: $thirdColor;
     box-shadow: 0px 2px 10px #DDE0DC;
     border-radius: 8px;
@@ -532,9 +523,7 @@
     }
 };
 .services_button_text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 600;
+    @extend %robotoNormal_600;
     font-size: 19px;
     line-height: 140%;
     color: $mainColor;
@@ -634,11 +623,8 @@
     }
 };
 .month {
-            
     animation-duration: 2s;
     animation-name: month-animation;
-    
-    
 }
 @keyframes month-animation {
     from {
@@ -652,7 +638,6 @@
         visibility: visible;
         transition: opacity 0.3s, visibility 0.3s
     }
-    
 };
 .years_number {
     width: 93px;
@@ -681,9 +666,7 @@
     margin: 35px 34px 21px 7px;    
 };
 .years_text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
+    @extend %title_Whyyou_Exactly_Phone_number_text;
     font-size: 14px;
     line-height: 16px;
     color: $secondColor;
@@ -697,9 +680,7 @@
 .percent_number {
     width: 133px;
     height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %displayflexJustifycenterAligncenter;
     margin-left: 4px;
 };
 .percent_box_text {
@@ -719,6 +700,7 @@
     display: flex;
     width: 165px;
     height: 48px;
+    @extend %title_Whyyou_Exactly_Phone_number_text;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
@@ -730,9 +712,7 @@
 .why {
     width: 320px;
     height: max-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %displayflexJustifycenterAligncenter;
     @extend %why;
     @media(min-width: 768px){
         width: 991px;
@@ -798,9 +778,7 @@
     }
 };
 .over_text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
+    @extend %title_Whyyou_Exactly_Phone_number_text;
     font-size: 16px;
     line-height: 140%;
     color: $forthColor;
@@ -865,17 +843,13 @@
     display: flex;
 };
 .box_one_number {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %displayflexJustifycenterAligncenter;
     width: 80px;
     height: 56px;
     text-align: center;
 };
 .one_number_text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
+    @extend %title_Whyyou_Exactly_Phone_number_text;
     font-size: 40px;
     line-height: 47px;
     color: $mainColor;        
@@ -901,9 +875,7 @@
 
 };
 .exclusively {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
+    @extend %title_Whyyou_Exactly_Phone_number_text;
     font-size: 16px;
     line-height: 19px;
     color: $secondColor;
@@ -1102,9 +1074,7 @@
     }
 }
 .home_box_text, .footer_services_box_text, .mon_fri_text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
+    @extend %title_Whyyou_Exactly_Phone_number_text;
     color: #0F2D4A;
     @media(min-width: 768px){
         font-size: 20px;
@@ -1129,14 +1099,12 @@
     }  
 };
 .footer_languages {
+    @extend %displayflexJustifycenterAligncenter;
     width: 53px;
     height: 16px;
     top: 189px;
     left: 10px;
-    display: flex;
     position: absolute;
-    justify-content: center;
-    align-items: center;  
     @media(min-width: 768px){
         width: 73px;
         height: 23px;
@@ -1145,9 +1113,7 @@
     }   
 };
 .languages_ua {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %displayflexJustifycenterAligncenter;
     width: 19px;
     height: 16px;
     margin-left: 0px;
@@ -1159,9 +1125,7 @@
     }
 };
 .footer_languages_ua_text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 600;
+    @extend %robotoNormal_600;
     color: #000000;
     font-size: 14px;
     line-height: 16px;
@@ -1184,9 +1148,7 @@
 .languages_en {
     width: 18px;
     height: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %displayflexJustifycenterAligncenter;
     position: relative;
     @media(min-width: 768px){
         width: 26px;
@@ -1195,9 +1157,7 @@
     }
 };
 .footer_languages_en_text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
+    @extend %title_Whyyou_Exactly_Phone_number_text;
     font-size: 14px;
     line-height: 16px;
     color: $forthColor;
@@ -1248,9 +1208,7 @@
     }
 };
 .working_text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 600;
+    @extend %robotoNormal_600;
     font-size: 14.2648px;
     line-height: 17px;
     color: #0F2D4A;
@@ -1298,9 +1256,7 @@
     }
 };
 .footer_contacts_text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 600;
+    @extend %robotoNormal_600;
     font-size: 21px;
     line-height: 25px;
     color: $thirdColor;
@@ -1322,9 +1278,7 @@
     }
 };
 .footer_nikola_text, .street_text, .footer_phone_text, .instagram_text, .email_text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
+    @extend %title_Whyyou_Exactly_Phone_number_text;
     color: $thirdColor;
 };
 .footer_nikola_text, .street_text, .footer_phone_text, .instagram_text, .email_text {
@@ -1548,9 +1502,7 @@
     }
 };
 .email_img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %displayflexJustifycenterAligncenter;
     width: 27.46px;
     height: 27.46px;
     margin-left: 0px;
@@ -1618,13 +1570,11 @@
     };
 };
 .copyright {
-    display: flex;
+    @extend %displayflexJustifycenterAligncenter;
     width: 93.53px;
     height: 15px;
     margin-top: 32.61px;
     margin-left: 172.46px;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     @media(min-width: 480px){
         width: 109px;
@@ -1634,12 +1584,10 @@
     }
 };
 .copyright_img_box {
-    display: flex;
+    @extend %displayflexJustifycenterAligncenter;
     width: 8.58px;
     height: 8.58px;
     margin-right: -2.66px;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     margin-top: 3.43px;
     margin-bottom: 2.99px;
@@ -1658,11 +1606,9 @@
     }
 };
 .copyright_text_box {
-    display: flex;
+    @extend %displayflexJustifycenterAligncenter;
     width: 86.66px;
     height: 15px;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     @media(min-width: 480px){
         width: 101px;
@@ -1670,9 +1616,7 @@
     }
 };
 .copyright_text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
+    @extend %title_Whyyou_Exactly_Phone_number_text;
     font-size: 11.1548px;
     line-height: 15px;
     color: $thirdColor;
@@ -1747,9 +1691,7 @@
     };    
 };
 .services_bold_text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 600;
+    @extend %robotoNormal_600;
     font-size: 17px;
     line-height: 20px;
     color: $mainColor;
@@ -2277,9 +2219,7 @@
     }; 
 };
 .therapeutic_header_text, .prosthetics_header_text, .surgical_header_text, .children_header_text, .prof_header_text, .plasmo_header_text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 600;
+    @extend %robotoNormal_600;
     font-size: 10px;
     line-height: 13.5px;
     color: $mainColor;
@@ -2339,12 +2279,10 @@
     
 };
 .plus4{
-    display: flex;
+    @extend %displayflexJustifycenterAligncenter;
     width: 5.5px;
     height: 12.5px;
     margin: 0px;
-    justify-content: center;
-    align-items: center;
     @media(min-width: 768px){
         width: 11px;
         height: 25px;
@@ -2416,12 +2354,10 @@
     }; 
 };
 .elipse4, .elipse6, .elipse7, .elipse8, .elipse5, .elipse9 {
+    @extend %displayflexJustifycenterAligncenter;
     position: absolute;
-    display: flex;
     width: 12px;
-    height: 12px;        
-    justify-content: center;
-    align-items: center; 
+    height: 12px;    
     background-color: $mainColor;
     border-radius: 50%;     
     @media(min-width: 992px){
@@ -2787,9 +2723,7 @@
     border-radius: 4px;
     background: rgba(217, 217, 217, 0.71);
     border-radius: 8px;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 600;
+    @extend %robotoNormal_600;
     font-size: 9.5px;
     line-height: 13.5px;
     color: rgba(27, 29, 31, 0.51);   
@@ -2865,9 +2799,7 @@
     }
 };
 .sign_up {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 600;
+    @extend %robotoNormal_600;
     font-size: 9.5px;
     line-height: 10px;
     text-align: center;
