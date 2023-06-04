@@ -1,0 +1,48 @@
+/*NULL*/
+h1,h2,h3,p{margin: 0;}
+/*NULL*/
+
+.wrapper{
+    max-width: 670px;
+}
+.title{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 0px;
+    background-color: #46b1de;
+    margin-bottom: 15px;
+}
+.article{
+    background-color: olivedrab;
+}
+.article__title{
+    margin-bottom: 10px;
+}
+.article__title h2{
+    text-align: center;
+}
+.black-border {
+    border: 4px solid black;   
+    padding: 5px; 
+}
+.article__body {
+    padding: 0px 10px ;
+}
+.article__actions {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0px ;
+   
+}
+.button {
+    background-color: orange;
+    padding: 5px 15px;
+    border-radius: 8px;
+    
+    
+}
+.article__autor{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 5px 5px 5px;
+}
