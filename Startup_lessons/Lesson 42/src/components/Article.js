@@ -8,8 +8,8 @@ class Article extends Component {
         return (
             <div className="article">
             {this.props.children}
-            <ArticleBody lang={this.props.lang} />
-            <ArticleActions lang={this.props.lang}/>
+            <ArticleBody />
+            <ArticleActions />
             </div>
             );
     }

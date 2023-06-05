@@ -4,11 +4,9 @@ import ArticleAuthor from "./components/ArticleAuthor";
 
 function App() {
   const article = {
-    description: "Описание статьи:",
-    preview:
-      "NVIDIA в Azure привносит искусственный интеллект, сетевые возможности и высокопроизводительные вычисления в предприятия.",
-    content:
-      "Microsoft Azure и NVIDIA предоставляют предприятиям в облаке возможность использовать комбинированную мощность ускоренных вычислений NVIDIA и сетевых возможностей NVIDIA по требованию для различных вычислительных задач в области искусственного интеллекта, машинного обучения, анализа данных, графики, виртуальных рабочих столов и высокопроизводительных вычислений (HPC). От дробных GPU и одного GPU до нескольких GPU на нескольких узлах для распределенных вычислений — выбирайте подходящее ускорение GPU для своих задач.",
+    description: 'Article description:',
+    preview:'NVIDIA on Azure is bringing AI, networking, and high-performance computing to the enterprise.',
+    content:'Microsoft Azure and NVIDIA empower enterprises in the cloud to harness the combined power of NVIDIA accelerated computing and NVIDIA networking on demand to meet the diverse computational requirements of AI, machine learning, data analytics, graphics, virtual desktop, and high-performance computing (HPC) applications. From fractional GPUs and single GPUs to multiple GPUs across multiple nodes for distributed computing, access the right-sized GPU acceleration for your workloads.',
   };
 
   const [isShow, setIsShow] = useState(false);
@@ -28,24 +26,23 @@ function App() {
   const markAsUnread = () => {
     setIsRead(false);
   };
-
   return (
     <div className="wrapper">
-      <h1 className="title">Новости NVIDIA</h1>
+      <h1 className="title">NVIDIA news</h1>
       <div className={`article ${isRead ? "read" : ""}`}>
         <div className={`article__title ${isRead ? "read" : ""}`}>
-          <h2>Ускоренный искусственный интеллект NVIDIA в Azure</h2>
+          <h2>NVIDIA Accelerated AI on Azure</h2>
         </div>
         <ArticleBody read={isRead} show={isShow} text={article} />
         <div className="article__actions">
           <button
             onClick={markAsRead}
-            className={`article__btn ${isRead ? "read" : ""} ${isShow ? "hidden" : ""}`}
+            className={`article__btn ${isRead ? "read" : ""} ${isShow ? "hidden" : "read"}`}
           >
             Mark as read
           </button>
           <button onClick={toggleArticle} className="article__btn">
-            {isShow ? "Закрыть" : "Читать"}
+            {isShow ? "Close" : "Read"}
           </button>
           <button onClick={markAsUnread} className="article__btn">
             Mark as unread

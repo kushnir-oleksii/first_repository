@@ -2,6 +2,7 @@ import React, {Component, createContext} from "react";
 import ArticleBody from "./components/ArticleBody";
 import ArticleActions from "./components/ArticleActions";
 import Article from "./components/Article";
+import LangContext from "./components/lang-context";
 
 
 let EN = {
@@ -62,8 +63,9 @@ class App extends Component{
   render(){
     return (
       <div className="wrapper">
+        <LangContext.Provider value={this.state.lang}>
        <h1 className="title">{this.state.lang.title}</h1>
-          <Article lang={this.state.lang}>
+          <Article>
           </Article>
         <div className="lang">
           <button onClick={this.SetLangUA.bind(this)} 
@@ -71,6 +73,7 @@ class App extends Component{
           <button onClick={this.SetLangEN.bind(this)}
            className="lang-btn">EN</button>
         </div>
+        </LangContext.Provider>
       </div> )}}
 
 export default App;

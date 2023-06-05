@@ -1,18 +1,16 @@
 import React from "react";
-import ArticleBody from "./ArticleBody";
 
-function Article(props) {
-  const { show, text } = props;
+function ArticleBody(props) {
+  const { read, show, text } = props;
 
   return (
-    <>
-      {show && (
-        <div>
-          <ArticleBody text={text} />
-        </div>
+    <div className={`article__body ${read ? "read" : ""}`}>
+      {!show && (
+        <h3 className="article__description">{text.description}</h3>
       )}
-    </>
+      <p className="article__text">{show ? text.content : text.preview}</p>
+    </div>
   );
 }
 
-export default Article;
+export default ArticleBody;
