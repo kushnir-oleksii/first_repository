@@ -44,7 +44,7 @@ function App() {
   useEffect(() => {
     localStorage.setItem("products", JSON.stringify(products));
 
-    // Update the visibility of "Remove" buttons
+    
     setShowRemoveCoffee(products.coffe > 0);
     setShowRemoveSugar(products.sugar > 0);
   }, [products]);
