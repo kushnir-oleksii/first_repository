@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Product from "./components/Product";
+import Add from "./components/Add";
 
 function App() {
   const productsList = [
@@ -9,6 +10,14 @@ function App() {
   const [products, setProducts] = useState(productsList);
   const [productName, setProductName] = useState('');
   const [productPrice, setProductPrice] = useState('');
+
+  const handleProductNameChange = (e) => {
+    setProductName(e.target.value);
+  };
+
+  const handleProductPriceChange = (e) => {
+    setProductPrice(e.target.value);
+  };
 
   const addProducts = () => {
     if (productPrice <= 0) {
@@ -35,23 +44,13 @@ function App() {
 
   return (
     <div className="wrapper">
-      <div className="add">
-        <label>Product name</label>
-        <input
-          onInput={(e) => setProductName(e.target.value)}
-          type="text"
-          value={productName}
-        />
-        <label>Product price</label>
-        <input
-          onInput={(e) => setProductPrice(e.target.value)}
-          type="number"
-          value={productPrice}
-        />
-        <button onClick={addProducts} type="button">
-          Add
-        </button>
-      </div>
+      <Add
+        productName={productName}
+        productPrice={productPrice}
+        handleProductNameChange={handleProductNameChange}
+        handleProductPriceChange={handleProductPriceChange}
+        addProducts={addProducts}
+      />
       <div className="list">
         {products.map((product) => (
           <Product
