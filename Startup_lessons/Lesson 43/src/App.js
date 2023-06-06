@@ -82,20 +82,18 @@ function App() {
         </div>
         <ArticleBody read={isRead} show={isShow} text={article} />
         <div className="article__actions">
-          <button
-            onClick={markAsRead}
-            className={`article__btn ${
-              isRead ? "read" : ""
-            } ${isShow ? "hidden" : "read"}`}
-          >
-            {lang.Mark_as_read}
-          </button>
-          <button onClick={toggleArticle} className="article__btn">
-            {isShow ? "Close" : lang.button_text}
-          </button>
-          <button onClick={markAsUnread} className="article__btn">
+        <button
+  onClick={markAsRead}
+  className={`article__btn ${isShow ? "hidden" : ""}`}
+>
+  {lang.Mark_as_read}
+</button>
+        <button onClick={toggleArticle} className="article__btn">
+          {isShow ? lang.button_text_close : lang.button_text}
+        </button>
+        <button onClick={markAsUnread} className="article__btn">
           {lang.Mark_as_unread}
-          </button>
+        </button>
         </div>
         <ArticleAuthor lang={lang} />
       </div>
