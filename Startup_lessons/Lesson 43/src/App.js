@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ArticleBody from "./components/ArticleBody";
 import ArticleAuthor from "./components/ArticleAuthor";
+import Article from "./Article";
 
 function App() {
   let EN = {
