@@ -1,19 +1,33 @@
 import React from "react";
 
-function Add({ productName, productPrice, handleProductNameChange, handleProductPriceChange, addProducts }) {
+function Add({
+  productName,
+  productPrice,
+  handleProductNameChange,
+  handleProductPriceChange,
+  validateName,
+  validatePrice,
+  isValidateName,
+  isValidatePrice,
+  addProducts
+}) {
   return (
     <div className="add">
-      <label>Product name</label>
+      <label style={{ color: isValidateName ? 'black' : 'brown' }}>Product name</label>
       <input
+        style={{ backgroundColor: isValidateName ? '#fff' : '#ee6060' }}
+        onBlur={validateName}
         onInput={handleProductNameChange}
-        type="text"
         value={productName}
+        type="text"
       />
-      <label>Product price</label>
+      <label style={{ color: isValidatePrice ? 'black' : 'brown' }}>Product price</label>
       <input
+        style={{ backgroundColor: isValidatePrice ? '#fff' : '#ee6060' }}
+        onBlur={validatePrice}
         onInput={handleProductPriceChange}
-        type="number"
         value={productPrice}
+        type="number"
       />
       <button onClick={addProducts} type="button">
         Add

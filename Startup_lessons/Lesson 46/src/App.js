@@ -10,6 +10,8 @@ function App() {
   const [products, setProducts] = useState(productsList);
   const [productName, setProductName] = useState('');
   const [productPrice, setProductPrice] = useState('');
+  const [isValidateName, setIsValidateName] = useState(true);
+  const [isValidatePrice, setIsValidatePrice] = useState(true);
 
   const handleProductNameChange = (e) => {
     setProductName(e.target.value);
@@ -19,14 +21,17 @@ function App() {
     setProductPrice(e.target.value);
   };
 
-  const addProducts = () => {
-    if (productPrice <= 0) {
-      alert('The price should be more than 0');
-      return;
-    }
+  const validateName = () => {
+    setIsValidateName(productName.trim().length >= 2);
+  };
 
-    if (productName.trim().length < 2) {
-      alert('Product name should contain at least 2 symbols');
+  const validatePrice = () => {
+    setIsValidatePrice(productPrice > 0);
+  };
+
+  const addProducts = () => {
+    if (!isValidateName || !isValidatePrice) {
+      alert('The price should be more than 0 and Product name should contain at least 2 symbols');
       return;
     }
 
@@ -49,6 +54,10 @@ function App() {
         productPrice={productPrice}
         handleProductNameChange={handleProductNameChange}
         handleProductPriceChange={handleProductPriceChange}
+        validateName={validateName}
+        validatePrice={validatePrice}
+        isValidateName={isValidateName}
+        isValidatePrice={isValidatePrice}
         addProducts={addProducts}
       />
       <div className="list">
