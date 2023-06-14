@@ -1,3 +1,5 @@
+//task1
+
 // import React, { useState } from "react";
 
 // function App() {
@@ -95,6 +97,8 @@
 // }
 
 // export default App;
+
+//task2
 
 // import React from "react";
 // import { Formik, Form, Field, ErrorMessage } from "formik";
@@ -201,6 +205,7 @@
 
 // export default App;
 
+//task3
 
 import React from "react";
 import { useForm } from "react-hook-form";
