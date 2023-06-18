@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="./css/_null.css">
     <link rel="stylesheet" href="./css/main.css">
-
+    <script defer src="./src/App.js"></script>
+    <title>Document</title>
+    
 </head>
 <body>
+    
     <section class="first_screen">
-       
         <div class="hydra_img">
-
         </div>
-        
         <div class="Hydra">
             <div class="letter_H"></div>
             <div class="letter_Y"></div>
@@ -22,12 +21,36 @@
             <div class="letter_R"></div>
             <div class="letter_A"></div>
         </div>
-        <div class="burger-menu">
+
+        <div class="hamburger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="vector1">
+            <img class="vector1_img" src="/Startup_lessons/Project/src/assets/img/Vector1.png" alt="">
+        </div>
+        <div class="vector2">
+            <img class="vector2_img" src="/Startup_lessons/Project/src/assets/img/Vector2.png" alt="">
+        </div>
+        <div class="vector3">
+            <img class="vector3_img" src="/Startup_lessons/Project/src/assets/img/Vector3.png" alt="">
+        </div>
+            <!-- <button class="burger-menu">
             <span class="line"></span>
             <span class="line"></span>
             <span class="line"></span>
-          </div>
-          
+        </button> -->
+        <!-- <div class="burger_box">
+            <input type="checkbox" id="burger_menu">
+            <label class="button_burger" for="burger_menu">
+              <span class="burger_line"></span>
+              <span class="burger_line"></span>
+              <span class="burger_line"></span>
+            </label>
+          </div> -->
+
+
         <div class="Rectangle4">
             <div class="Rectangle5"></div>
         </div>
@@ -50,16 +73,11 @@
                 <span class="location_text">Union St, Seattle, WA 98101,<br>United States</span>
             </div>
             <div class="circle_left_box">
-                
-                    <a class="circle_left" href="#"></a>
-                    
-                
+                <a class="circle_left" href="#"></a>
             </div>
             <div class="right">
                 <a class="circle_right" href="#"></a>
-
             </div>
-           
         </div>
         <div class="introduction_box">
             <span class="introduction_text">INTRODUCTION</span>
@@ -120,15 +138,15 @@
         <div class="slider_button_right_box">
             <button class="slider_button_right_box_inside">
                 <a href="https://www.google.com/" target="_blank">
-                <div class="slider_button_right"></div>
-            </a>
+                    <div class="slider_button_right"></div>
+                </a>
             </button>
         </div>
         <div class="slider_button_left_box">
             <button class="slider_button_left_box_inside">
                 <a href="https://www.google.com/" target="_blank">
-                <div class="slider_button_left"></div>
-            </a>
+                    <div class="slider_button_left"></div>
+                </a>
             </button>
         </div>
         <div class="Mask_group">
@@ -140,7 +158,125 @@
             </div>
 
         </div>
+        <div class="hydra_tech"></div>
+        <div class="hydra_tech_button_left_box">
+            <button class="hydra_tech_button_left_box_inside">
+                <a href="https://www.google.com/" target="_blank">
+                    <div class="hydra_tech_button_left"></div>
+                </a>
+            </button>
+        </div>
+        <div class="hydra_tech_button_right_box">
+            <button class="hydra_tech_button_right_box_inside">
+                <a href="https://www.google.com/" target="_blank">
+                    <div class="hydra_tech_button_right"></div>
+                </a>
+            </button>
+        </div>
+        <div class="HOW_WE_BUILD_box">
+            <span class="HOW_WE_BUILD_text">HOW WE BUILD</span>
+        </div>
+        <div class="WITH_HYDRA_VR_box">
+            <span class="WITH_HYDRA_VR_text">WITH HYDRA VR?</span>
+        </div>
+        <div class="how_we_build_steps">
+            <div class="how_we_build_circle">
+                <div class="how_we_build_circle_inside">
+                    <span class="how_we_build_circle_inside_text">01</span>
+                </div>
+            </div>
+        </div>
+        <div class="how_we_build_description_box">
+            <span class="how_we_build_description_text">
+                3D Conception<br>
+                & Design</span>
+        </div>
+        <div class="how_we_build_button_left_box">
+            <button class="how_we_build_button_left_box_inside">
+                <a href="https://www.google.com/" target="_blank">
+                    <div class="how_we_build_button_left"></div>
+                </a>
+            </button>
+        </div>
+        <div class="how_we_build_button_right_box">
+            <button class="how_we_build_button_right_box_inside">
+                <a href="https://www.google.com/" target="_blank">
+                    <div class="how_we_build_button_right"></div>
+                </a>
+            </button>
+        </div>
+        <div class="contact_form">
+            <div class="JOIN_HYDRA_box">
+                <span class="JOIN_HYDRA_text">JOIN HYDRA</span>
+            </div>
+            <div class="contact_form_line"></div>
+            <div class="lets_build_box">
+                <span class="lets_build_text">
+                    Let’s Build<br>
+                    Your VR Experience
+                </span>
+            </div>
+            <form class="first_name_box" action="" method="post">
+                <input 
+                    class="first_name" 
+                    type="text" 
+                    name=""
+                    id=""
+                    placeholder="First Name">
+            </form>
+            <form class="last_name_box" action="" method="post">
+                <input 
+                    class="last_name" 
+                    type="text" 
+                    name=""
+                    id=""
+                    placeholder="Last Name">
+            </form>
+            <form class="email_box" action="" method="post">
+                <input 
+                    class="email_text" 
+                    type="text" 
+                    name=""
+                    id=""
+                    placeholder="Email">
+            </form>
+            <form class="phone_number_box" action="" method="post">
+                <input 
+                    class="phone_number" 
+                    type="text" 
+                    name=""
+                    id=""
+                    placeholder="Phone Number">
+            </form>
+            <form class="subject_box" action="" method="post">
+                <input 
+                    class="subject" 
+                    type="text" 
+                    name=""
+                    id=""
+                    placeholder="Subject">
+            </form>
+            <form class="something_box" action="" method="post">
+                <input 
+                    class="something" 
+                    type="text" 
+                    name=""
+                    id=""
+                    placeholder="Tell Us Something...">
+            </form>
+            <button class="SEND_TO_HYDRA_button">SEND TO HYDRA</button>
+        </div>
+        <div class="contact_hydra_img"></div>
+        <div class="vector18" >
+            <img class="vector18_img" src="/Startup_lessons/Project/src/assets/img/Vector18.png" alt="">
+        </div>
+        <div class="vector19" >
+            <img class="vector19_img" src="/Startup_lessons/Project/src/assets/img/Vector_19.png" alt="">
+        </div>
+
 
     </section>
+    
+    
 </body>
 </html>

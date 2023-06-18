@@ -1,21 +1,33 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
-.TECHNOLOGIES_text, .TRY_IT_NOW_button, .simulation_text, .why_build_text, .LETS_GET_IN_TOUCH_button, .introduction_text, .build_your_world_button, .Reality, .Virtual, .Of {
+.SEND_TO_HYDRA_button, .JOIN_HYDRA_text, .how_we_build_description_text, .how_we_build_circle_inside_text, .HOW_WE_BUILD_text, .TECHNOLOGIES_text, .TRY_IT_NOW_button, .simulation_text, .why_build_text, .LETS_GET_IN_TOUCH_button, .introduction_text, .build_your_world_button, .Reality, .Virtual, .Of {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
 }
 
-.Vitae_sapien_text, .Eget_mi_proin_text, .location_text {
+.something::placeholder, .subject::placeholder, .phone_number::placeholder, .email_text::placeholder, .last_name::placeholder, .first_name::placeholder, .Vitae_sapien_text, .Eget_mi_proin_text, .location_text {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
 }
 
-.USED_BY_text, .with_hydra_text, .to_hydra_text {
+.lets_build_text, .WITH_HYDRA_VR_text, .USED_BY_text, .with_hydra_text, .to_hydra_text {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
+}
+
+.subject_box, .phone_number_box, .email_box, .last_name_box {
+  width: 300px;
+  height: 53px;
+  margin: 22px 22px 0px 21px;
+}
+
+.subject, .phone_number, .email_text, .last_name, .first_name {
+  width: 300px;
+  height: 53px;
+  border: 2px solid #FFFFFF;
 }
 
 .first_screen {
@@ -42,6 +54,7 @@
   margin-right: 0px;
   width: 69px;
   height: 59.88px;
+  z-index: 1;
 }
 
 .Hydra {
@@ -51,6 +64,7 @@
   height: 28px;
   margin-left: 11px;
   margin-top: 52px;
+  z-index: 1;
 }
 
 .letter_H {
@@ -152,16 +166,17 @@
     opacity: 1;
   }
 }
-.burger-menu {
+.hamburger-menu {
+  width: 33px;
   position: absolute;
+  height: 26px;
+  top: 53px;
+  right: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
-  width: 33px;
-  height: 26px;
-  top: 53px;
-  right: 20px;
+  transform: translate(-50%, -50%);
 }
 
 .line {
@@ -169,14 +184,26 @@
   height: 3px;
   background: linear-gradient(90deg, #C0B7E8 -11.84%, #8176AF 100%);
   border-radius: 40px;
+  transition: transform 0.3s ease;
 }
 
-.line:nth-child(2) {
+.hamburger-menu.open .line:nth-child(1) {
+  transform: rotate(45deg) translate(9px, 8px);
+}
+
+.hamburger-menu .line:nth-child(2) {
   width: 24px;
-  background: linear-gradient(90deg, #C0B7E8 -15.79%, #8176AF 100%);
-  opacity: 0.3;
-  border-radius: 40px;
   align-self: flex-end;
+}
+
+.hamburger-menu.open .line:nth-child(2) {
+  opacity: 0;
+  width: 10px;
+  align-self: flex-end;
+}
+
+.hamburger-menu.open .line:nth-child(3) {
+  transform: rotate(-45deg) translate(8px, -7px);
 }
 
 .Rectangle4 {
@@ -638,7 +665,7 @@
   border: none;
 }
 
-.slider_button_right_box {
+.slider_button_left_box {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -651,7 +678,7 @@
   background: rgba(14, 14, 14, 0.32);
 }
 
-.slider_button_right_box_inside {
+.slider_button_left_box_inside, .hydra_tech_button_left_box_inside, .how_we_build_button_left_box_inside {
   width: 44px;
   height: 44px;
   background: linear-gradient(267.61deg, #C0B7E8 -0.6%, #8176AF 98.31%);
@@ -660,7 +687,7 @@
   border: none;
 }
 
-.slider_button_right {
+.slider_button_left, .hydra_tech_button_left, .how_we_build_button_left {
   width: 38px;
   height: 38px;
   border-radius: 50%;
@@ -668,8 +695,8 @@
   transform: rotate(-90deg);
 }
 
-.slider_button_right::before,
-.slider_button_right::after {
+.slider_button_left::before, .hydra_tech_button_left::before, .how_we_build_button_left::before,
+.slider_button_left::after, .hydra_tech_button_left::after, .how_we_build_button_left::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -678,7 +705,7 @@
   transform: translate(-50%, -50%);
 }
 
-.slider_button_right::before {
+.slider_button_left::before, .hydra_tech_button_left::before, .how_we_build_button_left::before {
   left: 42%;
   transform-origin: center;
   background-color: #433D60;
@@ -686,7 +713,7 @@
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-.slider_button_right::after {
+.slider_button_left::after, .hydra_tech_button_left::after, .how_we_build_button_left::after {
   right: 42%;
   transform-origin: center;
   background-color: #433D60;
@@ -694,7 +721,7 @@
   transform: translate(50%, -50%) rotate(45deg);
 }
 
-.slider_button_left_box {
+.slider_button_right_box {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -707,7 +734,7 @@
   background: rgba(14, 14, 14, 0.32);
 }
 
-.slider_button_left_box_inside {
+.slider_button_right_box_inside, .hydra_tech_button_right_box_inside, .how_we_build_button_right_box_inside {
   width: 44px;
   height: 44px;
   background: linear-gradient(267.61deg, #C0B7E8 -0.6%, #8176AF 98.31%);
@@ -716,7 +743,7 @@
   border: none;
 }
 
-.slider_button_left {
+.slider_button_right, .hydra_tech_button_right, .how_we_build_button_right {
   width: 38px;
   height: 38px;
   border-radius: 50%;
@@ -724,8 +751,8 @@
   transform: rotate(90deg);
 }
 
-.slider_button_left::before,
-.slider_button_left::after {
+.slider_button_right::before, .hydra_tech_button_right::before, .how_we_build_button_right::before,
+.slider_button_right::after, .hydra_tech_button_right::after, .how_we_build_button_right::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -734,7 +761,7 @@
   transform: translate(-50%, -50%);
 }
 
-.slider_button_left::before {
+.slider_button_right::before, .hydra_tech_button_right::before, .how_we_build_button_right::before {
   left: 42%;
   transform-origin: center;
   background-color: #433D60;
@@ -742,7 +769,7 @@
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-.slider_button_left::after {
+.slider_button_right::after, .hydra_tech_button_right::after, .how_we_build_button_right::after {
   right: 42%;
   transform-origin: center;
   background-color: #433D60;
@@ -789,4 +816,395 @@
   font-size: 24px;
   line-height: 29px;
   color: #FFFFFF;
+}
+
+.hydra_tech {
+  background-image: url(../src/assets/img/Hydra-Tech4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 256px;
+  height: 256px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 2613px;
+}
+
+.hydra_tech_button_left_box {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 62px;
+  height: 62px;
+  left: 6px;
+  top: 2714px;
+  border-radius: 50%;
+  background: rgba(14, 14, 14, 0.32);
+}
+
+.hydra_tech_button_right_box {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 62px;
+  height: 62px;
+  right: 6px;
+  top: 2714px;
+  border-radius: 50%;
+  background: rgba(14, 14, 14, 0.32);
+}
+
+.HOW_WE_BUILD_box {
+  position: absolute;
+  width: 221px;
+  height: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 2847px;
+}
+
+.HOW_WE_BUILD_text {
+  font-size: 26px;
+  line-height: 32px;
+  /* identical to box height */
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.WITH_HYDRA_VR_box {
+  position: absolute;
+  width: 232px;
+  height: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 2895px;
+}
+
+.WITH_HYDRA_VR_text {
+  font-size: 26px;
+  line-height: 32px;
+  /* identical to box height */
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.how_we_build_steps {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 198px;
+  height: 198px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 2964px;
+  border-radius: 50%;
+  background: rgba(13, 13, 13, 0.32);
+}
+
+.how_we_build_circle {
+  border-radius: 50%;
+  width: 159px;
+  height: 159px;
+  margin: 19px 19px 20px 20px;
+  background: linear-gradient(251.27deg, #C0B7E8 12.87%, #8176AF 89.33%);
+}
+
+.how_we_build_circle_inside {
+  width: 69px;
+  height: 78px;
+  margin: 41px 46px 40px 44px;
+}
+
+.how_we_build_circle_inside_text {
+  font-size: 64px;
+  line-height: 78px;
+  /* identical to box height */
+  color: #343045;
+}
+
+.how_we_build_description_box {
+  position: absolute;
+  width: 187px;
+  height: 64px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 3199px;
+}
+
+.how_we_build_description_text {
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.how_we_build_button_left_box {
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 62px;
+  height: 62px;
+  left: 6px;
+  top: 3202px;
+  background: rgba(14, 14, 14, 0.32);
+}
+
+.how_we_build_button_right_box {
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 62px;
+  height: 62px;
+  right: 6px;
+  top: 3202px;
+  background: rgba(14, 14, 14, 0.32);
+}
+
+.contact_form {
+  position: absolute;
+  width: 343px;
+  height: 973px;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 3344px;
+  background: radial-gradient(50% 50% at 50% 50%, #403A5F 0%, #211E2E 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+}
+
+.JOIN_HYDRA_box {
+  width: 159px;
+  height: 29px;
+  margin: 45px 92px 0px 92px;
+}
+
+.JOIN_HYDRA_text {
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.contact_form_line {
+  width: 116.5px;
+  height: 0px;
+  margin: 21px 115.5px 0px 111px;
+  border: 1px solid rgba(192, 183, 232, 0.33);
+}
+
+.lets_build_box {
+  width: 232px;
+  height: 64px;
+  margin: 19px 55px 0px 56px;
+  text-align: center;
+}
+
+.lets_build_text {
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.first_name_box {
+  width: 300px;
+  height: 53px;
+  margin: 36px 22px 0px 21px;
+}
+
+.first_name {
+  border-radius: 40px;
+  background-color: inherit;
+  padding: 18px 190px 18px 29px;
+  color: #FFFFFF;
+}
+
+.first_name::placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.last_name {
+  border-radius: 40px;
+  background-color: inherit;
+  padding: 18px 190px 18px 29px;
+  color: #FFFFFF;
+}
+
+.last_name::placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.email_text {
+  border-radius: 40px;
+  background-color: inherit;
+  padding: 18px 220px 18px 29px;
+  color: #FFFFFF;
+}
+
+.email_text::placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.phone_number {
+  border-radius: 40px;
+  background-color: inherit;
+  padding: 18px 155px 18px 29px;
+  color: #FFFFFF;
+}
+
+.phone_number::placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.subject {
+  border-radius: 40px;
+  background-color: inherit;
+  padding: 18px 210px 18px 29px;
+  color: #FFFFFF;
+}
+
+.subject::placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.something_box {
+  width: 300px;
+  height: 219px;
+  margin: 22px 25px 0px 18px;
+}
+
+.something {
+  border: 2px solid #FFFFFF;
+  width: 300px;
+  height: 219px;
+  border-radius: 40px;
+  background-color: inherit;
+  padding: 18px 134px 184px 29px;
+  color: #FFFFFF;
+}
+
+.something::placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.SEND_TO_HYDRA_button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+  border-radius: 40px;
+  cursor: pointer;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  line-height: 17px;
+  color: #343045;
+  width: 250px;
+  height: 48px;
+  margin-top: 52px;
+  border: none;
+}
+
+.contact_hydra_img {
+  background-image: url(../src/assets/img/contact_hydra_img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 185px;
+  height: 187px;
+  left: 102px;
+  top: 4398px;
+  filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.25));
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.vector18_img {
+  position: absolute;
+  width: 390px;
+  height: 143px;
+  left: -64px;
+  top: 4469px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.vector1 {
+  position: absolute;
+  width: 390px;
+  height: 562px;
+  top: 77px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.vector1_img {
+  position: relative;
+  width: 288px;
+  height: 562px;
+  margin: 0px 0px 0px 102px;
+}
+
+.vector19_img {
+  position: absolute;
+  width: 390px;
+  height: 197px;
+  left: -63px;
+  top: 4317px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.vector2 {
+  position: absolute;
+  width: 390px;
+  height: 562px;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.vector2_img {
+  position: relative;
+  width: 316px;
+  height: 641px;
+  margin: 3px 51px 0px 23px;
+  z-index: 10;
+}
+
+.vector3 {
+  position: absolute;
+  width: 390px;
+  height: 352px;
+  top: 286px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.vector3_img {
+  position: relative;
+  width: 390px;
+  height: 542px;
+  z-index: 10;
 }
