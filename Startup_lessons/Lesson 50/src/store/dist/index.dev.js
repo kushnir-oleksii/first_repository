@@ -69,6 +69,11 @@ var counterReducer = function counterReducer() {
         isLoggedIn: true
       });
 
+    case 'logout':
+      return _objectSpread({}, state, {
+        isLoggedIn: false
+      });
+
     case 'clearData':
       return _objectSpread({}, state, {
         coffee: 0,

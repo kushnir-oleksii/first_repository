@@ -53,6 +53,11 @@ const counterReducer = (state = initialState, action) => {
         ...state,
         isLoggedIn: true,
       };
+      case 'logout':
+        return {
+          ...state,
+          isLoggedIn: false,
+        };
     case 'clearData':
       return {
         ...state,

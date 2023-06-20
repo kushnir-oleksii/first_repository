@@ -20,8 +20,8 @@ const SaveList = () => {
 
   const Logout = () => {
     dispatch({ type: 'logout' });
-    dispatch({ type: 'clearData' });
-    localStorage.clear();
+    // dispatch({ type: 'clearData' });
+    // localStorage.clear();
   };
 
   return (
