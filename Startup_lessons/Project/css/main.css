@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
-.contact_footer_text, .build_your_world_footer_button, .SOCIALIZE_WITH_HYDRA_text, .SEND_TO_HYDRA_button, .JOIN_HYDRA_text, .how_we_build_description_text, .how_we_build_circle_inside_text, .HOW_WE_BUILD_text, .TECHNOLOGIES_text, .TRY_IT_NOW_button, .simulation_text, .why_build_text, .LETS_GET_IN_TOUCH_button, .introduction_text, .build_your_world_button, .Reality, .Virtual, .Of {
+.contact_footer_text, .build_your_world_footer_button, .SOCIALIZE_WITH_HYDRA_text, .SEND_TO_HYDRA_button, .JOIN_HYDRA_text, .how_we_build_description_text, .how_we_build_circle_inside_text, .HOW_WE_BUILD_text, .TECHNOLOGIES_text, .TRY_IT_NOW_button, .simulation_text, .why_build_text, .LETS_GET_IN_TOUCH_button, .introduction_text, .build_your_world_text, .Reality, .Virtual, .Of {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -42,9 +42,32 @@
   border-radius: 40px;
   display: flex;
 }
+@media (min-width: 992px) {
+  .first_screen {
+    border-radius: 0px;
+    min-width: 1440px;
+  }
+}
+
+.hero_section {
+  position: relative;
+  display: flex;
+  width: 390px;
+  height: 644px;
+  margin: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (min-width: 992px) {
+  .hero_section {
+    width: 1440px;
+    height: 961px;
+    overflow: hidden;
+  }
+}
 
 .hydra_img {
-  background-image: url(../src/assets/img/Vector.png);
+  background-image: url(../src/assets/img/Mobile/Hydra_img.webp);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -56,6 +79,15 @@
   height: 59.88px;
   z-index: 1;
 }
+@media (min-width: 992px) {
+  .hydra_img {
+    background-image: url(../src/assets/img/Desctop/Hydra_img_desctop.webp);
+    width: 102px;
+    height: 103px;
+    margin-left: 87px;
+    margin-top: 50px;
+  }
+}
 
 .Hydra {
   position: relative;
@@ -66,18 +98,34 @@
   margin-top: 52px;
   z-index: 1;
 }
+@media (min-width: 992px) {
+  .Hydra {
+    width: 76px;
+    height: 46px;
+    margin-left: 15px;
+    margin-top: 79px;
+    margin-right: 0px;
+  }
+}
 
 .letter_H {
-  background-image: url(../src/assets/img/H.png);
+  background-image: url(../src/assets/img/Mobile/h.webp);
   background-repeat: no-repeat;
   background-size: cover;
   width: 7px;
   height: 28px;
   animation: slideIn_H 1s forwards;
 }
+@media (min-width: 992px) {
+  .letter_H {
+    background-image: url(../src/assets/img/Desctop/h-desctop.webp);
+    width: 11.57px;
+    height: 46px;
+  }
+}
 
 .letter_Y {
-  background-image: url(../src/assets/img/Y.png);
+  background-image: url(../src/assets/img/Mobile/Y.webp);
   background-repeat: no-repeat;
   background-size: cover;
   width: 8.39px;
@@ -85,9 +133,17 @@
   margin-left: 2px;
   animation: slideIn_Y 1.5s forwards;
 }
+@media (min-width: 992px) {
+  .letter_Y {
+    background-image: url(../src/assets/img/Desctop/y-desctop.webp);
+    width: 13.86px;
+    height: 46px;
+    margin-left: 3.3px;
+  }
+}
 
 .letter_D {
-  background-image: url(../src/assets/img/D.png);
+  background-image: url(../src/assets/img/Mobile/d.webp);
   background-repeat: no-repeat;
   background-size: cover;
   width: 6.98px;
@@ -95,9 +151,17 @@
   margin-left: 2px;
   animation: slideIn_D 2s forwards;
 }
+@media (min-width: 992px) {
+  .letter_D {
+    background-image: url(../src/assets/img/Desctop/d-desctop.webp);
+    width: 11.54px;
+    height: 46px;
+    margin-left: 3.3px;
+  }
+}
 
 .letter_R {
-  background-image: url(../src/assets/img/R.png);
+  background-image: url(../src/assets/img/Mobile/R.webp);
   background-repeat: no-repeat;
   background-size: cover;
   width: 8px;
@@ -105,15 +169,31 @@
   margin-left: 2px;
   animation: slideIn_R 2.5s forwards;
 }
+@media (min-width: 992px) {
+  .letter_R {
+    background-image: url(../src/assets/img/Desctop/r-desctop.webp);
+    width: 11.57px;
+    height: 46px;
+    margin-left: 3.66px;
+  }
+}
 
 .letter_A {
-  background-image: url(../src/assets/img/A.png);
+  background-image: url(../src/assets/img/Mobile/a.webp);
   background-repeat: no-repeat;
   background-size: cover;
   width: 9.39px;
   height: 28px;
   margin-left: 1px;
   animation: slideIn_A 3s forwards;
+}
+@media (min-width: 992px) {
+  .letter_A {
+    background-image: url(../src/assets/img/Desctop/a-desctop.webp);
+    width: 14px;
+    height: 46px;
+    margin-left: 3.3px;
+  }
 }
 
 @keyframes slideIn_H {
@@ -179,6 +259,11 @@
   transform: translate(-50%, -50%);
   z-index: 1;
 }
+@media (min-width: 992px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
 
 .line {
   width: 100%;
@@ -219,6 +304,16 @@
   border-radius: 100px 100px 100px 240px;
   z-index: 10;
 }
+@media (min-width: 992px) {
+  .Rectangle4 {
+    width: 524px;
+    height: 455px;
+    top: 251px;
+    right: 0px;
+    left: 832px;
+    transform: none;
+  }
+}
 
 .Rectangle5 {
   background-image: url(../src/assets/img/pexels-michelangelo-buonarroti-87283821.webp);
@@ -231,6 +326,15 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 100px 100px 100px 240px;
   z-index: 10;
+}
+@media (min-width: 992px) {
+  .Rectangle5 {
+    background-image: url(../src/assets/img/Desctop/michelangelo-buonarroti-desctop.webp);
+    width: 490px;
+    height: 426px;
+    flex-shrink: 0;
+    margin: 14px 18px 15px 16px;
+  }
 }
 
 .Dive_Into_The_Depths {
@@ -320,10 +424,29 @@
   background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
   border-radius: 40px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex-grow: 1;
+}
+.build_your_world_button:hover {
+  background: linear-gradient(90deg, #C0B7E8 0%, #8176AF 100%);
+}
+
+.build_your_world_text {
   font-size: 14px;
   line-height: 17px;
   color: #343045;
-  border: none;
+  line-height: 52px;
+  flex-grow: 1;
+  /* Занимает все доступное пространство внутри flex-контейнера */
+  display: flex;
+  /* Для выравнивания текста по центру по вертикали */
+  align-items: center;
+  /* Для выравнивания текста по центру по вертикали */
+  justify-content: center;
+  /* Для выравнивания текста по центру по горизонтали */
+}
+.build_your_world_text:hover {
+  font-size: 16px;
 }
 
 .Rectangel6 {
@@ -541,9 +664,8 @@
   height: 56px;
   top: 1670px;
   /* Измените отступы по желанию */
-  background-color: #8176AF;
-  /* Измените цвет фона по желанию */
   border-radius: 40px;
+  background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
   cursor: pointer;
   left: 50%;
   transform: translateX(-50%);
@@ -1159,12 +1281,33 @@
   left: 50%;
   transform: translateX(-50%);
 }
+@media (min-width: 992px) {
+  .vector1 {
+    width: 414px;
+    height: 669px;
+    top: 170px;
+    transform: none;
+    right: 3px;
+    left: 1023px;
+  }
+}
 
 .vector1_img {
+  background-image: url(../src/assets/img/Vector1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   width: 288px;
   height: 562px;
   margin: 0px 0px 0px 102px;
+}
+@media (min-width: 992px) {
+  .vector1_img {
+    background-image: url(../src/assets/img/Desctop/vector1.webp);
+    width: 414px;
+    height: 669px;
+    margin: 0;
+  }
 }
 
 .vector19_img {
@@ -1185,29 +1328,68 @@
   left: 50%;
   transform: translateX(-50%);
 }
+@media (min-width: 992px) {
+  .vector2 {
+    width: 385px;
+    height: 845px;
+    top: 0px;
+    left: 929px;
+    transform: none;
+  }
+}
 
 .vector2_img {
+  background-image: url(../src/assets/img/Vector2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
-  width: 316px;
+  width: 326px;
   height: 641px;
   margin: 3px 51px 0px 23px;
   z-index: 10;
+}
+@media (min-width: 992px) {
+  .vector2_img {
+    background-image: url(../src/assets/img/Desctop/vector-2.webp);
+    width: 385px;
+    height: 845px;
+    margin: 0;
+  }
 }
 
 .vector3 {
   position: absolute;
   width: 390px;
   height: 352px;
-  top: 286px;
+  top: 280px;
   left: 50%;
   transform: translateX(-50%);
 }
+@media (min-width: 992px) {
+  .vector3 {
+    width: 735.029px;
+    height: 419.323px;
+    top: 419px;
+    left: 707px;
+    transform: none;
+  }
+}
 
 .vector3_img {
+  background-image: url(../src/assets/img/Vector3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   width: 390px;
-  height: 542px;
+  height: 352px;
   z-index: 10;
+}
+@media (min-width: 992px) {
+  .vector3_img {
+    width: 735.029px;
+    height: 419.323px;
+    background-image: url(../src/assets/img/Desctop/vector3.webp);
+  }
 }
 
 .SOCIALIZE_WITH_HYDRA_box {

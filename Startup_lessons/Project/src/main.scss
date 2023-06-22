@@ -2,6 +2,10 @@
 @import '_colors';
 @import '_template';
 
+//Сочетание left: 50%; и transform: translateX(-50%); обычно используется вместе для центрирования элемента по горизонтали внутри его контейнера.
+//left: 50%;: Это свойство устанавливает левую позицию элемента на 50% относительно его родительского контейнера. Оно указывает, что левая граница элемента должна быть расположена на середине горизонтальной оси родителя.
+//transform: translateX(-50%);: Это свойство выполняет горизонтальное смещение элемента на -50% его собственной ширины. Путем применения отрицательного значения, элемент сдвигается влево на половину своей ширины. Это позволяет элементу быть точно посередине горизонтально относительно родителя, так как left: 50%; устанавливает начальную точку элемента на середине родителя
+
 .first_screen {
     background-repeat: no-repeat;
     background-size:cover;
@@ -14,11 +18,28 @@
     background-color:  #302C42;
     border-radius: 40px;
     display: flex;
+    @media (min-width: 992px) {
+        border-radius: 0px;
+        min-width: 1440px;
+    }
 
 }
-
+.hero_section{
+    position: relative;
+    display: flex;
+    width: 390px;
+    height: 644px;
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    @media (min-width: 992px){
+        width: 1440px;
+        height: 961px;
+        overflow: hidden;
+    }
+}
 .hydra_img {
-    background-image: url(../src/assets/img/Vector.png);
+    background-image: url(../src/assets/img/Mobile/Hydra_img.webp);
     background-repeat: no-repeat;
     background-size:cover;
     position: relative;
@@ -29,6 +50,13 @@
     width: 69px;
     height: 59.88px;
     z-index: 1;
+    @media (min-width: 992px){
+        background-image: url(../src/assets/img/Desctop/Hydra_img_desctop.webp);
+        width: 102px;
+        height: 103px;
+        margin-left: 87px;
+        margin-top: 50px;
+    }
 }
 .Hydra {
     position: relative;
@@ -38,55 +66,91 @@
     margin-left: 11px;
     margin-top: 52px;
     z-index: 1;
+    @media (min-width: 992px) {
+        width: 76px;
+        height: 46px;
+        margin-left: 15px;
+        margin-top: 79px;
+        margin-right: 0px;
+    }
 }
 
 .letter_H {
-    background-image: url(../src/assets/img/H.png);
+    background-image: url(../src/assets/img/Mobile/h.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 7px;
     height: 28px;
     animation: slideIn_H 1s forwards;
+    @media (min-width: 992px) {
+        background-image: url(../src/assets/img/Desctop/h-desctop.webp);
+        width: 11.57px;
+        height: 46px;
+    }
 }
 
 .letter_Y {
-    background-image: url(../src/assets/img/Y.png);
+    background-image: url(../src/assets/img/Mobile/Y.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 8.39px;
     height: 28px;
     margin-left: 2px;
     animation: slideIn_Y 1.5s forwards;
+    @media (min-width: 992px) {
+        background-image: url(../src/assets/img/Desctop/y-desctop.webp);
+        width: 13.86px;
+        height: 46px;
+        margin-left: 3.3px;
+    }
 }
 
 .letter_D {
-    background-image: url(../src/assets/img/D.png);
+    background-image: url(../src/assets/img/Mobile/d.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 6.98px;
     height: 28px;
     margin-left: 2px;
     animation: slideIn_D 2s forwards;
+    @media (min-width: 992px) {
+        background-image: url(../src/assets/img/Desctop/d-desctop.webp);
+        width: 11.54px;
+        height: 46px;
+        margin-left: 3.3px;
+    }
 }
 
 .letter_R {
-    background-image: url(../src/assets/img/R.png);
+    background-image: url(../src/assets/img/Mobile/R.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 8px;
     height: 28px;
     margin-left: 2px;
     animation: slideIn_R 2.5s forwards;
+    @media (min-width: 992px) {
+        background-image: url(../src/assets/img/Desctop/r-desctop.webp);
+        width: 11.57px;
+        height: 46px;
+        margin-left: 3.66px;
+    }
 }
 
 .letter_A {
-    background-image: url(../src/assets/img/A.png);
+    background-image: url(../src/assets/img/Mobile/a.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 9.39px;
     height: 28px;
     margin-left: 1px;
     animation: slideIn_A 3s forwards;
+    @media (min-width: 992px) {
+        background-image: url(../src/assets/img/Desctop/a-desctop.webp);
+        width: 14px;
+        height: 46px;
+        margin-left: 3.3px;
+    }
 }
 @keyframes slideIn_H {
     0% {
@@ -154,6 +218,9 @@
     cursor: pointer;
     transform: translate(-50%, -50%);
     z-index: 1;
+    @media (min-width: 992px){
+        display: none;
+    }
   }
   
   .line {
@@ -283,6 +350,14 @@
     background: rgba(0, 0, 0, 0.13);
     border-radius: 100px 100px 100px 240px;
     z-index: 10;
+    @media (min-width: 992px){
+        width: 524px;
+        height: 455px;
+        top: 251px;
+        right: 0px;
+        left: 832px;
+        transform: none;
+    }
 }
 .Rectangle5 {
     background-image: url(../src/assets/img/pexels-michelangelo-buonarroti-87283821.webp);
@@ -295,6 +370,13 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 100px 100px 100px 240px;
     z-index: 10;
+    @media (min-width: 992px){
+        background-image: url(../src/assets/img/Desctop/michelangelo-buonarroti-desctop.webp);
+        width: 490px;
+        height: 426px;
+        flex-shrink: 0;
+        margin: 14px 18px 15px 16px
+    }
 }
 .Dive_Into_The_Depths{
     display: flex;
@@ -368,7 +450,27 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
-.build_your_world_button{
+// .build_your_world_button{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     position: absolute;
+//     width: 292px;
+//     height: 52px;
+//     left: 50%;
+//     top: 592px;
+//     transform: translateX(-50%);
+//     background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+//     border-radius: 40px;
+//     cursor: pointer;
+//     @extend %title_mobile_Text;
+//     font-size: 14px;
+//     line-height: 17px;
+//     color: $secondColor;
+//     border: none;
+// }
+
+.build_your_world_button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -381,25 +483,28 @@
     background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
     border-radius: 40px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex-grow: 1;
+    &:hover {
+        background: linear-gradient(90deg, #C0B7E8 0%, #8176AF 100%);
+        
+    }
+}
+.build_your_world_text{
     @extend %title_mobile_Text;
     font-size: 14px;
     line-height: 17px;
     color: $secondColor;
-    border: none;
+    line-height: 52px;
+    // text-align: center;
+    flex-grow: 1; /* Занимает все доступное пространство внутри flex-контейнера */
+    display: flex; /* Для выравнивания текста по центру по вертикали */
+    align-items: center; /* Для выравнивания текста по центру по вертикали */
+    justify-content: center; /* Для выравнивания текста по центру по горизонтали */
+    &:hover {
+        font-size: 16px;
+    }   
 }
-// .build_your_world_box {
-//     position: absolute;
-//     width: 155px;
-//     height: 17px;
-//     top:17px;
-//     left:68px;
-// }
-// .build_your_world_text{
-//     @extend %title_mobile_Text;
-//     font-size: 14px;
-//     line-height: 17px;
-//     color: $secondColor;
-// }
 .Rectangel6{
     display: flex;
     position: absolute;
@@ -607,8 +712,8 @@
     width: 276px;
     height: 56px;
     top: 1670px; /* Измените отступы по желанию */
-    background-color: #8176AF; /* Измените цвет фона по желанию */
     border-radius: 40px;
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
     cursor: pointer;
     // transition: background-color 0.3s ease; /* Добавлен эффект плавного перехода */
     left: 50%;
@@ -621,14 +726,14 @@
 }
 
 // .LETS_GET_IN_TOUCH_button:hover {
-//     background-color: #C0B7E8; /* Измените цвет фона при наведении по желанию */
+//     background-color: #C0B7E8; 
 // }
 
 // .LETS_GET_IN_TOUCH_button_text {
 //     @extend %title_mobile_Text;
 //     font-size: 14px;
 //     line-height: 17px;
-//     color: $secondColor; /* Измените цвет текста по желанию */
+//     color: $secondColor; 
     
 // }
 .why_build_box {
@@ -1240,12 +1345,29 @@ border: 1px solid rgba(192, 183, 232, 0.33);
     top: 77px;
     left: 50%;
     transform: translateX(-50%);
+    @media (min-width: 992px) {
+        width: 414px;
+        height: 669px;
+        top: 170px;
+        transform:none;
+        right: 3px;
+        left: 1023px;
+    }
 }
 .vector1_img {
+    background-image: url(../src/assets/img/Vector1.png);
+    background-repeat: no-repeat;
+    background-size:cover;
     position: relative;
     width: 288px;
     height: 562px;
     margin: 0px 0px 0px 102px;
+    @media (min-width: 992px){
+        background-image: url(../src/assets/img/Desctop/vector1.webp);
+        width: 414px;
+        height: 669px;
+        margin: 0;
+    }
 
 }
 .vector19_img {
@@ -1259,34 +1381,68 @@ border: 1px solid rgba(192, 183, 232, 0.33);
 
 }
 .vector2 {
+    
     position: absolute;
     width: 390px;
     height: 562px;
     top: 0px;
     left: 50%;
     transform: translateX(-50%);
+    @media (min-width: 992px){
+        width: 385px;
+        height: 845px;
+        top: 0px;
+        left: 929px;
+        transform:none;
+    }
 }
 .vector2_img {
+    background-image: url(../src/assets/img/Vector2.png);
+    background-repeat: no-repeat;
+    background-size:cover;
     position: relative;
-    width: 316px;
+    width: 326px;
     height: 641px;
     margin: 3px 51px 0px 23px;
     z-index: 10;
+    @media (min-width: 992px){
+        background-image: url(../src/assets/img/Desctop/vector-2.webp);
+        width: 385px;
+        height: 845px;
+        margin: 0;
+        
+    }
 
 }
 .vector3 {
     position: absolute;
     width: 390px;
     height: 352px;
-    top: 286px;
+    top: 280px;
     left: 50%;
     transform: translateX(-50%);
+    @media (min-width: 992px){
+        width: 735.029px;
+        height: 419.323px;
+        top: 419px;
+        left: 707px;
+        transform:none;
+    }
 }
 .vector3_img {
+    background-image: url(../src/assets/img/Vector3.png);
+    background-repeat: no-repeat;
+    background-size:cover;
     position: relative;
     width: 390px;
-    height: 542px;
+    height: 352px;
     z-index: 10;
+    @media (min-width: 992px){
+        width: 735.029px;
+        height: 419.323px;
+        background-image: url(../src/assets/img/Desctop/vector3.webp);
+
+    }
 
 }
 .SOCIALIZE_WITH_HYDRA_box {
@@ -1475,7 +1631,7 @@ border: 1px solid rgba(192, 183, 232, 0.33);
     text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 // .LETS_GET_IN_TOUCH_button_text:hover {
-//     text-decoration: underline; /* Измените стиль подчеркивания по желанию */
+//     text-decoration: underline; /* стиль подчеркивания  */
 // }
 
 // .LETS_GET_IN_TOUCH_button{
