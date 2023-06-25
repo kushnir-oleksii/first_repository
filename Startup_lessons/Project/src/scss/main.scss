@@ -39,7 +39,7 @@
     }
 }
 .hydra_img {
-    background-image: url(../src/assets/img/Mobile/Hydra_img.webp);
+    background-image: url(/Startup_lessons/Project/src/assets/img/Mobile/Hydra_img.webp);
     background-repeat: no-repeat;
     background-size:cover;
     position: relative;
@@ -51,7 +51,7 @@
     height: 59.88px;
     z-index: 1;
     @media (min-width: 992px){
-        background-image: url(../src/assets/img/Desctop/Hydra_img_desctop.webp);
+        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/Hydra_img_desctop.webp);
         width: 102px;
         height: 103px;
         margin-left: 87px;
@@ -76,21 +76,21 @@
 }
 
 .letter_H {
-    background-image: url(../src/assets/img/Mobile/h.webp);
+    background-image: url(/Startup_lessons/Project/src/assets/img/Mobile/h.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 7px;
     height: 28px;
     animation: slideIn_H 1s forwards;
     @media (min-width: 992px) {
-        background-image: url(../src/assets/img/Desctop/h-desctop.webp);
+        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/h-desctop.webp);
         width: 11.57px;
         height: 46px;
     }
 }
 
 .letter_Y {
-    background-image: url(../src/assets/img/Mobile/Y.webp);
+    background-image: url(/Startup_lessons/Project/src/assets/img/Mobile/Y.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 8.39px;
@@ -98,7 +98,7 @@
     margin-left: 2px;
     animation: slideIn_Y 1.5s forwards;
     @media (min-width: 992px) {
-        background-image: url(../src/assets/img/Desctop/y-desctop.webp);
+        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/y-desctop.webp);
         width: 13.86px;
         height: 46px;
         margin-left: 3.3px;
@@ -106,7 +106,7 @@
 }
 
 .letter_D {
-    background-image: url(../src/assets/img/Mobile/d.webp);
+    background-image: url(/Startup_lessons/Project/src/assets/img/Mobile/d.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 6.98px;
@@ -114,7 +114,7 @@
     margin-left: 2px;
     animation: slideIn_D 2s forwards;
     @media (min-width: 992px) {
-        background-image: url(../src/assets/img/Desctop/d-desctop.webp);
+        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/d-desctop.webp);
         width: 11.54px;
         height: 46px;
         margin-left: 3.3px;
@@ -122,7 +122,7 @@
 }
 
 .letter_R {
-    background-image: url(../src/assets/img/Mobile/R.webp);
+    background-image: url(/Startup_lessons/Project/src/assets/img/Mobile/R.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 8px;
@@ -130,7 +130,7 @@
     margin-left: 2px;
     animation: slideIn_R 2.5s forwards;
     @media (min-width: 992px) {
-        background-image: url(../src/assets/img/Desctop/r-desctop.webp);
+        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/r-desctop.webp);
         width: 11.57px;
         height: 46px;
         margin-left: 3.66px;
@@ -138,7 +138,7 @@
 }
 
 .letter_A {
-    background-image: url(../src/assets/img/Mobile/a.webp);
+    background-image: url(/Startup_lessons/Project/src/assets/img/Mobile/a.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 9.39px;
@@ -146,7 +146,7 @@
     margin-left: 1px;
     animation: slideIn_A 3s forwards;
     @media (min-width: 992px) {
-        background-image: url(../src/assets/img/Desctop/a-desctop.webp);
+        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/a-desctop.webp);
         width: 14px;
         height: 46px;
         margin-left: 3.3px;
@@ -360,7 +360,7 @@
     }
 }
 .Rectangle5 {
-    background-image: url(../src/assets/img/pexels-michelangelo-buonarroti-87283821.webp);
+    background-image: url(/Startup_lessons/Project/src/assets/img/pexels-michelangelo-buonarroti-87283821.webp);
     background-repeat: no-repeat;
     background-size:cover;
     position: relative;
@@ -371,7 +371,7 @@
     border-radius: 100px 100px 100px 240px;
     z-index: 10;
     @media (min-width: 992px){
-        background-image: url(../src/assets/img/Desctop/michelangelo-buonarroti-desctop.webp);
+        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/michelangelo-buonarroti-desctop.webp);
         width: 490px;
         height: 426px;
         flex-shrink: 0;
@@ -387,12 +387,17 @@
     left: 50%;
     z-index: 10;
     transform: translateX(-50%);
+     @media (min-width: 992px){
+        transform:none;
+        left: 87px;
+        top: 299px;
+        width: 457px;
+        height: 56px;
+     }
 
 }
 .Dive{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
+    @extend %title_mobile_Text ;
     font-size: 36px;
     line-height: 44px;
     text-align: center;
@@ -401,6 +406,9 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     // text-fill-color: transparent;
+     @media (min-width: 992px){
+        font-size: 46px;
+     }
 }
 .Into_The_Depths{
     font-size: 24px;
@@ -410,6 +418,9 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    @media (min-width: 992px){
+        font-size: 40px;
+     }
 }
 .Of_Virtual_Reality{
     display: flex;
@@ -420,7 +431,14 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: 82.38px;
-    z-index: 100;
+    z-index: 10;
+    @media (min-width: 992px){
+        transform:none;
+        left: 87px;
+        top: 359px;
+        width: 402px;
+        height: 56px;
+     }
 }
 .Of{
     @extend %title_mobile_Text;
@@ -431,6 +449,10 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    @media (min-width: 992px){
+        font-size: 40px;
+     }
+    
 }
 .Virtual{
     @extend %title_mobile_Text;
@@ -440,6 +462,10 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    @media (min-width: 992px){
+        font-size: 46px;
+     }
+    
 }
 .Reality {
     @extend %title_mobile_Text;
@@ -449,6 +475,25 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    @media (min-width: 992px){
+        font-size: 46px;
+     }
+}
+.Lorem_ipsum_box{
+    display: none;
+    @media (min-width: 992px){
+        display: flex;
+        position: absolute;
+        margin-top: 451px;
+        margin-left: 87px;
+        width: 450px;
+        height: 72px
+    }
+}
+.Lorem_ipsum_text{
+    color: $firstColor;
+    @extend %title_mobile_thin_Text;
+    line-height: 1.6;
 }
 // .build_your_world_button{
 //     display: flex;
@@ -471,10 +516,7 @@
 // }
 
 .build_your_world_button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
+    @extend %button_box;
     width: 292px;
     height: 52px;
     left: 50%;
@@ -487,10 +529,16 @@
     flex-grow: 1;
     &:hover {
         background: linear-gradient(90deg, #C0B7E8 0%, #8176AF 100%);
-        
+    }
+    @media (min-width: 992px){
+        transform:none;
+        top: 589px;
+        left: 87px;
+        width: 214px;
+        height: 48px;
     }
 }
-.build_your_world_text{
+.build_your_world_text,.JOIN_HYDRA_button_text,.contact_us_text{ 
     @extend %title_mobile_Text;
     font-size: 14px;
     line-height: 17px;
@@ -504,7 +552,127 @@
     &:hover {
         font-size: 16px;
     }   
+    @media (min-width: 992px){
+        font-size: 12px;
+        &:hover {
+            font-size: 14px;
+        }   
+    }
 }
+.arrow_small_right_box {
+    display: none;
+    @media (min-width: 992px){
+        display: flex;
+        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/arrow-small-right.webp);
+        background-repeat: no-repeat;
+        background-size:cover;
+        position: absolute;
+        top: 563px;
+        left: 312px;
+        width: 100px;
+        height: 100px;
+
+    }
+}
+.spisok_menu_box{
+    position: absolute;
+    z-index: 20;
+    top: 75px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    @media (min-width: 992px){
+        top: 94px;
+        left: 485px;
+        display: flex;
+        width: 387px;
+        height: 15px;
+        transform:none;
+    }
+}
+.spisok_menu {
+    z-index: 100;
+    @extend %title_mobile_Text;
+    display: none;
+    list-style: none;
+    flex-direction: column;
+    font-size: 12px;
+    
+    @media(min-width: 992px){
+        font-size: 12px;
+        display: inline-flex;
+        flex-direction: row;
+    }
+}
+.spisok_menu.open {
+    display: flex; // Отобразить список меню при добавлении класса 'open'
+    z-index: 1;
+  }
+.spisok_menu_services {
+    @media (min-width: 992px){
+        margin-left: 42px;
+    }
+    
+}
+.spisok_menu_technologies, .spisok_menu_how_to{
+    @media (min-width: 992px){
+        margin-left: 41px;
+    }
+}
+.contact_us_button{
+    display: none;
+    @media (min-width: 992px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 154px;
+        height: 48px;
+        top: 79px;
+        left: 1012px;
+        border-radius: 40px;
+        border: 2px solid #FFF; 
+        cursor: pointer;
+        z-index: 20;
+        background-color: inherit;
+        transition: background-color 0.3s ease;
+        
+    }
+}
+.contact_us_text{
+    @extend %title_mobile_Text;
+    color: $firstColor;
+    font-size: 12px;
+}
+.JOIN_HYDRA_button{
+    display: none;
+    @media (min-width: 992px){ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 1204px;
+        top: 79px;
+        width: 155px;
+        height: 48px;
+        flex-shrink: 0;
+        transition: background-color 0.3s ease;
+        flex-grow: 1;
+        background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+        border-radius: 40px;
+        z-index: 11;
+        &:hover {
+            background: linear-gradient(90deg, #C0B7E8 0%, #8176AF 100%);
+        }
+    }
+}
+
+
+
+  
 .Rectangel6{
     display: flex;
     position: absolute;
@@ -516,9 +684,14 @@
     background: radial-gradient(50% 2900.76% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
     box-shadow: 0px 4px 4px rgba(192, 183, 232, 0.01);
     border-radius: 90px;
+    @media (min-width: 992px){
+        top: 794px;
+        width: 1272px;
+        height: 167px;
+    }
 }
 .location_img{
-    background-image: url(../src/assets/img/Location-Icon.png);
+    background-image: url(/Startup_lessons/Project/src/assets/img/Location-Icon.png);
     background-repeat: no-repeat;
     background-size:cover;
     position: absolute;
@@ -526,6 +699,11 @@
     height: 70px;
     left: 36px;
     top: 21px;
+    @media (min-width: 992px){
+        top: 49px;
+        left: 39px;
+        bottom: 48px;
+    }
 }
 .location_text_box{
     position: absolute;
@@ -533,13 +711,74 @@
     height: 40px;
     left: 101px;
     top: 38px;
+    @media (min-width: 992px){
+        width: 290px;
+        height: 17px;
+        top: 92px;
+        left: 109px;
+    }
 };
 .location_text{
     @extend %title_mobile_standard_Text;
     font-size: 14px;
     line-height: 17px;
     color: $firstColor;
+    @media (min-width: 992px){
+        br {
+            display: none;
+          }
+    }
 };
+.pay_us_a_visit_box{
+    display: none;
+    @media (min-width: 992px){
+    display: flex;
+    position: absolute;
+    top: 53px;
+    left: 109px;
+    width: 169px;
+    height: 29px;
+    }
+}
+.pay_us_a_visit_text{
+    @extend %title_mobile_Text;
+    font-size: 24px;
+    color: $firstColor;
+}
+.dividing_line_left{
+    display: none;
+    @media (min-width: 992px){
+        display: flex;
+        position: absolute;
+        top: 26px;
+        left: 441.5px;
+        width: 0px;
+        height: 116.5px;
+        border: 1px solid rgba(192, 183, 232, 0.33);
+    }
+}
+.give_us_a_call_box{
+    display: none;
+    @media (min-width: 992px){
+        display: flex;
+        position: absolute;
+        top: 54px;
+        left: 577px;
+    }
+}
+.give_us_a_call_text{
+    @extend %title_mobile_Text;
+    color: $firstColor;
+    font-size: 24px;
+}
+.give_us_a_call_text::before{
+    content: "";
+    position: absolute;
+    background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/phone-call.webp);
+    width: 59px;
+    height: 59px;
+    left: -88px;
+}
 .circle_left_box {
     position: absolute;
     width: 30px;
@@ -549,6 +788,9 @@
     bottom: 39px;
     right: 312px;
     background: none;
+    @media (min-width: 992px){
+        display: none;
+    }
 }
 .circle {
     left: 8.75px;
@@ -604,6 +846,9 @@
     right: 11px;
     border-radius: 50%;
     background: none;
+    @media (min-width: 992px){
+        display: none;
+    }
  };
 .circle_right {
     left: 3.75px;
@@ -649,6 +894,13 @@
     left: 50%;
     transform: translateX(-50%);
     top: 865px;
+    @media (min-width: 992px){
+        transform: none;
+        top: 1055px;
+        left: 84px;
+        width: 298px;
+        height: 44px;
+    }
 }
 .introduction_text {
     @extend %title_mobile_Text;
@@ -656,8 +908,171 @@
     line-height: 32px;
     text-align: center;
     color:  $firstColor;
-    
+    @media (min-width: 992px){
+        font-size: 36px;
+    }
 }
+.phone_number_pcbox {
+    display: none;
+    @media (min-width: 992px){
+        display: flex;
+        position: absolute;
+        top: 92px;
+        left: 577px;
+        bottom: 58px;
+        width: 87px;
+        height: 17px;
+    }
+}
+.phone_number_pctext{
+    @extend %title_mobile_thin_Text;
+    font-size: 14px;
+    color: $firstColor;
+}
+.dividing_line_right{
+    display: none;
+    @media (min-width: 992px){
+        display: flex;
+        position: absolute;
+        top: 28px;
+        left: 812px;
+        width: 0px;
+        height: 116.5px;
+        border: 1px solid rgba(192, 183, 232, 0.33);
+    }
+}
+.send_us_a_message_box{
+    display: none;
+    @media (min-width: 992px){
+        display: flex;
+        position: absolute;
+        top: 54px;
+        left: 950px;
+    }
+}
+.send_us_a_message_text{
+    @extend %title_mobile_Text;
+    color: $firstColor;
+    font-size: 24px;
+}
+.send_us_a_message_text::before{
+    content: "";
+    position: absolute;
+    background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/mail.webp);
+    width: 65px;
+    height: 65px;
+    left: -88px;
+}
+.email_text_box{
+    display: none;
+    @media (min-width: 992px){
+        display: flex;
+        position: absolute;
+        top: 92px;
+        left: 951px;
+        bottom: 58px;
+        width: 189px;
+        height: 17px;
+    }
+}
+.email_link{
+    @extend %title_mobile_thin_Text;
+        font-size: 14px;
+        color: $firstColor;
+}
+.about {
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+        @media(min-width: 480px){
+            bottom: 0;
+            left: 0px;
+            width: 0%;
+            height: 1px;
+            transition: 0.2s;
+        }
+    };
+    &:hover:after {
+        @media(min-width: 992px){
+            width: 46px;
+        }
+    };
+}
+.services {
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+        @media(min-width: 480px){
+            bottom: 0;
+            left: 88px;
+            width: 0%;
+            height: 1px;
+            transition: 0.2s;
+        }
+    };
+    &:hover:after {
+        @media(min-width: 992px){
+            width: 62px;
+        }
+    };
+}
+.technologies{
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+        @media(min-width: 480px){
+            bottom: 0;
+            left: 191px;
+            width: 0%;
+            height: 1px;
+            transition: 0.2s;
+        }
+    };
+    &:hover:after {
+        @media(min-width: 992px){
+            width: 100px;
+        }
+    };
+}
+.how_to{
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+        @media(min-width: 480px){
+            bottom: 0;
+            left: 332px;
+            width: 0%;
+            height: 1px;
+            transition: 0.2s;
+        }
+    };
+    &:hover:after {
+        @media(min-width: 992px){
+            width: 55px;
+        }
+    };
+}
+
 .to_hydra_box{
     position: absolute;
     display: flex;
@@ -667,6 +1082,13 @@
     top: 913px;
     left: 50%;
     transform: translateX(-50%);
+    @media (min-width: 992px){
+        transform: none;
+        top: 1109px;
+        left: 84px;
+        width: 298px;
+        height: 44px;
+    }
 }
 .to_hydra_text{
     font-size: 26px;
@@ -674,9 +1096,12 @@
     color:  $firstColor;
     @extend %title_mobile_thin_Text;
     text-align: center;
+    @media (min-width: 992px){
+        font-size: 36px;
+    }
 }
 .vr_img_box{
-    background-image: url(../src/assets/img/VR_img.png);
+    background-image: url(/Startup_lessons/Project/src/assets/img/VR_img.png);
     background-repeat: no-repeat;
     background-size:cover;
     position: absolute;
@@ -686,6 +1111,17 @@
     transform: translateX(-50%);
     // left: 23px;
     top: 981px;
+    @media (min-width: 992px){
+        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/about-hydra-vr.webp);
+        transform: none;
+        border-radius: 240px 100px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        top: 1253px;
+        left: 72px;
+        width: 524px;
+        height: 557px;
+        flex-shrink: 0;      
+    }
 }
 
 .Eget_mi_proin_box{
@@ -704,10 +1140,7 @@
 }
 
 .LETS_GET_IN_TOUCH_button {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %button_box;
     text-align: center;
     width: 276px;
     height: 56px;
@@ -788,7 +1221,7 @@
     background: rgba(14, 14, 14, 0.32);
 }
 .slider_img {
-    background-image: url(../src/assets/img/Mask_group.png);
+    background-image: url(/Startup_lessons/Project/src/assets/img/Mask_group.png);
     background-repeat: no-repeat;
     background-size:cover;
     position: absolute;
@@ -810,8 +1243,7 @@
     width: 154px;
     height: 0px;
     margin: 17.5px 79.5px 0px 86.5px;
-
-border: 1px solid rgba(192, 183, 232, 0.33);
+    border: 1px solid rgba(192, 183, 232, 0.33);
 }
 .Vitae_sapien_box {
     width: 250px;
@@ -847,10 +1279,7 @@ border: 1px solid rgba(192, 183, 232, 0.33);
     border: none;
 }
 .slider_button_left_box {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %button_box;
     width: 62px;
     height: 62px;
     left: 7px;
@@ -888,7 +1317,6 @@ border: 1px solid rgba(192, 183, 232, 0.33);
 .slider_button_left::before, .hydra_tech_button_left::before,.how_we_build_button_left::before {
     left: 42%;
     transform-origin: center;
-    
     background-color: #433D60;
     transform: matrix(0, -1, -1, 0, 0, 0);
     transform: translate(-50%, -50%) rotate(-45deg);
@@ -897,16 +1325,12 @@ border: 1px solid rgba(192, 183, 232, 0.33);
 .slider_button_left::after, .hydra_tech_button_left::after, .how_we_build_button_left::after {
     right: 42%;
     transform-origin: center;
-    
     background-color: #433D60;
     transform: matrix(0, -1, -1, 0, 0, 0);
     transform: translate(50%, -50%) rotate(45deg);
 }
 .slider_button_right_box {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %button_box;
     width: 62px;
     height: 62px;
     right: 5px;
@@ -959,7 +1383,7 @@ border: 1px solid rgba(192, 183, 232, 0.33);
     transform: translate(50%, -50%) rotate(45deg);
 }
 .Mask_group{
-    background-image: url(../src/assets/img/Mask_group2.png);
+    background-image: url(/Startup_lessons/Project/src/assets/img/Mask_group2.png);
     background-repeat: no-repeat;
     background-size:cover;
     position: absolute;
@@ -997,7 +1421,7 @@ border: 1px solid rgba(192, 183, 232, 0.33);
     color: $firstColor;
 }
 .hydra_tech {
-    background-image: url(../src/assets/img/Hydra-Tech4.png);
+    background-image: url(/Startup_lessons/Project/src/assets/img/Hydra-Tech4.png);
     background-repeat: no-repeat;
     background-size:cover;
     position: absolute;
@@ -1009,10 +1433,7 @@ border: 1px solid rgba(192, 183, 232, 0.33);
     top: 2613px;
 }
 .hydra_tech_button_left_box{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %button_box;
     width: 62px;
     height: 62px;
     left: 6px;
@@ -1022,10 +1443,7 @@ border: 1px solid rgba(192, 183, 232, 0.33);
     background: rgba(14, 14, 14, 0.32);
 }
 .hydra_tech_button_right_box{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %button_box;
     width: 62px;
     height: 62px;
     right: 6px;
@@ -1118,10 +1536,7 @@ border: 1px solid rgba(192, 183, 232, 0.33);
 }
 .how_we_build_button_left_box {
     border-radius: 50%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %button_box;
     width: 62px;
     height: 62px;
     left: 6px;
@@ -1168,7 +1583,7 @@ border: 1px solid rgba(192, 183, 232, 0.33);
     width: 116.5px;
     height: 0px;
     margin: 21px 115.5px 0px 111px;
-    border: 1px solid rgba(192, 183, 232, 0.33);
+    border: 1px solid rgba(52, 48, 69, 100);
 }
 .lets_build_box{
     width: 232px;
@@ -1307,7 +1722,7 @@ border: 1px solid rgba(192, 183, 232, 0.33);
     border: none;
 }
 .contact_hydra_img {
-    background-image: url(../src/assets/img/contact_hydra_img.png);
+    background-image: url(/Startup_lessons/Project/src/assets/img/contact_hydra_img.png);
     background-repeat: no-repeat;
     background-size:cover;
     position: absolute;
@@ -1355,7 +1770,7 @@ border: 1px solid rgba(192, 183, 232, 0.33);
     }
 }
 .vector1_img {
-    background-image: url(../src/assets/img/Vector1.png);
+    background-image: url(/Startup_lessons/Project/src/assets/img/Vector1.png);
     background-repeat: no-repeat;
     background-size:cover;
     position: relative;
@@ -1363,7 +1778,7 @@ border: 1px solid rgba(192, 183, 232, 0.33);
     height: 562px;
     margin: 0px 0px 0px 102px;
     @media (min-width: 992px){
-        background-image: url(../src/assets/img/Desctop/vector1.webp);
+        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/vector1.webp);
         width: 414px;
         height: 669px;
         margin: 0;
@@ -1397,7 +1812,7 @@ border: 1px solid rgba(192, 183, 232, 0.33);
     }
 }
 .vector2_img {
-    background-image: url(../src/assets/img/Vector2.png);
+    background-image: url(/Startup_lessons/Project/src/assets/img/Vector2.png);
     background-repeat: no-repeat;
     background-size:cover;
     position: relative;
@@ -1406,7 +1821,7 @@ border: 1px solid rgba(192, 183, 232, 0.33);
     margin: 3px 51px 0px 23px;
     z-index: 10;
     @media (min-width: 992px){
-        background-image: url(../src/assets/img/Desctop/vector-2.webp);
+        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/vector-2.webp);
         width: 385px;
         height: 845px;
         margin: 0;
@@ -1430,7 +1845,7 @@ border: 1px solid rgba(192, 183, 232, 0.33);
     }
 }
 .vector3_img {
-    background-image: url(../src/assets/img/Vector3.png);
+    background-image: url(/Startup_lessons/Project/src/assets/img/Vector3.png);
     background-repeat: no-repeat;
     background-size:cover;
     position: relative;
@@ -1440,7 +1855,7 @@ border: 1px solid rgba(192, 183, 232, 0.33);
     @media (min-width: 992px){
         width: 735.029px;
         height: 419.323px;
-        background-image: url(../src/assets/img/Desctop/vector3.webp);
+        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/vector3.webp);
 
     }
 
@@ -1483,7 +1898,7 @@ border: 1px solid rgba(192, 183, 232, 0.33);
     padding: 0px;
     width: 32px;
     height: 32px;
-    background-image: url(../src/assets/img/facebook.png);
+    background-image: url(/Startup_lessons/Project/src/assets/img/facebook.png);
     content: "";
     background-size: 32px 32px;
     }
@@ -1502,7 +1917,7 @@ border: 1px solid rgba(192, 183, 232, 0.33);
     padding: 0px;
     width: 32px;
     height: 32px;
-    background-image: url(../src/assets/img/twitter.png);
+    background-image: url(/Startup_lessons/Project/src/assets/img/twitter.png);
     content: "";
     background-size: 32px 32px;
     }
@@ -1521,7 +1936,7 @@ border: 1px solid rgba(192, 183, 232, 0.33);
     padding: 0px;
     width: 32px;
     height: 32px;
-    background-image: url(../src/assets/img/linkedin.png);
+    background-image: url(/Startup_lessons/Project/src/assets/img/linkedin.png);
     content: "";
     background-size: 32px 32px;
     }
@@ -1540,7 +1955,7 @@ border: 1px solid rgba(192, 183, 232, 0.33);
     padding: 0px;
     width: 32px;
     height: 32px;
-    background-image: url(../src/assets/img/youtube.png);
+    background-image: url(/Startup_lessons/Project/src/assets/img/youtube.png);
     content: "";
     background-size: 32px 32px;
     }
@@ -1559,7 +1974,7 @@ border: 1px solid rgba(192, 183, 232, 0.33);
     padding: 0px;
     width: 32px;
     height: 32px;
-    background-image: url(../src/assets/img/instagram.png);
+    background-image: url(/Startup_lessons/Project/src/assets/img/instagram.png);
     content: "";
     background-size: 32px 32px;
     }
@@ -1578,16 +1993,13 @@ border: 1px solid rgba(192, 183, 232, 0.33);
     padding: 0px;
     width: 32px;
     height: 32px;
-    background-image: url(../src/assets/img/pinterest.png);
+    background-image: url(/Startup_lessons/Project/src/assets/img/pinterest.png);
     content: "";
     background-size: 32px 32px;
     }
 }
 .build_your_world_footer_button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
+    @extend %button_box;
     width: 292px;
     height: 52px;
     top: 4769px;

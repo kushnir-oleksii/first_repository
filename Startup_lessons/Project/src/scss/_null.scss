@@ -1,11 +1,17 @@
+@import '_colors';
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    a {
-      text-decoration: none;  
-    };
+    
 };
+a {
+  text-decoration: none;
+  color: $firstColor;
+};
+.link_spisok_menu:hover {
+  color: #C0B7E8 ;
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document

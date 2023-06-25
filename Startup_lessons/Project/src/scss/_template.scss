@@ -8,3 +8,9 @@
     height: 53px;
     border: 2px solid #FFFFFF;
 };
+%button_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
