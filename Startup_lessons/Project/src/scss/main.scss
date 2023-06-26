@@ -538,7 +538,7 @@
         height: 48px;
     }
 }
-.build_your_world_text,.JOIN_HYDRA_button_text,.contact_us_text{ 
+.build_your_world_text,.JOIN_HYDRA_button_text,.contact_us_text, .LETS_GET_IN_TOUCH_text{ 
     @extend %title_mobile_Text;
     font-size: 14px;
     line-height: 17px;
@@ -621,6 +621,98 @@
     @media (min-width: 992px){
         margin-left: 41px;
     }
+}
+.about {
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+        @media(min-width: 480px){
+            bottom: 0;
+            left: 0px;
+            width: 0%;
+            height: 1px;
+            transition: 0.2s;
+        }
+    };
+    &:hover:after {
+        @media(min-width: 992px){
+            width: 46px;
+        }
+    };
+}
+.services {
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+        @media(min-width: 480px){
+            bottom: 0;
+            left: 88px;
+            width: 0%;
+            height: 1px;
+            transition: 0.2s;
+        }
+    };
+    &:hover:after {
+        @media(min-width: 992px){
+            width: 62px;
+        }
+    };
+}
+.technologies{
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+        @media(min-width: 480px){
+            bottom: 0;
+            left: 191px;
+            width: 0%;
+            height: 1px;
+            transition: 0.2s;
+        }
+    };
+    &:hover:after {
+        @media(min-width: 992px){
+            width: 100px;
+        }
+    };
+}
+.how_to{
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+        @media(min-width: 480px){
+            bottom: 0;
+            left: 332px;
+            width: 0%;
+            height: 1px;
+            transition: 0.2s;
+        }
+    };
+    &:hover:after {
+        @media(min-width: 992px){
+            width: 55px;
+        }
+    };
 }
 .contact_us_button{
     display: none;
@@ -885,33 +977,6 @@
     transform: translate(50%, -50%) rotate(45deg);
 }
 
-.introduction_box {
-    background-color:  #302C42;
-    display: flex;
-    position: absolute;
-    width: 216px;
-    height: 32px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 865px;
-    @media (min-width: 992px){
-        transform: none;
-        top: 1055px;
-        left: 84px;
-        width: 298px;
-        height: 44px;
-    }
-}
-.introduction_text {
-    @extend %title_mobile_Text;
-    font-size: 26px;
-    line-height: 32px;
-    text-align: center;
-    color:  $firstColor;
-    @media (min-width: 992px){
-        font-size: 36px;
-    }
-}
 .phone_number_pcbox {
     display: none;
     @media (min-width: 992px){
@@ -980,97 +1045,45 @@
         font-size: 14px;
         color: $firstColor;
 }
-.about {
-    &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        background-color: white;
-        width: 0%;
-        height: 1px;
-        transition: 0.2s;
-        @media(min-width: 480px){
-            bottom: 0;
-            left: 0px;
-            width: 0%;
-            height: 1px;
-            transition: 0.2s;
-        }
-    };
-    &:hover:after {
-        @media(min-width: 992px){
-            width: 46px;
-        }
-    };
+.introduction_section{
+    position: absolute;
+    top: 865px;
+    width: 390px;
+    height: 861px;
+    left: 50%;
+    transform: translateX(-50%);
+    @media (min-width: 992px){
+        top: 1051px;
+        width: 1440px;
+        height: 756px;
+    }
 }
-.services {
-    &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        background-color: white;
-        width: 0%;
-        height: 1px;
-        transition: 0.2s;
-        @media(min-width: 480px){
-            bottom: 0;
-            left: 88px;
-            width: 0%;
-            height: 1px;
-            transition: 0.2s;
-        }
-    };
-    &:hover:after {
-        @media(min-width: 992px){
-            width: 62px;
-        }
-    };
+.introduction_box {
+    background-color:  #302C42;
+    display: flex;
+    position: absolute;
+    width: 216px;
+    height: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0px;
+    @media (min-width: 992px){
+        transform: none;
+        top: 5px;
+        left: 84px;
+        width: 298px;
+        height: 44px;
+    }
 }
-.technologies{
-    &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        background-color: white;
-        width: 0%;
-        height: 1px;
-        transition: 0.2s;
-        @media(min-width: 480px){
-            bottom: 0;
-            left: 191px;
-            width: 0%;
-            height: 1px;
-            transition: 0.2s;
-        }
-    };
-    &:hover:after {
-        @media(min-width: 992px){
-            width: 100px;
-        }
-    };
-}
-.how_to{
-    &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        background-color: white;
-        width: 0%;
-        height: 1px;
-        transition: 0.2s;
-        @media(min-width: 480px){
-            bottom: 0;
-            left: 332px;
-            width: 0%;
-            height: 1px;
-            transition: 0.2s;
-        }
-    };
-    &:hover:after {
-        @media(min-width: 992px){
-            width: 55px;
-        }
-    };
+.introduction_text {
+    @extend %title_mobile_Text;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    color:  $firstColor;
+    @media (min-width: 992px){
+        font-size: 36px;
+    }
 }
 
 .to_hydra_box{
@@ -1079,12 +1092,12 @@
     width: 183px;
     height: 32px;
     left: 104px;
-    top: 913px;
+    top: 48px;
     left: 50%;
     transform: translateX(-50%);
     @media (min-width: 992px){
         transform: none;
-        top: 1109px;
+        top: 58px;
         left: 84px;
         width: 298px;
         height: 44px;
@@ -1110,18 +1123,64 @@
     left: 50%;
     transform: translateX(-50%);
     // left: 23px;
-    top: 981px;
+    top: 117.93px;
     @media (min-width: 992px){
         background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/about-hydra-vr.webp);
         transform: none;
         border-radius: 240px 100px;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-        top: 1253px;
-        left: 72px;
+        top: 199px;
+        left: 84px;
         width: 524px;
         height: 557px;
         flex-shrink: 0;      
     }
+}
+.direct_arrow_vr {
+    @media (min-width: 992px){
+        display: flex;
+        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/direct-arrow-vr.webp);
+        background-repeat: no-repeat;
+        background-size:cover;
+        position: absolute;
+        width: 157.5px;
+        height: 3px;
+        flex-shrink: 0;
+        top: 78px;
+        left: 365px;
+        
+    }
+}
+.arrow_right_vr{
+    @media (min-width: 992px){
+        display: flex;
+        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/arrow-small-right.webp);
+        background-repeat: no-repeat;
+        background-size:cover;
+        position: absolute;
+        top: 30px;
+        left: 493px;
+        width: 100px;
+        height: 100px;
+    }
+}
+.Vitae_sapien_vr_box {
+    display: none;
+    @media (min-width: 992px){
+        display: flex;
+        position: absolute;
+        top: 0px;
+        left: 704px;
+        width: 652px;
+        height: 98px;
+    }
+}
+.Vitae_sapien_vr_text {
+    @extend %title_mobile_standard_Text;
+    font-size: 16px;
+    line-height: 1.6;
+    color: $firstColor;
+
 }
 
 .Eget_mi_proin_box{
@@ -1130,21 +1189,72 @@
     height: 246px;
     left: 50%;
     transform: translateX(-50%);
-    top: 1390px;
+    top: 526.93px;
+    @media (min-width: 992px){
+        transform:none;
+        top: 384px;
+        left: 726px;
+        width: 630px;
+        height: 228px;
+
+    }
 }
 .Eget_mi_proin_text{
-    @extend %title_mobile_standard_Text;
+    @extend %title_mobile_thin_Text;
     font-size: 12px;
     line-height: 15px;
     color: $firstColor;
+    @media (min-width: 992px){
+        line-height: 1.6;
+        font-size: 16px;
+        br {
+            display: none;
+          }
+    }
+}
+.about_box {
+    display: none;
+    @media (min-width: 992px){
+        display: flex;
+        position: absolute;
+        top: 249px;
+        left: 725px;
+        width: 136px;
+        height: 44px;
+        text-align: center;
+    }
+}
+
+.about_box_text{
+    @extend %title_mobile_Text;
+    color: $firstColor;
+    font-size: 36px;
+}
+.hydra_vr_box{
+    display: none;
+    @media (min-width: 992px){
+        display: flex;
+        position: absolute;
+        top: 298px;
+        left: 725px;
+        width: 192px;
+        height: 44px;
+        text-align: center;
+    }
+}
+.hydra_vr_box_text{
+    @extend %title_mobile_thin_Text;
+    color: $firstColor;
+    font-size: 36px;
 }
 
 .LETS_GET_IN_TOUCH_button {
+    position: absolute;
     @extend %button_box;
     text-align: center;
     width: 276px;
     height: 56px;
-    top: 1670px; /* Измените отступы по желанию */
+    top: 806.93px; /* Измените отступы по желанию */
     border-radius: 40px;
     background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
     cursor: pointer;
@@ -1156,6 +1266,18 @@
     line-height: 17px;
     color: $secondColor;
     border: none;
+    transition: background-color 0.3s ease;
+    flex-grow: 1;
+    &:hover {
+        background: linear-gradient(90deg, #C0B7E8 0%, #8176AF 100%);
+    }
+    @media (min-width: 992px){
+        transform:none;
+        top: 640px;
+        left: 726px;
+        width: 214px;
+        height: 48px;
+    }
 }
 
 // .LETS_GET_IN_TOUCH_button:hover {
@@ -1184,7 +1306,6 @@
     font-size: 26px;
     line-height: 32px;    /* identical to box height */
     text-align: center;
-
 }
 .with_hydra_box{
     position: absolute;

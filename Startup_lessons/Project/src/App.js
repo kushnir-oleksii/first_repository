@@ -5,3 +5,5 @@ hamburgerMenu.addEventListener('click', function() {
   hamburgerMenu.classList.toggle('open');
   spisokMenu.classList.toggle('open');
 });
+
+

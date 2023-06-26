@@ -1,18 +1,18 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
-.contact_footer_text, .build_your_world_footer_button, .SOCIALIZE_WITH_HYDRA_text, .SEND_TO_HYDRA_button, .JOIN_HYDRA_text, .how_we_build_description_text, .how_we_build_circle_inside_text, .HOW_WE_BUILD_text, .TECHNOLOGIES_text, .TRY_IT_NOW_button, .simulation_text, .why_build_text, .LETS_GET_IN_TOUCH_button, .send_us_a_message_text, .introduction_text, .give_us_a_call_text, .pay_us_a_visit_text, .spisok_menu, .build_your_world_text, .JOIN_HYDRA_button_text, .contact_us_text, .Reality, .Virtual, .Of, .Dive {
+.contact_footer_text, .build_your_world_footer_button, .SOCIALIZE_WITH_HYDRA_text, .SEND_TO_HYDRA_button, .JOIN_HYDRA_text, .how_we_build_description_text, .how_we_build_circle_inside_text, .HOW_WE_BUILD_text, .TECHNOLOGIES_text, .TRY_IT_NOW_button, .simulation_text, .why_build_text, .LETS_GET_IN_TOUCH_button, .about_box_text, .introduction_text, .send_us_a_message_text, .give_us_a_call_text, .pay_us_a_visit_text, .spisok_menu, .build_your_world_text, .JOIN_HYDRA_button_text, .contact_us_text, .LETS_GET_IN_TOUCH_text, .Reality, .Virtual, .Of, .Dive {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
 }
 
-.something::placeholder, .subject::placeholder, .phone_number::placeholder, .email_text::placeholder, .last_name::placeholder, .first_name::placeholder, .Vitae_sapien_text, .Eget_mi_proin_text, .location_text {
+.something::placeholder, .subject::placeholder, .phone_number::placeholder, .email_text::placeholder, .last_name::placeholder, .first_name::placeholder, .Vitae_sapien_text, .Vitae_sapien_vr_text, .location_text {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
 }
 
-.lets_build_text, .WITH_HYDRA_VR_text, .USED_BY_text, .with_hydra_text, .to_hydra_text, .email_link, .phone_number_pctext, .Lorem_ipsum_text {
+.lets_build_text, .WITH_HYDRA_VR_text, .USED_BY_text, .with_hydra_text, .hydra_vr_box_text, .Eget_mi_proin_text, .to_hydra_text, .email_link, .phone_number_pctext, .Lorem_ipsum_text {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
@@ -502,7 +502,7 @@
   }
 }
 
-.build_your_world_text, .JOIN_HYDRA_button_text, .contact_us_text {
+.build_your_world_text, .JOIN_HYDRA_button_text, .contact_us_text, .LETS_GET_IN_TOUCH_text {
   font-size: 14px;
   line-height: 17px;
   color: #343045;
@@ -516,14 +516,14 @@
   justify-content: center;
   /* Для выравнивания текста по центру по горизонтали */
 }
-.build_your_world_text:hover, .JOIN_HYDRA_button_text:hover, .contact_us_text:hover {
+.build_your_world_text:hover, .JOIN_HYDRA_button_text:hover, .contact_us_text:hover, .LETS_GET_IN_TOUCH_text:hover {
   font-size: 16px;
 }
 @media (min-width: 992px) {
-  .build_your_world_text, .JOIN_HYDRA_button_text, .contact_us_text {
+  .build_your_world_text, .JOIN_HYDRA_button_text, .contact_us_text, .LETS_GET_IN_TOUCH_text {
     font-size: 12px;
   }
-  .build_your_world_text:hover, .JOIN_HYDRA_button_text:hover, .contact_us_text:hover {
+  .build_your_world_text:hover, .JOIN_HYDRA_button_text:hover, .contact_us_text:hover, .LETS_GET_IN_TOUCH_text:hover {
     font-size: 14px;
   }
 }
@@ -596,6 +596,102 @@
 @media (min-width: 992px) {
   .spisok_menu_technologies, .spisok_menu_how_to {
     margin-left: 41px;
+  }
+}
+
+.about::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  width: 0%;
+  height: 1px;
+  transition: 0.2s;
+}
+@media (min-width: 480px) {
+  .about::after {
+    bottom: 0;
+    left: 0px;
+    width: 0%;
+    height: 1px;
+    transition: 0.2s;
+  }
+}
+@media (min-width: 992px) {
+  .about:hover:after {
+    width: 46px;
+  }
+}
+
+.services::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  width: 0%;
+  height: 1px;
+  transition: 0.2s;
+}
+@media (min-width: 480px) {
+  .services::after {
+    bottom: 0;
+    left: 88px;
+    width: 0%;
+    height: 1px;
+    transition: 0.2s;
+  }
+}
+@media (min-width: 992px) {
+  .services:hover:after {
+    width: 62px;
+  }
+}
+
+.technologies::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  width: 0%;
+  height: 1px;
+  transition: 0.2s;
+}
+@media (min-width: 480px) {
+  .technologies::after {
+    bottom: 0;
+    left: 191px;
+    width: 0%;
+    height: 1px;
+    transition: 0.2s;
+  }
+}
+@media (min-width: 992px) {
+  .technologies:hover:after {
+    width: 100px;
+  }
+}
+
+.how_to::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  width: 0%;
+  height: 1px;
+  transition: 0.2s;
+}
+@media (min-width: 480px) {
+  .how_to::after {
+    bottom: 0;
+    left: 332px;
+    width: 0%;
+    height: 1px;
+    transition: 0.2s;
+  }
+}
+@media (min-width: 992px) {
+  .how_to:hover:after {
+    width: 55px;
   }
 }
 
@@ -890,38 +986,6 @@
   transform: translate(50%, -50%) rotate(45deg);
 }
 
-.introduction_box {
-  background-color: #302C42;
-  display: flex;
-  position: absolute;
-  width: 216px;
-  height: 32px;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 865px;
-}
-@media (min-width: 992px) {
-  .introduction_box {
-    transform: none;
-    top: 1055px;
-    left: 84px;
-    width: 298px;
-    height: 44px;
-  }
-}
-
-.introduction_text {
-  font-size: 26px;
-  line-height: 32px;
-  text-align: center;
-  color: #FFFFFF;
-}
-@media (min-width: 992px) {
-  .introduction_text {
-    font-size: 36px;
-  }
-}
-
 .phone_number_pcbox {
   display: none;
 }
@@ -1003,99 +1067,51 @@
   color: #FFFFFF;
 }
 
-.about::after {
-  content: "";
+.introduction_section {
   position: absolute;
-  bottom: 0;
-  background-color: white;
-  width: 0%;
-  height: 1px;
-  transition: 0.2s;
-}
-@media (min-width: 480px) {
-  .about::after {
-    bottom: 0;
-    left: 0px;
-    width: 0%;
-    height: 1px;
-    transition: 0.2s;
-  }
+  top: 865px;
+  width: 390px;
+  height: 861px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 @media (min-width: 992px) {
-  .about:hover:after {
-    width: 46px;
+  .introduction_section {
+    top: 1051px;
+    width: 1440px;
+    height: 756px;
   }
 }
 
-.services::after {
-  content: "";
+.introduction_box {
+  background-color: #302C42;
+  display: flex;
   position: absolute;
-  bottom: 0;
-  background-color: white;
-  width: 0%;
-  height: 1px;
-  transition: 0.2s;
-}
-@media (min-width: 480px) {
-  .services::after {
-    bottom: 0;
-    left: 88px;
-    width: 0%;
-    height: 1px;
-    transition: 0.2s;
-  }
+  width: 216px;
+  height: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0px;
 }
 @media (min-width: 992px) {
-  .services:hover:after {
-    width: 62px;
+  .introduction_box {
+    transform: none;
+    top: 5px;
+    left: 84px;
+    width: 298px;
+    height: 44px;
   }
 }
 
-.technologies::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  background-color: white;
-  width: 0%;
-  height: 1px;
-  transition: 0.2s;
-}
-@media (min-width: 480px) {
-  .technologies::after {
-    bottom: 0;
-    left: 191px;
-    width: 0%;
-    height: 1px;
-    transition: 0.2s;
-  }
+.introduction_text {
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+  color: #FFFFFF;
 }
 @media (min-width: 992px) {
-  .technologies:hover:after {
-    width: 100px;
-  }
-}
-
-.how_to::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  background-color: white;
-  width: 0%;
-  height: 1px;
-  transition: 0.2s;
-}
-@media (min-width: 480px) {
-  .how_to::after {
-    bottom: 0;
-    left: 332px;
-    width: 0%;
-    height: 1px;
-    transition: 0.2s;
-  }
-}
-@media (min-width: 992px) {
-  .how_to:hover:after {
-    width: 55px;
+  .introduction_text {
+    font-size: 36px;
   }
 }
 
@@ -1105,14 +1121,14 @@
   width: 183px;
   height: 32px;
   left: 104px;
-  top: 913px;
+  top: 48px;
   left: 50%;
   transform: translateX(-50%);
 }
 @media (min-width: 992px) {
   .to_hydra_box {
     transform: none;
-    top: 1109px;
+    top: 58px;
     left: 84px;
     width: 298px;
     height: 44px;
@@ -1140,7 +1156,7 @@
   height: 358px;
   left: 50%;
   transform: translateX(-50%);
-  top: 981px;
+  top: 117.93px;
 }
 @media (min-width: 992px) {
   .vr_img_box {
@@ -1148,12 +1164,61 @@
     transform: none;
     border-radius: 240px 100px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    top: 1253px;
-    left: 72px;
+    top: 199px;
+    left: 84px;
     width: 524px;
     height: 557px;
     flex-shrink: 0;
   }
+}
+
+@media (min-width: 992px) {
+  .direct_arrow_vr {
+    display: flex;
+    background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/direct-arrow-vr.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 157.5px;
+    height: 3px;
+    flex-shrink: 0;
+    top: 78px;
+    left: 365px;
+  }
+}
+
+@media (min-width: 992px) {
+  .arrow_right_vr {
+    display: flex;
+    background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/arrow-small-right.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 30px;
+    left: 493px;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.Vitae_sapien_vr_box {
+  display: none;
+}
+@media (min-width: 992px) {
+  .Vitae_sapien_vr_box {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 704px;
+    width: 652px;
+    height: 98px;
+  }
+}
+
+.Vitae_sapien_vr_text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #FFFFFF;
 }
 
 .Eget_mi_proin_box {
@@ -1162,7 +1227,16 @@
   height: 246px;
   left: 50%;
   transform: translateX(-50%);
-  top: 1390px;
+  top: 526.93px;
+}
+@media (min-width: 992px) {
+  .Eget_mi_proin_box {
+    transform: none;
+    top: 384px;
+    left: 726px;
+    width: 630px;
+    height: 228px;
+  }
 }
 
 .Eget_mi_proin_text {
@@ -1170,12 +1244,62 @@
   line-height: 15px;
   color: #FFFFFF;
 }
+@media (min-width: 992px) {
+  .Eget_mi_proin_text {
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  .Eget_mi_proin_text br {
+    display: none;
+  }
+}
+
+.about_box {
+  display: none;
+}
+@media (min-width: 992px) {
+  .about_box {
+    display: flex;
+    position: absolute;
+    top: 249px;
+    left: 725px;
+    width: 136px;
+    height: 44px;
+    text-align: center;
+  }
+}
+
+.about_box_text {
+  color: #FFFFFF;
+  font-size: 36px;
+}
+
+.hydra_vr_box {
+  display: none;
+}
+@media (min-width: 992px) {
+  .hydra_vr_box {
+    display: flex;
+    position: absolute;
+    top: 298px;
+    left: 725px;
+    width: 192px;
+    height: 44px;
+    text-align: center;
+  }
+}
+
+.hydra_vr_box_text {
+  color: #FFFFFF;
+  font-size: 36px;
+}
 
 .LETS_GET_IN_TOUCH_button {
+  position: absolute;
   text-align: center;
   width: 276px;
   height: 56px;
-  top: 1670px;
+  top: 806.93px;
   /* Измените отступы по желанию */
   border-radius: 40px;
   background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
@@ -1186,6 +1310,20 @@
   line-height: 17px;
   color: #343045;
   border: none;
+  transition: background-color 0.3s ease;
+  flex-grow: 1;
+}
+.LETS_GET_IN_TOUCH_button:hover {
+  background: linear-gradient(90deg, #C0B7E8 0%, #8176AF 100%);
+}
+@media (min-width: 992px) {
+  .LETS_GET_IN_TOUCH_button {
+    transform: none;
+    top: 640px;
+    left: 726px;
+    width: 214px;
+    height: 48px;
+  }
 }
 
 .why_build_box {
