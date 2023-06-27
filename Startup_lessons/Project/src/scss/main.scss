@@ -538,7 +538,7 @@
         height: 48px;
     }
 }
-.build_your_world_text,.JOIN_HYDRA_button_text,.contact_us_text, .LETS_GET_IN_TOUCH_text{ 
+.build_your_world_text,.JOIN_HYDRA_button_text,.contact_us_text, .LETS_GET_IN_TOUCH_text, .TRY_IT_NOW_text{ 
     @extend %title_mobile_Text;
     font-size: 14px;
     line-height: 17px;
@@ -1136,34 +1136,21 @@
         flex-shrink: 0;      
     }
 }
-.direct_arrow_vr {
+.arrow_pc {
+    display: none;
     @media (min-width: 992px){
         display: flex;
-        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/direct-arrow-vr.webp);
+        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/arrow-pc.webp);
         background-repeat: no-repeat;
         background-size:cover;
         position: absolute;
-        width: 157.5px;
-        height: 3px;
-        flex-shrink: 0;
-        top: 78px;
-        left: 365px;
-        
-    }
-}
-.arrow_right_vr{
-    @media (min-width: 992px){
-        display: flex;
-        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/arrow-small-right.webp);
-        background-repeat: no-repeat;
-        background-size:cover;
-        position: absolute;
-        top: 30px;
-        left: 493px;
-        width: 100px;
+        width: 228px;
         height: 100px;
+        top: 30px;
+        left: 365px;
     }
 }
+
 .Vitae_sapien_vr_box {
     display: none;
     @media (min-width: 992px){
@@ -1291,14 +1278,34 @@
 //     color: $secondColor; 
     
 // }
+.why_build_section{
+    position: absolute;
+    width: 390px;
+    height: 920px;
+    top: 1786px;
+    left: 50%;
+    transform: translateX(-50%);
+    @media (min-width: 992px){
+        width: 1440px;
+        height: 716px;
+        top: 1918px;
+    }
+}
 .why_build_box {
     position: absolute;
     width: 162px;
     height: 32px;
     // left: 113px;
-    top: 1786px;
+    top: 0px;
     left: 50%;
     transform: translateX(-50%);
+    @media (min-width: 992px){
+        transform: none;
+        width: 225px;
+        height: 44px;
+        top: 0px;
+        left: 90px;
+    }
 }
 .why_build_text {
     @extend %title_mobile_Text;
@@ -1306,6 +1313,9 @@
     font-size: 26px;
     line-height: 32px;    /* identical to box height */
     text-align: center;
+    @media (min-width: 992px){
+        font-size: 36px;
+    }
 }
 .with_hydra_box{
     position: absolute;
@@ -1313,7 +1323,14 @@
     transform: translateX(-50%);
     width: 189px;
     height: 32px;
-    top: 1834px;
+    top: 48px;
+    @media (min-width: 992px){
+        transform: none;
+        top: 59px;
+        left: 90px;
+        width: 259px;
+        height: 44px;
+    }
 }
 .with_hydra_text {
     @extend %title_mobile_thin_Text;
@@ -1321,6 +1338,41 @@
     line-height: 31.69px;    /* identical to box height */
     text-align: center;
     color: $firstColor;
+    @media (min-width: 992px){
+        font-size: 36px;
+    }
+}
+.arrow_pc_why_build_section{
+    display: none;
+    @media (min-width: 992px){
+        display: flex;
+        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/arrow-pc.webp);
+        background-repeat: no-repeat;
+        background-size:cover;
+        position: absolute;
+        width: 228px;
+        height: 100px;
+        top: 31px;
+        left: 365px;
+    }
+}
+.Vitae_sapien_build_section_box {
+    display: none;
+    @media (min-width: 992px){
+        display: flex;
+        position: absolute;
+        top: 0px;
+        left: 710px;
+        width: 652px;
+        height: 98px;
+    }
+}
+.Vitae_sapien_build_section_text {
+    @extend %title_mobile_standard_Text;
+    font-size: 16px;
+    line-height: 1.6;
+    color: $firstColor;
+
 }
 .slider_box {
     position: absolute;
@@ -1329,11 +1381,43 @@
     // left: 36px;
     left: 50%;
     transform: translateX(-50%);
-    top: 1892px;
+    top: 106px;
     background: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #211E2E 100%);
     border-radius: 40px;
+    @media (min-width: 992px){
+        transform:none;
+        top: 203px;
+        left: 84px;
+        width: 310px;
+        height: 511px;
+    }
 }
-.slider_img_box {
+.slider_box_education, .self-care_box_education {
+    display: none;    
+    @media (min-width: 992px){
+        display: flex;
+        position: absolute;
+        width: 320px;
+        height: 511px;
+        background: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #211E2E 100%);
+        border-radius: 40px;
+        transform:none;
+        top: 203px;
+        width: 310px;
+        height: 511px;
+    }
+}
+.slider_box_education {
+    @media (min-width: 992px){
+        left: 405px;
+    }
+}
+.self-care_box_education{
+    @media (min-width: 992px){
+        left: 725px;
+    }
+}
+.slider_img_box, .slider_img_box_education, .self-care_img_box_education {
     position: absolute;
     width: 219px;
     height: 219px;
@@ -1341,8 +1425,7 @@
     border-radius: 50%;
     background: rgba(14, 14, 14, 0.32);
 }
-.slider_img {
-    background-image: url(/Startup_lessons/Project/src/assets/img/Mask_group.png);
+.slider_img, .slider_img_education, .self-care_img_education {
     background-repeat: no-repeat;
     background-size:cover;
     position: absolute;
@@ -1350,35 +1433,95 @@
     height: 190.92px;
     margin: 14.44px 14.44px 13.64px 13.64px;
 }
+.slider_img {
+    background-image: url(/Startup_lessons/Project/src/assets/img/Mask_group.png);
+    @media (min-width: 992px){
+        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/pexels-shvets-production.webp);
+        border-radius: 190.923px;
+    }
+}
+.slider_img_education{
+    @media (min-width: 992px){
+        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/pexels-mikhail-nilov.webp);
+        border-radius: 190.923px;
+    }
+}
+.self-care_img_education {
+    @media (min-width: 992px){
+        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/pexels-rodnae-productionspng.png);
+        border-radius: 190.923px;
+    }
+}
 .simulation_box {
     margin: 267px 75px 0px 84px;
+    @media (min-width: 992px){
+        margin: 263px 74px 0px 76px;
+    }
 }
-.simulation_text {
+
+.simulation_text, .education_text, .self-care_text {
     @extend %title_mobile_Text;
     font-size: 24px;
     line-height: 29px;
     color: $firstColor;
-
+    white-space: nowrap;
 }
+.education_box{
+    @media (min-width: 992px){
+        width: 152px;
+        height: 29px;
+        margin: 263px 78px 0px 80px;
+    }
+}
+.self-care_box{
+    @media (min-width: 992px){
+        width: 140px;
+        height: 29px;
+        margin: 263px 85px 0px 85px;
+    }
+}
+
 .slider_line_inside{
     width: 154px;
     height: 0px;
     margin: 17.5px 79.5px 0px 86.5px;
     border: 1px solid rgba(192, 183, 232, 0.33);
+    @media (min-width: 992px){
+        margin: 17.5px 77.5px 0px 78.5px;
+    }
 }
-.Vitae_sapien_box {
+.education_line_inside, .self-care_line_inside{
+        position: absolute;
+        display: flex;
+        width: 154px;
+        height: 0px;
+        border: 1px solid rgba(192, 183, 232, 0.33);
+        top: 309.5px;
+    left:  78.5px;
+}
+
+.Vitae_sapien_box{
+    margin: 21.5px 37px 0px 33px;
+
+}
+.Vitae_sapien_box, .Vitae_sapien_box_education, .Vitae_sapien_box_self-care {
     width: 250px;
     height: 57px;
-    margin: 21.5px 37px 0px 33px;
+    
 }
-.Vitae_sapien_text {
+.Vitae_sapien_box_education, .Vitae_sapien_box_self-care{
+    position: absolute;
+    top: 331px;
+    left: 25px;
+}
+.Vitae_sapien_text, .Vitae_sapien_text{
     @extend %title_mobile_standard_Text;
     font-size: 12px;
     line-height: 15px;
     color: $firstColor;
 
 }
-.TRY_IT_NOW_button{
+.TRY_IT_NOW_button, .TRY_IT_NOW_button_education, .TRY_IT_NOW_button_self-care{
     position: relative;
     display: flex;
     justify-content: center;
@@ -1396,8 +1539,30 @@
     color: $secondColor;
     width: 250px;
     height: 48px;
-    margin-top: 35px;
+    
     border: none;
+    transition: background-color 0.3s ease;
+    flex-grow: 1;
+    &:hover {
+        background: linear-gradient(90deg, #C0B7E8 0%, #8176AF 100%);
+    }
+    @media (min-width: 992px){
+        width: 154px;
+        height: 48px;
+    }
+    
+}
+.TRY_IT_NOW_button{
+    margin-top: 35px;
+}
+.TRY_IT_NOW_button_education, .TRY_IT_NOW_button_self-care{
+    @media (min-width: 992px){
+        position: absolute;
+        top: 423px;
+        left: 78px;
+        transform:none;
+    }
+
 }
 .slider_button_left_box {
     @extend %button_box;
@@ -1407,6 +1572,10 @@
     top: 2107px;
     border-radius: 50%;
     background: rgba(14, 14, 14, 0.32);
+    @media (min-width: 992px){
+        display: none;
+        font-size: 12px;
+    }
 }
 .slider_button_left_box_inside, .hydra_tech_button_left_box_inside, .how_we_build_button_left_box_inside{
     width: 44px;
@@ -1415,14 +1584,19 @@
     border-radius: 50%;
     cursor: pointer;
     border: none;
+    @media (min-width: 992px){
+        display: none;
+    }
 }
 .slider_button_left, .hydra_tech_button_left, .how_we_build_button_left{
     width: 38px;
     height: 38px;
-    
     border-radius: 50%;
     margin: 3px 2px 3px 4px;
-    transform: rotate(-90deg);;
+    transform: rotate(-90deg);
+    @media (min-width: 992px){
+        display: none;
+    }
     
 }
 .slider_button_left::before, .hydra_tech_button_left::before,.how_we_build_button_left::before,
@@ -1458,6 +1632,9 @@
     top: 2107px;
     border-radius: 50%;
     background: rgba(14, 14, 14, 0.32);
+    @media (min-width: 992px){
+        display: none;
+    }
 }
 .slider_button_right_box_inside, .hydra_tech_button_right_box_inside, .how_we_build_button_right_box_inside{
     width: 44px;
@@ -1466,6 +1643,9 @@
     border-radius: 50%;
     cursor: pointer;
     border: none;
+    @media (min-width: 992px){
+        display: none;
+    }
 }
 .slider_button_right, .hydra_tech_button_right, .how_we_build_button_right{
     width: 38px;
@@ -1474,6 +1654,9 @@
     border-radius: 50%;
     margin: 3px 2px 3px 4px;
     transform: rotate(90deg);
+    @media (min-width: 992px){
+        display: none;
+    }
     
 }
 .slider_button_right::before, .hydra_tech_button_right::before,.how_we_build_button_right::before,
@@ -1517,6 +1700,10 @@
     border-radius: 60px;
     left: 50%;
     transform: translateX(-50%);
+    @media (min-width: 992px){
+        display: none;
+    }
+    
 }
 .TECHNOLOGIES_box {
     width: 257px;
@@ -1560,8 +1747,10 @@
     left: 6px;
     top: 2714px;
     border-radius: 50%;
-
     background: rgba(14, 14, 14, 0.32);
+    @media (min-width: 992px){
+        display: none;
+    }
 }
 .hydra_tech_button_right_box{
     @extend %button_box;
@@ -1570,8 +1759,10 @@
     right: 6px;
     top: 2714px;
     border-radius: 50%;
-
     background: rgba(14, 14, 14, 0.32);
+    @media (min-width: 992px){
+        display: none;
+    }
 }
 .HOW_WE_BUILD_box {
     position: absolute;
@@ -1663,6 +1854,9 @@
     left: 6px;
     top: 3202px;
     background: rgba(14, 14, 14, 0.32);
+    @media (min-width: 992px){
+        display: none;
+    }
 }
 .how_we_build_button_right_box {
     border-radius: 50%;
@@ -1675,6 +1869,9 @@
     right: 6px;
     top: 3202px;
     background: rgba(14, 14, 14, 0.32);
+    @media (min-width: 992px){
+        display: none;
+    }
 }
 .contact_form{
     position: absolute;
