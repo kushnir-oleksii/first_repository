@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
-.contact_footer_text, .build_your_world_footer_button, .SOCIALIZE_WITH_HYDRA_text, .SEND_TO_HYDRA_button, .JOIN_HYDRA_text, .how_we_build_description_text, .how_we_build_circle_inside_text, .HOW_WE_BUILD_text, .TECHNOLOGIES_text, .TRY_IT_NOW_button, .TRY_IT_NOW_button_education, .TRY_IT_NOW_button_self-care, .simulation_text, .education_text, .self-care_text, .why_build_text, .LETS_GET_IN_TOUCH_button, .about_box_text, .introduction_text, .send_us_a_message_text, .give_us_a_call_text, .pay_us_a_visit_text, .spisok_menu, .build_your_world_text, .JOIN_HYDRA_button_text, .contact_us_text, .LETS_GET_IN_TOUCH_text, .TRY_IT_NOW_text, .Reality, .Virtual, .Of, .Dive {
+.contact_footer_text, .build_your_world_footer_button, .SOCIALIZE_WITH_HYDRA_text, .SEND_TO_HYDRA_button, .JOIN_HYDRA_text, .how_we_build_description_text, .how_we_build_circle_inside_text, .HOW_WE_BUILD_text, .TECHNOLOGIES_text, .TRY_IT_NOW_button, .TRY_IT_NOW_button_education, .TRY_IT_NOW_button_self-care, .TRY_IT_NOW_button_outdoor, .simulation_text, .education_text, .self-care_text, .outdoor_text, .why_build_text, .LETS_GET_IN_TOUCH_button, .about_box_text, .introduction_text, .send_us_a_message_text, .give_us_a_call_text, .pay_us_a_visit_text, .spisok_menu, .build_your_world_text, .JOIN_HYDRA_button_text, .contact_us_text, .LETS_GET_IN_TOUCH_text, .TRY_IT_NOW_text, .Reality, .Virtual, .Of, .Dive {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -1449,11 +1449,11 @@
   }
 }
 
-.slider_box_education, .self-care_box_education {
+.slider_box_education, .slider_box_self-care, .slider_box_outdoor {
   display: none;
 }
 @media (min-width: 992px) {
-  .slider_box_education, .self-care_box_education {
+  .slider_box_education, .slider_box_self-care, .slider_box_outdoor {
     display: flex;
     position: absolute;
     width: 320px;
@@ -1474,12 +1474,18 @@
 }
 
 @media (min-width: 992px) {
-  .self-care_box_education {
+  .slider_box_self-care {
     left: 725px;
   }
 }
 
-.slider_img_box, .slider_img_box_education, .self-care_img_box_education {
+@media (min-width: 992px) {
+  .slider_box_outdoor {
+    left: 1046px;
+  }
+}
+
+.slider_img_box, .slider_img_box_education, .self-care_img_box, .outdoor_img_box {
   position: absolute;
   width: 219px;
   height: 219px;
@@ -1488,7 +1494,7 @@
   background: rgba(14, 14, 14, 0.32);
 }
 
-.slider_img, .slider_img_education, .self-care_img_education {
+.slider_img, .slider_img_education, .self-care_img, .outdoor_img {
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -1515,8 +1521,15 @@
 }
 
 @media (min-width: 992px) {
-  .self-care_img_education {
+  .self-care_img {
     background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/pexels-rodnae-productionspng.png);
+    border-radius: 190.923px;
+  }
+}
+
+@media (min-width: 992px) {
+  .outdoor_img {
+    background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/pexels-mali-maeder.webp);
     border-radius: 190.923px;
   }
 }
@@ -1530,7 +1543,7 @@
   }
 }
 
-.simulation_text, .education_text, .self-care_text {
+.simulation_text, .education_text, .self-care_text, .outdoor_text {
   font-size: 24px;
   line-height: 29px;
   color: #FFFFFF;
@@ -1553,6 +1566,14 @@
   }
 }
 
+@media (min-width: 992px) {
+  .outdoor_box {
+    width: 132px;
+    height: 29px;
+    margin: 263px 93px 0px 85px;
+  }
+}
+
 .slider_line_inside {
   width: 154px;
   height: 0px;
@@ -1565,7 +1586,7 @@
   }
 }
 
-.education_line_inside, .self-care_line_inside {
+.education_line_inside, .self-care_line_inside, .outdoor_line_inside {
   position: absolute;
   display: flex;
   width: 154px;
@@ -1579,12 +1600,12 @@
   margin: 21.5px 37px 0px 33px;
 }
 
-.Vitae_sapien_box, .Vitae_sapien_box_education, .Vitae_sapien_box_self-care {
+.Vitae_sapien_box, .Vitae_sapien_box_education, .Vitae_sapien_box_self-care, .Vitae_sapien_box_outdoor {
   width: 250px;
   height: 57px;
 }
 
-.Vitae_sapien_box_education, .Vitae_sapien_box_self-care {
+.Vitae_sapien_box_education, .Vitae_sapien_box_self-care, .Vitae_sapien_box_outdoor {
   position: absolute;
   top: 331px;
   left: 25px;
@@ -1596,7 +1617,7 @@
   color: #FFFFFF;
 }
 
-.TRY_IT_NOW_button, .TRY_IT_NOW_button_education, .TRY_IT_NOW_button_self-care {
+.TRY_IT_NOW_button, .TRY_IT_NOW_button_education, .TRY_IT_NOW_button_self-care, .TRY_IT_NOW_button_outdoor {
   position: relative;
   display: flex;
   justify-content: center;
@@ -1616,11 +1637,11 @@
   transition: background-color 0.3s ease;
   flex-grow: 1;
 }
-.TRY_IT_NOW_button:hover, .TRY_IT_NOW_button_education:hover, .TRY_IT_NOW_button_self-care:hover {
+.TRY_IT_NOW_button:hover, .TRY_IT_NOW_button_education:hover, .TRY_IT_NOW_button_self-care:hover, .TRY_IT_NOW_button_outdoor:hover {
   background: linear-gradient(90deg, #C0B7E8 0%, #8176AF 100%);
 }
 @media (min-width: 992px) {
-  .TRY_IT_NOW_button, .TRY_IT_NOW_button_education, .TRY_IT_NOW_button_self-care {
+  .TRY_IT_NOW_button, .TRY_IT_NOW_button_education, .TRY_IT_NOW_button_self-care, .TRY_IT_NOW_button_outdoor {
     width: 154px;
     height: 48px;
   }
@@ -1631,7 +1652,7 @@
 }
 
 @media (min-width: 992px) {
-  .TRY_IT_NOW_button_education, .TRY_IT_NOW_button_self-care {
+  .TRY_IT_NOW_button_education, .TRY_IT_NOW_button_self-care, .TRY_IT_NOW_button_outdoor {
     position: absolute;
     top: 423px;
     left: 78px;
