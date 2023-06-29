@@ -67,8 +67,7 @@ function App() {
   const article = {
     description: lang.description,
     preview: lang.description_text,
-    content:
-      lang.lang_content
+    content: lang.lang_content
   };
 
  

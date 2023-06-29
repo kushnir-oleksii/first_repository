@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
-.contact_footer_text, .build_your_world_footer_button, .SOCIALIZE_WITH_HYDRA_text, .SEND_TO_HYDRA_button, .JOIN_HYDRA_text, .how_we_build_description_text, .how_we_build_circle_inside_text, .HOW_WE_BUILD_text, .TECHNOLOGIES_text, .TRY_IT_NOW_button, .TRY_IT_NOW_button_education, .TRY_IT_NOW_button_self-care, .TRY_IT_NOW_button_outdoor, .simulation_text, .education_text, .self-care_text, .outdoor_text, .why_build_text, .LETS_GET_IN_TOUCH_button, .about_box_text, .introduction_text, .send_us_a_message_text, .give_us_a_call_text, .pay_us_a_visit_text, .spisok_menu, .build_your_world_text, .JOIN_HYDRA_button_text, .contact_us_text, .LETS_GET_IN_TOUCH_text, .TRY_IT_NOW_text, .Reality, .Virtual, .Of, .Dive {
+.contact_footer_text, .build_your_world_footer_button, .SOCIALIZE_WITH_HYDRA_text, .SEND_TO_HYDRA_button, .JOIN_HYDRA_text, .how_we_build_description_text, .interaction_description_text, .vr_world_description_text, .Deploy_description_text, .how_we_build_circle_inside_text2, .how_we_build_circle_inside_text, .HOW_WE_BUILD_text, .TECHNOLOGIES_text, .TRY_IT_NOW_button, .TRY_IT_NOW_button_education, .TRY_IT_NOW_button_self-care, .TRY_IT_NOW_button_outdoor, .simulation_text, .education_text, .self-care_text, .outdoor_text, .why_build_text, .LETS_GET_IN_TOUCH_button, .about_box_text, .introduction_text, .send_us_a_message_text, .give_us_a_call_text, .pay_us_a_visit_text, .spisok_menu, .build_your_world_text, .JOIN_HYDRA_button_text, .contact_us_text, .LETS_GET_IN_TOUCH_text, .TRY_IT_NOW_text, .Reality, .Virtual, .Of, .Dive {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -53,6 +53,45 @@
   .first_screen {
     border-radius: 0px;
     min-width: 1440px;
+  }
+}
+
+@media (min-width: 992px) {
+  .vector14_box {
+    background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/vector14.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    position: absolute;
+    width: 1440px;
+    height: 814px;
+    flex-shrink: 0;
+    top: 2187px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+}
+
+.vector15_box {
+  z-index: 10;
+  display: none;
+}
+@media (min-width: 992px) {
+  .vector15_box {
+    background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/vector15.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    position: absolute;
+    display: flex;
+    width: 1440px;
+    height: 170px;
+    flex-shrink: 0;
+    top: 3665px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
   }
 }
 
@@ -1321,6 +1360,7 @@
   top: 1786px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 10;
 }
 @media (min-width: 992px) {
   .why_build_section {
@@ -1392,11 +1432,11 @@
   }
 }
 
-.arrow_pc_why_build_section {
+.arrow_pc_why_build_section, .arrow_pc_how_we_build_section {
   display: none;
 }
 @media (min-width: 992px) {
-  .arrow_pc_why_build_section {
+  .arrow_pc_why_build_section, .arrow_pc_how_we_build_section {
     display: flex;
     background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/arrow-pc.webp);
     background-repeat: no-repeat;
@@ -1406,6 +1446,20 @@
     height: 100px;
     top: 31px;
     left: 365px;
+  }
+}
+
+@media (min-width: 992px) {
+  .arrow_pc_why_build_section {
+    top: 31px;
+    left: 365px;
+  }
+}
+
+@media (min-width: 992px) {
+  .arrow_pc_how_we_build_section {
+    top: 31px;
+    left: 424px;
   }
 }
 
@@ -1522,7 +1576,7 @@
 
 @media (min-width: 992px) {
   .self-care_img {
-    background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/pexels-rodnae-productionspng.png);
+    background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/self-care.webp);
     border-radius: 190.923px;
   }
 }
@@ -1795,6 +1849,24 @@
   transform: translate(50%, -50%) rotate(45deg);
 }
 
+.technologies_hardware {
+  position: absolute;
+  top: 2459px;
+  width: 390px;
+  height: 219px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (min-width: 992px) {
+  .technologies_hardware {
+    top: 2748px;
+    width: 1440px;
+    height: 630px;
+    flex-shrink: 0;
+    z-index: 10;
+  }
+}
+
 .Mask_group {
   background-image: url(/Startup_lessons/Project/src/assets/img/Mask_group2.png);
   background-repeat: no-repeat;
@@ -1803,15 +1875,19 @@
   width: 348px;
   height: 163.35px;
   left: 17px;
-  top: 2459px;
+  top: 0px;
   box-shadow: 0px 4px 4px rgba(192, 183, 232, 0.01);
   border-radius: 60px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 17px;
 }
 @media (min-width: 992px) {
   .Mask_group {
-    display: none;
+    background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/pexels-rodnae-productions.png);
+    width: 1278px;
+    height: 303px;
+    flex-shrink: 0;
+    left: 84px;
+    border-radius: 160px;
   }
 }
 
@@ -1819,6 +1895,13 @@
   width: 257px;
   height: 20px;
   margin: 51px 39px 0px 52px;
+}
+@media (min-width: 992px) {
+  .TECHNOLOGIES_box {
+    width: 578px;
+    height: 44px;
+    margin: 108px 358px 0px 343px;
+  }
 }
 
 .TECHNOLOGIES_text {
@@ -1828,17 +1911,97 @@
   text-align: center;
   color: #FFFFFF;
 }
+@media (min-width: 992px) {
+  .TECHNOLOGIES_text {
+    font-size: 36px;
+  }
+}
 
 .USED_BY_box {
   width: 249px;
   height: 29px;
   margin: 14px 45px 49.35px 55px;
 }
+@media (min-width: 992px) {
+  .USED_BY_box {
+    width: 371px;
+    height: 44px;
+    margin: 11px 469px 0px 438px;
+  }
+}
 
 .USED_BY_text {
   font-size: 24px;
   line-height: 29px;
   color: #FFFFFF;
+}
+@media (min-width: 992px) {
+  .USED_BY_text {
+    font-size: 36px;
+  }
+}
+
+.hardware_box {
+  display: none;
+}
+@media (min-width: 992px) {
+  .hardware_box {
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    left: 670px;
+    top: 253px;
+    background: rgba(14, 14, 14, 0.32);
+  }
+}
+
+@media (min-width: 992px) {
+  .hardware_box_inside {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(267.61deg, #C0B7E8 -0.6%, #8176AF 98.31%);
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+  }
+}
+
+.hardware_button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 5px;
+  transform: rotate(180deg);
+}
+
+.hardware_button::after, .hardware_button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 30%;
+  height: 3px;
+  transform: translate(-50%, -50%);
+}
+
+.hardware_button::before {
+  left: 42%;
+  transform-origin: center;
+  background-color: #433D60;
+  transform: matrix(0, -1, -1, 0, 0, 0);
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.hardware_button::after {
+  right: 40%;
+  transform-origin: center;
+  background-color: #433D60;
+  transform: matrix(0, -1, -1, 0, 0, 0);
+  transform: translate(50%, -50%) rotate(45deg);
 }
 
 .hydra_tech {
@@ -1850,7 +2013,68 @@
   height: 256px;
   left: 50%;
   transform: translateX(-50%);
-  top: 2613px;
+  top: 154px;
+}
+@media (min-width: 992px) {
+  .hydra_tech {
+    background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/hydra-tech4.webp);
+    width: 282px;
+    height: 282px;
+    transform: none;
+    top: 348px;
+    left: 1045px;
+  }
+}
+
+.hydra_tech2 {
+  display: none;
+}
+@media (min-width: 992px) {
+  .hydra_tech2 {
+    display: flex;
+    background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/hydra-tech2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 263px;
+    height: 263px;
+    top: 357px;
+    left: 741px;
+  }
+}
+
+.hydra_tech3 {
+  display: none;
+}
+@media (min-width: 992px) {
+  .hydra_tech3 {
+    display: flex;
+    background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/hydra-tech3.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 252px;
+    height: 252px;
+    top: 363px;
+    left: 418px;
+  }
+}
+
+.hydra_tech4 {
+  display: none;
+}
+@media (min-width: 992px) {
+  .hydra_tech4 {
+    display: flex;
+    background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/hydra-tech3.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 174px;
+    height: 174px;
+    top: 402px;
+    left: 153px;
+  }
 }
 
 .hydra_tech_button_left_box {
@@ -1881,13 +2105,37 @@
   }
 }
 
-.HOW_WE_BUILD_box {
+.how_we_build_section {
   position: absolute;
-  width: 221px;
-  height: 32px;
+  top: 2847px;
+  width: 390px;
+  height: 416px;
   left: 50%;
   transform: translateX(-50%);
-  top: 2847px;
+}
+@media (min-width: 992px) {
+  .how_we_build_section {
+    top: 3447px;
+    width: 1440px;
+    height: 509px;
+    z-index: 10;
+  }
+}
+
+.HOW_WE_BUILD_box {
+  position: relative;
+  width: 221px;
+  height: 32px;
+  left: 83px;
+  top: 0px;
+}
+@media (min-width: 992px) {
+  .HOW_WE_BUILD_box {
+    top: 0px;
+    left: 87px;
+    width: 306px;
+    height: 44px;
+  }
 }
 
 .HOW_WE_BUILD_text {
@@ -1897,14 +2145,27 @@
   text-align: center;
   color: #FFFFFF;
 }
+@media (min-width: 992px) {
+  .HOW_WE_BUILD_text {
+    font-size: 36px;
+    line-height: normal;
+  }
+}
 
 .WITH_HYDRA_VR_box {
   position: absolute;
   width: 232px;
   height: 32px;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 2895px;
+  left: 77px;
+  top: 48px;
+}
+@media (min-width: 992px) {
+  .WITH_HYDRA_VR_box {
+    top: 59px;
+    left: 87px;
+    width: 321px;
+    height: 44px;
+  }
 }
 
 .WITH_HYDRA_VR_text {
@@ -1914,6 +2175,38 @@
   text-align: center;
   color: #FFFFFF;
 }
+@media (min-width: 992px) {
+  .WITH_HYDRA_VR_text {
+    font-size: 36px;
+    line-height: normal;
+  }
+}
+
+.Vitae_sapien_how_we_build_section {
+  display: none;
+}
+@media (min-width: 992px) {
+  .Vitae_sapien_how_we_build_section {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 707px;
+    width: 652px;
+    height: 98px;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .Vitae_sapien_how_we_build_section_text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #FFFFFF;
+  }
+}
 
 .how_we_build_steps {
   position: absolute;
@@ -1922,11 +2215,16 @@
   align-items: center;
   width: 198px;
   height: 198px;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 2964px;
+  left: 94px;
+  top: 117px;
   border-radius: 50%;
   background: rgba(13, 13, 13, 0.32);
+}
+@media (min-width: 992px) {
+  .how_we_build_steps {
+    top: 222px;
+    left: 141px;
+  }
 }
 
 .how_we_build_circle {
@@ -1950,19 +2248,160 @@
   color: #343045;
 }
 
+.how_we_build_steps2, .how_we_build_steps3, .how_we_build_steps4 {
+  display: none;
+}
+@media (min-width: 992px) {
+  .how_we_build_steps2, .how_we_build_steps3, .how_we_build_steps4 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 198px;
+    height: 198px;
+    left: 94px;
+    top: 117px;
+    border-radius: 50%;
+    background: rgba(13, 13, 13, 0.32);
+  }
+}
+
+@media (min-width: 992px) {
+  .how_we_build_steps2 {
+    top: 222px;
+    left: 454px;
+  }
+}
+
+@media (min-width: 992px) {
+  .how_we_build_steps3 {
+    top: 222px;
+    left: 781px;
+  }
+}
+
+@media (min-width: 992px) {
+  .how_we_build_steps4 {
+    top: 222px;
+    left: 1102px;
+  }
+}
+
+.how_we_build_circle2 {
+  border-radius: 50%;
+  width: 159px;
+  height: 159px;
+  margin: 19px 19px 20px 20px;
+  background: linear-gradient(251.27deg, #C0B7E8 12.87%, #8176AF 89.33%);
+}
+
+.how_we_build_circle_inside2 {
+  width: 69px;
+  height: 78px;
+  margin: 41px 46px 40px 44px;
+}
+
+.how_we_build_circle_inside_text2 {
+  font-size: 64px;
+  line-height: 78px;
+  /* identical to box height */
+  color: #343045;
+}
+
+.arrow-small-right-how-we-build, .interaction-how-we-build, .vr_world-how-we-build, .deploy-how-we-build {
+  display: none;
+}
+@media (min-width: 992px) {
+  .arrow-small-right-how-we-build, .interaction-how-we-build, .vr_world-how-we-build, .deploy-how-we-build {
+    display: flex;
+    background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/arrow-small-right-how-we-build.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 67px;
+    height: 67px;
+  }
+}
+
+.arrow-small-right-how-we-build {
+  top: 427px;
+  left: 98px;
+}
+
+.interaction-how-we-build {
+  top: 427px;
+  left: 437px;
+}
+
+.vr_world-how-we-build {
+  top: 427px;
+  left: 761px;
+}
+
+.deploy-how-we-build {
+  top: 427px;
+  left: 1088px;
+}
+
 .how_we_build_description_box {
   position: absolute;
   width: 187px;
   height: 64px;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 3199px;
+  left: 99px;
+  top: 352px;
+}
+@media (min-width: 992px) {
+  .how_we_build_description_box {
+    top: 445px;
+    left: 161px;
+  }
 }
 
-.how_we_build_description_text {
+.interaction_description_box {
+  display: none;
+}
+@media (min-width: 992px) {
+  .interaction_description_box {
+    display: flex;
+    position: absolute;
+    width: 140px;
+    height: 64px;
+    left: 500px;
+    top: 445px;
+  }
+}
+
+.vr_world_description_box {
+  display: none;
+}
+@media (min-width: 992px) {
+  .vr_world_description_box {
+    display: flex;
+    position: absolute;
+    width: 157px;
+    height: 64px;
+    left: 824px;
+    top: 445px;
+  }
+}
+
+.Deploy_description_box {
+  display: none;
+}
+@media (min-width: 992px) {
+  .Deploy_description_box {
+    display: flex;
+    position: absolute;
+    width: 117px;
+    height: 64px;
+    left: 1151px;
+    top: 445px;
+  }
+}
+
+.how_we_build_description_text, .interaction_description_text, .vr_world_description_text, .Deploy_description_text {
   font-size: 24px;
   line-height: 29px;
-  text-align: center;
   color: #FFFFFF;
 }
 
@@ -2008,6 +2447,11 @@
   background: radial-gradient(50% 50% at 50% 50%, #403A5F 0%, #211E2E 100%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 40px;
+}
+@media (min-width: 992px) {
+  .contact_form {
+    display: none;
+  }
 }
 
 .JOIN_HYDRA_box {
