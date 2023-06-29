@@ -573,7 +573,7 @@
         height: 48px;
     }
 }
-.build_your_world_text,.JOIN_HYDRA_button_text,.contact_us_text, .LETS_GET_IN_TOUCH_text, .TRY_IT_NOW_text{ 
+.build_your_world_text,.JOIN_HYDRA_button_text,.contact_us_text, .LETS_GET_IN_TOUCH_text, .TRY_IT_NOW_text, .SEND_TO_HYDRAtext{ 
     @extend %title_mobile_Text;
     font-size: 14px;
     line-height: 17px;
@@ -2261,13 +2261,24 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 40px;
     @media (min-width: 992px){
-        display: none;
+        width: 1275px;
+        height: 1008px;
+        border-radius: 100px;
+        background: radial-gradient(50% 50.00% at 50% 50.00%, #403A5F 0%, #211E2E 100%);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        top: 4068px;
     }
 }
 .JOIN_HYDRA_box{
     width: 159px;
     height: 29px;
     margin: 45px 92px 0px 92px;
+    @media (min-width: 992px){
+        width: 238px;
+        height: 44px;
+        margin: 90px 523px 0px 514px;
+    }
+    
 }
 .JOIN_HYDRA_text {
     @extend %title_mobile_Text;
@@ -2275,18 +2286,36 @@
     line-height: 29px;
     text-align: center;
     color: $firstColor;
+    @media (min-width: 992px){
+        font-size: 36px;
+    }
 }
 .contact_form_line {
     width: 116.5px;
     height: 0px;
     margin: 21px 115.5px 0px 111px;
-    border: 1px solid rgba(52, 48, 69, 100);
+    border: 1px solid rgba(52, 48, 69, 1);
+    border-image: linear-gradient(to right,  rgba(52, 48, 69, 1), rgba(192, 183, 232, 1), rgba(129, 118, 175, 1), rgba(52, 48, 69, 1)) 1;//створює градієнт для рамки, використовуючи вказані кольори
+    border-image-slice: 1;
+    @media (min-width: 992px){
+        border: 1px solid rgba(52, 48, 69, 1);
+        border-image: linear-gradient(to right, rgba(52, 48, 69, 1), rgba(192, 183, 232, 1), rgba(129, 118, 175, 1), rgba(52, 48, 69, 1)) 1;//створює градієнт для рамки, використовуючи вказані кольори
+        border-image-slice: 1;//встановлює розмір сегмента градієнту, який буде повторюватися вздовж рамки (в даному випадку 1 означає, що сегмент градієнту повторюватиметься повністю)
+        width: 414px;
+        height: 0px;
+        margin: 30px 432px 0px 429px;
+    }
 }
 .lets_build_box{
     width: 232px;
     height: 64px;
     margin: 19px 55px 0px 56px;
     text-align: center;
+    @media (min-width: 992px){
+        width: 541px;
+        height: 44px;
+        margin: 21px 371px 0px 363px;
+    }
 }
 .lets_build_text {
     @extend %title_mobile_thin_Text;
@@ -2294,11 +2323,26 @@
     line-height: 29px;
     text-align: center;
     color: $firstColor;
+    @media (min-width: 992px){
+        br {
+            display: none;
+        }
+        font-size: 36px;
+    }
 }
 .first_name_box {
     width: 300px;
     height: 53px;
     margin: 36px 22px 0px 21px;
+    @media (min-width: 992px){
+        position: absolute;
+        width: 524px;
+        height: 72px;
+        margin: 0px;
+        top: 294px;
+        left: 107px;
+
+    }
 }
 .first_name{
     @extend %mobile_input_text_box;
@@ -2306,6 +2350,11 @@
     background-color: inherit;
     padding: 18px 190px 18px 29px;
     color: $firstColor;
+    @media (min-width: 992px){
+        width: 524px;
+        height: 72px;
+        padding: 27px 400px 28px 42px;
+    }
 }
 .first_name::placeholder {
     @extend %title_mobile_standard_Text;
@@ -2315,6 +2364,14 @@
 }
 .last_name_box {
     @extend %mobile_input_box;
+    @media (min-width: 992px){
+        position: absolute;
+        width: 524px;
+        height: 72px;
+        top: 294px;
+        left: 641px;
+        margin: 0px;
+    }
 }
 .last_name{
     @extend %mobile_input_text_box;
@@ -2322,6 +2379,11 @@
     background-color: inherit;
     padding: 18px 190px 18px 29px;
     color: $firstColor;
+    @media (min-width: 992px){
+        width: 524px;
+        height: 72px;
+        padding: 27px 400px 28px 44px;
+    }
 }
 .last_name::placeholder {
     @extend %title_mobile_standard_Text;
@@ -2331,6 +2393,14 @@
 }
 .email_box {
     @extend %mobile_input_box;
+    @media (min-width: 992px){
+        position: absolute;
+        width: 524px;
+        height: 72px;
+        top: 405px;
+        left: 108px;
+        margin: 0px;
+    }
 }
 .email_text{
     @extend %mobile_input_text_box;
@@ -2338,6 +2408,11 @@
     background-color: inherit;
     padding: 18px 220px 18px 29px;
     color: $firstColor;
+    @media (min-width: 992px){
+        width: 524px;
+        height: 72px;
+        padding: 27px 430px 28px 42px;
+    }
 }
 .email_text::placeholder {
     @extend %title_mobile_standard_Text;
@@ -2347,6 +2422,14 @@
 }
 .phone_number_box {
     @extend %mobile_input_box;
+    @media (min-width: 992px){
+        position: absolute;
+        width: 524px;
+        height: 72px;
+        top: 405px;
+        left: 644px;
+        margin: 0px;
+    }
 }
 .phone_number{
     @extend %mobile_input_text_box;
@@ -2354,6 +2437,11 @@
     background-color: inherit;
     padding: 18px 155px 18px 29px;
     color: $firstColor;
+    @media (min-width: 992px){
+        width: 524px;
+        height: 72px;
+        padding: 27px 360px 28px 42px;
+    }
 }
 .phone_number::placeholder {
     @extend %title_mobile_standard_Text;
@@ -2363,6 +2451,14 @@
 }
 .subject_box {
     @extend %mobile_input_box;
+    @media (min-width: 992px){
+        position: absolute;
+        width: 1058px;
+        height: 72px;
+        top: 510px;
+        left: 107px;
+        margin: 0px;
+    }
 }
 .subject{
     @extend %mobile_input_text_box;
@@ -2370,6 +2466,11 @@
     background-color: inherit;
     padding: 18px 210px 18px 29px;
     color: $firstColor;
+    @media (min-width: 992px){
+        width: 1058px;
+        height: 72px;
+        padding: 27px 955px 28px 42px;
+    }
 }
 .subject::placeholder {
     @extend %title_mobile_standard_Text;
@@ -2381,6 +2482,14 @@
     width: 300px;
     height: 219px;
     margin: 22px 25px 0px 18px;
+    @media (min-width: 992px){
+        position: absolute;
+        width: 1058px;
+        height: 210px;
+        top: 615px;
+        left: 106px;
+        margin: 0px;
+    }
 }
 .something{
     border: 2px solid #FFFFFF;
@@ -2390,6 +2499,11 @@
     background-color: inherit;
     padding: 18px 134px 184px 29px;
     color: $firstColor;
+    @media (min-width: 992px){
+        width: 1058px;
+        height: 210px;
+        padding: 27px 870px 166px 42px;
+    }
 }
 .something::placeholder {
     @extend %title_mobile_standard_Text;
@@ -2417,6 +2531,20 @@
     height: 48px;
     margin-top: 52px;
     border: none;
+    transition: background-color 0.3s ease;
+    flex-grow: 1;
+    &:hover {
+        background: linear-gradient(90deg, #C0B7E8 0%, #8176AF 100%);
+    }
+    @media (min-width: 992px){
+        position: absolute;
+        top: 876px;
+        left: 529px;
+        width: 214px;
+        font-size: 12px;
+        transform: none;
+        margin: 0px;
+    }
 }
 .contact_hydra_img {
     background-image: url(/Startup_lessons/Project/src/assets/img/contact_hydra_img.png);
@@ -2430,6 +2558,9 @@
     filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.25));
     left: 50%;
     transform: translateX(-50%);
+    @media (min-width: 992px){
+        display: none;
+    }
 }
 // .vector18{
 //     position: absolute;
@@ -2449,6 +2580,9 @@
     top: 4469px;
     left: 50%;
     transform: translateX(-50%);
+    @media (min-width: 992px){
+        display: none;
+    }
 }
 .vector1 {
     position: absolute;
@@ -2490,6 +2624,9 @@
     top: 4317px;
     left: 50%;
     transform: translateX(-50%);
+    @media (min-width: 992px){
+        display: none;
+    }
 
 }
 .vector2 {
@@ -2564,6 +2701,9 @@
     transform: translateX(-50%);
     width: 206px;
     height: 20px;
+    @media (min-width: 992px){
+        display: none;
+    }
 }
 .SOCIALIZE_WITH_HYDRA_text{
     @extend %title_mobile_Text;
@@ -2580,6 +2720,9 @@
     height: 32px;
     left: 50%;
     transform: translateX(-50%);
+    @media (min-width: 992px){
+        display: none;
+    }
 }
 .social_facebook{
     position: relative;
@@ -2710,6 +2853,9 @@
     line-height: 17px;
     color: $secondColor;
     border: none;
+    @media (min-width: 992px){
+        display: none;
+    }
 }
 .footer_line {
     position: absolute;
@@ -2719,6 +2865,9 @@
     height: 0px;
     top: 4885px;
     border: 1px solid rgba(192, 183, 232, 0.33);
+    @media (min-width: 992px){
+        display: none;
+    }
 }
 .contact_footer_box{
     position: absolute;
@@ -2729,6 +2878,9 @@
     transform: translateX(-50%);
     width: 273px;
     height: 97px;
+    @media (min-width: 992px){
+        display: none;
+    }
 
 }
 .contact_footer_text{
