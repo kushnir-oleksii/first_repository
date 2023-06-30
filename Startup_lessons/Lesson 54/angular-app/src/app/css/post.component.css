@@ -45,8 +45,8 @@ p {
 
 button {
   position: absolute;
-  left: 340px;
-  top: 70px;
+  right: 10px;
+  bottom: 5px;
   background-color: #e1821d;
   color: #19191d;
   font-size: 16px;
