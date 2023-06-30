@@ -19,29 +19,26 @@ var AddPostComponent = /** @class */ (function () {
         this.nameInputValue = event.target.value;
     };
     AddPostComponent.prototype.onStatus = function (event) {
-        this.statusInputValue = event.target.value.slice(0, 50); //slice прибирає имволи коли більше 50 
+        // Ограничение длины ввода до 50 символов
+        this.statusInputValue = event.target.value.slice(0, 50);
     };
     AddPostComponent.prototype.onAvatar = function (event) {
         this.avatarInputValue = event.target.value;
     };
-    AddPostComponent.prototype.addNewPost = function (nameValue, statusValue, avatarValue) {
+    AddPostComponent.prototype.addNewPost = function () {
         var value = {
-            name: nameValue,
-            status: statusValue,
-            avatar: avatarValue
+            name: this.nameInputValue,
+            status: this.statusInputValue,
+            avatar: this.avatarInputValue
         };
         this.onPost.emit(value);
-        this.nameInputValue = '';
-        this.statusInputValue = '';
-        this.avatarInputValue = '';
+        this.resetForm();
     };
-    ;
     AddPostComponent.prototype.resetForm = function () {
         this.nameInputValue = '';
         this.statusInputValue = '';
         this.avatarInputValue = '';
     };
-    ;
     __decorate([
         core_1.Output()
     ], AddPostComponent.prototype, "onPost");

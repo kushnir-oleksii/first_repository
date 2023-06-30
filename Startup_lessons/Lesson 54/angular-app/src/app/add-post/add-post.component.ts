@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+
 @Component({
   selector: 'app-add-post',
   templateUrl: './add-post.component.html',
@@ -11,32 +12,33 @@ export class AddPostComponent {
   nameInputValue = '';
   statusInputValue = '';
   avatarInputValue = '';
-  onName(event: any){
+
+  onName(event: any) {
     this.nameInputValue = event.target.value;
   }
+
   onStatus(event: any) {
-    this.statusInputValue = event.target.value.slice(0, 50);//slice прибирає имволи коли більше 50 
+    // Ограничение длины ввода до 50 символов
+    this.statusInputValue = event.target.value.slice(0, 50);
   }
-  onAvatar(event: any){
+
+  onAvatar(event: any) {
     this.avatarInputValue = event.target.value;
   }
 
-  addNewPost(nameValue: string, statusValue: string, avatarValue: string ) {
+  addNewPost() {
     const value = {
-      name: nameValue,
-      status: statusValue,
-      avatar: avatarValue,
-    }
-    this.onPost.emit(value)
+      name: this.nameInputValue,
+      status: this.statusInputValue,
+      avatar: this.avatarInputValue,
+    };
+    this.onPost.emit(value);
+    this.resetForm();
+  }
+
+  resetForm() {
     this.nameInputValue = '';
     this.statusInputValue = '';
     this.avatarInputValue = '';
-};
-resetForm() {
-  this.nameInputValue = '';
-  this.statusInputValue = '';
-  this.avatarInputValue = '';
-};
-
+  }
 }
-

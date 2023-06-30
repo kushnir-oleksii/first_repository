@@ -12,8 +12,5 @@
      [value]="avatarInputValue" 
      (input)="onAvatar($event)" #avatar>
   
-    <button type="button" 
-     (click)="addNewPost(name.value, status.value, avatar.value)">
-     Add user</button>
-  </div>
-  
+    <button type="button" (click)="addNewPost()">Add user</button>
+</div>

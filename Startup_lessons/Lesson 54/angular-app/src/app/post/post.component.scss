@@ -1,46 +1,49 @@
 .body{
-    
+    position: relative;
+    display: flex;
     max-width: 500px;
+    min-height: 100px;
     padding: 10px 20px 5px 20px;
     margin: 0 auto 30px auto;
     background-color: aliceblue;
     border: 3px solid #ccc;
 }
 h2{
+    display: flex;
     position: absolute;
-    left: 320px;
-    top: 320px;
+    top: 10px;
+    left: 90px;
 }
 
 .post-text{
+    display: flex;
     position: absolute;
     line-height: 24px;
-    left: 320px;
-    top: 350px;
+    top: 30px;
+    left: 90px;
 }
 p{
     font-style: italic;
 }
 
 .picture{
-    top: 0;
-    left: 0;
-    position: relative;
-    width: 100px;
-    height: 100px;
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
     img {
     position: relative;
     border-radius: 50%;
-    
     width: 100%;
     height: 100%;
     object-fit: fill;
     }
 }
 button{
-    position: relative;
-    left: 350px;
-    top: 0px;
+    position: absolute;
+    left: 340px;
+    top: 70px;
     background-color: #e1821d;
         color: rgb(25, 25, 29);
         font-size: 16px;

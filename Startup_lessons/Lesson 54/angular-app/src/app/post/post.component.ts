@@ -1,3 +1,4 @@
+
 import { Component, Input, Output, EventEmitter} from '@angular/core';
 
 @Component({
@@ -16,4 +17,3 @@ export class PostComponent {
     this.removeUser.emit();
   }
 }
-
