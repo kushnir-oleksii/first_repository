@@ -21,6 +21,7 @@
     @media (min-width: 992px) {
         border-radius: 0px;
         min-width: 1440px;
+        height: 5597px;
     }
 
 }
@@ -573,7 +574,7 @@
         height: 48px;
     }
 }
-.build_your_world_text,.JOIN_HYDRA_button_text,.contact_us_text, .LETS_GET_IN_TOUCH_text, .TRY_IT_NOW_text, .SEND_TO_HYDRAtext{ 
+.build_your_world_text,.JOIN_HYDRA_button_text,.contact_us_text, .LETS_GET_IN_TOUCH_text, .TRY_IT_NOW_text, .SEND_TO_HYDRAtext, .build_your_world_text{ 
     @extend %title_mobile_Text;
     font-size: 14px;
     line-height: 17px;
@@ -629,7 +630,7 @@
     }
 }
 .spisok_menu {
-    z-index: 100;
+    z-index: 10;
     @extend %title_mobile_Text;
     display: none;
     list-style: none;
@@ -666,7 +667,7 @@
         width: 0%;
         height: 1px;
         transition: 0.2s;
-        @media(min-width: 480px){
+        @media(min-width: 992px){
             bottom: 0;
             left: 0px;
             width: 0%;
@@ -2267,6 +2268,7 @@
         background: radial-gradient(50% 50.00% at 50% 50.00%, #403A5F 0%, #211E2E 100%);
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         top: 4068px;
+        z-index: 5;
     }
 }
 .JOIN_HYDRA_box{
@@ -2546,6 +2548,21 @@
         margin: 0px;
     }
 }
+.contact_and_social_section{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 4398px;
+    width: 390px;
+    height: 622px;
+    @media (min-width: 992px){
+        top: 5198.5px;
+        width: 1440px;
+        height: 340px;
+        z-index: 2;
+    }
+
+}
 .contact_hydra_img {
     background-image: url(/Startup_lessons/Project/src/assets/img/contact_hydra_img.png);
     background-repeat: no-repeat;
@@ -2554,13 +2571,226 @@
     width: 185px;
     height: 187px;
     left: 102px;
-    top: 4398px;
+    top: 0px;
     filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.25));
     left: 50%;
     transform: translateX(-50%);
     @media (min-width: 992px){
-        display: none;
+    background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/contact_hydra_img.webp);
+       top: 7.5px;
+       left: 86px;
+       transform: none;
     }
+}
+.footer_line_left, .footer_line_center, .footer_line_right{
+    @media (min-width: 992px){
+        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/vector20.webp);
+        background-repeat: no-repeat;
+        background-size:cover;
+        position: absolute;
+        width: 6px;
+        height: 196px;
+       
+    }
+}
+.footer_line_left{
+    @media (min-width: 992px){
+        top: 0px;
+        left: 371px;
+    }
+}
+.footer_line_center{
+    @media (min-width: 992px){
+        top: 4.5px;
+        left: 690px;
+    }
+}
+.footer_line_right{
+    @media (min-width: 992px){
+        top: 7.5px;
+        left: 975px;
+    }
+}
+.spisok_menu__box_footer{
+    display: none;
+    @media (min-width: 992px){
+        display: flex;
+        position: absolute;
+        top: 4.5px;
+        left: 452px;
+        width: 134px;
+        height: 192px;
+    }
+
+}
+.spisok_menu_footer{
+    @extend %title_mobile_Text;
+    list-style: none;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 2.5;
+
+}
+.about_footer {
+    &::after {
+        content: "";
+        position: absolute;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+        top: 26px;
+        left: 0px;
+    };
+    &:hover:after {
+            width: 58px;
+            
+        
+    };
+}
+.services_footer {
+    &::after {
+        content: "";
+        position: absolute;
+        top: 70px;
+        left: 0px;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+    };
+    &:hover:after {
+        width: 82px;
+        
+    };
+}
+.technologies_footer {
+    &::after {
+        content: "";
+        position: absolute;
+        top: 110px;
+        left: 0px;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+    };
+    &:hover:after {
+        width: 134px;
+        
+    };
+}
+.how_to_footer {
+    &::after {
+        content: "";
+        position: absolute;
+        top: 150px;
+        left: 0px;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+    };
+    &:hover:after {
+        width: 75px;
+        
+    };
+}
+.join_footer {
+    &::after {
+        content: "";
+        position: absolute;
+        top: 190px;
+        left: 0px;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+    };
+    &:hover:after {
+        width: 110px;
+        
+    };
+}
+.faq_menu_box_footer{
+    display: none;
+    @media (min-width: 992px){
+        display: flex;
+        position: absolute;
+        top: 4.5px;
+        left: 797px;
+        width: 109px;
+        height: 149px;
+    }
+}
+.faq_menu_footer{
+    @extend %title_mobile_Text;
+    list-style: none;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 2.5;
+}
+.faq_footer {
+    &::after {
+        content: "";
+        position: absolute;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+        top: 30px;
+        left: 0px;
+    };
+    &:hover:after {
+            width: 47px;
+    };
+}
+.sitemap_footer {
+    &::after {
+        content: "";
+        position: absolute;
+        top: 70px;
+        left: 0px;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+    };
+    &:hover:after {
+        width: 75px;
+    };
+}
+.conditions_footer {
+    &::after {
+        content: "";
+        position: absolute;
+        top: 110px;
+        left: 0px;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+    };
+    &:hover:after {
+        width: 109px;
+        
+    };
+}
+.licenses_footer {
+    &::after {
+        content: "";
+        position: absolute;
+        top: 150px;
+        left: 0px;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+    };
+    &:hover:after {
+        width: 85px;
+        
+    };
 }
 // .vector18{
 //     position: absolute;
@@ -2572,16 +2802,22 @@
 //     transform: translateX(-50%);
     
 // }
-.vector18_img{
+.vector18{
+    background-image: url(/Startup_lessons/Project/src/assets/img/Vector18.png);
+    background-repeat: no-repeat;
+    background-size:cover;
     position: absolute;
     width: 390px;
-    height: 143px;
-    left: -64px;
+    height: 150px;
     top: 4469px;
     left: 50%;
     transform: translateX(-50%);
     @media (min-width: 992px){
-        display: none;
+        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/vector18.webp);
+        width: 1440px;
+        height: 270px;
+        top: 5165px;
+        z-index: 1;
     }
 }
 .vector1 {
@@ -2616,16 +2852,22 @@
     }
 
 }
-.vector19_img {
+.vector19 {
     position: absolute;
+    background-image: url(/Startup_lessons/Project/src/assets/img/Vector_19.png);
+    background-repeat: no-repeat;
+    background-size:cover;
     width: 390px;
     height: 197px;
-    left: -63px;
     top: 4317px;
     left: 50%;
     transform: translateX(-50%);
     @media (min-width: 992px){
-        display: none;
+        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/vector19.webp);
+        width: 1440px;
+        height: 363px;
+        top: 4886px;
+        z-index: 1;
     }
 
 }
@@ -2696,13 +2938,13 @@
 }
 .SOCIALIZE_WITH_HYDRA_box {
     position: absolute;
-    top: 4641px;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 243px;
+    left: 85px;
     width: 206px;
     height: 20px;
     @media (min-width: 992px){
-        display: none;
+        top: 4.5px;
+        left: 1046px;
     }
 }
 .SOCIALIZE_WITH_HYDRA_text{
@@ -2715,13 +2957,15 @@
     position: absolute;
     display: flex;
     align-items: center;
-    top: 4690px;
+    top: 292px;
     width: 292px;
     height: 32px;
     left: 50%;
     transform: translateX(-50%);
     @media (min-width: 992px){
-        display: none;
+        top: 63.5px;
+        left: 1046px;
+        transform: none;
     }
 }
 .social_facebook{
@@ -2842,9 +3086,8 @@
     @extend %button_box;
     width: 292px;
     height: 52px;
-    top: 4769px;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 371px;
+    left: 46px;
     background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
     border-radius: 40px;
     cursor: pointer;
@@ -2853,8 +3096,16 @@
     line-height: 17px;
     color: $secondColor;
     border: none;
+    transition: background-color 0.3s ease;
+    flex-grow: 1;
+    &:hover {
+        background: linear-gradient(90deg, #C0B7E8 0%, #8176AF 100%);
+    }
     @media (min-width: 992px){
-        display: none;
+        left: 1046px;
+        top: 145px;
+        width: 214px;
+height: 48px;
     }
 }
 .footer_line {
@@ -2863,23 +3114,31 @@
     transform: translateX(-50%);
     width: 289px;
     height: 0px;
-    top: 4885px;
+    top: 487px;
     border: 1px solid rgba(192, 183, 232, 0.33);
     @media (min-width: 992px){
-        display: none;
+        top: 274px;
+        left: 87px;
+        transform: none;
+        width: 1269px;
+        border: 1px solid rgba(52, 48, 69, 1);
+        border-image: linear-gradient(to right,  rgba(52, 48, 69, 1), rgba(192, 183, 232, 1), rgba(129, 118, 175, 1), rgba(52, 48, 69, 1)) 1;//створює градієнт для рамки, використовуючи вказані кольори
+        border-image-slice: 1;
     }
 }
 .contact_footer_box{
     position: absolute;
     display: flex;
     justify-content: center;
-    top: 4923px;
+    top: 525px;
     left: 50%;
     transform: translateX(-50%);
     width: 273px;
     height: 97px;
     @media (min-width: 992px){
-        display: none;
+        top: 322.5px;
+        width: 693px;
+        height: 17px;
     }
 
 }
@@ -2890,6 +3149,11 @@
     color: $firstColor;
     letter-spacing: 1.82px;
     text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    @media (min-width: 992px){
+        br{
+            display: none;
+        }
+    }
 }
 // .LETS_GET_IN_TOUCH_button_text:hover {
 //     text-decoration: underline; /* стиль подчеркивания  */
