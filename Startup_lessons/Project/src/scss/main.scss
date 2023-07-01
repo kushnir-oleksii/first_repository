@@ -629,6 +629,9 @@
         transform:none;
     }
 }
+.spisok_menu_about, .spisok_menu_services, .spisok_menu_technologies, .spisok_menu_how_to{
+    cursor: pointer;
+}
 .spisok_menu {
     z-index: 10;
     @extend %title_mobile_Text;
