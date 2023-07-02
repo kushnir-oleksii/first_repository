@@ -53,7 +53,7 @@
     }
 }
 .scrollToTopBtn_img{
-        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/chevron-small-down.png);
+        background-image: url(../assets/img/Desctop/chevron-small-down.png);
         background-repeat: no-repeat;
         background-size:cover;
         width: 50px;
@@ -74,7 +74,7 @@
 
 .vector14_box{
     @media (min-width: 992px){
-        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/vector14.webp);
+        background-image: url(../assets/img/Desctop/vector14.webp);
         background-repeat: no-repeat;
         background-size:cover;
         position: absolute;
@@ -91,7 +91,7 @@
     z-index: 10;
     display: none;
     @media (min-width: 992px){
-        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/vector15.webp);
+        background-image: url(../assets/img/Desctop/vector15.webp);
         background-repeat: no-repeat;
         background-size:cover;
         position: relative;
@@ -121,7 +121,7 @@
     }
 }
 .hydra_img {
-    background-image: url(/Startup_lessons/Project/src/assets/img/Mobile/Hydra_img.webp);
+    background-image: url(../assets/img/Mobile/Hydra_img.webp);
     background-repeat: no-repeat;
     background-size:cover;
     position: relative;
@@ -133,7 +133,7 @@
     height: 59.88px;
     z-index: 1;
     @media (min-width: 992px){
-        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/Hydra_img_desctop.webp);
+        background-image: url(../assets/img/Desctop/Hydra_img_desctop.webp);
         width: 102px;
         height: 103px;
         margin-left: 87px;
@@ -158,21 +158,21 @@
 }
 
 .letter_H {
-    background-image: url(/Startup_lessons/Project/src/assets/img/Mobile/h.webp);
+    background-image: url(../assets/img/Mobile/h.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 7px;
     height: 28px;
     animation: slideIn_H 1s forwards;
     @media (min-width: 992px) {
-        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/h-desctop.webp);
+        background-image: url(../assets/img/Desctop/h-desctop.webp);
         width: 11.57px;
         height: 46px;
     }
 }
 
 .letter_Y {
-    background-image: url(/Startup_lessons/Project/src/assets/img/Mobile/Y.webp);
+    background-image: url(../assets/img/Mobile/Y.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 8.39px;
@@ -180,7 +180,7 @@
     margin-left: 2px;
     animation: slideIn_Y 1.5s forwards;
     @media (min-width: 992px) {
-        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/y-desctop.webp);
+        background-image: url(../assets/img/Desctop/y-desctop.webp);
         width: 13.86px;
         height: 46px;
         margin-left: 3.3px;
@@ -188,7 +188,7 @@
 }
 
 .letter_D {
-    background-image: url(/Startup_lessons/Project/src/assets/img/Mobile/d.webp);
+    background-image: url(../assets/img/Mobile/d.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 6.98px;
@@ -196,7 +196,7 @@
     margin-left: 2px;
     animation: slideIn_D 2s forwards;
     @media (min-width: 992px) {
-        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/d-desctop.webp);
+        background-image: url(../assets/img/Desctop/d-desctop.webp);
         width: 11.54px;
         height: 46px;
         margin-left: 3.3px;
@@ -204,7 +204,7 @@
 }
 
 .letter_R {
-    background-image: url(/Startup_lessons/Project/src/assets/img/Mobile/R.webp);
+    background-image: url(../assets/img/Mobile/R.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 8px;
@@ -212,7 +212,7 @@
     margin-left: 2px;
     animation: slideIn_R 2.5s forwards;
     @media (min-width: 992px) {
-        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/r-desctop.webp);
+        background-image: url(../assets/img/Desctop/r-desctop.webp);
         width: 11.57px;
         height: 46px;
         margin-left: 3.66px;
@@ -220,7 +220,7 @@
 }
 
 .letter_A {
-    background-image: url(/Startup_lessons/Project/src/assets/img/Mobile/a.webp);
+    background-image: url(../assets/img/Mobile/a.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 9.39px;
@@ -228,7 +228,7 @@
     margin-left: 1px;
     animation: slideIn_A 3s forwards;
     @media (min-width: 992px) {
-        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/a-desctop.webp);
+        background-image: url(../assets/img/Desctop/a-desctop.webp);
         width: 14px;
         height: 46px;
         margin-left: 3.3px;
@@ -442,7 +442,7 @@
     }
 }
 .Rectangle5 {
-    background-image: url(/Startup_lessons/Project/src/assets/img/pexels-michelangelo-buonarroti-87283821.webp);
+    background-image: url(../assets/img/pexels-michelangelo-buonarroti-87283821.webp);
     background-repeat: no-repeat;
     background-size:cover;
     position: relative;
@@ -453,7 +453,7 @@
     border-radius: 100px 100px 100px 240px;
     z-index: 10;
     @media (min-width: 992px){
-        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/michelangelo-buonarroti-desctop.webp);
+        background-image: url(../assets/img/Desctop/michelangelo-buonarroti-desctop.webp);
         width: 490px;
         height: 426px;
         flex-shrink: 0;
@@ -668,7 +668,7 @@
     display: none;
     @media (min-width: 992px){
         display: flex;
-        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/arrow-small-right.webp);
+        background-image: url(../assets/img/Desctop/arrow-small-right.webp);
         background-repeat: no-repeat;
         background-size:cover;
         position: absolute;
@@ -891,7 +891,7 @@
     }
 }
 .location_img{
-    background-image: url(/Startup_lessons/Project/src/assets/img/Location-Icon.png);
+    background-image: url(../assets/img/Location-Icon.png);
     background-repeat: no-repeat;
     background-size:cover;
     position: absolute;
@@ -974,7 +974,7 @@
 .give_us_a_call_text::before{
     content: "";
     position: absolute;
-    background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/phone-call.webp);
+    background-image: url(../assets/img/Desctop/phone-call.webp);
     width: 59px;
     height: 59px;
     left: -88px;
@@ -1131,7 +1131,7 @@
 .send_us_a_message_text::before{
     content: "";
     position: absolute;
-    background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/mail.webp);
+    background-image: url(../assets/img/Desctop/mail.webp);
     width: 65px;
     height: 65px;
     left: -88px;
@@ -1222,7 +1222,7 @@
     }
 }
 .vr_img_box{
-    background-image: url(/Startup_lessons/Project/src/assets/img/VR_img.png);
+    background-image: url(../assets/img/VR_img.png);
     background-repeat: no-repeat;
     background-size:cover;
     position: absolute;
@@ -1233,7 +1233,7 @@
     // left: 23px;
     top: 117.93px;
     @media (min-width: 992px){
-        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/about-hydra-vr.webp);
+        background-image: url(../assets/img/Desctop/about-hydra-vr.webp);
         transform: none;
         border-radius: 240px 100px;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -1248,7 +1248,7 @@
     display: none;
     @media (min-width: 992px){
         display: flex;
-        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/arrow-pc.webp);
+        background-image: url(../assets/img/Desctop/arrow-pc.webp);
         background-repeat: no-repeat;
         background-size:cover;
         position: absolute;
@@ -1455,7 +1455,7 @@
     display: none;
     @media (min-width: 992px){
         display: flex;
-        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/arrow-pc.webp);
+        background-image: url(../assets/img/Desctop/arrow-pc.webp);
         background-repeat: no-repeat;
         background-size:cover;
         position: absolute;
@@ -1561,27 +1561,27 @@
     margin: 14.44px 14.44px 13.64px 13.64px;
 }
 .slider_img {
-    background-image: url(/Startup_lessons/Project/src/assets/img/Mask_group.png);
+    background-image: url(../assets/img/Mask_group.png);
     @media (min-width: 992px){
-        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/pexels-shvets-production.webp);
+        background-image: url(../assets/img/Desctop/pexels-shvets-production.webp);
         border-radius: 190.923px;
     }
 }
 .slider_img_education{
     @media (min-width: 992px){
-        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/pexels-mikhail-nilov.webp);
+        background-image: url(../assets/img/Desctop/pexels-mikhail-nilov.webp);
         border-radius: 190.923px;
     }
 }
 .self-care_img {
     @media (min-width: 992px){
-        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/self-care.webp);
+        background-image: url(../assets/img/Desctop/self-care.webp);
         border-radius: 190.923px;
     }
 }
 .outdoor_img{
     @media (min-width: 992px){
-        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/pexels-mali-maeder.webp);
+        background-image: url(../assets/img/Desctop/pexels-mali-maeder.webp);
         border-radius: 190.923px;
     }
 }
@@ -1842,7 +1842,7 @@
     }
 }
 .Mask_group{
-    background-image: url(/Startup_lessons/Project/src/assets/img/Mask_group2.png);
+    background-image: url(../assets/img/Mask_group2.png);
     background-repeat: no-repeat;
     background-size:cover;
     position: absolute;
@@ -1854,7 +1854,7 @@
     border-radius: 60px;
     left: 17px;
     @media (min-width: 992px){
-        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/pexels-rodnae-productions.png);
+        background-image: url(../assets/img/Desctop/pexels-rodnae-productions.png);
         width: 1278px;
         height: 303px;
         flex-shrink: 0;
@@ -1976,7 +1976,7 @@
     transform: translate(50%, -50%) rotate(45deg);
 }
 .hydra_tech {
-    background-image: url(/Startup_lessons/Project/src/assets/img/Hydra-Tech4.png);
+    background-image: url(../assets/img/Hydra-Tech4.png);
     background-repeat: no-repeat;
     background-size:cover;
     position: absolute;
@@ -1987,7 +1987,7 @@
     transform: translateX(-50%);
     top: 154px;
     @media (min-width: 992px){
-        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/hydra-tech4.webp);
+        background-image: url(../assets/img/Desctop/hydra-tech4.webp);
         width: 282px;
         height: 282px;
         transform:none;
@@ -1999,7 +1999,7 @@
     display: none;
     @media (min-width: 992px){
         display: flex;
-        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/hydra-tech2.webp);
+        background-image: url(../assets/img/Desctop/hydra-tech2.webp);
         background-repeat: no-repeat;
         background-size:cover;
         position: absolute;
@@ -2013,7 +2013,7 @@
     display: none;
     @media (min-width: 992px){
         display: flex;
-        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/hydra-tech3.webp);
+        background-image: url(../assets/img/Desctop/hydra-tech3.webp);
         background-repeat: no-repeat;
         background-size:cover;
         position: absolute;
@@ -2027,7 +2027,7 @@
     display: none;
     @media (min-width: 992px){
         display: flex;
-        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/hydra-tech1.webp);
+        background-image: url(../assets/img/Desctop/hydra-tech1.webp);
         background-repeat: no-repeat;
         background-size:cover;
         position: absolute;
@@ -2237,7 +2237,7 @@
     display: none;
     @media (min-width: 992px){
         display: flex;
-        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/arrow-small-right-how-we-build.webp);
+        background-image: url(../assets/img/Desctop/arrow-small-right-how-we-build.webp);
         background-repeat: no-repeat;
         background-size:cover;
         position: absolute;
@@ -2652,7 +2652,7 @@
 
 }
 .contact_hydra_img {
-    background-image: url(/Startup_lessons/Project/src/assets/img/contact_hydra_img.png);
+    background-image: url(../assets/img/contact_hydra_img.png);
     background-repeat: no-repeat;
     background-size:cover;
     position: absolute;
@@ -2664,7 +2664,7 @@
     left: 50%;
     transform: translateX(-50%);
     @media (min-width: 992px){
-    background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/contact_hydra_img.webp);
+    background-image: url(../assets/img/Desctop/contact_hydra_img.webp);
        top: 7.5px;
        left: 86px;
        transform: none;
@@ -2672,7 +2672,7 @@
 }
 .footer_line_left, .footer_line_center, .footer_line_right{
     @media (min-width: 992px){
-        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/vector20.webp);
+        background-image: url(../assets/img/Desctop/vector20.webp);
         background-repeat: no-repeat;
         background-size:cover;
         position: absolute;
@@ -2891,7 +2891,7 @@
     
 // }
 .vector18{
-    background-image: url(/Startup_lessons/Project/src/assets/img/Vector18.png);
+    background-image: url(../assets/img/Vector18.png);
     background-repeat: no-repeat;
     background-size:cover;
     position: absolute;
@@ -2901,7 +2901,7 @@
     left: 50%;
     transform: translateX(-50%);
     @media (min-width: 992px){
-        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/vector18.webp);
+        background-image: url(../assets/img/Desctop/vector18.webp);
         width: 1440px;
         height: 270px;
         top: 5165px;
@@ -2925,7 +2925,7 @@
     }
 }
 .vector1_img {
-    background-image: url(/Startup_lessons/Project/src/assets/img/Vector1.png);
+    background-image: url(../assets/img/Vector1.png);
     background-repeat: no-repeat;
     background-size:cover;
     position: relative;
@@ -2933,7 +2933,7 @@
     height: 562px;
     margin: 0px 0px 0px 102px;
     @media (min-width: 992px){
-        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/vector1.webp);
+        background-image: url(../assets/img/Desctop/vector1.webp);
         width: 414px;
         height: 669px;
         margin: 0;
@@ -2942,7 +2942,7 @@
 }
 .vector19 {
     position: absolute;
-    background-image: url(/Startup_lessons/Project/src/assets/img/Vector_19.png);
+    background-image: url(../assets/img/Vector_19.png);
     background-repeat: no-repeat;
     background-size:cover;
     width: 390px;
@@ -2951,7 +2951,7 @@
     left: 50%;
     transform: translateX(-50%);
     @media (min-width: 992px){
-        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/vector19.webp);
+        background-image: url(../assets/img/Desctop/vector19.webp);
         width: 1440px;
         height: 363px;
         top: 4886px;
@@ -2976,7 +2976,7 @@
     }
 }
 .vector2_img {
-    background-image: url(/Startup_lessons/Project/src/assets/img/Vector2.png);
+    background-image: url(../assets/img/Vector2.png);
     background-repeat: no-repeat;
     background-size:cover;
     position: relative;
@@ -2985,7 +2985,7 @@
     margin: 3px 51px 0px 23px;
     z-index: 10;
     @media (min-width: 992px){
-        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/vector-2.webp);
+        background-image: url(../assets/img/Desctop/vector-2.webp);
         width: 385px;
         height: 845px;
         margin: 0;
@@ -3009,7 +3009,7 @@
     }
 }
 .vector3_img {
-    background-image: url(/Startup_lessons/Project/src/assets/img/Vector3.png);
+    background-image: url(../assets/img/Vector3.png);
     background-repeat: no-repeat;
     background-size:cover;
     position: relative;
@@ -3019,7 +3019,7 @@
     @media (min-width: 992px){
         width: 735.029px;
         height: 419.323px;
-        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/vector3.webp);
+        background-image: url(../assets/img/Desctop/vector3.webp);
 
     }
 
@@ -3070,7 +3070,7 @@
     padding: 0px;
     width: 32px;
     height: 32px;
-    background-image: url(/Startup_lessons/Project/src/assets/img/facebook.png);
+    background-image: url(../assets/img/facebook.png);
     content: "";
     background-size: 32px 32px;
     }
@@ -3089,7 +3089,7 @@
     padding: 0px;
     width: 32px;
     height: 32px;
-    background-image: url(/Startup_lessons/Project/src/assets/img/twitter.png);
+    background-image: url(../assets/img/twitter.png);
     content: "";
     background-size: 32px 32px;
     }
@@ -3108,7 +3108,7 @@
     padding: 0px;
     width: 32px;
     height: 32px;
-    background-image: url(/Startup_lessons/Project/src/assets/img/linkedin.png);
+    background-image: url(../assets/img/linkedin.png);
     content: "";
     background-size: 32px 32px;
     }
@@ -3127,7 +3127,7 @@
     padding: 0px;
     width: 32px;
     height: 32px;
-    background-image: url(/Startup_lessons/Project/src/assets/img/youtube.png);
+    background-image: url(../assets/img/youtube.png);
     content: "";
     background-size: 32px 32px;
     }
@@ -3146,7 +3146,7 @@
     padding: 0px;
     width: 32px;
     height: 32px;
-    background-image: url(/Startup_lessons/Project/src/assets/img/instagram.png);
+    background-image: url(../assets/img/instagram.png);
     content: "";
     background-size: 32px 32px;
     }
@@ -3165,7 +3165,7 @@
     padding: 0px;
     width: 32px;
     height: 32px;
-    background-image: url(/Startup_lessons/Project/src/assets/img/pinterest.png);
+    background-image: url(../assets/img/pinterest.png);
     content: "";
     background-size: 32px 32px;
     }
