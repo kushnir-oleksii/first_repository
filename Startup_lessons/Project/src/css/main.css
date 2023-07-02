@@ -57,12 +57,62 @@
   }
 }
 
+.scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 10px;
+  z-index: 99;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+  font-size: 6px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex-grow: 1;
+}
+.scrollToTopBtn:hover {
+  background: linear-gradient(90deg, #C0B7E8 0%, #8176AF 100%);
+}
+@media (min-width: 992px) {
+  .scrollToTopBtn {
+    width: 70px;
+    height: 70px;
+    bottom: 30px;
+    right: 30px;
+  }
+}
+
+.scrollToTopBtn_img {
+  background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/chevron-small-down.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 6px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+@media (min-width: 992px) {
+  .scrollToTopBtn_img {
+    width: 70px;
+    height: 70px;
+    bottom: 30px;
+    right: 30px;
+  }
+}
+
 @media (min-width: 992px) {
   .vector14_box {
     background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/vector14.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
     position: absolute;
     width: 1440px;
     height: 814px;
@@ -1946,6 +1996,14 @@
   }
 }
 
+@keyframes rotate-button {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 .hardware_box {
   display: none;
 }
@@ -1973,7 +2031,12 @@
     border-radius: 50%;
     cursor: pointer;
     border: none;
+    transition: background 0.3s ease;
   }
+}
+
+.hardware_box_inside:hover {
+  background: linear-gradient(90deg, #C0B7E8 0%, #8176AF 100%);
 }
 
 .hardware_button {

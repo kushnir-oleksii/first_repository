@@ -25,12 +25,58 @@
     }
 
 }
+
+.scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%); 
+    font-size: 6px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex-grow: 1;
+    &:hover {
+        background: linear-gradient(90deg, #C0B7E8 0%, #8176AF 100%);
+    }
+    @media (min-width: 992px){
+        width: 70px;
+        height: 70px;
+        bottom: 30px;
+        right: 30px;
+    }
+}
+.scrollToTopBtn_img{
+        background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/chevron-small-down.png);
+        background-repeat: no-repeat;
+        background-size:cover;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        font-size: 6px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transform: rotate(180deg);
+        @media (min-width: 992px){
+            width: 70px;
+            height: 70px;
+            bottom: 30px;
+            right: 30px;
+        }
+}
+
 .vector14_box{
     @media (min-width: 992px){
         background-image: url(/Startup_lessons/Project/src/assets/img/Desctop/vector14.webp);
         background-repeat: no-repeat;
         background-size:cover;
-        position: relative;
         position: absolute;
         width: 1440px;
         height: 814px;
@@ -595,6 +641,29 @@
         }   
     }
 }
+
+// .scrollToTopBtn_text{
+//     @extend %title_mobile_Text;
+//     font-size: 9px;
+//     line-height: normal;
+//     color: $secondColor;
+//     line-height: 52px;
+//     // text-align: center;
+//     flex-grow: 1; /* Занимает все доступное пространство внутри flex-контейнера */
+//     display: flex; /* Для выравнивания текста по центру по вертикали */
+//     align-items: center; /* Для выравнивания текста по центру по вертикали */
+//     justify-content: center; /* Для выравнивания текста по центру по горизонтали */
+//     &:hover {
+//         font-size: 11px;
+//     }   
+//     @media (min-width: 992px){
+//         font-size: 12px;
+//         &:hover {
+//             font-size: 14px;
+//         }   
+//     }
+
+// }
 .arrow_small_right_box {
     display: none;
     @media (min-width: 992px){
@@ -1834,6 +1903,15 @@
         font-size: 36px;
     }
 }
+@keyframes rotate-button {
+    0% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
 .hardware_box{
     display: none;
     @media (min-width: 992px){
@@ -1847,6 +1925,7 @@
         left: 670px;
         top: 253px;
         background: rgba(14, 14, 14, 0.32);
+        
     }
     
 }
@@ -1859,7 +1938,11 @@
         border-radius: 50%;
         cursor: pointer;
         border: none;
+        transition: background 0.3s ease;//при наведені зміна фону
     }
+}
+.hardware_box_inside:hover {
+    background: linear-gradient(90deg, #C0B7E8 0%, #8176AF 100%); // новый колір фону при наведені 
 }
 .hardware_button{
     width: 60px;
@@ -1867,7 +1950,9 @@
     border-radius: 50%;
     margin: 5px;
     transform: rotate(180deg);
+    
 }
+
 .hardware_button::after, .hardware_button::before{
     content: "";
     position: absolute;
