@@ -107,6 +107,25 @@ const servicesButton = document.querySelector('.spisok_menu_services');
     });
 }
 
+function scrollToContact_form() {
+  const contact_form = document.getElementById("contact_form");
+    if (contact_form) {
+        // Вычисляем высоту окна браузера и половину высоты секции, чтобы прокрутить к центру
+        const windowHeight = window.innerHeight;
+        const sectionHeight = contact_form.clientHeight;
+        const offset = (windowHeight - sectionHeight) / 2;
+        // Прокручиваем страницу к секции с учетом отступа
+        window.scrollTo({ top: contact_form.offsetTop - offset, behavior: 'smooth' });
+    }
+}
+const contact_us_button = document.querySelector('.contact_us_button');
+  if (contact_us_button) {
+    contact_us_button.addEventListener("click", function (event) {
+      event.preventDefault(); // Предотвращаем переход по ссылке
+      scrollToContact_form(); // Вызываем функцию прокрутки
+  });
+}
+
   // const how_toButton = document.querySelector('.spisok_menu_how_to');
   // const how_we_build_section = document.getElementById('how_we_build_section');
   // how_toButton.addEventListener('click', () => {
