@@ -157,3 +157,87 @@ function scrollToTop() {
   //   // Прокручиваем страницу до раздела "why_build_section"
   //   how_we_build_section.scrollIntoView({ behavior: 'smooth' });
   // });
+// JavaScript (примерно)
+
+
+  //   // Функция для переключения видимости блоков слайдера
+  //   function toggleSliderBox(sliderBoxClass) {
+  //     const sliderBoxes = document.querySelectorAll(sliderBoxClass);
+  //     sliderBoxes.forEach(box => box.classList.toggle('active'));
+  // }
+
+  // // Добавляем обработчики событий для кнопок
+  // document.querySelector('.slider_button_left_box_inside').addEventListener('click', () => {
+  //     toggleSliderBox('.slider_box');
+  //     toggleSliderBox('.slider_box_education');
+  //     toggleSliderBox('.slider_box_self-care');
+  //     toggleSliderBox('.slider_box_outdoor');
+  // });
+
+  // document.querySelector('.slider_button_right_box_inside').addEventListener('click', () => {
+  //     toggleSliderBox('.slider_box');
+  //     toggleSliderBox('.slider_box_education');
+  //     toggleSliderBox('.slider_box_self-care');
+  //     toggleSliderBox('.slider_box_outdoor');
+  // });
+
+// // Функция для скрытия всех блоков слайдера
+// function hideAllSliderBoxes() {
+//   const sliderBoxes = document.querySelectorAll('.slider_box, .slider_box_education, .slider_box_self-care, .slider_box_outdoor');
+//   sliderBoxes.forEach(box => box.classList.remove('active'));
+// }
+
+// // Функция для отображения выбранного блока слайдера
+// function showSliderBox(sliderBoxClass) {
+//   const sliderBox = document.querySelector(sliderBoxClass);
+//   sliderBox.classList.add('active');
+// }
+
+// // Добавляем обработчики событий для кнопок
+// document.getElementById('slider_button_left').addEventListener('click', () => {
+//   hideAllSliderBoxes();
+//   showSliderBox('.slider_box');
+// });
+
+// document.getElementById('slider_button_right').addEventListener('click', () => {
+//   hideAllSliderBoxes();
+//   showSliderBox('.slider_box_education');
+// });
+
+// При загрузке страницы
+// document.addEventListener("DOMContentLoaded", function () {
+//   // Получаем все слайдеры и кнопки
+//   const sliderBoxes = document.querySelectorAll(".slider_box, .slider_box_education, .slider_box_self-care, .slider_box_outdoor");
+//   const sliderButtonLeftInside = document.getElementById("slider_button_left_box_inside");
+//   const sliderButtonRightInside = document.getElementById("slider_button_right_box_inside");
+
+//   // Переменная для хранения текущего индекса слайдера
+//   let currentSliderIndex = 0;
+
+//   // Функция для отображения текущего слайдера
+//   function showCurrentSliderBox() {
+//     sliderBoxes.forEach((sliderBox) => {
+//       sliderBox.style.display = "none";
+//     });
+//     sliderBoxes[currentSliderIndex].style.display = "flex";
+//   }
+
+//   // Обработчик события для кнопки slider_button_left_box_inside
+//   sliderButtonLeftInside.addEventListener("click", () => {
+//     if (window.innerWidth < 992) {
+//       currentSliderIndex = (currentSliderIndex - 1 + sliderBoxes.length) % sliderBoxes.length;
+//       showCurrentSliderBox();
+//     }
+//   });
+
+//   // Обработчик события для кнопки slider_button_right_box_inside
+//   sliderButtonRightInside.addEventListener("click", () => {
+//     if (window.innerWidth < 992) {
+//       currentSliderIndex = (currentSliderIndex + 1) % sliderBoxes.length;
+//       showCurrentSliderBox();
+//     }
+//   });
+
+//   // Показываем первый слайдер при загрузке страницы
+//   showCurrentSliderBox();
+// });
