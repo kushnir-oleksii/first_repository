@@ -1496,19 +1496,36 @@
 
 }
 .slider_box {
+   display: none;
+    
+    @media (min-width: 992px){
+        position: absolute;
+        display: flex;
+        top: 203px;
+        left: 84px;
+        width: 310px;
+        height: 511px;
+        background: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #211E2E 100%);
+        border-radius: 40px;
+    }
+}
+.slider_box_mobile,.slider_box_education_mobile, .slider_box_self-care_mobile,.slider_box_outdoor_mobile{
     position: absolute;
+    display: flex;
     width: 320px;
     height: 511px;
     left: 36px;
     top: 106px;
     background: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #211E2E 100%);
     border-radius: 40px;
-    @media (min-width: 992px){
-        top: 203px;
-        left: 84px;
-        width: 310px;
-        height: 511px;
+    z-index: 5;
+    @media (min-width: 991px){
+        display: none;
     }
+
+}
+.slider_box_education_mobile,.slider_box_self-care_mobile,.slider_box_outdoor_mobile{
+    display: none;
 }
 .slider_box_education, .slider_box_self-care, .slider_box_outdoor {
     display: none;    
@@ -1541,7 +1558,7 @@
     }
 
 }
-.slider_img_box, .slider_img_box_education, .self-care_img_box, .outdoor_img_box {
+.slider_img_box, .slider_img_box_education, .self-care_img_box, .outdoor_img_box,.slider_img_box_mobile,.slider_img_box_education_mobile,.self-care_img_box_mobile,.outdoor_img_box_mobile {
     position: absolute;
     width: 219px;
     height: 219px;
@@ -1549,7 +1566,7 @@
     border-radius: 50%;
     background: rgba(14, 14, 14, 0.32);
 }
-.slider_img, .slider_img_education, .self-care_img, .outdoor_img {
+.slider_img, .slider_img_education, .self-care_img, .outdoor_img,.slider_img_mobile,.slider_img_education_mobile,.self-care_img_mobile,.outdoor_img_mobile {
     background-repeat: no-repeat;
     background-size:cover;
     position: absolute;
@@ -1557,38 +1574,46 @@
     height: 190.92px;
     margin: 14.44px 14.44px 13.64px 13.64px;
 }
-.slider_img {
+.slider_img,.slider_img_mobile {
     background-image: url(../assets/img/Mask_group.png);
     @media (min-width: 992px){
         background-image: url(../assets/img/Desctop/pexels-shvets-production.webp);
         border-radius: 190.923px;
     }
 }
-.slider_img_education{
+.slider_img_education,.slider_img_education_mobile{
+    background-image: url(../assets/img/Desctop/pexels-mikhail-nilov.webp);
+        border-radius: 190.923px;
     @media (min-width: 992px){
         background-image: url(../assets/img/Desctop/pexels-mikhail-nilov.webp);
         border-radius: 190.923px;
     }
 }
-.self-care_img {
+.self-care_img,.self-care_img_mobile {
+    background-image: url(../assets/img/Desctop/self-care.webp);
+        border-radius: 190.923px;
     @media (min-width: 992px){
         background-image: url(../assets/img/Desctop/self-care.webp);
         border-radius: 190.923px;
     }
 }
-.outdoor_img{
+.outdoor_img,.outdoor_img_mobile{
+    background-image: url(../assets/img/Desctop/pexels-mali-maeder.webp);
+        border-radius: 190.923px;
     @media (min-width: 992px){
         background-image: url(../assets/img/Desctop/pexels-mali-maeder.webp);
         border-radius: 190.923px;
     }
 }
 .simulation_box {
-    margin: 267px 75px 0px 84px;
     @media (min-width: 992px){
+        
         margin: 263px 74px 0px 76px;
     }
 }
-
+.simulation_box_mobile,.education_box_mobile,.self-care_box_mobile,.outdoor_box_mobile{
+    margin: 263px 74px 0px 76px;
+}
 .simulation_text, .education_text, .self-care_text,.outdoor_text {
     @extend %title_mobile_Text;
     font-size: 24px;
@@ -1619,13 +1644,24 @@
 }
 
 .slider_line_inside{
-    width: 154px;
-    height: 0px;
-    margin: 17.5px 79.5px 0px 86.5px;
-    border: 1px solid rgba(192, 183, 232, 0.33);
     @media (min-width: 992px){
-        margin: 17.5px 77.5px 0px 78.5px;
+        position: absolute;
+        display: flex;
+        width: 154px;
+        height: 0px;
+        top: 309.5px;
+        left:  78.5px;
+        border: 1px solid rgba(192, 183, 232, 0.33);
     }
+}
+.slider_line_inside_mobile,.education_line_inside_mobile,.self-care_line_inside_mobile,.outdoor_line_inside_mobile{
+    position: absolute;
+        display: flex;
+        width: 154px;
+        height: 0px;
+        top: 309.5px;
+        left:  78.5px;
+        border: 1px solid rgba(192, 183, 232, 0.33);
 }
 .education_line_inside, .self-care_line_inside, .outdoor_line_inside{
         position: absolute;
@@ -1637,8 +1673,12 @@
     left:  78.5px;
 }
 
-.Vitae_sapien_box{
-    margin: 21.5px 37px 0px 33px;
+.Vitae_sapien_box,.Vitae_sapien_box_mobile,.Vitae_sapien_box_education_mobile,.Vitae_sapien_box_self-care_mobile,.Vitae_sapien_box_outdoor_mobile{
+    position: absolute;
+    top: 331px;
+    left: 25px;
+    width: 250px;
+    height: 57px;
 
 }
 .Vitae_sapien_box, .Vitae_sapien_box_education, .Vitae_sapien_box_self-care, .Vitae_sapien_box_outdoor {
@@ -1659,7 +1699,7 @@
 
 }
 .TRY_IT_NOW_button, .TRY_IT_NOW_button_education, .TRY_IT_NOW_button_self-care, .TRY_IT_NOW_button_outdoor{
-    position: relative;
+    @media (min-width: 992px){
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1668,36 +1708,51 @@
     border-radius: 40px;
     cursor: pointer;
     // transition: background-color 0.3s ease; /* Добавлен эффект плавного перехода */
-    left: 50%;
-    transform: translateX(-50%);
-    @extend %title_mobile_Text;
+    width: 154px;
+    height: 48px;
+    position: absolute;
+    top: 423px;
+    left: 78px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
     font-size: 14px;
     line-height: 17px;
     color: $secondColor;
-    width: 250px;
-    height: 48px;
-    
     border: none;
     transition: background-color 0.3s ease;
     flex-grow: 1;
     &:hover {
         background: linear-gradient(90deg, #C0B7E8 0%, #8176AF 100%);
     }
-    @media (min-width: 992px){
-        width: 154px;
-        height: 48px;
-    }
-    
+      
 }
-.TRY_IT_NOW_button{
-    margin-top: 35px;
 }
-.TRY_IT_NOW_button_education, .TRY_IT_NOW_button_self-care, .TRY_IT_NOW_button_outdoor{
-    @media (min-width: 992px){
-        position: absolute;
-        top: 423px;
-        left: 78px;
-        transform:none;
+.TRY_IT_NOW_button_mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    border-radius: 40px;
+    cursor: pointer;
+    // transition: background-color 0.3s ease; /* Добавлен эффект плавного перехода */
+    width: 154px;
+    height: 48px;
+    position: absolute;
+    top: 423px;
+    left: 78px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: $secondColor;
+    border: none;
+    transition: background-color 0.3s ease;
+    flex-grow: 1;
+    &:hover {
+        background: linear-gradient(90deg, #C0B7E8 0%, #8176AF 100%);
     }
 
 }
@@ -1709,6 +1764,7 @@
     top: 321px;
     border-radius: 50%;
     background: rgba(14, 14, 14, 0.32);
+    z-index: 15;
     @media (min-width: 992px){
         display: none;
         font-size: 12px;
@@ -1769,6 +1825,7 @@
     top: 321px;
     border-radius: 50%;
     background: rgba(14, 14, 14, 0.32);
+    z-index: 15;
     @media (min-width: 992px){
         display: none;
     }

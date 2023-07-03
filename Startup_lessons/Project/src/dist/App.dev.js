@@ -226,34 +226,46 @@ function scrollToTop() {
 //   showSliderBox('.slider_box_education');
 // });
 // При загрузке страницы
-// document.addEventListener("DOMContentLoaded", function () {
-//   // Получаем все слайдеры и кнопки
-//   const sliderBoxes = document.querySelectorAll(".slider_box, .slider_box_education, .slider_box_self-care, .slider_box_outdoor");
-//   const sliderButtonLeftInside = document.getElementById("slider_button_left_box_inside");
-//   const sliderButtonRightInside = document.getElementById("slider_button_right_box_inside");
-//   // Переменная для хранения текущего индекса слайдера
-//   let currentSliderIndex = 0;
-//   // Функция для отображения текущего слайдера
-//   function showCurrentSliderBox() {
-//     sliderBoxes.forEach((sliderBox) => {
-//       sliderBox.style.display = "none";
-//     });
-//     sliderBoxes[currentSliderIndex].style.display = "flex";
-//   }
-//   // Обработчик события для кнопки slider_button_left_box_inside
-//   sliderButtonLeftInside.addEventListener("click", () => {
-//     if (window.innerWidth < 992) {
-//       currentSliderIndex = (currentSliderIndex - 1 + sliderBoxes.length) % sliderBoxes.length;
-//       showCurrentSliderBox();
-//     }
-//   });
-//   // Обработчик события для кнопки slider_button_right_box_inside
-//   sliderButtonRightInside.addEventListener("click", () => {
-//     if (window.innerWidth < 992) {
-//       currentSliderIndex = (currentSliderIndex + 1) % sliderBoxes.length;
-//       showCurrentSliderBox();
-//     }
-//   });
-//   // Показываем первый слайдер при загрузке страницы
-//   showCurrentSliderBox();
-// });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Получаем все слайдеры и кнопки
+  var sliderBoxes = document.querySelectorAll(".slider_box_mobile, .slider_box_education_mobile, .slider_box_self-care_mobile,.slider_box_outdoor_mobile");
+  var sliderButtonLeftInside = document.getElementById("slider_button_left");
+  var sliderButtonRightInside = document.getElementById("slider_button_right"); // Переменная для хранения текущего индекса слайдера
+
+  var currentSliderIndex = 0; // Функция для скрытия всех слайдеров
+
+  function hideAllSliderBoxes() {
+    sliderBoxes.forEach(function (sliderBox) {
+      sliderBox.style.display = "none";
+    });
+  } // Функция для отображения текущего слайдера
+
+
+  function showCurrentSliderBox() {
+    if (window.innerWidth <= 992) {
+      hideAllSliderBoxes();
+      sliderBoxes[currentSliderIndex].style.display = "flex";
+    } else {
+      hideAllSliderBoxes();
+    }
+  } // Обработчик события для кнопки slider_button_left_box_inside
+
+
+  sliderButtonLeftInside.addEventListener("click", function () {
+    currentSliderIndex = (currentSliderIndex - 1 + sliderBoxes.length) % sliderBoxes.length;
+    showCurrentSliderBox();
+  }); // Обработчик события для кнопки slider_button_right_box_inside
+
+  sliderButtonRightInside.addEventListener("click", function () {
+    currentSliderIndex = (currentSliderIndex + 1) % sliderBoxes.length;
+    showCurrentSliderBox();
+  }); // Показываем первый слайдер при загрузке страницы
+
+  showCurrentSliderBox(); // Обработчик события изменения размера окна
+
+  window.addEventListener("resize", function () {
+    showCurrentSliderBox();
+  });
+});
