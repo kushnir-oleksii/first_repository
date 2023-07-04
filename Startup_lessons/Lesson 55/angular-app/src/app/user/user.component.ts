@@ -11,4 +11,5 @@ export class UserComponent {
   @Input() url = ''
   isOnline = false
   isActive = false
+  
 }

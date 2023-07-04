@@ -1,16 +1,19 @@
-<div  [ngClass]="{online: isOnline}" class="wrapper">
-    <div class="body">
+<div   [ngClass]="{online: isOnline}"  class="wrapper">
+    <div  class="body">
         <div class="picture">
             <img [src]="url" alt="">
         </div>
+        
         <div class="user-data">
             <h2>{{ name }}</h2>
            
-            <div class="post-text">{{ status }}</div>
+            <div  class="post-text">{{ status }}</div>
         </div>
+        
     </div>
-    <button  (click)="isActive = !isActive" (click)="isOnline = !isOnline" class="network">
+    <button  (click)="isActive = !isActive; isOnline = !isOnline" class="network">
         {{isOnline ? "Online" : "Offline"}}
     </button>
+    
 
 </div>
