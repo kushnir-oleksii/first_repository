@@ -1,0 +1,22 @@
+%mobile_input_box {
+    width: 300px;
+    height: 53px;
+    margin: 22px 22px 0px 21px;
+};
+%mobile_input_text_box {
+    width: 300px;
+    height: 53px;
+    border: 2px solid #FFFFFF;
+};
+%button_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+// %pc_input_text_box {
+//     width: 524px;
+//     height: 72px;
+//     border: 2px solid #FFFFFF;
+//     border-radius: 40px;
+// };

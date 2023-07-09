@@ -1,0 +1,308 @@
+@import 'title';
+@import '_colors';
+@import '_template';
+
+.wrapper {
+    background-repeat: no-repeat;
+    background-size:cover;
+    // min-width: 390px;  
+    margin:0 auto;
+    background-color:  #302C42;
+    // border-radius: 40px;
+    border-radius: 0px;
+    display: flex;
+}
+.page_content {
+    display: flex;
+    margin: 0 auto;
+    padding: 50px 78px 59px 84px;
+    background-color: inherit;
+    height: 100vh;
+    
+}
+.dive_section{
+    display: flex;
+    background-color: inherit;
+    
+}
+.dive_section_top_menu{
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+}
+
+.top_menu_hydra_words{
+    display: flex;
+    margin-top: 29px;
+    margin-left: 15px;
+    height: fit-content;
+}
+.letter_H{
+    animation: slideIn_H 1s forwards;
+    
+}
+.letter_Y{
+    margin-left: 3.3px;
+    animation: slideIn_Y 1.5s forwards;
+    
+}
+.letter_D{
+    margin-left: 3.3px;
+    animation: slideIn_D 2s forwards;
+    
+}
+.letter_R{
+    margin-left: 3.66px;
+    animation: slideIn_R 2.5s forwards;
+    
+}
+.letter_A{
+    margin-left: 3.3px;
+    animation: slideIn_A 3s forwards;
+    
+}
+@keyframes slideIn_H {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn_Y {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn_D {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn_R {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn_A {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+// .top_menu_hamburger-menu {
+//     width: 33px;
+//     position: absolute;
+//     height: 26px;
+//     top: 53px;
+//     right: 20px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     cursor: pointer;
+//     transform: translate(-50%, -50%);
+//     z-index: 1;
+//     @media (min-width: 992px){
+//         display: none;
+//     }
+//   }
+  
+//   .line {
+//     width: 100%;
+//     height: 3px;
+//     background: linear-gradient(90deg, #C0B7E8 -11.84%, #8176AF 100%);
+//     border-radius: 40px;
+//     transition: transform 0.3s ease;
+//   }
+  
+//   .top_menu_hamburger-menu.open .line:nth-child(1) {
+//     transform: rotate(45deg) translate(9px, 8px);
+//   }
+//   .top_menu_hamburger-menu .line:nth-child(2) {
+    
+//     width: 24px;
+//     align-self: flex-end;
+
+//   }
+//   .top_menu_hamburger-menu.open .line:nth-child(2) {
+//     opacity: 0;
+//     width: 10px;
+//     align-self: flex-end;
+
+//   }
+  
+//   .top_menu_hamburger-menu.open .line:nth-child(3) {
+//     transform: rotate(-45deg) translate(8px, -7px);
+//   }
+
+
+.top_menu_hydra_img {
+    max-width: 100%;
+    height: auto;
+    max-width: 69px;
+    max-height: 60px;
+    @media screen and (min-width: 990px) {
+   max-width: 103px;
+    max-height: 102px;
+    object-fit: cover;
+    }
+}
+
+.top_menu_navigation_bar{
+    position: relative;
+    display: flex;
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 44px;
+    // margin-left: 205px;
+    padding: 0;
+    height: fit-content;
+}
+.navigation_bar{
+    position: relative;
+    list-style: none;
+    display: inline-flex;
+    flex-direction: column;
+    @extend %title_mobile_Text;
+    font-size: 12px;
+    padding-left: 50px;
+    text-align: center;
+    
+    @media screen and (min-width: 990px) {
+        
+        position: relative;
+    list-style: none;
+    display: inline-flex;
+    flex-direction: row;
+    
+    font-size: 12px;
+    padding-left: 205px;
+   
+    }
+}
+.navigation_bar_services{
+    @media screen and (min-width: 990px) {
+    padding-left: 41px;
+    }
+}
+.navigation_bar_technologies, .navigation_bar_how_to{
+    @media screen and (min-width: 990px) {
+    padding-left: 41px;
+    }
+}
+.navigation_bar_about, .navigation_bar_services, .navigation_bar_technologies, .navigation_bar_how_to{
+    cursor: pointer;
+}
+@media screen and (min-width: 990px) {
+.about {
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+                   bottom: 0;
+            left: 205px;
+            width: 0%;
+            height: 1px;
+            transition: 0.2s;
+       
+    };
+    &:hover:after {
+            width: 46px;
+        
+    };
+}
+.services {
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+        bottom: 0;
+        left: 291px;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+        
+    };
+    &:hover:after {
+        width: 62px;
+    };
+}
+.technologies{
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+        
+            bottom: 0;
+            left: 394px;
+            width: 0%;
+            height: 1px;
+            transition: 0.2s;
+        
+    };
+    &:hover:after {
+            width: 100px;
+    };
+}
+.how_to{
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+            bottom: 0;
+            left: 534px;
+            width: 0%;
+            height: 1px;
+            transition: 0.2s;
+        
+    };
+    &:hover:after {
+        
+            width: 55px;
+        
+    };
+}
+}
