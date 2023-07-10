@@ -229,6 +229,9 @@
     // margin-left: 205px;
     padding: 0;
     height: fit-content;
+    @media screen and (min-width: 990px) {
+        padding-left: 205px;
+    }
 }
 .navigation_bar{
     position: relative;
@@ -248,7 +251,7 @@
     flex-direction: row;
     
     font-size: 12px;
-    padding-left: 205px;
+    // padding-left: 205px;
    
     }
 }
