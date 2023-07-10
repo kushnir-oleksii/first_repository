@@ -44,9 +44,31 @@
   animation: slideIn_H 1s forwards;
 }
 
+.letter_H_img {
+  max-width: 7px;
+  height: 28px;
+}
+@media (min-width: 992px) {
+  .letter_H_img {
+    max-width: fit-content;
+    height: fit-content;
+  }
+}
+
 .letter_Y {
   margin-left: 3.3px;
   animation: slideIn_Y 1.5s forwards;
+}
+
+.letter_Y_img {
+  max-width: 8.39px;
+  height: 28px;
+}
+@media (min-width: 992px) {
+  .letter_Y_img {
+    max-width: fit-content;
+    height: fit-content;
+  }
 }
 
 .letter_D {
@@ -54,14 +76,47 @@
   animation: slideIn_D 2s forwards;
 }
 
+.letter_D_img {
+  max-width: 6.98px;
+  max-height: 28px;
+}
+@media (min-width: 992px) {
+  .letter_D_img {
+    max-width: fit-content;
+    max-height: fit-content;
+  }
+}
+
 .letter_R {
   margin-left: 3.66px;
   animation: slideIn_R 2.5s forwards;
 }
 
+.letter_R_img {
+  max-width: 8px;
+  max-height: 28px;
+}
+@media (min-width: 992px) {
+  .letter_R_img {
+    max-width: fit-content;
+    max-height: fit-content;
+  }
+}
+
 .letter_A {
   margin-left: 3.3px;
   animation: slideIn_A 3s forwards;
+}
+
+.letter_A_img {
+  max-width: 9.39px;
+  max-height: 28px;
+}
+@media (min-width: 992px) {
+  .letter_A_img {
+    max-width: fit-content;
+    max-height: fit-content;
+  }
 }
 
 @keyframes slideIn_H {
@@ -115,8 +170,6 @@
   }
 }
 .top_menu_hydra_img {
-  max-width: 100%;
-  height: auto;
   max-width: 69px;
   max-height: 60px;
 }

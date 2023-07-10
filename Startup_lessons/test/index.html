@@ -8,110 +8,22 @@
     <script defer src="./src/App.js"></script>
     <title>Document</title>
     
-    <style>
-        /* Общие стили */
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Адаптивная верстка */
-        .wrapper {
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-color: #302C42;
-            display: flex;
-        }
-
-        .page_content {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 50px;
-            background-color: inherit;
-            min-height: 100vh;
-        }
-
-        .dive_section {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            background-color: inherit;
-        }
-
-        .top_menu_hydra_img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .top_menu_navigation_bar {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            margin-top: 44px;
-        }
-
-        .navigation_bar {
-            list-style: none;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 0;
-            margin: 0;
-        }
-
-        .navigation_bar li {
-            margin: 0 10px;
-        }
-
-        .link_navigation_bar {
-            text-decoration: none;
-            color: #fff;
-            font-size: 12px;
-        }
-        
-        /* Медиа-запросы для адаптивности */
-        @media (max-width: 768px) {
-            .page_content {
-                padding: 20px;
-            }
-
-            .navigation_bar {
-                flex-direction: column;
-            }
-
-            .navigation_bar li {
-                margin: 10px 0;
-            }
-        }
-    </style>
 </head>
 <body>
     <section class="wrapper">
         <section class="page_content">
             <section class="dive_section">
-                <div class="dive_section_top_menu">
-                    <div class="top_menu_hydra_img_box">
-                        <img class="top_menu_hydra_img" src="./src/assets/img/Desctop/Hydra_img_desctop.webp" alt="">
-                    </div>
-                    <div class="top_menu_navigation_bar">
-                        <ul class="navigation_bar">
-                            <li class="navigation_bar_about"><a class="link_navigation_bar about">ABOUT</a></li>
-                            <li class="navigation_bar_services"><a class="link_navigation_bar services">SERVICES</a></li>
-                            <li class="navigation_bar_technologies"><a class="link_navigation_bar technologies">TECHNOLOGIES</a></li>
-                            <li class="navigation_bar_how_to"><a class="link_navigation_bar how_to">HOW TO</a></li>
-                        </ul>
-                    </div>
+                <div class="img_box">
+                    <img src="./src/assets/img/Desctop/Hydra_img_desctop.webp" alt="">
                 </div>
+                <div class="text">
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum culpa omnis minus quod aspernatur cum, nam, quia placeat non porro distinctio? Beatae debitis adipisci quae assumenda fugit exercitationem harum at. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure illum assumenda veritatis. Praesentium necessitatibus dignissimos ipsam cum consequatur, ipsa recusandae quibusdam fuga libero veritatis, nemo obcaecati explicabo ut temporibus enim!  </h1>
+                </div>
+               
             </section>
         </section>
     </section>
+    
+    
 </body>
 </html>

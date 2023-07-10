@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+body {
+  overflow: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  background-color: #302C42;
+  display: flex;
+  height: 100vh;
+  height: 100%;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.page_content {
+  display: flex;
+  margin: 0 auto;
+  padding: 50px 78px 59px 84px;
+  background-color: inherit;
+}
+
+.dive_section {
+  display: flex;
+  background-color: inherit;
+  height: auto;
+}
+
+.text {
+  display: flex;
+  height: 100vh;
+}
