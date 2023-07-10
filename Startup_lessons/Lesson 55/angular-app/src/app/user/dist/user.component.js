@@ -15,6 +15,7 @@ var UserComponent = /** @class */ (function () {
         this.url = '';
         this.isOnline = false;
         this.isActive = false;
+        this.offline = null;
     }
     __decorate([
         core_1.Input()
