@@ -1,0 +1,22 @@
+\sql
+\connect root@localhost
+
+CREATE DATABASE shop;
+
+CREATE TABLE items (product VARCHAR(128), price MEDIUMINT UNSIGNED, rating DECIMAL(3,2), category VARCHAR(64), brand VARCHAR(64), id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, INDEX(product(8)), INDEX(price), INDEX(rating), INDEX(category(6)), INDEX(brand(5)));
+DESCRIBE items;
+INSERT INTO items(product, price, rating, category, brand) VALUES('iPhone 9','549','4.69','smartphones', 'Apple');
+INSERT INTO items(product, price, rating, category, brand) VALUES('iPhone X','899','4.44','smartphones', 'Apple');
+INSERT INTO items(product, price, rating, category, brand) VALUES('Samsung Universe 9','1249','4.09','smartphones', 'Samsung');
+INSERT INTO items(product, price, rating, category, brand) VALUES('OPPO F19','280','4.3','smartphones', 'OPPO');
+INSERT INTO items(product, price, rating, category, brand) VALUES('Huawei P30','499','4.09','smartphones', 'Huawei');
+INSERT INTO items(product, price, rating, category, brand) VALUES('MacBook Pro','1149','4.57','laptops', 'Apple');
+INSERT INTO items(product, price, rating, category, brand) VALUES('Samsung Galaxy Book','1149','4.25','laptops', 'Samsung');
+INSERT INTO items(product, price, rating, category, brand) VALUES('Microsoft Surface Laptop 4','1149','4.43','laptops', 'Microsoft Surface');
+INSERT INTO items(product, price, rating, category, brand) VALUES('Infinix INBOOK','1099','4.54','laptops', 'Infinix');
+INSERT INTO items(product, price, rating, category, brand) VALUES('HP Pavilion 15-DK1056WM','1099','4.43','laptops', 'HP Pavilion');
+SELECT product, price FROM items WHERE brand="APPLE";
+SELECT product FROM items WHERE price<"1000";
+SELECT product FROM items WHERE price BETWEEN "500" AND "1500";
+SELECT product, price, rating FROM items WHERE brand IN ("Apple", "Samsung", "Huawei");
+SELECT product, category FROM items WHERE brand ="Samsung" OR category LIKE "Samsung%";
