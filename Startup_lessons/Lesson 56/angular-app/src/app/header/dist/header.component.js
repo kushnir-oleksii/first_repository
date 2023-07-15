@@ -13,9 +13,17 @@ var HeaderComponent = /** @class */ (function () {
         this.groupService = groupService;
         this.newGroupName = '';
     }
+    Object.defineProperty(HeaderComponent.prototype, "groupName", {
+        get: function () {
+            return this.groupService.getGroupName();
+        },
+        enumerable: false,
+        configurable: true
+    });
     HeaderComponent.prototype.editGroupName = function () {
         if (this.newGroupName.trim() !== '') {
             this.groupService.setGroupName(this.newGroupName);
+            this.newGroupName = '';
         }
     };
     HeaderComponent = __decorate([

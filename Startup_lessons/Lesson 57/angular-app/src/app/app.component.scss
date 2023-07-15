@@ -29,27 +29,16 @@ label{
     letter-spacing: 1.2px;
 }
 
-#city{
-    margin-bottom: 7px;
-}
-
-input, select{
+input{
     height: 24px;
     font-size: 16px;
-}
-
-button[type="button"] {
-    background-color: #e1821d;
-    color: rgb(25, 25, 29);
-    font-size: 16px;
-    padding: 4px 5px;
-    border-radius: 5px;
-    box-shadow: 1px 0px 0.55px 1px rgba(0,0,0,0.75);
-    margin: 0 auto;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    &:active{
-        box-shadow: 0.15px 0px 0.07px 0.15px rgba(0,0,0,0.75);
+    &.ng-invalid.ng-touched{
+        border: 2px solid red;
+        background-color: #a12424;
+        color: #fff;
+        &::placeholder{
+            color: #fff;
+        }
     }
 }
 
@@ -67,3 +56,4 @@ button[type="submit"] {
         box-shadow: 0.15px 0px 0.07px 0.15px rgba(0,0,0,0.75);
     }
 }
+

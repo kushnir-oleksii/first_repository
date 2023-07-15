@@ -6,23 +6,27 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 exports.__esModule = true;
-exports.GroupService = void 0;
+exports.AppModule = void 0;
 var core_1 = require("@angular/core");
-var GroupService = /** @class */ (function () {
-    function GroupService() {
-        this.groupName = 'Healthy lifestyle';
+var forms_1 = require("@angular/forms");
+var platform_browser_1 = require("@angular/platform-browser");
+var app_component_1 = require("./app.component");
+var AppModule = /** @class */ (function () {
+    function AppModule() {
     }
-    GroupService.prototype.getGroupName = function () {
-        return this.groupName;
-    };
-    GroupService.prototype.setGroupName = function (newGroupName) {
-        this.groupName = newGroupName;
-    };
-    GroupService = __decorate([
-        core_1.Injectable({
-            providedIn: 'root'
+    AppModule = __decorate([
+        core_1.NgModule({
+            declarations: [
+                app_component_1.AppComponent
+            ],
+            imports: [
+                platform_browser_1.BrowserModule,
+                forms_1.FormsModule
+            ],
+            providers: [],
+            bootstrap: [app_component_1.AppComponent]
         })
-    ], GroupService);
-    return GroupService;
+    ], AppModule);
+    return AppModule;
 }());
-exports.GroupService = GroupService;
+exports.AppModule = AppModule;

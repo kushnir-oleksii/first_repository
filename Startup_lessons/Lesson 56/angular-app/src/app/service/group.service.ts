@@ -1,17 +1,16 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class GroupService {
-    
-  private groupNameSubject = new BehaviorSubject<string>('Healthy lifestyle');
-  groupName$ = this.groupNameSubject.asObservable();
+  private groupName = 'Healthy lifestyle';
 
-  getGroupName(): string | null {
-    return this.groupNameSubject.getValue();
+  getGroupName(): string {
+    return this.groupName;
   }
 
   setGroupName(newGroupName: string): void {
-    this.groupNameSubject.next(newGroupName);
+    this.groupName = newGroupName;
   }
 }

@@ -12,9 +12,7 @@ var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
 var user_component_1 = require("./user/user.component");
 var header_component_1 = require("./header/header.component");
-var pop_up_component_1 = require("./pop-up/pop-up.component");
-var forms_1 = require("@angular/forms");
-var group_service_1 = require("../app/service/group.service");
+var users_service_1 = require("./service/users.service");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -23,14 +21,12 @@ var AppModule = /** @class */ (function () {
             declarations: [
                 app_component_1.AppComponent,
                 user_component_1.UserComponent,
-                header_component_1.HeaderComponent,
-                pop_up_component_1.PopUpComponent
+                header_component_1.HeaderComponent
             ],
             imports: [
-                platform_browser_1.BrowserModule,
-                forms_1.FormsModule
+                platform_browser_1.BrowserModule
             ],
-            providers: [group_service_1.GroupService],
+            providers: [users_service_1.UsersService],
             bootstrap: [app_component_1.AppComponent]
         })
     ], AppModule);

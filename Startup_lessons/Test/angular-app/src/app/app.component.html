@@ -1,15 +1,31 @@
 <div class="wrapper">
-    <header>
-        <app-header></app-header>>
-    </header>
-    <main>
-        <app-developer-card 
-        *ngFor="let developer of developers"
-        [name]="developer.name"
-        [status]="developer.status"
-        [img]="developer.url"
-        ></app-developer-card>
-        <button class="popup">Show details</button>
-    </main>
-    <ng-template #popUp></ng-template>
+    <form (ngSubmit)="submit(user)" name="user" #user="ngForm">
+        <div class="form-item">
+            <label for="name">Name</label>
+            <input id="name" placeholder="Your Name..." name="name" #name="ngModel" ngModel required minlength="2" pattern="[a-z A-Z]+$">
+            <p *ngIf="name.invalid && name.touched && name.errors?.['required']">The field must not be empty</p>
+            <p *ngIf="name.invalid && name.touched && name.errors?.['minlength']">
+            The name must contain more than {{name.errors?.['minlength']['requiredLength']}} characters.
+            </p>
+            <p *ngIf="name.invalid && name.touched && name.errors?.['pattern']">Only latin letters are allowed</p>
+        </div>
+        <div class="form-item">
+            <label for="email">Email</label>
+            <input id="email" placeholder="Your email...">
+        </div>
+        <div class="form-item">
+            <label for="country">Country</label>
+            <select id="country">
+                <option value="canada">Canada</option>
+                <option value="ukraine">Ukraine</option>
+                <option value="usa">USA</option>
+            </select>
+        </div>
+        <div class="form-item">
+            <label for="city">City</label>
+            <input id="city" placeholder="Your city...">
+            <button type="button">Choice capital</button>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
 </div>

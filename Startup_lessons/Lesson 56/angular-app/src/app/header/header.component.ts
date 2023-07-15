@@ -9,11 +9,16 @@ import { GroupService } from '../service/group.service';
 export class HeaderComponent {
   newGroupName = '';
 
-  constructor(public groupService: GroupService) {}
+  constructor(private groupService: GroupService) {}
+
+  get groupName(): string {
+    return this.groupService.getGroupName();
+  }
 
   editGroupName() {
     if (this.newGroupName.trim() !== '') {
       this.groupService.setGroupName(this.newGroupName);
+      this.newGroupName = '';
     }
   }
 }

@@ -14,25 +14,14 @@ var UserComponent = /** @class */ (function () {
         this.name = '';
         this.status = '';
         this.img = '';
-        this.groupName = '';
-        this.newUserName = '';
-        this.newUserStatus = '';
     }
-    UserComponent.prototype.editGroupName = function (newGroupName) {
-        if (newGroupName.trim() !== '') {
-            this.groupService.setGroupName(newGroupName);
-        }
-    };
-    UserComponent.prototype.editName = function () {
-        if (this.newUserName.trim() !== '') {
-            this.name = this.newUserName;
-        }
-    };
-    UserComponent.prototype.editStatus = function () {
-        if (this.newUserStatus.trim() !== '') {
-            this.status = this.newUserStatus;
-        }
-    };
+    Object.defineProperty(UserComponent.prototype, "groupName", {
+        get: function () {
+            return this.groupService.getGroupName();
+        },
+        enumerable: false,
+        configurable: true
+    });
     __decorate([
         core_1.Input()
     ], UserComponent.prototype, "name");
@@ -42,9 +31,6 @@ var UserComponent = /** @class */ (function () {
     __decorate([
         core_1.Input()
     ], UserComponent.prototype, "img");
-    __decorate([
-        core_1.Input()
-    ], UserComponent.prototype, "groupName");
     UserComponent = __decorate([
         core_1.Component({
             selector: 'app-user',

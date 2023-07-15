@@ -5,22 +5,22 @@
         </div>
         <div class="user-data">
             <div class="user-data-item">
-                <h2>{{ name }}</h2>
+                <h2>{{name}}</h2>
                 <div class="edit-body">
-                    <input type="text" placeholder="Write new name" [(ngModel)]="newUserName">
-                    <button class="network" (click)="editName()">Edit</button>
+                    <input type="text" placeholder="Write new name">
+                    <button class="network">Edit</button>
                 </div>
             </div>
             <div class="user-data-item">
-                <div class="status-text">{{ status }}</div>
+                <div class="status-text">{{status}}</div>
                 <div class="edit-body">
-                    <input type="text" placeholder="Write new status" [(ngModel)]="newUserStatus">
-                    <button class="network" (click)="editStatus()">Edit</button>
+                    <input type="text" placeholder="Write new status">
+                    <button class="network">Edit</button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="group">
-        <p><b>Group Name:</b><span>{{ groupService.getGroupName() }}</span></p>
-    </div>
+<div class="group">
+    <p><b>Group Name:</b><span> {{ groupName }}</span></p>
+</div>
 </div>
