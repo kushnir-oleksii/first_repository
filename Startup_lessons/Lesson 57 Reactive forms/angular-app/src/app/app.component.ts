@@ -7,11 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'home-work';
-  submit(form: any){
-    if(form.valid){
-      console.log(form.value);
-    } else {
-      form.control.markAllAsTouched()
-    }
-  }
-} 
+}

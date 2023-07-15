@@ -27,7 +27,7 @@
               <p *ngIf="password.invalid && password.touched && password.errors?.['required']">The field must not be empty</p>
               <p *ngIf="password.invalid && password.touched && password.errors?.['minlength']">
               The Password must contain more than {{password.errors?.['minlength']['requiredLength']}} characters.
-              </p>>
+              </p>
     </div>
       <button type="submit">Submit</button>
   </form>

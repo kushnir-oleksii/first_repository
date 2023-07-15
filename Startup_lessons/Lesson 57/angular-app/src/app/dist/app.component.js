@@ -13,7 +13,12 @@ var AppComponent = /** @class */ (function () {
         this.title = 'home-work';
     }
     AppComponent.prototype.submit = function (form) {
-        console.log(form);
+        if (form.valid) {
+            console.log(form.value);
+        }
+        else {
+            form.control.markAllAsTouched();
+        }
     };
     AppComponent = __decorate([
         core_1.Component({
