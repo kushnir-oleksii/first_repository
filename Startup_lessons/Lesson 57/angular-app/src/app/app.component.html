@@ -15,9 +15,7 @@
           <input id="email" placeholder="Your email..."  name="email" #email="ngModel" 
           ngModel required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}">
                 <p *ngIf="email.invalid && email.touched && email.errors?.['required']">The field must not be empty</p>
-                <!-- <p *ngIf="email.invalid && email.touched && email.errors?.['minlength']">
-                The Email must contain more than {{email.errors?.['minlength']['requiredLength']}} characters.
-                </p> -->
+               
                 <p *ngIf="email.invalid && email.touched && email.errors?.['pattern']">Enter correct email</p>
       </div>
       <div class="form-item">
