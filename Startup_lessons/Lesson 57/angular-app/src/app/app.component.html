@@ -18,7 +18,7 @@
                 <!-- <p *ngIf="email.invalid && email.touched && email.errors?.['minlength']">
                 The Email must contain more than {{email.errors?.['minlength']['requiredLength']}} characters.
                 </p> -->
-                <p *ngIf="email.invalid && email.touched && email.errors?.['pattern']">Email address must be correct</p>
+                <p *ngIf="email.invalid && email.touched && email.errors?.['pattern']">Enter correct email</p>
       </div>
       <div class="form-item">
         <label for="password">Password</label>
@@ -26,7 +26,7 @@
         ngModel required minlength="7">
               <p *ngIf="password.invalid && password.touched && password.errors?.['required']">The field must not be empty</p>
               <p *ngIf="password.invalid && password.touched && password.errors?.['minlength']">
-              The Password must contain more than {{password.errors?.['minlength']['requiredLength']}} characters.
+              The Password must contain more than {{password.errors?.['minlength']['requiredLength']}} characters. You have entered just {{ password.value.length }}
               </p>
     </div>
       <button type="submit">Submit</button>
