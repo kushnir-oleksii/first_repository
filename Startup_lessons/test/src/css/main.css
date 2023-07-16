@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
-.navigation_bar {
+.Dive, .navigation_bar {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -252,7 +252,7 @@
     height: 1px;
     transition: 0.2s;
     bottom: 0;
-    left: 44.6%;
+    left: 44%;
     width: 0%;
     height: 1px;
     transition: 0.2s;
@@ -270,13 +270,13 @@
     height: 1px;
     transition: 0.2s;
     bottom: 0;
-    left: 240px;
+    left: 60%;
     width: 0%;
     height: 1px;
     transition: 0.2s;
   }
   .technologies:hover:after {
-    width: 100px;
+    width: 14.64%;
   }
 
   .how_to::after {
@@ -288,12 +288,42 @@
     height: 1px;
     transition: 0.2s;
     bottom: 0;
-    left: 380px;
+    left: 81.5%;
     width: 0%;
     height: 1px;
     transition: 0.2s;
   }
   .how_to:hover:after {
-    width: 55px;
+    width: 8%;
   }
+}
+.dive_section_center {
+  display: flex;
+  height: fit-content;
+  flex-direction: row;
+  width: 35.68%;
+  height: auto;
+  padding-top: 11.42%;
+}
+
+.Dive {
+  font-size: 3.2vw;
+  line-height: 2.8vw;
+  text-align: center;
+  background: linear-gradient(91.57deg, #C0B7E8 -1.02%, #8176AF 36.25%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: block;
+  align-items: center;
+}
+
+.Into_The_Depths {
+  font-size: 2.6vw;
+  line-height: 1.9vw;
+  text-align: center;
+  background: #FFFFFF;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
