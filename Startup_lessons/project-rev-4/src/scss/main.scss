@@ -23,7 +23,6 @@
     @media (min-width: 992px){
         width: 1440px;
         padding: 50px 78px 59px 84px;
-
     }
     
 }
@@ -31,12 +30,13 @@
     position: relative;
     display: flex;
     background-color: inherit;
+    flex-direction: column;
     
 }
 .dive_section_top_menu{
     display: flex;
-    justify-content: space-between;
     height: fit-content;
+    flex-direction: row;
 }
 
 .top_menu_hydra_words{
@@ -365,4 +365,78 @@
         
     };
 }
+}
+.contact_us_button{
+    display: none;
+    @media (min-width: 992px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: fit-content;
+        margin-top: 29px;
+        margin-left: 140px;
+        border-radius: 40px;
+        border: 2px solid #FFF; 
+        cursor: pointer;
+        z-index: 20;
+        background-color: inherit;
+        transition: background-color 0.3s ease;
+        
+    }
+}
+.contact_us_text{
+    @extend %title_mobile_Text;
+    color: $firstColor;
+    font-size: 12px;
+    padding: 16px 38px 16px 34px;
+}
+// .dive_section_vector1 {
+//     position: absolute;
+//     width: 390px;
+//     height: 562px;
+//     top: 77px;
+//     background-color: inherit;
+//     @media (min-width: 992px) {
+//         width: 414px;
+//         height: 669px;
+//         top: 170px;
+//         right: 3px;
+//         left: 1023px;
+//     }
+// }
+.dive_section_vector1_img {
+    background-image: url(../assets/img/Vector1.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: absolute;
+    display: flex;
+    width: 288px;
+    height: 562px;
+    top: 77px;
+    left:  102px;
+    @media (min-width: 992px){
+        background-image: url(../assets/img/Desctop/vector1.webp);
+        max-width: 414px;
+        max-height: 669px;
+        top: 170px;
+        left: 1023px;
+    }
+
+}
+.Rectangle4 {
+    display: flex;
+    position: relative;
+    width: 340px;
+    height: 296px;
+    margin-top: 98px;
+    background: rgba(0, 0, 0, 0.13);
+    border-radius: 100px 100px 100px 240px;
+    z-index: 10;
+    @media (min-width: 992px){
+        width: 524px;
+        height: 455px;
+        margin-top: 98px;
+        margin-left: 748px;
+    }
 }

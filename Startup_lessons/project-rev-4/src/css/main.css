@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
-.navigation_bar {
+.contact_us_text, .navigation_bar {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -34,12 +34,13 @@
   position: relative;
   display: flex;
   background-color: inherit;
+  flex-direction: column;
 }
 
 .dive_section_top_menu {
   display: flex;
-  justify-content: space-between;
   height: fit-content;
+  flex-direction: row;
 }
 
 .top_menu_hydra_words {
@@ -364,5 +365,71 @@
   }
   .how_to:hover:after {
     width: 55px;
+  }
+}
+.contact_us_button {
+  display: none;
+}
+@media (min-width: 992px) {
+  .contact_us_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: fit-content;
+    margin-top: 29px;
+    margin-left: 140px;
+    border-radius: 40px;
+    border: 2px solid #FFF;
+    cursor: pointer;
+    z-index: 20;
+    background-color: inherit;
+    transition: background-color 0.3s ease;
+  }
+}
+
+.contact_us_text {
+  color: #FFFFFF;
+  font-size: 12px;
+  padding: 16px 38px 16px 34px;
+}
+
+.dive_section_vector1_img {
+  background-image: url(../assets/img/Vector1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  display: flex;
+  width: 288px;
+  height: 562px;
+  top: 77px;
+  left: 102px;
+}
+@media (min-width: 992px) {
+  .dive_section_vector1_img {
+    background-image: url(../assets/img/Desctop/vector1.webp);
+    max-width: 414px;
+    max-height: 669px;
+    top: 170px;
+    left: 1023px;
+  }
+}
+
+.Rectangle4 {
+  display: flex;
+  position: relative;
+  width: 340px;
+  height: 296px;
+  margin-top: 98px;
+  background: rgba(0, 0, 0, 0.13);
+  border-radius: 100px 100px 100px 240px;
+  z-index: 10;
+}
+@media (min-width: 992px) {
+  .Rectangle4 {
+    width: 524px;
+    height: 455px;
+    margin-top: 98px;
+    margin-left: 748px;
   }
 }

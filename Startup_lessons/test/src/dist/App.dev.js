@@ -1,10 +1,10 @@
 "use strict";
 
-var hamburgerMenu = document.querySelector('.hamburger-menu');
-var spisokMenu = document.querySelector('.spisok_menu');
+var hamburgerMenu = document.querySelector('.top_menu_hamburger-menu');
+var navigationBar = document.querySelector('.navigation_bar');
 hamburgerMenu.addEventListener('click', function () {
   hamburgerMenu.classList.toggle('open');
-  spisokMenu.classList.toggle('open');
+  navigationBar.classList.toggle('open');
 }); // // Получаем кнопку "ABOUT" по классу
 // const aboutButton = document.querySelector('.spisok_menu_about');
 // // Получаем раздел "introduction_section" по его ID

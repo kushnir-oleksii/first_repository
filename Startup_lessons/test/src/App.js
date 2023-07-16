@@ -1,10 +1,12 @@
-const hamburgerMenu = document.querySelector('.hamburger-menu');
-const spisokMenu = document.querySelector('.spisok_menu');
+const hamburgerMenu = document.querySelector('.top_menu_hamburger-menu');
+const navigationBar = document.querySelector('.navigation_bar');
 
 hamburgerMenu.addEventListener('click', function() {
   hamburgerMenu.classList.toggle('open');
-  spisokMenu.classList.toggle('open');
+  navigationBar.classList.toggle('open');
 });
+
+
 
 
   // // Получаем кнопку "ABOUT" по классу
