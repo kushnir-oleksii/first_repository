@@ -20,3 +20,29 @@ SELECT product FROM items WHERE price<"1000";
 SELECT product FROM items WHERE price BETWEEN "500" AND "1500";
 SELECT product, price, rating FROM items WHERE brand IN ("Apple", "Samsung", "Huawei");
 SELECT product, category FROM items WHERE brand ="Samsung" OR category LIKE "Samsung%";
+
+
+\sql
+\connect root@localhost
+USE shop;
+INSERT INTO items(product, price, rating, category, brand) VALUES('iPhone 12','1100','4.69','smartphones', 'Apple');
+INSERT INTO items(product, price, rating, category, brand) VALUES('iPhone 11','979','4.69','smartphones', 'Apple');
+INSERT INTO items(product, price, rating, category, brand) VALUES('MacBook Air','1300','4.72','laptops', 'Apple');
+INSERT INTO items(product, price, rating, category, brand) VALUES('iPhone 14','1549','4.69','smartphones', 'Apple');
+INSERT INTO items(product, price, rating, category, brand) VALUES('iPhone 13','1349','4.69','smartphones', 'Apple');
+INSERT INTO items(product, price, rating, category, brand) VALUES('MacBook','950','4.69','laptops', 'Apple');
+SELECT * FROM items WHERE brand="Apple";
+SELECT category, COUNT(product) FROM items GROUP BY category;
+SELECT COUNT(DISTINCT brand) FROM items;
+CREATE TABLE customer (id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, name VARCHAR(128), itemsID MEDIUMINT UNSIGNED);
+INSERT INTO customer(name, itemsID) VALUES('Mike','9');
+INSERT INTO customer(name, itemsID) VALUES('Bob','5');
+INSERT INTO customer(name, itemsID) VALUES('Nikola','11');
+INSERT INTO customer(name, itemsID) VALUES('Mike','14');
+INSERT INTO customer(name, itemsID) VALUES('Nikola','3');
+INSERT INTO customer(name, itemsID) VALUES('Mike','8');
+INSERT INTO customer(name, itemsID) VALUES('Mike','9');
+SELECT name, product, price FROM customer JOIN items ON customer.itemsID=items.id;
+SELECT customer.name, COUNT(*) AS quantity FROM customer JOIN items ON customer.itemsID = items.id GROUP BY customer.name;
+SELECT customer.name, COUNT(*) AS quantity FROM customer JOIN items ON customer.itemsID = items.id GROUP BY customer.name ORDER BY quantity DESC;
+SELECT items.category, items.product, items.price FROM customer JOIN items ON customer.itemsID = items.id ORDER BY items.category ASC, items.price DESC;
