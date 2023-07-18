@@ -1,5 +1,31 @@
 "use strict";
 
+// Отображение/скрытие кнопки при прокрутке
+window.onscroll = function () {
+  showScrollToTopButton();
+};
+
+function showScrollToTopButton() {
+  var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+}
+
+document.getElementById("scrollToTopBtn").onclick = function () {
+  scrollToTop();
+}; // Прокрутка наверх при клике на кнопку
+
+
+function scrollToTop() {
+  document.body.scrollTop = 0; // Для Safari
+
+  document.documentElement.scrollTop = 0; // Для других браузеров
+}
+
 var hamburgerMenu = document.querySelector('.top_menu_hamburger-menu');
 var navigationBar = document.querySelector('.navigation_bar');
 hamburgerMenu.addEventListener('click', function () {
@@ -155,32 +181,6 @@ if (contact_us_button) {
 
     scrollToContact_form(); // Вызываем функцию прокрутки
   });
-} // Отображение/скрытие кнопки при прокрутке
-
-
-window.onscroll = function () {
-  showScrollToTopButton();
-};
-
-function showScrollToTopButton() {
-  var scrollToTopBtn = document.getElementById("scrollToTopBtn");
-
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    scrollToTopBtn.style.display = "block";
-  } else {
-    scrollToTopBtn.style.display = "none";
-  }
-}
-
-document.getElementById("scrollToTopBtn").onclick = function () {
-  scrollToTop();
-}; // Прокрутка наверх при клике на кнопку
-
-
-function scrollToTop() {
-  document.body.scrollTop = 0; // Для Safari
-
-  document.documentElement.scrollTop = 0; // Для других браузеров
 } // const how_toButton = document.querySelector('.spisok_menu_how_to');
 // const how_we_build_section = document.getElementById('how_we_build_section');
 // how_toButton.addEventListener('click', () => {
