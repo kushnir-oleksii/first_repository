@@ -1,0 +1,408 @@
+@import 'title';
+@import '_colors';
+@import '_template';
+
+.wrapper {
+    background-repeat: no-repeat;
+    background-size:cover;
+    // padding: 3.47% 5.42% 4.1% 5.83%;
+    // min-width: 390px;  
+    margin:0 auto;
+    background-color:  #302C42;
+    // border-radius: 40px;
+    border-radius: 0px;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.page_content {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    background-color: inherit;
+    height: auto;
+    padding: 3.47% 5.42% 4.1% 5.83%;
+}
+.scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%); 
+    font-size: 6px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex-grow: 1;
+    &:hover {
+        background: linear-gradient(90deg, #C0B7E8 0%, #8176AF 100%);
+    }
+    @media (min-width: 992px){
+        width: 70px;
+        height: 70px;
+        bottom: 30px;
+        right: 30px;
+    }
+}
+
+.scrollToTopBtn_img{
+        background-image: url(../assets/img/Desctop/chevron-small-down.png);
+        background-repeat: no-repeat;
+        background-size:cover;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        font-size: 6px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transform: rotate(180deg);
+        @media (min-width: 992px){
+            width: 70px;
+            height: 70px;
+            bottom: 30px;
+            right: 30px;
+        }
+}
+.dive_section{
+    position: relative;
+    display: flex;
+    background-color: inherit;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    
+}
+.dive_section_top_menu{
+    display: flex;
+    height: fit-content;
+    flex-direction: row;
+}
+
+ 
+ 
+
+.top_menu_navigation_bar {
+    width: 100%;
+    position: relative;
+    display: flex;
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 3.44%;
+    // margin-left: 205px;
+    padding: 0;
+    height: fit-content;
+}
+.navigation_bar{
+    position: relative;
+    list-style: none;
+    display: inline-flex;
+    flex-direction: row;
+    @extend %title_mobile_Text;
+    font-size: 0.8vw;
+    padding-left: 16.04%;   
+    text-align: center;   
+    width: 53.44%; 
+}
+.navigation_bar.open {
+    display: flex; // Отобразить список меню при добавлении класса 'open'
+    z-index: 1;
+  }
+.navigation_bar_services{
+    padding-left: 10.85%;
+}
+.navigation_bar_technologies, .navigation_bar_how_to{
+    padding-left: 10.6%;
+}
+.navigation_bar_about, .navigation_bar_services, .navigation_bar_technologies, .navigation_bar_how_to{
+    cursor: pointer;
+}
+.top_menu_hydra_img_box {
+    width: 8.06%;
+    height: auto;
+}
+.top_menu_hydra_img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.top_menu_hydra_words{
+    width: 5.75%;
+    height: 3.6%;
+    display: flex;
+    margin-top: 0;
+    margin-left: 1.17%;
+    height: fit-content;
+}
+.letter_H{
+    animation: slideIn_H 1s forwards;
+    
+}
+.letter_H_img{
+    width: 100%;
+    height: auto;
+}
+.letter_Y{
+    margin-left: 6.6%;
+    animation: slideIn_Y 1.5s forwards;
+    
+}
+.letter_Y_img{
+    width: 100%;
+    height: auto;
+}
+.letter_D{
+    margin-left: 6.6%;
+    animation: slideIn_D 2s forwards;
+    
+}
+.letter_D_img{
+    width: 100%;
+    height: auto;
+}
+.letter_R{
+    margin-left: 7.3%;
+    animation: slideIn_R 2.5s forwards;
+    
+}
+.letter_R_img{
+    width: 100%;
+    height: auto;
+}
+.letter_A{
+    margin-left: 6.6%;
+    animation: slideIn_A 3s forwards;
+    
+}
+.letter_A_img{
+    width: 100%;
+    height: auto;
+}
+@keyframes slideIn_H {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn_Y {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn_D {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn_R {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn_A {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.vector1 {
+    display: flex;
+    position: absolute;
+    width: 32.39%;
+    height: auto;
+    top: 170px;
+    left: 73.47%;
+}
+.vector1_img {
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 990px) {
+.about {
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+                   bottom: 0;
+            left: 30%;
+            width: 0%;
+            height: 1px;
+            transition: 0.2s;
+       
+    };
+    &:hover:after {
+            width: 6.73%;
+        
+    };
+}
+.services {
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+        bottom: 0;
+        left: 44%;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+        
+    };
+    &:hover:after {
+        width: 9.08%;
+    };
+}
+.technologies{
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+        
+            bottom: 0;
+            left: 60%;
+            width: 0%;
+            height: 1px;
+            transition: 0.2s;
+        
+    };
+    &:hover:after {
+            width: 14.64%;
+    };
+}
+.how_to{
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        background-color: white;
+        width: 0%;
+        height: 1px;
+        transition: 0.2s;
+            bottom: 0;
+            left: 81.5%;
+            width: 0%;
+            height: 1px;
+            transition: 0.2s;
+        
+    };
+    &:hover:after {
+        
+            width: 8%;
+        
+    };
+}
+}
+
+.dive_section_center{
+    display: flex;
+    height: fit-content;
+    flex-direction: row;
+    padding-top: 11.42%;
+}
+.Dive{
+    @extend %title_mobile_Text ;
+    font-size: 3.2vw;
+    text-align: center;
+    background: $firstGradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display:block;
+    align-items: center;
+}
+.Into_The_Depths{
+    font-size: 2.78vw;
+    text-align: center;
+    background: $firstColor;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.Of_Virtual_Reality{
+    display: flex;
+    padding-top: 0.28vw;
+    z-index: 10;
+}
+.Of{
+    @extend %title_mobile_Text;
+    font-style: normal;
+    font-size: 2.78vw;
+    background: $firstColor;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.Virtual{
+    @extend %title_mobile_Text;
+    font-size:  3.2vw;
+    background: linear-gradient(91.57deg, #8176AF -1.02%, #9b93b1 36.25%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;    
+}
+.Lorem_ipsum_box{
+        display: flex;
+        padding-top: 2.5vw;
+}
+.Lorem_ipsum_text{
+    color: $firstColor;
+    @extend %title_mobile_thin_Text;
+    line-height: 1.5;
+    font-size: 1.12vw;
+}
