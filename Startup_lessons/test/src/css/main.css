@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
-.Virtual, .Of, .Dive, .navigation_bar {
+.build_your_world_text, .JOIN_HYDRA_button_text, .contact_us_text, .LETS_GET_IN_TOUCH_text, .TRY_IT_NOW_text, .SEND_TO_HYDRAtext, .Virtual, .Of, .Dive, .navigation_bar {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -9,6 +9,13 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
+}
+
+.build_your_world_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
 }
 
 .wrapper {
@@ -261,24 +268,60 @@
   }
 }
 .vector1 {
-  display: flex;
   position: absolute;
-  width: 32.39%;
+  width: 27.5vw;
   height: auto;
-  top: 170px;
-  left: 73.47%;
+  top: 11.8vw;
+  right: 0.208vw;
+  left: 71vw;
 }
 
 .vector1_img {
+  background-image: url(../assets/img/Desctop/vector1.webp);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%;
+  width: 27.5vw;
+  height: 46.45vw;
   margin: 0;
-  padding: 0;
+  z-index: 1;
+}
+
+.vector2 {
+  position: absolute;
+  width: 26.55vw;
+  height: auto;
+  top: 0px;
+  left: 64.51vw;
+}
+
+.vector2_img {
+  background-image: url(../assets/img/Desctop/vector-2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 26.55vw;
+  height: 58.68vw;
+  margin: 0;
+  z-index: 1;
+}
+
+.vector3 {
+  position: absolute;
+  width: 49.5vw;
+  height: auto;
+  top: 29.097vw;
+  left: 49.097vw;
+}
+
+.vector3_img {
+  background-image: url(../assets/img/Desctop/vector3.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 49.5vw;
+  height: 29.12vw;
+  z-index: 1;
 }
 
 @media screen and (min-width: 990px) {
@@ -359,6 +402,8 @@
   height: fit-content;
   flex-direction: row;
   padding-top: 11.42%;
+  z-index: 2;
+  height: 100%;
 }
 
 .Dive {
@@ -413,4 +458,51 @@
   color: #FFFFFF;
   line-height: 1.5;
   font-size: 1.12vw;
+}
+
+.button_and_arrow {
+  display: flex;
+  flex-direction: row;
+}
+
+.build_your_world_button {
+  display: flex;
+  position: relative;
+  width: 14.86vw;
+  height: 3.33vw;
+  margin-top: 4.583vw;
+  height: fit-content;
+  background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.build_your_world_button:hover {
+  background: linear-gradient(90deg, #C0B7E8 0%, #8176AF 100%);
+}
+
+.build_your_world_text, .JOIN_HYDRA_button_text, .contact_us_text, .LETS_GET_IN_TOUCH_text, .TRY_IT_NOW_text, .SEND_TO_HYDRAtext, .build_your_world_text {
+  font-size: 0.972vw;
+  line-height: 1.18vw;
+  color: #343045;
+  line-height: 3.61vw;
+  text-align: center;
+}
+.build_your_world_text:hover, .JOIN_HYDRA_button_text:hover, .contact_us_text:hover, .LETS_GET_IN_TOUCH_text:hover, .TRY_IT_NOW_text:hover, .SEND_TO_HYDRAtext:hover, .build_your_world_text:hover {
+  font-size: 1.11vw;
+}
+@media (min-width: 992px) {
+  .build_your_world_text, .JOIN_HYDRA_button_text, .contact_us_text, .LETS_GET_IN_TOUCH_text, .TRY_IT_NOW_text, .SEND_TO_HYDRAtext, .build_your_world_text {
+    font-size: 0.83vw;
+  }
+  .build_your_world_text:hover, .JOIN_HYDRA_button_text:hover, .contact_us_text:hover, .LETS_GET_IN_TOUCH_text:hover, .TRY_IT_NOW_text:hover, .SEND_TO_HYDRAtext:hover, .build_your_world_text:hover {
+    font-size: 0.972vw;
+  }
+}
+
+.arrow_small_right_box_img {
+  width: 6.94vw;
+  height: 6.94vw;
+  margin-left: 0.763vw;
+  margin-top: 2.77vw;
 }
