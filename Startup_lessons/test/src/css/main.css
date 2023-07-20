@@ -11,7 +11,7 @@
   font-weight: 300;
 }
 
-.build_your_world_button {
+.dive_section_center_button_and_arrow_build_your_world_button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,7 +114,6 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 3.44%;
   padding: 0;
   height: fit-content;
 }
@@ -127,7 +126,8 @@
   font-size: 0.8vw;
   padding-left: 16.04%;
   text-align: center;
-  width: 53.44%;
+  width: 45.94%;
+  height: 1.0416vw;
 }
 
 .navigation_bar.open {
@@ -145,6 +145,52 @@
 
 .navigation_bar_about, .navigation_bar_services, .navigation_bar_technologies, .navigation_bar_how_to {
   cursor: pointer;
+}
+
+.contact_us_button {
+  display: none;
+}
+@media (min-width: 448px) {
+  .contact_us_button {
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 10.694vw;
+    height: 3.33vw;
+    margin-left: 9.72vw;
+    border-radius: 40px;
+    border: 2px solid #FFF;
+    cursor: pointer;
+    z-index: 20;
+    background-color: inherit;
+    transition: background-color 0.3s ease;
+  }
+}
+
+.JOIN_HYDRA_button {
+  display: none;
+}
+@media (min-width: 448px) {
+  .JOIN_HYDRA_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 2.639vw;
+    width: 10.764vw;
+    height: 3.33vw;
+    flex-shrink: 0;
+    transition: background-color 0.3s ease;
+    flex-grow: 1;
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    border-radius: 40px;
+    z-index: 11;
+  }
+  .JOIN_HYDRA_button:hover {
+    background: linear-gradient(90deg, #C0B7E8 0%, #8176AF 100%);
+  }
 }
 
 .top_menu_hydra_img_box {
@@ -324,7 +370,7 @@
   z-index: 1;
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 448px) {
   .about::after {
     content: "";
     position: absolute;
@@ -334,13 +380,13 @@
     height: 1px;
     transition: 0.2s;
     bottom: 0;
-    left: 30%;
+    left: 14.22vw;
     width: 0%;
     height: 1px;
     transition: 0.2s;
   }
   .about:hover:after {
-    width: 6.73%;
+    width: 3.195vw;
   }
 
   .services::after {
@@ -352,13 +398,13 @@
     height: 1px;
     transition: 0.2s;
     bottom: 0;
-    left: 44%;
+    left: 20vw;
     width: 0%;
     height: 1px;
     transition: 0.2s;
   }
   .services:hover:after {
-    width: 9.08%;
+    width: 4.31vw;
   }
 
   .technologies::after {
@@ -370,13 +416,13 @@
     height: 1px;
     transition: 0.2s;
     bottom: 0;
-    left: 60%;
+    left: 27vw;
     width: 0%;
     height: 1px;
     transition: 0.2s;
   }
   .technologies:hover:after {
-    width: 14.64%;
+    width: 6.94vw;
   }
 
   .how_to::after {
@@ -388,13 +434,13 @@
     height: 1px;
     transition: 0.2s;
     bottom: 0;
-    left: 81.5%;
+    left: 36.3vw;
     width: 0%;
     height: 1px;
     transition: 0.2s;
   }
   .how_to:hover:after {
-    width: 8%;
+    width: 3.81vw;
   }
 }
 .dive_section_center {
@@ -460,12 +506,12 @@
   font-size: 1.12vw;
 }
 
-.button_and_arrow {
+.dive_section_center_button_and_arrow {
   display: flex;
   flex-direction: row;
 }
 
-.build_your_world_button {
+.dive_section_center_button_and_arrow_build_your_world_button {
   display: flex;
   position: relative;
   width: 14.86vw;
@@ -477,7 +523,7 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.build_your_world_button:hover {
+.dive_section_center_button_and_arrow_build_your_world_button:hover {
   background: linear-gradient(90deg, #C0B7E8 0%, #8176AF 100%);
 }
 
@@ -487,20 +533,26 @@
   color: #343045;
   line-height: 3.61vw;
   text-align: center;
+  flex-grow: 1;
 }
 .build_your_world_text:hover, .JOIN_HYDRA_button_text:hover, .contact_us_text:hover, .LETS_GET_IN_TOUCH_text:hover, .TRY_IT_NOW_text:hover, .SEND_TO_HYDRAtext:hover, .build_your_world_text:hover {
   font-size: 1.11vw;
 }
-@media (min-width: 992px) {
+@media (min-width: 448px) {
   .build_your_world_text, .JOIN_HYDRA_button_text, .contact_us_text, .LETS_GET_IN_TOUCH_text, .TRY_IT_NOW_text, .SEND_TO_HYDRAtext, .build_your_world_text {
-    font-size: 0.83vw;
+    font-size: 0.84vw;
   }
   .build_your_world_text:hover, .JOIN_HYDRA_button_text:hover, .contact_us_text:hover, .LETS_GET_IN_TOUCH_text:hover, .TRY_IT_NOW_text:hover, .SEND_TO_HYDRAtext:hover, .build_your_world_text:hover {
     font-size: 0.972vw;
   }
 }
 
-.arrow_small_right_box_img {
+.contact_us_text {
+  color: #FFFFFF;
+  font-size: 0.84vw;
+}
+
+.build_your_world_button_arrow_small_right_box_img {
   width: 6.94vw;
   height: 6.94vw;
   margin-left: 0.763vw;

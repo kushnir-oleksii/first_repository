@@ -97,7 +97,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 3.44%;
+    
     // margin-left: 205px;
     padding: 0;
     height: fit-content;
@@ -111,7 +111,9 @@
     font-size: 0.8vw;
     padding-left: 16.04%;   
     text-align: center;   
-    width: 53.44%; 
+    width: 45.94%; 
+    // margin-top: 3.44%;
+    height: 1.0416vw;
 }
 .navigation_bar.open {
     display: flex; // Отобразить список меню при добавлении класса 'open'
@@ -125,6 +127,48 @@
 }
 .navigation_bar_about, .navigation_bar_services, .navigation_bar_technologies, .navigation_bar_how_to{
     cursor: pointer;
+}
+.contact_us_button{
+    display: none;
+    @media (min-width: 448px){
+        display: flex;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 10.694vw;
+        height: 3.33vw;
+        // margin-top: 2.0138vw;
+        margin-left: 9.72vw;
+        border-radius: 40px;
+        border: 2px solid #FFF; 
+        cursor: pointer;
+        z-index: 20;
+        background-color: inherit;
+        transition: background-color 0.3s ease;
+    }
+}
+.JOIN_HYDRA_button{
+    display: none;
+    @media (min-width: 448px){ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-left: 2.639vw;
+        // margin-top: 2.0138vw;
+        width: 10.764vw;
+        height: 3.33vw;
+        flex-shrink: 0;
+        transition: background-color 0.3s ease;
+        flex-grow: 1;
+        background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+        border-radius: 40px;
+        z-index: 11;
+        &:hover {
+            background: linear-gradient(90deg, #C0B7E8 0%, #8176AF 100%);
+        }
+    }
 }
 .top_menu_hydra_img_box {
     width: 8.06%;
@@ -296,7 +340,7 @@
     height: 29.12vw;
     z-index: 1;
 }
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 448px) {
 .about {
     &::after {
         content: "";
@@ -307,14 +351,14 @@
         height: 1px;
         transition: 0.2s;
                    bottom: 0;
-            left: 30%;
+            left: 14.22vw;
             width: 0%;
             height: 1px;
             transition: 0.2s;
        
     };
     &:hover:after {
-            width: 6.73%;
+            width: 3.195vw;
         
     };
 }
@@ -328,14 +372,14 @@
         height: 1px;
         transition: 0.2s;
         bottom: 0;
-        left: 44%;
+        left: 20vw;
         width: 0%;
         height: 1px;
         transition: 0.2s;
         
     };
     &:hover:after {
-        width: 9.08%;
+        width: 4.31vw;
     };
 }
 .technologies{
@@ -349,14 +393,14 @@
         transition: 0.2s;
         
             bottom: 0;
-            left: 60%;
+            left: 27vw;
             width: 0%;
             height: 1px;
             transition: 0.2s;
         
     };
     &:hover:after {
-            width: 14.64%;
+            width: 6.94vw;
     };
 }
 .how_to{
@@ -369,7 +413,7 @@
         height: 1px;
         transition: 0.2s;
             bottom: 0;
-            left: 81.5%;
+            left: 36.3vw;
             width: 0%;
             height: 1px;
             transition: 0.2s;
@@ -377,7 +421,7 @@
     };
     &:hover:after {
         
-            width: 8%;
+            width: 3.81vw;
         
     };
 }
@@ -443,11 +487,11 @@
     line-height: 1.5;
     font-size: 1.12vw;
 }
-.button_and_arrow{
+.dive_section_center_button_and_arrow{
     display: flex;
     flex-direction: row;
 }
-.build_your_world_button {
+.dive_section_center_button_and_arrow_build_your_world_button {
     display: flex;
     position: relative;
     width: 14.86vw;
@@ -481,15 +525,21 @@
     color: $secondColor;
     line-height: 3.61vw;
     text-align: center;
+    flex-grow: 1;
     &:hover {
         font-size: 1.11vw;
     }   
-    @media (min-width: 992px){
-        font-size: 0.83vw;
+    @media (min-width: 448px){
+        font-size: 0.84vw;
         &:hover {
             font-size: 0.972vw;
         }   
     }
+}
+.contact_us_text{
+    @extend %title_mobile_Text;
+    color: $firstColor;
+    font-size: 0.84vw;
 }
 // .arrow_small_right_box {
 //     display: none;
@@ -506,7 +556,7 @@
 
 //     }
 // }
-.arrow_small_right_box_img{
+.build_your_world_button_arrow_small_right_box_img{
     width: 6.94vw;
     height: 6.94vw;
     margin-left: 0.763vw;
