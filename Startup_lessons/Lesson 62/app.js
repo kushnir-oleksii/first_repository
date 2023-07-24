@@ -61,6 +61,67 @@
 //     console.log(`Server started on http://localhost:${PORT}`);
 // })
 
+// import express from 'express';
+// import path from 'path';
+// import { fileURLToPath } from 'url';
+// import { createRequire } from 'node:module';
+// import fs from 'fs';
+
+// const __filename = fileURLToPath(import.meta.url);
+// const __dirname = path.dirname(__filename);
+// const require = createRequire(import.meta.url);
+
+// const PORT = process.env.PORT || 3000;
+
+// const app = express();
+
+// app.get('/', async (req, res) => {
+//   if (process.env.NODE_ENV === 'development') {
+//     console.log('development mode');
+//   } 
+//  else if (process.env.NODE_ENV === 'production') {
+//     console.log('production mode');
+//  }else {
+//     console.log('start mode');
+//   }
+
+//   console.log('start');
+
+//   try {
+//     const data = await readFilePromise(path.join(__dirname, './package.json'));
+//     const jsonData = JSON.parse(data);
+
+//     const response = `
+//       <h1>Welcome</h1>
+//       <h2>Json text:</h2>
+//       <pre>${JSON.stringify(jsonData, null, 2)}</pre>
+//     `;
+
+//     console.log('JSON data:', jsonData);
+//     res.send(response); 
+//   } catch (error) {
+//     console.error(error);
+//     res.status(500).json({ error: 'Error reading package.json' });
+//   }
+
+//   console.log('end');
+// });
+
+// function readFilePromise(filePath) {
+//   return new Promise((resolve, reject) => {
+//     try {
+//       const data = fs.readFileSync(filePath);
+//       resolve(data.toString());
+//     } catch (error) {
+//       reject(error);
+//     }
+//   });
+// }
+
+// app.listen(PORT, () => {
+//   console.log(`Server started on http://localhost:${PORT}`);
+// });
+
 import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -78,27 +139,34 @@ const app = express();
 app.get('/', async (req, res) => {
   if (process.env.NODE_ENV === 'development') {
     console.log('development mode');
-  } 
- else if (process.env.NODE_ENV === 'production') {
+  } else if (process.env.NODE_ENV === 'production') {
     console.log('production mode');
- }else {
+  } else {
     console.log('start mode');
   }
 
   console.log('start');
 
   try {
-    const data = await readFilePromise(path.join(__dirname, './package.json'));
-    const jsonData = JSON.parse(data);
+    const filePath = path.join(__dirname, './package.json');
 
-    const response = `
-      <h1>Welcome</h1>
-      <h2>Json text:</h2>
-      <pre>${JSON.stringify(jsonData, null, 2)}</pre>
-    `;
+    fs.readFile(filePath, 'utf8', (err, data) => {
+      if (err) {
+        console.error(err);
+        return res.status(500).json({ error: 'Error reading package.json' });
+      }
 
-    console.log('JSON data:', jsonData);
-    res.send(response); 
+      const jsonData = JSON.parse(data);
+
+      const response = `
+        <h1>Welcome</h1>
+        <h2>Json text:</h2>
+        <pre>${JSON.stringify(jsonData, null, 2)}</pre>
+      `;
+
+      console.log('JSON data:', jsonData);
+      res.send(response);
+    });
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Error reading package.json' });
@@ -106,17 +174,6 @@ app.get('/', async (req, res) => {
 
   console.log('end');
 });
-
-function readFilePromise(filePath) {
-  return new Promise((resolve, reject) => {
-    try {
-      const data = fs.readFileSync(filePath);
-      resolve(data.toString());
-    } catch (error) {
-      reject(error);
-    }
-  });
-}
 
 app.listen(PORT, () => {
   console.log(`Server started on http://localhost:${PORT}`);
