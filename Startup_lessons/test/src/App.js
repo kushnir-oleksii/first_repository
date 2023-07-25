@@ -22,7 +22,7 @@ function scrollToTop() {
   document.documentElement.scrollTop = 0; // Для других браузеров
 }
 
-const hamburgerMenu = document.querySelector('.top_menu_hamburger-menu');
+const hamburgerMenu = document.querySelector('.hamburger-menu');
 const navigationBar = document.querySelector('.navigation_bar');
 
 hamburgerMenu.addEventListener('click', function() {

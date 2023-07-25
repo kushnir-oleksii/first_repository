@@ -26,7 +26,7 @@ function scrollToTop() {
   document.documentElement.scrollTop = 0; // Для других браузеров
 }
 
-var hamburgerMenu = document.querySelector('.top_menu_hamburger-menu');
+var hamburgerMenu = document.querySelector('.hamburger-menu');
 var navigationBar = document.querySelector('.navigation_bar');
 hamburgerMenu.addEventListener('click', function () {
   hamburgerMenu.classList.toggle('open');
