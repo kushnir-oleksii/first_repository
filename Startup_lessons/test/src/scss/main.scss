@@ -18,6 +18,7 @@
 .page_content {
     position: relative;
     display: flex;
+    flex-direction: column;
     margin: 0 auto;
     padding: 0;
     width: 100%;
@@ -153,8 +154,8 @@
   }
 .navigation_bar{
     display: none;
-    padding-top: 5vw;
-    padding-left: 2vw;
+    padding-top: 7vw;
+    padding-left: 5vw;
     font-size: 3.07vw;
     list-style: none;
     flex-direction: column;
@@ -396,11 +397,12 @@
 }
 .vector2 {
     position: absolute;
-    width: 82vw;
+    width: 83vw;
     height: auto;
-    top: -16.6vw;
-    left: 5.89vw;
+    top: 0vw;
+    left: 0;
     z-index: 1;
+    left: 4.89vw;
     @media (min-width: 768px) {
         width: 26.55vw;
         left: 64.51vw;
@@ -408,17 +410,28 @@
     }
 }
 .vector2_img {
-    background-image: url(../assets/img/Desctop/vector-2.webp);
+        @media (min-width: 768px) {
+        background-image: url(../assets/img/Desctop/vector-2.webp);
+        background-repeat: no-repeat;
+        background-size:cover;
+        position: relative;
+        width: 26.55vw;
+        height: 58.68vw;
+        margin: 0;
+        z-index: 1;
+    }
+}
+.vector2_img_mobile {
+    background-image: url(../assets/img/Mobile/vector-2.webp);
     background-repeat: no-repeat;
     background-size:cover;
     position: relative;
-    width: 82vw;
-    height: 181.7vw;
+    width: 83vw;
+    height: 161vw;
     margin: 0;
     z-index: 1;
     @media (min-width: 768px) {
-        width: 26.55vw;
-        height: 58.68vw;
+        display: none;
     }
 }
 .vector3 {
@@ -645,7 +658,6 @@
     width: 74.87vw;
     height: 13.33vw;
     margin-left: 13.33vw;
-    margin-bottom: 13.59vw;
     @extend %button_box;
     margin-top: 9.23vw;
     height: fit-content;
@@ -757,4 +769,282 @@
         flex-shrink: 0;
         margin: 0.972vw 1.25vw 1.042vw 1.1vw;
     }
+}
+.Rectangel6{
+    display: flex;
+    position: relative;
+    width: 88.974vw;
+    height: 27.95vw;
+    margin-top: 13.589vw;
+    margin-left: 5.897vw;
+    margin-bottom: 10vw;
+    background: radial-gradient(50% 2900.76% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: 0px 4px 4px rgba(192, 183, 232, 0.01);
+    border-radius: 90px;
+    @media (min-width: 768px){
+        top: 794px;
+        width: 1272px;
+        height: 167px;
+    }
+}
+.circle_left_box {
+    position: relative;
+    width: 7.69vw;
+    height: 7.69vw;
+    margin-left: 1.282vw;
+    margin-top: 10.256vw;
+    margin-bottom: 10vw;
+    background: none;
+    @media (min-width: 768px){
+        display: none;
+    }
+}
+// .circle {
+//     left: 8.75px;
+//     top: 43.75px;
+//     position: absolute;
+//     height: 22.5px;
+//     width: 22.5px;
+//     border-radius: 50%;
+//     transform: rotate(-90deg);
+//     background: none;
+// }
+.circle_left {
+    left: 0.962vw;
+    top: 0.962vw;
+    position: absolute;
+    height: 5.769vw;
+    width: 5.769vw;
+    border: 1.5px solid #FFFFFF;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+    background: none;
+}
+
+.circle_left::before,
+.circle_left::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    height: 1.5px;
+    background-color: #FFFFFF;
+    transform: translate(-50%, -50%);
+}
+
+.circle_left::before {
+    left: 34%;
+    transform-origin: center;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.circle_left::after {
+    right: 34%;
+    transform-origin: center;
+    transform: translate(50%, -50%) rotate(45deg);
+}
+.location_img{
+    position: relative;
+    width: 17.94vw;
+    height: 17.94vw;
+    margin-left: 0.26vw;
+    margin-top: 5.38vw;
+    @media (min-width: 768px){
+        top: 49px;
+        left: 39px;
+        bottom: 48px;
+    }
+}
+.location_text_box{
+    display: flex;
+    position: relative;
+    // width: 195px;
+    // height: 40px;
+    padding-left: -1.28vw;
+    padding-top: 9.74vw;
+    
+    @media (min-width: 768px){
+        width: 290px;
+        height: 17px;
+        top: 92px;
+        left: 109px;
+    }
+};
+.location_text{
+    @extend %title_mobile_standard_Text;
+    font-size: 3.59vw;
+    line-height: 4.35vw;
+    color: $firstColor;
+    @media (min-width: 768px){
+        br {
+            display: none;
+          }
+    }
+};
+.pay_us_a_visit_box{
+    display: none;
+    @media (min-width: 768px){
+    display: flex;
+    position: absolute;
+    top: 53px;
+    left: 109px;
+    width: 169px;
+    height: 29px;
+    }
+}
+.pay_us_a_visit_text{
+    @extend %title_mobile_Text;
+    font-size: 24px;
+    color: $firstColor;
+}
+.dividing_line_left{
+    display: none;
+    @media (min-width: 768px){
+        display: flex;
+        position: absolute;
+        top: 26px;
+        left: 441.5px;
+        width: 0px;
+        height: 116.5px;
+        border: 1px solid rgba(192, 183, 232, 0.33);
+    }
+}
+.give_us_a_call_box{
+    display: none;
+    @media (min-width: 768px){
+        display: flex;
+        position: absolute;
+        top: 54px;
+        left: 577px;
+    }
+}
+.give_us_a_call_text{
+    @extend %title_mobile_Text;
+    color: $firstColor;
+    font-size: 24px;
+}
+.give_us_a_call_text::before{
+    content: "";
+    position: absolute;
+    background-image: url(../assets/img/Desctop/phone-call.webp);
+    width: 59px;
+    height: 59px;
+    left: -88px;
+}
+
+ .right{
+    position: relative;
+    width: 7.69vw;
+    height: 7.69vw;
+    margin-left: 2.56vw;
+    margin-top: 10.256vw;
+    margin-bottom: 10vw;
+    border-radius: 50%;
+    background: none;
+    @media (min-width: 768px){
+        display: none;
+    }
+ };
+.circle_right {
+    left: 0.962vw;
+    top: 0.962vw;
+    position: absolute;
+    height: 5.769vw;
+    width: 5.769vw;
+    border: 1.5px solid #FFFFFF;
+    border-radius: 50%;
+    transform: rotate(90deg);
+    background: none;
+    
+} ;
+.circle_right::before,
+.circle_right::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    height: 1.5px;
+    background-color: #FFFFFF;
+    transform: translate(-50%, -50%);
+}
+
+.circle_right::before {
+    left: 34%;
+    transform-origin: center;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.circle_right::after {
+    right: 34%;
+    transform-origin: center;
+    transform: translate(50%, -50%) rotate(45deg);
+}
+
+.phone_number_pcbox {
+    display: none;
+    @media (min-width: 768px){
+        display: flex;
+        position: absolute;
+        top: 92px;
+        left: 577px;
+        bottom: 58px;
+        width: 87px;
+        height: 17px;
+    }
+}
+.phone_number_pctext{
+    @extend %title_mobile_thin_Text;
+    font-size: 14px;
+    color: $firstColor;
+}
+.dividing_line_right{
+    display: none;
+    @media (min-width: 768px){
+        display: flex;
+        position: absolute;
+        top: 28px;
+        left: 812px;
+        width: 0px;
+        height: 116.5px;
+        border: 1px solid rgba(192, 183, 232, 0.33);
+    }
+}
+.send_us_a_message_box{
+    display: none;
+    @media (min-width: 768px){
+        display: flex;
+        position: absolute;
+        top: 54px;
+        left: 950px;
+    }
+}
+.send_us_a_message_text{
+    @extend %title_mobile_Text;
+    color: $firstColor;
+    font-size: 24px;
+}
+.send_us_a_message_text::before{
+    content: "";
+    position: absolute;
+    background-image: url(../assets/img/Desctop/mail.webp);
+    width: 65px;
+    height: 65px;
+    left: -88px;
+}
+.email_text_box{
+    display: none;
+    @media (min-width: 768px){
+        display: flex;
+        position: absolute;
+        top: 92px;
+        left: 951px;
+        bottom: 58px;
+        width: 189px;
+        height: 17px;
+    }
+}
+.email_link{
+    @extend %title_mobile_thin_Text;
+        font-size: 14px;
+        color: $firstColor;
 }
