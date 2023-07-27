@@ -131,7 +131,7 @@
   width: 33px;
   position: absolute;
   height: 26px;
-  top: 53px;
+  top: 64.14px;
   right: 20px;
   display: flex;
   flex-direction: column;
@@ -266,6 +266,7 @@
   margin-top: 6.579vw;
   width: 17.69vw;
   height: 15.39vw;
+  z-index: 2;
 }
 @media (min-width: 768px) {
   .top_menu_hydra_img_box {
@@ -401,11 +402,20 @@
 }
 .vector1 {
   position: absolute;
-  width: 27.5vw;
+  width: 70vw;
   height: auto;
-  top: 11.8vw;
-  right: 0.208vw;
-  left: 71vw;
+  top: 19.74vw;
+  right: 0;
+  left: 26.15vw;
+  z-index: 1;
+}
+@media (min-width: 768px) {
+  .vector1 {
+    width: 27.5vw;
+    top: 11.8vw;
+    right: 0.208vw;
+    left: 71vw;
+  }
 }
 
 .vector1_img {
@@ -413,18 +423,32 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  width: 27.5vw;
-  height: 46.45vw;
+  width: 70vw;
+  height: 144.1vw;
   margin: 0;
   z-index: 1;
+}
+@media (min-width: 768px) {
+  .vector1_img {
+    width: 27.5vw;
+    height: 46.45vw;
+  }
 }
 
 .vector2 {
   position: absolute;
-  width: 26.55vw;
+  width: 82vw;
   height: auto;
-  top: 0px;
-  left: 64.51vw;
+  top: -16.6vw;
+  left: 5.89vw;
+  z-index: 1;
+}
+@media (min-width: 768px) {
+  .vector2 {
+    width: 26.55vw;
+    left: 64.51vw;
+    top: 0;
+  }
 }
 
 .vector2_img {
@@ -432,18 +456,32 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  width: 26.55vw;
-  height: 58.68vw;
+  width: 82vw;
+  height: 181.7vw;
   margin: 0;
   z-index: 1;
+}
+@media (min-width: 768px) {
+  .vector2_img {
+    width: 26.55vw;
+    height: 58.68vw;
+  }
 }
 
 .vector3 {
   position: absolute;
-  width: 49.5vw;
+  width: 144vw;
   height: auto;
-  top: 29.097vw;
-  left: 49.097vw;
+  top: 73.33vw;
+  left: -47.79vw;
+  z-index: 1;
+}
+@media (min-width: 768px) {
+  .vector3 {
+    width: 49.5vw;
+    top: 29.097vw;
+    left: 49.097vw;
+  }
 }
 
 .vector3_img {
@@ -451,9 +489,15 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  width: 49.5vw;
-  height: 29.12vw;
+  width: 144vw;
+  height: 90.25vw;
   z-index: 1;
+}
+@media (min-width: 768px) {
+  .vector3_img {
+    width: 49.5vw;
+    height: 29.12vw;
+  }
 }
 
 @media (min-width: 768px) {
@@ -545,14 +589,19 @@
 
 .Dive_Into_The_Depths {
   display: flex;
+  justify-content: center;
+  z-index: 2;
+  padding-bottom: 1.79vw;
 }
 @media (min-width: 768px) {
   .Dive_Into_The_Depths {
     width: 31.67vw;
+    padding: 0;
   }
 }
 
 .Dive {
+  z-index: 10;
   margin-top: 7.69vw;
   font-size: 9.23vw;
   text-align: center;
@@ -562,7 +611,6 @@
   background-clip: text;
   display: block;
   align-items: center;
-  margin-left: 11.79vw;
 }
 @media (min-width: 768px) {
   .Dive {
@@ -579,6 +627,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  z-index: 10;
 }
 @media (min-width: 768px) {
   .Into_The_Depths {
@@ -591,6 +640,7 @@
   padding-top: 2.05vw;
   z-index: 10;
   padding-left: 14.87vw;
+  z-index: 15;
 }
 @media (min-width: 768px) {
   .Of_Virtual_Reality {
@@ -606,6 +656,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  z-index: 10;
 }
 @media (min-width: 768px) {
   .Of {
@@ -615,10 +666,11 @@
 
 .Virtual {
   font-size: 8.2vw;
-  background: linear-gradient(91.57deg, #8176AF -1.02%, #9b93b1 36.25%);
+  background: linear-gradient(227deg, #C0B7E8 0%, #8176AF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  z-index: 10;
 }
 @media (min-width: 768px) {
   .Virtual {
@@ -658,6 +710,7 @@
   height: fit-content;
   background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
   border-radius: 40px;
+  z-index: 10;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
