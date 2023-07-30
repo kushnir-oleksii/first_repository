@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 import { Product } from './model/product.js';
 import { Customer } from './model/customer.js';
 
-const url = 'mongodb://127.0.0.1/shop';
+const url = 'mongodb://127.0.0.1:27017/shop';
 
 
 const PORT = 3000;
