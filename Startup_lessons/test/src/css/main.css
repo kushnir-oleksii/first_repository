@@ -1,27 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
-.send_us_a_message_text, .give_us_a_call_text, .pay_us_a_visit_text, .build_your_world_text, .JOIN_HYDRA_button_text, .contact_us_text, .LETS_GET_IN_TOUCH_text, .TRY_IT_NOW_text, .SEND_TO_HYDRAtext, .Virtual, .Of, .Dive, .navigation_bar {
+.about_box_text, .introduction_text, .send_us_a_message_text, .give_us_a_call_text, .pay_us_a_visit_text, .build_your_world_text, .JOIN_HYDRA_button_text, .contact_us_text, .LETS_GET_IN_TOUCH_text, .TRY_IT_NOW_text, .SEND_TO_HYDRAtext, .Virtual, .Of, .Dive, .navigation_bar {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
 }
 
-.location_text {
+.Vitae_sapien_vr_text, .location_text {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
 }
 
-.email_link, .phone_number_pctext, .Lorem_ipsum_text {
+.Eget_mi_proin_text, .hydra_vr_box_text, .to_hydra_text, .email_link, .phone_number_pctext, .Lorem_ipsum_text {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
 }
 
-.dive_section_center_button_and_arrow_build_your_world_button {
+.LETS_GET_IN_TOUCH_button, .dive_section_center_button_and_arrow_build_your_world_button {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
 }
 
 .wrapper {
@@ -418,7 +417,7 @@
 }
 @media (min-width: 768px) {
   .vector1 {
-    width: 27.2vw;
+    width: 26.8vw;
     top: 11.8vw;
     right: 0.208vw;
     left: 71vw;
@@ -437,7 +436,7 @@
 }
 @media (min-width: 768px) {
   .vector1_img {
-    width: 27.2vw;
+    width: 26.8vw;
     height: 46.45vw;
   }
 }
@@ -498,7 +497,7 @@
 }
 @media (min-width: 768px) {
   .vector3 {
-    width: 49.2vw;
+    width: 48.7vw;
     top: 29.097vw;
     left: 49.097vw;
   }
@@ -515,7 +514,7 @@
 }
 @media (min-width: 768px) {
   .vector3_img {
-    width: 49.2vw;
+    width: 48.7vw;
     height: 29.12vw;
   }
 }
@@ -759,7 +758,7 @@
 @media (min-width: 768px) {
   .build_your_world_text, .JOIN_HYDRA_button_text, .contact_us_text, .LETS_GET_IN_TOUCH_text, .TRY_IT_NOW_text, .SEND_TO_HYDRAtext {
     font-size: 0.84vw;
-    line-height: 1.18vw;
+    line-height: 3.33vw;
   }
   .build_your_world_text:hover, .JOIN_HYDRA_button_text:hover, .contact_us_text:hover, .LETS_GET_IN_TOUCH_text:hover, .TRY_IT_NOW_text:hover, .SEND_TO_HYDRAtext:hover {
     font-size: 0.972vw;
@@ -828,7 +827,6 @@
   margin-top: 13.589vw;
   margin-left: 5.897vw;
   margin-right: 5.12vw;
-  margin-bottom: 10vw;
   background: radial-gradient(50% 2900.76% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
   box-shadow: 0px 4px 4px rgba(192, 183, 232, 0.01);
   border-radius: 90px;
@@ -1137,4 +1135,226 @@
 .email_link {
   font-size: 0.97vw;
   color: #FFFFFF;
+}
+
+.introduction_section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 15.13vw;
+}
+@media (min-width: 768px) {
+  .introduction_section {
+    flex-direction: row;
+    padding-top: 6.25vw;
+  }
+}
+
+.introduction_section_leftside {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.introduction_box {
+  background-color: #302C42;
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 0;
+}
+@media (min-width: 768px) {
+  .introduction_box {
+    padding-top: 0.278vw;
+    margin: 0;
+  }
+}
+
+.introduction_text {
+  font-size: 6.67vw;
+  line-height: 8.2vw;
+  text-align: center;
+  color: #FFFFFF;
+}
+@media (min-width: 768px) {
+  .introduction_text {
+    font-size: 2.5vw;
+    line-height: 3.06vw;
+  }
+}
+
+.to_hydra_box {
+  position: relative;
+  display: flex;
+  padding-top: 4.1vw;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .to_hydra_box {
+    flex-direction: row;
+    padding-top: 0.7vw;
+    margin: 0;
+  }
+}
+
+.to_hydra_text {
+  font-size: 6.67vw;
+  line-height: 8.2vw;
+  color: #FFFFFF;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .to_hydra_text {
+    font-size: 2.5vw;
+    line-height: 3.06vw;
+  }
+}
+
+.arrow_pc {
+  display: none;
+}
+@media (min-width: 768px) {
+  .arrow_pc {
+    display: flex;
+    position: relative;
+    width: 15.83vw;
+    height: 6.94vw;
+    margin-left: 2.08vw;
+    margin-top: -1.94vw;
+  }
+}
+
+.vr_img_box {
+  width: 84.41vw;
+  height: 91.8vw;
+  border-radius: 35.9vw 15.38vw;
+  margin-top: 9.23vw;
+  margin-left: 5.9vw;
+}
+@media (min-width: 768px) {
+  .vr_img_box {
+    border-radius: 16.67vw 6.94vw;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 5vw;
+    margin-left: 0;
+    width: 36.39vw;
+    height: 38.68vw;
+    flex-shrink: 0;
+  }
+}
+
+.introduction_section_rightside {
+  display: flex;
+  flex-direction: column;
+}
+
+.Vitae_sapien_vr_box {
+  display: none;
+}
+@media (min-width: 768px) {
+  .Vitae_sapien_vr_box {
+    display: flex;
+    position: relative;
+    padding-left: 6.67vw;
+  }
+}
+
+.Vitae_sapien_vr_text {
+  font-size: 1.11vw;
+  line-height: 1.6;
+  color: #FFFFFF;
+}
+
+.about_box {
+  display: none;
+}
+@media (min-width: 768px) {
+  .about_box {
+    display: flex;
+    position: relative;
+    padding-left: 8.125vw;
+    padding-top: 10.49vw;
+    line-height: 3.06vw;
+    text-align: center;
+  }
+}
+
+.about_box_text {
+  color: #FFFFFF;
+  font-size: 2.5vw;
+}
+
+.hydra_vr_box {
+  display: none;
+}
+@media (min-width: 768px) {
+  .hydra_vr_box {
+    display: flex;
+    position: relative;
+    padding-top: 0.35vw;
+    padding-left: 8.125vw;
+    text-align: center;
+  }
+}
+
+.hydra_vr_box_text {
+  color: #FFFFFF;
+  font-size: 2.5vw;
+}
+
+.Eget_mi_proin_box {
+  display: flex;
+  position: relative;
+  padding-top: 13.08vw;
+  padding-left: 5.9vw;
+}
+@media (min-width: 768px) {
+  .Eget_mi_proin_box {
+    padding-top: 2.92vw;
+    padding-left: 8.19vw;
+  }
+}
+
+.Eget_mi_proin_text {
+  font-size: 3.08vw;
+  line-height: 1.7;
+  color: #FFFFFF;
+}
+@media (min-width: 768px) {
+  .Eget_mi_proin_text {
+    line-height: 1.75;
+    font-size: 1.11vw;
+  }
+  .Eget_mi_proin_text br {
+    display: none;
+  }
+}
+
+.LETS_GET_IN_TOUCH_button {
+  display: flex;
+  position: relative;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 70.77vw;
+  height: 14.36vw;
+  margin-top: 8.72vw;
+  margin-left: 15.38vw;
+  border-radius: 10.26vw;
+  background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.LETS_GET_IN_TOUCH_button:hover {
+  background: linear-gradient(90deg, #C0B7E8 0%, #8176AF 100%);
+}
+@media (min-width: 768px) {
+  .LETS_GET_IN_TOUCH_button {
+    width: 14.86vw;
+    height: 3.33vw;
+    margin-top: 1.94vw;
+    margin-left: 8.19vw;
+    border-radius: 2.78vw;
+    margin-bottom: 0;
+  }
 }

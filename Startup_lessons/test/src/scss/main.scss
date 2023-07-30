@@ -373,7 +373,7 @@
     left: 26.15vw;
     z-index: 1;
     @media (min-width: 768px) {
-        width: 27.2vw;
+        width: 26.8vw;
         top: 11.8vw;
         right: 0.208vw;
         left: 71vw;
@@ -390,7 +390,7 @@
     margin: 0;
     z-index: 1;
     @media (min-width: 768px) {
-        width: 27.2vw;
+        width: 26.8vw;
         height: 46.45vw;
     }
         
@@ -442,7 +442,7 @@
     left: -47.79vw;
     z-index: 1;
     @media (min-width: 768px) {
-        width: 49.2vw;
+        width: 48.7vw;
         top: 29.097vw;
         left: 49.097vw;
     }
@@ -456,7 +456,7 @@
     height: 90.25vw;
     z-index: 1;
     @media (min-width: 768px) {
-        width: 49.2vw;
+        width: 48.7vw;
         height: 29.12vw;
     }
 }
@@ -701,7 +701,7 @@
     }   
     @media (min-width: 768px){
         font-size: 0.84vw;
-        line-height: 1.18vw;
+        line-height: 3.33vw;
         &:hover {
             font-size: 0.972vw;
         }   
@@ -778,7 +778,6 @@
     margin-top: 13.589vw;
     margin-left: 5.897vw;
     margin-right: 5.12vw;
-    margin-bottom: 10vw;
     background: radial-gradient(50% 2900.76% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
     box-shadow: 0px 4px 4px rgba(192, 183, 232, 0.01);
     border-radius: 90px;
@@ -1067,4 +1066,205 @@
     @extend %title_mobile_thin_Text;
         font-size: 0.97vw;
         color: $firstColor;
+}
+.introduction_section{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 15.13vw;
+    // width: 390px;
+    // height: 861px;
+    @media (min-width: 768px){
+        flex-direction: row;
+        padding-top: 6.25vw;
+    }
+}
+.introduction_section_leftside{
+    position: relative;
+    display: flex;
+    flex-direction: column;    
+}
+.introduction_box {
+    background-color:  #302C42;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    // width: 216px;
+    // height: 32px;
+    padding-top: 0;
+    @media (min-width: 768px){
+        padding-top: 0.278vw;
+        margin: 0;
+    }
+}
+.introduction_text {
+    @extend %title_mobile_Text;
+    font-size: 6.67vw;
+    line-height: 8.2vw;
+    text-align: center;
+    color:  $firstColor;
+    @media (min-width: 768px){
+        font-size: 2.5vw;
+        line-height: 3.06vw;
+    }
+}
+
+.to_hydra_box{
+    position: relative;
+    display: flex;
+    padding-top: 4.1vw;
+    margin: 0 auto;
+    text-align: center;
+    @media (min-width: 768px){
+        flex-direction: row;
+        padding-top: 0.7vw;
+        margin: 0;
+    }
+}
+.to_hydra_text{
+    font-size: 6.67vw;
+    line-height: 8.2vw;
+    color:  $firstColor;
+    @extend %title_mobile_thin_Text;
+    text-align: center;
+    @media (min-width: 768px){
+        font-size: 2.5vw;
+        line-height: 3.06vw;
+    }
+}
+.arrow_pc {
+    display: none;
+    @media (min-width: 768px){
+        display: flex;
+        position: relative;
+        width: 15.83vw;
+        height: 6.94vw;
+        margin-left: 2.08vw;
+        margin-top: -1.94vw;
+    }
+}
+.vr_img_box{
+    width: 84.41vw;
+    height: 91.8vw;
+    border-radius: 35.9vw 15.38vw;
+    margin-top: 9.23vw;
+    margin-left: 5.9vw;
+    @media (min-width: 768px){
+        border-radius: 16.67vw 6.94vw;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        margin-top: 5vw;
+        margin-left: 0;
+        width: 36.39vw;
+        height: 38.68vw;
+        flex-shrink: 0;      
+    }
+}
+.introduction_section_rightside{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.Vitae_sapien_vr_box {
+    display: none;
+    @media (min-width: 768px){
+        display: flex;
+        position: relative;
+        padding-left: 6.67vw ;
+    }
+}
+.Vitae_sapien_vr_text {
+    @extend %title_mobile_standard_Text;
+    font-size: 1.11vw;
+    line-height: 1.6;
+    color: $firstColor;
+
+}
+.about_box {
+    display: none;
+    @media (min-width: 768px){
+        display: flex;
+        position: relative;
+        padding-left: 8.125vw;
+        padding-top: 10.49vw;
+        line-height: 3.06vw;
+        text-align: center;
+    }
+}
+
+.about_box_text{
+    @extend %title_mobile_Text;
+    color: $firstColor;
+    font-size: 2.5vw;
+}
+.hydra_vr_box{
+    display: none;
+    @media (min-width: 768px){
+        display: flex;
+        position: relative;
+       padding-top: 0.35vw;
+       padding-left: 8.125vw;
+        text-align: center;
+    }
+}
+.hydra_vr_box_text{
+    @extend %title_mobile_thin_Text;
+    color: $firstColor;
+    font-size: 2.5vw;
+}
+
+.Eget_mi_proin_box{
+    display: flex;
+    position: relative;
+    padding-top: 13.08vw;
+    padding-left: 5.9vw;
+    @media (min-width: 768px){
+        padding-top: 2.92vw;
+        padding-left: 8.19vw;
+
+    }
+}
+.Eget_mi_proin_text{
+    @extend %title_mobile_thin_Text;
+    font-size: 3.08vw;
+    line-height: 1.7;
+    color: $firstColor;
+    @media (min-width: 768px){
+        line-height: 1.75;
+        font-size: 1.11vw;
+        br {
+            display: none;
+          }
+    }
+}
+
+.LETS_GET_IN_TOUCH_button {
+    display: flex;
+    position: relative;
+    flex-grow: 0;
+    @extend %button_box;
+    flex-shrink: 0;
+    width: 70.77vw;
+    height: 14.36vw;
+    margin-top: 8.72vw;
+    margin-left: 15.38vw;
+    border-radius: 10.26vw;
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    cursor: pointer;
+    // transition: background-color 0.3s ease; /* Добавлен эффект плавного перехода */
+    transition: background-color 0.3s ease;
+    
+    &:hover {
+        background: linear-gradient(90deg, #C0B7E8 0%, #8176AF 100%);
+    }
+    @media (min-width: 768px){
+        
+        width: 14.86vw;
+        height: 3.33vw;
+        margin-top: 1.94vw;
+        margin-left: 8.19vw;
+        border-radius: 2.78vw;
+        margin-bottom: 0;
+        
+    }
 }

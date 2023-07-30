@@ -56,7 +56,7 @@ hamburgerMenu.addEventListener('click', function() {
     }
 }
 
-const aboutButton = document.querySelector(".spisok_menu_about a");
+const aboutButton = document.querySelector(".navigation_bar_about");
     if (aboutButton) {
         aboutButton.addEventListener("click", function (event) {
             event.preventDefault(); // Предотвращаем переход по ссылке

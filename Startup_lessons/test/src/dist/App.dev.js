@@ -57,7 +57,7 @@ function scrollToIntroductionSection() {
   }
 }
 
-var aboutButton = document.querySelector(".spisok_menu_about a");
+var aboutButton = document.querySelector(".navigation_bar_about");
 
 if (aboutButton) {
   aboutButton.addEventListener("click", function (event) {
