@@ -373,7 +373,7 @@
     left: 26.15vw;
     z-index: 1;
     @media (min-width: 768px) {
-        width: 27.5vw;
+        width: 27.2vw;
         top: 11.8vw;
         right: 0.208vw;
         left: 71vw;
@@ -390,7 +390,7 @@
     margin: 0;
     z-index: 1;
     @media (min-width: 768px) {
-        width: 27.5vw;
+        width: 27.2vw;
         height: 46.45vw;
     }
         
@@ -442,7 +442,7 @@
     left: -47.79vw;
     z-index: 1;
     @media (min-width: 768px) {
-        width: 49.5vw;
+        width: 49.2vw;
         top: 29.097vw;
         left: 49.097vw;
     }
@@ -456,7 +456,7 @@
     height: 90.25vw;
     z-index: 1;
     @media (min-width: 768px) {
-        width: 49.5vw;
+        width: 49.2vw;
         height: 29.12vw;
     }
 }
@@ -770,21 +770,23 @@
         margin: 0.972vw 1.25vw 1.042vw 1.1vw;
     }
 }
-.Rectangel6{
+.contact_info_box{
     display: flex;
     position: relative;
-    width: 88.974vw;
-    height: 27.95vw;
+    // width: 88.974vw;
+    // height: 27.95vw;
     margin-top: 13.589vw;
     margin-left: 5.897vw;
+    margin-right: 5.12vw;
     margin-bottom: 10vw;
     background: radial-gradient(50% 2900.76% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
     box-shadow: 0px 4px 4px rgba(192, 183, 232, 0.01);
     border-radius: 90px;
+    z-index: 2;
     @media (min-width: 768px){
-        top: 794px;
-        width: 1272px;
-        height: 167px;
+        margin-top: 6.11vw;
+        margin-left: 0;
+        margin-right: 0vw;
     }
 }
 .circle_left_box {
@@ -850,10 +852,15 @@
     margin-left: 0.26vw;
     margin-top: 5.38vw;
     @media (min-width: 768px){
-        top: 49px;
-        left: 39px;
-        bottom: 48px;
+        width: 4.86vw;
+        height: 4.86vw;
+        margin-left: 2.7vw;
+        margin-top: 3.4vw;
     }
+}
+.pay_us_and_union_street_box {
+    display: flex;
+    flex-direction: column;
 }
 .location_text_box{
     display: flex;
@@ -862,12 +869,13 @@
     // height: 40px;
     padding-left: -1.28vw;
     padding-top: 9.74vw;
-    
     @media (min-width: 768px){
-        width: 290px;
-        height: 17px;
-        top: 92px;
-        left: 109px;
+        // width: 290px;
+        // height: 17px;
+        // top: 92px;
+        // left: 109px;
+        padding-left: 0;
+        padding-top: 0.694vw;
     }
 };
 .location_text{
@@ -876,6 +884,9 @@
     line-height: 4.35vw;
     color: $firstColor;
     @media (min-width: 768px){
+        line-height: 1.18vw;
+        font-size: 0.97vw;
+        padding-bottom: 4.028vw;
         br {
             display: none;
           }
@@ -885,51 +896,59 @@
     display: none;
     @media (min-width: 768px){
     display: flex;
-    position: absolute;
-    top: 53px;
-    left: 109px;
-    width: 169px;
-    height: 29px;
+    position: relative;
+    // top: 53px;
+    // left: 109px;
+    // width: 169px;
+    // height: 29px;
+    padding-top: 3.68vw;
     }
 }
 .pay_us_a_visit_text{
     @extend %title_mobile_Text;
-    font-size: 24px;
+    font-size: 1.66vw;
     color: $firstColor;
 }
 .dividing_line_left{
     display: none;
     @media (min-width: 768px){
         display: flex;
-        position: absolute;
-        top: 26px;
-        left: 441.5px;
+        position: relative;
+        margin-top: 1.8vw;
+        margin-left: 3.319vw;
         width: 0px;
-        height: 116.5px;
+        height: 8.1vw;
         border: 1px solid rgba(192, 183, 232, 0.33);
     }
+}
+.phone_call_box {
+    display: flex;
+    flex-direction: column;
 }
 .give_us_a_call_box{
     display: none;
     @media (min-width: 768px){
         display: flex;
-        position: absolute;
-        top: 54px;
-        left: 577px;
+        position: relative;
+        margin-left: 9.41vw;
+        margin-top: 3.88vw;
+
     }
 }
 .give_us_a_call_text{
     @extend %title_mobile_Text;
     color: $firstColor;
-    font-size: 24px;
+    font-size: 1.66vw;
 }
 .give_us_a_call_text::before{
     content: "";
     position: absolute;
+    background-repeat: no-repeat;
+    background-size:cover;
     background-image: url(../assets/img/Desctop/phone-call.webp);
-    width: 59px;
-    height: 59px;
-    left: -88px;
+    width: 4.097vw;
+    height: 4.097vw;
+    left: -6.11vw;
 }
 
  .right{
@@ -984,67 +1003,68 @@
     display: none;
     @media (min-width: 768px){
         display: flex;
-        position: absolute;
-        top: 92px;
-        left: 577px;
-        bottom: 58px;
-        width: 87px;
-        height: 17px;
+        position: relative;
+        margin-top: 0.625vw;
+        margin-left: 9.41vw;
+        
     }
 }
 .phone_number_pctext{
     @extend %title_mobile_thin_Text;
-    font-size: 14px;
+    font-size: 0.972vw;
     color: $firstColor;
 }
 .dividing_line_right{
     display: none;
     @media (min-width: 768px){
         display: flex;
-        position: absolute;
-        top: 28px;
-        left: 812px;
+        position: relative;
+        margin-top: 1.94vw;
+        margin-left: 4.58vw;
         width: 0px;
-        height: 116.5px;
+        height: 8.1vw;
         border: 1px solid rgba(192, 183, 232, 0.33);
     }
+}
+.send_us_text_and_mail_img {
+    display: flex;
+    flex-direction: column;
 }
 .send_us_a_message_box{
     display: none;
     @media (min-width: 768px){
         display: flex;
-        position: absolute;
-        top: 54px;
-        left: 950px;
+        position: relative;
+        margin-top: 3.75vw;
+        margin-left: 9.66vw;
     }
 }
 .send_us_a_message_text{
     @extend %title_mobile_Text;
     color: $firstColor;
-    font-size: 24px;
+    font-size: 1.66vw;
 }
 .send_us_a_message_text::before{
     content: "";
     position: absolute;
+    background-repeat: no-repeat;
+    background-size:cover;
     background-image: url(../assets/img/Desctop/mail.webp);
-    width: 65px;
-    height: 65px;
-    left: -88px;
+    width: 4.51vw;
+    height: 4.51vw;
+    left: -6.11vw;
 }
 .email_text_box{
     display: none;
     @media (min-width: 768px){
         display: flex;
-        position: absolute;
-        top: 92px;
-        left: 951px;
-        bottom: 58px;
-        width: 189px;
-        height: 17px;
+        position: relative;
+        margin-left: 9.66vw;
+        padding-top: 0.625vw;
     }
 }
 .email_link{
     @extend %title_mobile_thin_Text;
-        font-size: 14px;
+        font-size: 0.97vw;
         color: $firstColor;
 }
