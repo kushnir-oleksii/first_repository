@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel='stylesheet', href='/style.css')
+        title Users
+    body
+        h1 Edit #{user.title}
+        form(action=`/change-user/${user._id}` class="add" method="POST")
+            label(for="title") Name:
+            input(id="title" name="title" value=`${user.title}`)
+            label(for="age") Age :
+            input(type="number", min="1", id="age" name="age" value=`${user.age}`)
+            label(for="status") Status:
+            input(id="status" name="status" value=`${user.status}`)
+            label(for="img") Link for image:
+            input(id="img" name="link" value=`${user.link}`)
+            button(type="submit") Edit User

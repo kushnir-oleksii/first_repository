@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Courses</title>
+  </head>
+  <body>
+    <h1>Admin page</h1>
+    <h2>Add users</h2>
+    <form class="add" action="/add" method="POST">
+      <label for="title">Name:</label>
+      <input id="title" name="title" placeholder="Enter Name">
+      <label for="age">Age: </label>
+      <input type="number" min="1" id="age" name="age" placeholder="Enter age">
+      <label for="status">Status:</label>
+      <input id="status" name="status" placeholder="Enter status">
+      <label for="img">Link for image:</label>
+      <input id="img" name="link" placeholder="Enter image link">
+      <button type="submit">Add User</button>
+    </form>
+    <h2 class="corses-list">All users</h2>
+  </body>
+</html>

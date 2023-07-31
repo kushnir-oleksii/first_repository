@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel='stylesheet', href='/style.css')
+        title Courses
+    body
+        h1 Edit #{course.title}
+        form(action=`/change-course/${course._id}` class="add" method="POST")
+            label(for="title") Title:
+            input(id="title" name="title" value=`${course.title}`)
+            label(for="description") Description:
+            input(id="description" name="description" value=`${course.description}`)
+            label(for="price") Price:
+            input(type="number", min="1", id="price" name="price" value=`${course.price}`)
+            label(for="img") Link for image:
+            input(id="img" name="link" value=`${course.link}`)
+            button(type="submit") Edit Course
