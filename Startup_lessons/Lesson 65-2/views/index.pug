@@ -5,11 +5,9 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(rel='stylesheet', href='/style.css')
-    title Courses
+    title Users
   body
-    h1 #{title.text}
-      a(href=`${title.link}`) #{title.linkMessage}
-    if isAdmin
+    
     h2 Add users
     form(action="/add" class="add" method="POST")
       label(for="name") Name:
@@ -34,7 +32,7 @@ html(lang="en")
             .course-view-btn
               a(href=`/user/${user._id}`) 
                 button Show
-            if isAdmin
+            
             .course-btn
               a(href=`/edit/${user._id}`)
                 button Edit
