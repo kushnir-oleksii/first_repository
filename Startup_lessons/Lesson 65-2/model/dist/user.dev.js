@@ -11,10 +11,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 
 var Schema = _mongoose["default"].Schema;
 var userSchema = new Schema({
-  title: String,
+  name: String,
   age: Number,
   status: String,
-  link: String
+  avatar: String
 });
 
 var User = _mongoose["default"].model('user', userSchema);

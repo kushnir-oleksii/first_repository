@@ -3,10 +3,10 @@ import mongoose from 'mongoose';
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema ({
-    title: String,
+    name: String,
     age: Number,
     status: String,
-    link: String,
+    avatar: String,
 })
 
 const User = mongoose.model('user', userSchema);
