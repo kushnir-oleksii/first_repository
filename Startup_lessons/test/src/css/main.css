@@ -11,7 +11,7 @@
   font-weight: 400;
 }
 
-.Eget_mi_proin_text, .hydra_vr_box_text, .to_hydra_text, .email_link, .phone_number_pctext, .Lorem_ipsum_text {
+.eget_mi_proin_text, .hydra_vr_box_text, .to_hydra_text, .email_link, .phone_number_pctext, .Lorem_ipsum_text {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
@@ -307,56 +307,56 @@
   }
 }
 
-.letter_H {
+.letter_h {
   animation: slideIn_H 1s forwards;
 }
 
-.letter_H_img {
+.letter_h_img {
   width: 100%;
   height: auto;
 }
 
-.letter_Y {
+.letter_y {
   margin-left: 6.6%;
   animation: slideIn_Y 1.5s forwards;
 }
 
-.letter_Y_img {
+.letter_y_img {
   width: 100%;
   height: auto;
 }
 
-.letter_D {
+.letter_d {
   margin-left: 6.6%;
   animation: slideIn_D 2s forwards;
 }
 
-.letter_D_img {
+.letter_d_img {
   width: 100%;
   height: auto;
 }
 
-.letter_R {
+.letter_r {
   margin-left: 7.3%;
   animation: slideIn_R 2.5s forwards;
 }
 
-.letter_R_img {
+.letter_r_img {
   width: 100%;
   height: auto;
 }
 
-.letter_A {
+.letter_a {
   margin-left: 6.6%;
   animation: slideIn_A 3s forwards;
 }
 
-.letter_A_img {
+.letter_a_img {
   width: 100%;
   height: auto;
 }
 
-@keyframes slideIn_H {
+@keyframes slideIn_h {
   0% {
     transform: translateX(-50px);
     opacity: 0;
@@ -366,7 +366,7 @@
     opacity: 1;
   }
 }
-@keyframes slideIn_Y {
+@keyframes slideIn_y {
   0% {
     transform: translateX(-50px);
     opacity: 0;
@@ -376,7 +376,7 @@
     opacity: 1;
   }
 }
-@keyframes slideIn_D {
+@keyframes slideIn_d {
   0% {
     transform: translateX(-50px);
     opacity: 0;
@@ -386,7 +386,7 @@
     opacity: 1;
   }
 }
-@keyframes slideIn_R {
+@keyframes slideIn_r {
   0% {
     transform: translateX(-50px);
     opacity: 0;
@@ -396,7 +396,7 @@
     opacity: 1;
   }
 }
-@keyframes slideIn_A {
+@keyframes slideIn_a {
   0% {
     transform: translateX(-50px);
     opacity: 0;
@@ -417,7 +417,7 @@
 }
 @media (min-width: 768px) {
   .vector1 {
-    width: 26.8vw;
+    width: 27.5%;
     top: 11.8vw;
     right: 0.208vw;
     left: 71vw;
@@ -436,7 +436,7 @@
 }
 @media (min-width: 768px) {
   .vector1_img {
-    width: 26.8vw;
+    width: 100%;
     height: 46.45vw;
   }
 }
@@ -497,7 +497,7 @@
 }
 @media (min-width: 768px) {
   .vector3 {
-    width: 48.7vw;
+    width: 50%;
     top: 29.097vw;
     left: 49.097vw;
   }
@@ -514,8 +514,64 @@
 }
 @media (min-width: 768px) {
   .vector3_img {
-    width: 48.7vw;
+    width: 100%;
     height: 29.12vw;
+  }
+}
+
+.introduction_section_line_upper {
+  display: none;
+}
+@media (min-width: 768px) {
+  .introduction_section_line_upper {
+    display: flex;
+    position: absolute;
+    width: 100.34%;
+    height: auto;
+    top: 88.06vw;
+    left: -0.452vw;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .introduction_section_line_upper_img {
+    display: flex;
+    background-image: url(../assets/img/Desctop/introduction_section_line_upper.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 18.5vw;
+    z-index: 1;
+  }
+}
+
+.introduction_section_line_bottom {
+  display: none;
+}
+@media (min-width: 768px) {
+  .introduction_section_line_bottom {
+    display: flex;
+    position: absolute;
+    width: 100.34%;
+    left: -0.452vw;
+    height: auto;
+    top: 107.92vw;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .introduction_section_line_bottom_img {
+    display: flex;
+    background-image: url(../assets/img/Desctop/introduction_section_line_bottom.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 15.5vw;
+    z-index: 1;
   }
 }
 
@@ -1142,6 +1198,7 @@
   flex-direction: column;
   position: relative;
   padding-top: 15.13vw;
+  z-index: 2;
 }
 @media (min-width: 768px) {
   .introduction_section {
@@ -1303,30 +1360,31 @@
   font-size: 2.5vw;
 }
 
-.Eget_mi_proin_box {
+.eget_mi_proin_box {
   display: flex;
   position: relative;
   padding-top: 13.08vw;
   padding-left: 5.9vw;
 }
 @media (min-width: 768px) {
-  .Eget_mi_proin_box {
+  .eget_mi_proin_box {
     padding-top: 2.92vw;
     padding-left: 8.19vw;
+    width: 51.94vw;
   }
 }
 
-.Eget_mi_proin_text {
+.eget_mi_proin_text {
   font-size: 3.08vw;
   line-height: 1.7;
   color: #FFFFFF;
 }
 @media (min-width: 768px) {
-  .Eget_mi_proin_text {
-    line-height: 1.75;
+  .eget_mi_proin_text {
+    line-height: 1.75vw;
     font-size: 1.11vw;
   }
-  .Eget_mi_proin_text br {
+  .eget_mi_proin_text br {
     display: none;
   }
 }
