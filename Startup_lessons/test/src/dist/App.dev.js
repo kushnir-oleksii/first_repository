@@ -244,7 +244,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   function showCurrentSliderBox() {
-    if (window.innerWidth <= 992) {
+    if (window.innerWidth <= 768) {
       hideAllSliderBoxes();
       sliderBoxes[currentSliderIndex].style.display = "flex";
     } else {

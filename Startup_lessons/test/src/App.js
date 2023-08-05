@@ -227,7 +227,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Функция для отображения текущего слайдера
   function showCurrentSliderBox() {
-    if (window.innerWidth <= 992) {
+    if (window.innerWidth <= 768) {
       hideAllSliderBoxes();
       sliderBoxes[currentSliderIndex].style.display = "flex";
     } else {
