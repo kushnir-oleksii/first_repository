@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
-.simulation_text, .education_text, .self-care_text, .outdoor_text, .why_build_text, .about_box_text, .introduction_text, .send_us_a_message_text, .give_us_a_call_text, .pay_us_a_visit_text, .build_your_world_text, .JOIN_HYDRA_button_text, .contact_us_text, .LETS_GET_IN_TOUCH_text, .TRY_IT_NOW_text, .SEND_TO_HYDRAtext, .Virtual, .Of, .Dive, .navigation_bar {
+.technologies_text, .simulation_text, .education_text, .self-care_text, .outdoor_text, .why_build_text, .about_box_text, .introduction_text, .send_us_a_message_text, .give_us_a_call_text, .pay_us_a_visit_text, .build_your_world_text, .JOIN_HYDRA_button_text, .contact_us_text, .LETS_GET_IN_TOUCH_text, .TRY_IT_NOW_text, .SEND_TO_HYDRAtext, .Virtual, .Of, .Dive, .navigation_bar {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -11,13 +11,13 @@
   font-weight: 400;
 }
 
-.with_hydra_text, .eget_mi_proin_text, .hydra_vr_box_text, .to_hydra_text, .email_link, .phone_number_pctext, .Lorem_ipsum_text {
+.used_by_text, .with_hydra_text, .eget_mi_proin_text, .hydra_vr_box_text, .to_hydra_text, .email_link, .phone_number_pctext, .Lorem_ipsum_text {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
 }
 
-.slider_button_right_box, .slider_button_left_box, .LETS_GET_IN_TOUCH_button, .dive_section_center_button_and_arrow_build_your_world_button {
+.hydra_tech_button_right_box, .hydra_tech_button_left_box, .slider_button_right_box, .slider_button_left_box, .LETS_GET_IN_TOUCH_button, .dive_section_center_button_and_arrow_build_your_world_button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -497,7 +497,7 @@
 }
 @media (min-width: 768px) {
   .vector3 {
-    width: 50%;
+    width: 49%;
     top: 29.097vw;
     left: 49.097vw;
   }
@@ -1466,6 +1466,7 @@
   .with_hydra_box {
     padding-top: 1.042vw;
     margin: 0;
+    width: 17.986vw;
   }
 }
 
@@ -1522,7 +1523,7 @@
 }
 
 .Vitae_sapien_build_section_text {
-  font-size: 16px;
+  font-size: 1.11vw;
   line-height: 1.6;
   color: #FFFFFF;
 }
@@ -1560,6 +1561,7 @@
   .slider_box_education, .slider_box_self-care, .slider_box_outdoor {
     display: flex;
     position: relative;
+    flex-direction: column;
     width: 21.53vw;
     height: 35.49vw;
     background: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #211E2E 100%);
@@ -1586,7 +1588,7 @@
   position: relative;
   width: 56.15vw;
   height: 56.15vw;
-  margin: 6.92vw 12.05vw 0px 13.84vw;
+  margin: 6.92vw 12.05vw 5.38vw 13.84vw;
   border-radius: 50%;
   background: rgba(14, 14, 14, 0.32);
 }
@@ -1628,46 +1630,13 @@
   display: none;
 }
 
-.slider_img_education, .slider_img_education_mobile {
-  background-image: url(../assets/img/Desctop/pexels-mikhail-nilov.webp);
-  border-radius: 190.923px;
-}
-@media (min-width: 992px) {
-  .slider_img_education, .slider_img_education_mobile {
-    background-image: url(../assets/img/Desctop/pexels-mikhail-nilov.webp);
-    border-radius: 190.923px;
-  }
-}
-
-.self-care_img, .self-care_img_mobile {
-  background-image: url(../assets/img/Desctop/self-care.webp);
-  border-radius: 190.923px;
-}
-@media (min-width: 992px) {
-  .self-care_img, .self-care_img_mobile {
-    background-image: url(../assets/img/Desctop/self-care.webp);
-    border-radius: 190.923px;
-  }
-}
-
-.outdoor_img, .outdoor_img_mobile {
-  background-image: url(../assets/img/Desctop/pexels-mali-maeder.webp);
-  border-radius: 190.923px;
-}
-@media (min-width: 992px) {
-  .outdoor_img, .outdoor_img_mobile {
-    background-image: url(../assets/img/Desctop/pexels-mali-maeder.webp);
-    border-radius: 190.923px;
-  }
-}
-
-.simulation_box {
+.simulation_box, .education_box, .self-care_box, .outdoor_box {
   display: flex;
   position: relative;
 }
 
 .simulation_box_mobile, .education_box_mobile, .self-care_box_mobile, .outdoor_box_mobile {
-  margin: 5.38vw 19.48vw 0vw 21.53vw;
+  margin: 0 auto;
 }
 
 .simulation_text, .education_text, .self-care_text, .outdoor_text {
@@ -1686,30 +1655,6 @@
   }
 }
 
-@media (min-width: 992px) {
-  .education_box {
-    width: 152px;
-    height: 29px;
-    margin: 263px 78px 0px 80px;
-  }
-}
-
-@media (min-width: 992px) {
-  .self-care_box {
-    width: 140px;
-    height: 29px;
-    margin: 263px 85px 0px 85px;
-  }
-}
-
-@media (min-width: 992px) {
-  .outdoor_box {
-    width: 132px;
-    height: 29px;
-    margin: 263px 93px 0px 85px;
-  }
-}
-
 @media (min-width: 768px) {
   .slider_line_inside {
     position: relative;
@@ -1723,23 +1668,23 @@
 }
 
 .slider_line_inside_mobile, .education_line_inside_mobile, .self-care_line_inside_mobile, .outdoor_line_inside_mobile {
-  position: absolute;
+  position: relative;
   display: flex;
-  width: 154px;
+  width: 39.49vw;
   height: 0px;
-  top: 309.5px;
-  left: 78.5px;
+  margin-top: 3.975vw;
+  margin-left: 22.18vw;
   border: 1px solid rgba(192, 183, 232, 0.33);
 }
 
 .education_line_inside, .self-care_line_inside, .outdoor_line_inside {
-  position: absolute;
+  position: relative;
   display: flex;
-  width: 154px;
+  width: 10.69vw;
   height: 0px;
+  margin-top: 1.215vw;
+  margin-left: 5.45vw;
   border: 1px solid rgba(192, 183, 232, 0.33);
-  top: 309.5px;
-  left: 78.5px;
 }
 
 .Vitae_sapien_box_mobile, .Vitae_sapien_box_education_mobile, .Vitae_sapien_box_self-care_mobile, .Vitae_sapien_box_outdoor_mobile {
@@ -1754,15 +1699,9 @@
   margin-top: 1.493vw;
 }
 
-.Vitae_sapien_box_education, .Vitae_sapien_box_self-care, .Vitae_sapien_box_outdoor {
-  position: absolute;
-  top: 331px;
-  left: 25px;
-}
-
 .Vitae_sapien_text, .Vitae_sapien_text {
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 3.077vw;
+  line-height: 1.6;
   padding-left: 8.46vw;
   color: #FFFFFF;
 }
@@ -1774,7 +1713,7 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .TRY_IT_NOW_button, .TRY_IT_NOW_button_education, .TRY_IT_NOW_button_self-care, .TRY_IT_NOW_button_outdoor {
     display: flex;
     justify-content: center;
@@ -1783,20 +1722,18 @@
     background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
     border-radius: 40px;
     cursor: pointer;
-    width: 154px;
-    height: 48px;
-    position: absolute;
-    top: 423px;
-    left: 78px;
+    width: 10.694vw;
+    height: 3.33vw;
+    position: relative;
+    margin-top: 2.43vw;
+    margin-left: 5.416vw;
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 0.83vw;
     color: #343045;
     border: none;
     transition: background-color 0.3s ease;
-    flex-grow: 1;
   }
   .TRY_IT_NOW_button:hover, .TRY_IT_NOW_button_education:hover, .TRY_IT_NOW_button_self-care:hover, .TRY_IT_NOW_button_outdoor:hover {
     background: linear-gradient(90deg, #C0B7E8 0%, #8176AF 100%);
@@ -1811,20 +1748,19 @@
   background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
   border-radius: 40px;
   cursor: pointer;
-  width: 154px;
-  height: 48px;
-  position: absolute;
-  top: 423px;
-  left: 78px;
+  width: 64.1vw;
+  height: 12.3vw;
+  position: relative;
+  margin-top: 8.97vw;
+  margin-left: 8.46vw;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 3.58vw;
+  line-height: 12.3vw;
   color: #343045;
   border: none;
   transition: background-color 0.3s ease;
-  flex-grow: 1;
 }
 .TRY_IT_NOW_button_mobile:hover {
   background: linear-gradient(90deg, #C0B7E8 0%, #8176AF 100%);
@@ -1832,43 +1768,42 @@
 
 .slider_button_left_box {
   position: absolute;
-  width: 62px;
-  height: 62px;
-  left: 7px;
+  width: 15.9vw;
+  height: 15.9vw;
+  left: 1.79vw;
   top: 55.12vw;
   border-radius: 50%;
   background: rgba(14, 14, 14, 0.32);
   z-index: 15;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .slider_button_left_box {
     display: none;
-    font-size: 12px;
   }
 }
 
 .slider_button_left_box_inside, .hydra_tech_button_left_box_inside, .how_we_build_button_left_box_inside {
-  width: 44px;
-  height: 44px;
+  width: 11.28vw;
+  height: 11.28vw;
   background: linear-gradient(267.61deg, #C0B7E8 -0.6%, #8176AF 98.31%);
   border-radius: 50%;
   cursor: pointer;
   border: none;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .slider_button_left_box_inside, .hydra_tech_button_left_box_inside, .how_we_build_button_left_box_inside {
     display: none;
   }
 }
 
 .slider_button_left, .hydra_tech_button_left, .how_we_build_button_left {
-  width: 38px;
-  height: 38px;
+  width: 9.74vw;
+  height: 9.74vw;
   border-radius: 50%;
   margin: 3px 2px 3px 4px;
   transform: rotate(-90deg);
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .slider_button_left, .hydra_tech_button_left, .how_we_build_button_left {
     display: none;
   }
@@ -1879,13 +1814,13 @@
   content: "";
   position: absolute;
   top: 50%;
-  width: 30%;
+  width: 29%;
   height: 3px;
   transform: translate(-50%, -50%);
 }
 
 .slider_button_left::before, .hydra_tech_button_left::before, .how_we_build_button_left::before {
-  left: 42%;
+  left: 41%;
   transform-origin: center;
   background-color: #433D60;
   transform: matrix(0, -1, -1, 0, 0, 0);
@@ -1902,42 +1837,42 @@
 
 .slider_button_right_box {
   position: absolute;
-  width: 62px;
-  height: 62px;
-  right: 5px;
+  width: 15.9vw;
+  height: 15.9vw;
+  right: 1.28vw;
   top: 55.12vw;
   border-radius: 50%;
   background: rgba(14, 14, 14, 0.32);
   z-index: 15;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .slider_button_right_box {
     display: none;
   }
 }
 
 .slider_button_right_box_inside, .hydra_tech_button_right_box_inside, .how_we_build_button_right_box_inside {
-  width: 44px;
-  height: 44px;
+  width: 11.28vw;
+  height: 11.28vw;
   background: linear-gradient(267.61deg, #C0B7E8 -0.6%, #8176AF 98.31%);
   border-radius: 50%;
   cursor: pointer;
   border: none;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .slider_button_right_box_inside, .hydra_tech_button_right_box_inside, .how_we_build_button_right_box_inside {
     display: none;
   }
 }
 
 .slider_button_right, .hydra_tech_button_right, .how_we_build_button_right {
-  width: 38px;
-  height: 38px;
+  width: 9.74vw;
+  height: 9.74vw;
   border-radius: 50%;
   margin: 3px 2px 3px 4px;
   transform: rotate(90deg);
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .slider_button_right, .hydra_tech_button_right, .how_we_build_button_right {
     display: none;
   }
@@ -1948,13 +1883,13 @@
   content: "";
   position: absolute;
   top: 50%;
-  width: 30%;
+  width: 29%;
   height: 3px;
   transform: translate(-50%, -50%);
 }
 
 .slider_button_right::before, .hydra_tech_button_right::before, .how_we_build_button_right::before {
-  left: 42%;
+  left: 41%;
   transform-origin: center;
   background-color: #433D60;
   transform: matrix(0, -1, -1, 0, 0, 0);
@@ -1970,19 +1905,266 @@
 }
 
 .technologies_hardware {
-  position: absolute;
-  top: 2459px;
-  width: 390px;
-  height: 219px;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 14.36vw;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .technologies_hardware {
-    top: 2748px;
-    width: 1440px;
-    height: 630px;
+    margin-left: 0;
+    margin-top: 7.92vw;
     flex-shrink: 0;
     z-index: 10;
+  }
+}
+
+.technologies_hardware_background {
+  background-image: url(../assets/img/Mask_group2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 89.23vw;
+  height: 41.88vw;
+  left: 4.36vw;
+  top: 0px;
+  box-shadow: 0px 4px 4px rgba(192, 183, 232, 0.01);
+  border-radius: 60px;
+  z-index: 2;
+}
+@media (min-width: 768px) {
+  .technologies_hardware_background {
+    background-image: url(../assets/img/Desctop/pexels-rodnae-productions.png);
+    width: 88.75vw;
+    height: 21.041vw;
+    flex-shrink: 0;
+    left: 0;
+    border-radius: 160px;
+  }
+}
+
+.technologies_box {
+  display: flex;
+  position: relative;
+  z-index: 3;
+}
+
+.technologies_text {
+  font-size: 4.1vw;
+  line-height: 5.128vw;
+  /* identical to box height */
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 13.077vw;
+  padding-left: 17.69vw;
+}
+@media (min-width: 768px) {
+  .technologies_text {
+    font-size: 2.5vw;
+    line-height: 3.05vw;
+    padding-top: 7.5vw;
+    padding-left: 23.819vw;
+  }
+}
+
+.used_by_box {
+  display: flex;
+  position: relative;
+  z-index: 3;
+}
+
+.used_by_text {
+  font-size: 6.15vw;
+  line-height: 7.43vw;
+  color: #FFFFFF;
+  padding-top: 3.59vw;
+  padding-left: 18.46vw;
+}
+@media (min-width: 768px) {
+  .used_by_text {
+    padding-top: 0.76vw;
+    padding-left: 30.42vw;
+    font-size: 2.5vw;
+    line-height: 3.05vw;
+  }
+}
+
+@keyframes rotate-button {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.hardware_box {
+  display: none;
+  z-index: 2;
+}
+@media (min-width: 768px) {
+  .hardware_box {
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6.94vw;
+    height: 6.94vw;
+    left: 40.69vw;
+    top: 17.57vw;
+    background: rgba(14, 14, 14, 0.32);
+  }
+}
+
+@media (min-width: 768px) {
+  .hardware_box_inside {
+    display: flex;
+    width: 4.86vw;
+    height: 4.86vw;
+    background: linear-gradient(267.61deg, #C0B7E8 -0.6%, #8176AF 98.31%);
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease;
+  }
+}
+
+.hardware_box_inside:hover {
+  background: linear-gradient(90deg, #C0B7E8 0%, #8176AF 100%);
+}
+
+.hardware_button {
+  width: 4.16vw;
+  height: 4.16vw;
+  border-radius: 50%;
+  margin: 0.347vw;
+  transform: rotate(180deg);
+}
+
+.hardware_button::after, .hardware_button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 30%;
+  height: 3px;
+  transform: translate(-50%, -50%);
+}
+
+.hardware_button::before {
+  left: 42%;
+  transform-origin: center;
+  background-color: #433D60;
+  transform: matrix(0, -1, -1, 0, 0, 0);
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.hardware_button::after {
+  right: 40%;
+  transform-origin: center;
+  background-color: #433D60;
+  transform: matrix(0, -1, -1, 0, 0, 0);
+  transform: translate(50%, -50%) rotate(45deg);
+}
+
+.technologies_hardware_imgs {
+  display: flex;
+  position: relative;
+  margin-top: 10.256vw;
+}
+@media (min-width: 768px) {
+  .technologies_hardware_imgs {
+    margin-top: 9.79vw;
+  }
+}
+
+.hydra_tech1 {
+  display: none;
+}
+@media (min-width: 768px) {
+  .hydra_tech1 {
+    display: flex;
+    position: relative;
+    width: 12.08vw;
+    height: 12.08vw;
+    margin-top: 3.75vw;
+    margin-left: 4.79vw;
+  }
+}
+
+.hydra_tech2 {
+  display: none;
+}
+@media (min-width: 768px) {
+  .hydra_tech2 {
+    display: flex;
+    position: relative;
+    width: 17.5vw;
+    height: 17.5vw;
+    margin-top: 1.18vw;
+    margin-left: 6.319vw;
+    opacity: 0.86;
+    flex-shrink: 0;
+  }
+}
+
+.hydra_tech3 {
+  display: none;
+}
+@media (min-width: 768px) {
+  .hydra_tech3 {
+    display: flex;
+    position: relative;
+    width: 18.263vw;
+    height: 18.263vw;
+    margin-top: 0.625vw;
+    margin-left: 4.93vw;
+  }
+}
+
+.hydra_tech4 {
+  width: 65.64vw;
+  height: 65.64vw;
+  margin-top: 0vw;
+  margin-left: 17.43vw;
+  z-index: 1;
+}
+@media (min-width: 768px) {
+  .hydra_tech4 {
+    width: 19.583vw;
+    height: 19.583vw;
+    margin-top: 0;
+    margin-left: 3.88vw;
+  }
+}
+
+.hydra_tech_button_left_box {
+  position: absolute;
+  width: 15.9vw;
+  height: 15.9vw;
+  left: 1.538vw;
+  top: 65.384vw;
+  border-radius: 50%;
+  background: rgba(14, 14, 14, 0.32);
+  z-index: 2;
+}
+@media (min-width: 768px) {
+  .hydra_tech_button_left_box {
+    display: none;
+  }
+}
+
+.hydra_tech_button_right_box {
+  position: absolute;
+  z-index: 2;
+  width: 15.9vw;
+  height: 15.9vw;
+  right: 1.538vw;
+  top: 65.384vw;
+  border-radius: 50%;
+  background: rgba(14, 14, 14, 0.32);
+}
+@media (min-width: 768px) {
+  .hydra_tech_button_right_box {
+    display: none;
   }
 }

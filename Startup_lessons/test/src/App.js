@@ -76,7 +76,7 @@ function scrollToWhy_build_section() {
     }
 }
 
-const servicesButton = document.querySelector('.spisok_menu_services');
+const servicesButton = document.querySelector('.navigation_bar_services');
   if (servicesButton) {
       servicesButton.addEventListener("click", function (event) {
         event.preventDefault(); // Предотвращаем переход по ссылке
@@ -100,7 +100,7 @@ const servicesButton = document.querySelector('.spisok_menu_services');
           window.scrollTo({ top: technologies_hardware.offsetTop - offset, behavior: 'smooth' });
       }
   }
-  const technologiesButton = document.querySelector('.spisok_menu_technologies')
+  const technologiesButton = document.querySelector('.navigation_bar_technologies')
     if (technologiesButton) {
       technologiesButton.addEventListener("click", function (event) {
         event.preventDefault(); // Предотвращаем переход по ссылке

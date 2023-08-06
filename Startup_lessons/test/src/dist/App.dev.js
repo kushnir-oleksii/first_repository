@@ -83,7 +83,7 @@ function scrollToWhy_build_section() {
   }
 }
 
-var servicesButton = document.querySelector('.spisok_menu_services');
+var servicesButton = document.querySelector('.navigation_bar_services');
 
 if (servicesButton) {
   servicesButton.addEventListener("click", function (event) {
@@ -115,7 +115,7 @@ function scrollToTechnologies_hardware() {
   }
 }
 
-var technologiesButton = document.querySelector('.spisok_menu_technologies');
+var technologiesButton = document.querySelector('.navigation_bar_technologies');
 
 if (technologiesButton) {
   technologiesButton.addEventListener("click", function (event) {
