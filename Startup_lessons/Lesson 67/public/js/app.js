@@ -34,7 +34,6 @@ socket.on('new_msg', message => {
 
 
 btnSave.addEventListener('click', () => {
-  // Вызываем роут на сервере для сохранения сообщений
   fetch('/save')
     .then(response => response.text())
     .then(message => console.log(message))

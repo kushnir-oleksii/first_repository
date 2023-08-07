@@ -30,7 +30,6 @@ socket.on('new_msg', function (message) {
   chat.appendChild(li);
 });
 btnSave.addEventListener('click', function () {
-  // Вызываем роут на сервере для сохранения сообщений
   fetch('/save').then(function (response) {
     return response.text();
   }).then(function (message) {

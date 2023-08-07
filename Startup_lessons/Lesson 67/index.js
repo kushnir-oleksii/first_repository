@@ -37,13 +37,13 @@ server.listen(PORT, () => {
 });
 io.on('connection', (socket) => {
   socket.on('user_connected', (userName) => {
-    socket.userName = userName; // Сохраняем имя пользователя в объекте сокета
+    socket.userName = userName; // збереження користувача 
     console.log(`System user ${socket.userName} is connected`);
   });
 
   socket.on('send_msg', data => {
     const message = { name: data.name, msg: data.msg };
-    messages.push(message); // Добавляем сообщение в массив
+    messages.push(message); // пушимо меседр в масив
     io.emit('new_msg', message);
   });
 
