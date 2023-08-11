@@ -11,8 +11,8 @@ module.exports = {
    calculate: {
      rest: "/calculate",
      params: {
-       a: { type: "number" }, // Используем правильный формат для валидации
-       b: { type: "number" },
+       a: { type: "string" }, // Используем правильный формат для валидации
+       b: { type: "string" },
        operator: { type: "string", pattern: "^[+\\-*/]$"} // Паттерн для оператора
      },
      async handler(ctx) {
@@ -23,7 +23,7 @@ module.exports = {
         const numB = parseFloat(b);
       
         if (isNaN(numA) || isNaN(numB)) {
-          throw new Error("Параметры 'a' и 'b' должны быть числами");
+          throw new Error("Параметри 'a' та 'b' повинні бути числами");
         }
       
         let result;
@@ -42,30 +42,30 @@ module.exports = {
             if (numB !== 0) {
               result = numA / numB;
             } else {
-              throw new Error("Деление на ноль невозможно");
+              throw new Error("Ділити на нуль не можна");
             }
             break;
           default:
-            throw new Error("Неподдерживаемый оператор");
+            throw new Error("Такий оператор не використовується");
         }
       
         let operation;
         switch (operator) {
           case "+":
-            operation = "сложения";
+            operation = "додавання";
             break;
           case "-":
-            operation = "вычитания";
+            operation = "віднімання";
             break;
           case "*":
-            operation = "умножения";
+            operation = "множення";
             break;
           case "/":
-            operation = "деления";
+            operation = "ділення";
             break;
         }
       
-        return `Результат ${operation} ${numA} и ${numB} равен: ${result}`;
+        return `Результат ${operation} ${numA} та ${numB} дорівнює: ${result}`;
       }
       
      

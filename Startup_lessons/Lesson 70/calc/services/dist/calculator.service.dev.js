@@ -12,11 +12,11 @@ module.exports = {
       rest: "/calculate",
       params: {
         a: {
-          type: "number"
+          type: "string"
         },
         // Используем правильный формат для валидации
         b: {
-          type: "number"
+          type: "string"
         },
         operator: {
           type: "string",
@@ -41,7 +41,7 @@ module.exports = {
                   break;
                 }
 
-                throw new Error("Параметры 'a' и 'b' должны быть числами");
+                throw new Error("Параметри 'a' та 'b' повинні бути числами");
 
               case 5:
                 _context.t0 = operator;
@@ -71,13 +71,13 @@ module.exports = {
                 break;
 
               case 18:
-                throw new Error("Деление на ноль невозможно");
+                throw new Error("Ділити на нуль не можна");
 
               case 19:
                 return _context.abrupt("break", 21);
 
               case 20:
-                throw new Error("Неподдерживаемый оператор");
+                throw new Error("Такий оператор не використовується");
 
               case 21:
                 _context.t1 = operator;
@@ -85,23 +85,23 @@ module.exports = {
                 break;
 
               case 24:
-                operation = "сложения";
+                operation = "додавання";
                 return _context.abrupt("break", 32);
 
               case 26:
-                operation = "вычитания";
+                operation = "віднімання";
                 return _context.abrupt("break", 32);
 
               case 28:
-                operation = "умножения";
+                operation = "множення";
                 return _context.abrupt("break", 32);
 
               case 30:
-                operation = "деления";
+                operation = "ділення";
                 return _context.abrupt("break", 32);
 
               case 32:
-                return _context.abrupt("return", "\u0420\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442 ".concat(operation, " ").concat(numA, " \u0438 ").concat(numB, " \u0440\u0430\u0432\u0435\u043D: ").concat(result));
+                return _context.abrupt("return", "\u0420\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442 ".concat(operation, " ").concat(numA, " \u0442\u0430 ").concat(numB, " \u0434\u043E\u0440\u0456\u0432\u043D\u044E\u0454: ").concat(result));
 
               case 33:
               case "end":
