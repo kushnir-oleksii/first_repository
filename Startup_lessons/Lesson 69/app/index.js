@@ -24,7 +24,7 @@ const book = 'The Wind in the Willows (introductory fragment).txt'
 //     process.stdout.write(data + '\n');
 // }
 
-// // Пример использования функции
+
 // writeToConsole('Hello, world!');
 // writeToConsole('This is a test message.');
 
@@ -36,7 +36,7 @@ const ask = (question) => {
         if (['y', 'yes', 'n', 'no'].includes(input)) {
           resolve(input);
         } else {
-          reject(new Error('Неправильный ввод'));
+          reject(new Error('Incorrect input'));
         }
       });
     });
