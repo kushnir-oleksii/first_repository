@@ -2140,7 +2140,7 @@
 .how_we_build_steps_box{
     display: flex;
     position: relative;
-    flex-direction: column;
+    
     margin-top: 9.49vw;
     @media (min-width: 768px){
         margin-top: 6.319vw;
@@ -2170,7 +2170,7 @@
     border-radius: 50%;
     width: 40.769vw;
     height: 40.769vw;
-    margin: 4.87vw 14.87vw 5.128vw 5.128vw;
+    margin: 4.87vw 4.87vw 5.128vw 5.128vw;
     background: linear-gradient(251.27deg, #C0B7E8 12.87%, #8176AF 89.33%);
     @media (min-width: 768px){
         width: 11.041vw;
@@ -2198,61 +2198,78 @@
 .how_we_build_steps_box_one_3dconseption{
     display: flex;
     position: relative;
-    margin-top: 9.487vw;
+    
     @media (min-width: 768px){
         margin-top: 0.486vw;
     }
 }
+.arrow-small-right-how-we-build,.interaction-how-we-build{
+    display: none;
+    @media (min-width: 768px){
+        display: flex;
+        position: relative;
+        width: 4.65vw;
+        height: 4.65vw;
+    }
+}
 .arrow-small-right-how-we-build{
-    display: flex;
-    position: relative;
-    margin-left: 0.97vw;
-    margin-top: 0;
-    width: 4.65vw;
-    height: 4.65vw;
+    @media (min-width: 768px){
+        margin-left: 0.97vw;
+        margin-top: 0;
+    }
 }
 .how_we_build_description_box {
     position: relative;
     
     margin-left: 25.384vw;
     margin-top: 9.487vw;
+    text-align: center;
     @media (min-width: 768px){
+        text-align: left;
         margin-top: 1.25vw;
         margin-left: -0.277vw;
     }
 }
 .how_we_build_steps2, .how_we_build_steps3, .how_we_build_steps4 {
     display: none;
-    @media (min-width: 992px){
-        position: absolute;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 48.71vw;
+    height: 48.71vw;
+    margin-left:24.1vw;
+    border-radius: 50%;
+    background: rgba(13, 13, 13, 0.32);
+    @media (min-width: 768px){
         display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 198px;
-        height: 198px;
-        left: 94px;
-        top: 117px;
+        width: 13.75vw;
+        height: 13.75vw;
         border-radius: 50%;
         background: rgba(13, 13, 13, 0.32);
         
     }
 }
+.how_we_build_steps_box_two_interaction{
+    display:none;
+    position: relative;
+    @media (min-width: 768px){
+        display: flex;
+        margin-top: 0.486vw;
+    }
+}
 .how_we_build_steps2 {
-    @media (min-width: 992px){
-        top: 222px;
-        left: 454px;
+    @media (min-width: 768px){
+        margin-left: 7.36vw;
     }
 }
 .how_we_build_steps3 {
-    @media (min-width: 992px){
-        top: 222px;
-        left: 781px;
+    @media (min-width: 768px){
+        margin-left: 8.95vw;
     }
 }
 .how_we_build_steps4 {
-    @media (min-width: 992px){
-        top: 222px;
-        left: 1102px;
+    @media (min-width: 768px){
+        margin-left: 8.54vw;
     }
 }
 .how_we_build_circle2 {
@@ -2274,22 +2291,22 @@
     color: $secondColor;
 
 }
- .interaction-how-we-build, .vr_world-how-we-build, .deploy-how-we-build{
-    display: none;
-    @media (min-width: 992px){
-        display: flex;
-        background-image: url(../assets/img/Desctop/arrow-small-right-how-we-build.webp);
-        background-repeat: no-repeat;
-        background-size:cover;
-        position: absolute;
-        width: 67px;
-        height: 67px;
-    }
-}
+//  .interaction-how-we-build, .vr_world-how-we-build, .deploy-how-we-build{
+//     display: none;
+//     @media (min-width: 992px){
+//         display: flex;
+//         background-image: url(../assets/img/Desctop/arrow-small-right-how-we-build.webp);
+//         background-repeat: no-repeat;
+//         background-size:cover;
+//         position: absolute;
+//         width: 67px;
+//         height: 67px;
+//     }
+// }
 
 .interaction-how-we-build{
-    top: 427px;
-    left: 437px;
+    margin-top: 0.486vw;
+    margin-left: 6.18vw;
 }
 .vr_world-how-we-build{
     top: 427px;
@@ -2302,13 +2319,12 @@
 
 .interaction_description_box{
     display: none;
-    @media (min-width: 992px){
+    @media (min-width: 768px){
         display: flex;
-        position: absolute;
-        width: 140px;
-        height: 64px;
-        left: 500px;
-        top: 445px;
+        position: relative;
+        text-align: left;
+        margin-top: 1.25vw;
+        margin-left: -0.277vw;
     }
 }
 .vr_world_description_box{
@@ -2336,22 +2352,25 @@
 .how_we_build_description_text, .interaction_description_text, .vr_world_description_text, .Deploy_description_text {
     @extend %title_mobile_Text;
     font-size: 6.153vw;
-    line-height: normal;
+    line-height: 1.6;
+    text-align: center;
     color: $firstColor;
     @media (min-width: 768px){
+        text-align: left;
         font-size: 1.66vw;
+        line-height: normal;
     }
 }
 .how_we_build_button_left_box {
     position: absolute;
     border-radius: 50%;
     @extend %button_box;
-    width: 62px;
-    height: 62px;
-    left: 6px;
-    top: 355px;
+    width: 15.9vw;
+    height: 15.9vw;
+    left: 1.54vw;
+    top: 91vw;
     background: rgba(14, 14, 14, 0.32);
-    @media (min-width: 992px){
+    @media (min-width: 768px){
         display: none;
     }
 }
@@ -2361,12 +2380,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 62px;
-    height: 62px;
-    right: 6px;
-    top: 355px;
+    width: 15.9vw;
+    height: 15.9vw;
+    right: 1.54vw;
+    top: 91vw;
     background: rgba(14, 14, 14, 0.32);
-    @media (min-width: 992px){
+    @media (min-width: 768px){
         display: none;
     }
 }
