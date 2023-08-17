@@ -133,24 +133,44 @@ const servicesButton = document.querySelector('.navigation_bar_services');
     });
 }
 
-function scrollToContact_form() {
-  const contact_form = document.getElementById("contact_form");
-    if (contact_form) {
+function scrollToContactInfoBbox() {
+  const contact_info_box = document.getElementById("contact_info_box");
+    if (contact_info_box) {
         // Вычисляем высоту окна браузера и половину высоты секции, чтобы прокрутить к центру
         const windowHeight = window.innerHeight;
-        const sectionHeight = contact_form.clientHeight;
+        const sectionHeight = contact_info_box.clientHeight;
         const offset = (windowHeight - sectionHeight) / 2;
         // Прокручиваем страницу к секции с учетом отступа
-        window.scrollTo({ top: contact_form.offsetTop - offset, behavior: 'smooth' });
+        window.scrollTo({ top: contact_info_box.offsetTop - offset, behavior: 'smooth' });
     }
 }
 const contact_us_button = document.querySelector('.contact_us_button');
   if (contact_us_button) {
     contact_us_button.addEventListener("click", function (event) {
       event.preventDefault(); // Предотвращаем переход по ссылке
+      scrollToContactInfoBbox(); // Вызываем функцию прокрутки
+  });
+}
+
+function scrollToContact_form() {
+  const contact_form = document.getElementById("contact_form");
+    if (contact_form) {
+        // Вычисляем высоту окна браузера и половину высоты секции, чтобы прокрутить к центру
+        const windowHeight = window.innerHeight;
+        const sectionHeight = contact_form.clientHeight;
+        const offset = (windowHeight - sectionHeight) / 3;
+        // Прокручиваем страницу к секции с учетом отступа
+        window.scrollTo({ top: contact_form.offsetTop - offset, behavior: 'smooth' });
+    }
+}
+const JOIN_HYDRA_button = document.querySelector('.JOIN_HYDRA_button');
+  if (JOIN_HYDRA_button) {
+    JOIN_HYDRA_button.addEventListener("click", function (event) {
+      event.preventDefault(); // Предотвращаем переход по ссылке
       scrollToContact_form(); // Вызываем функцию прокрутки
   });
 }
+
 
 
 

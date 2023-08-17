@@ -157,17 +157,17 @@ if (how_toButton) {
   });
 }
 
-function scrollToContact_form() {
-  var contact_form = document.getElementById("contact_form");
+function scrollToContactInfoBbox() {
+  var contact_info_box = document.getElementById("contact_info_box");
 
-  if (contact_form) {
+  if (contact_info_box) {
     // Вычисляем высоту окна браузера и половину высоты секции, чтобы прокрутить к центру
     var windowHeight = window.innerHeight;
-    var sectionHeight = contact_form.clientHeight;
+    var sectionHeight = contact_info_box.clientHeight;
     var offset = (windowHeight - sectionHeight) / 2; // Прокручиваем страницу к секции с учетом отступа
 
     window.scrollTo({
-      top: contact_form.offsetTop - offset,
+      top: contact_info_box.offsetTop - offset,
       behavior: 'smooth'
     });
   }
@@ -177,6 +177,32 @@ var contact_us_button = document.querySelector('.contact_us_button');
 
 if (contact_us_button) {
   contact_us_button.addEventListener("click", function (event) {
+    event.preventDefault(); // Предотвращаем переход по ссылке
+
+    scrollToContactInfoBbox(); // Вызываем функцию прокрутки
+  });
+}
+
+function scrollToContact_form() {
+  var contact_form = document.getElementById("contact_form");
+
+  if (contact_form) {
+    // Вычисляем высоту окна браузера и половину высоты секции, чтобы прокрутить к центру
+    var windowHeight = window.innerHeight;
+    var sectionHeight = contact_form.clientHeight;
+    var offset = (windowHeight - sectionHeight) / 3; // Прокручиваем страницу к секции с учетом отступа
+
+    window.scrollTo({
+      top: contact_form.offsetTop - offset,
+      behavior: 'smooth'
+    });
+  }
+}
+
+var JOIN_HYDRA_button = document.querySelector('.JOIN_HYDRA_button');
+
+if (JOIN_HYDRA_button) {
+  JOIN_HYDRA_button.addEventListener("click", function (event) {
     event.preventDefault(); // Предотвращаем переход по ссылке
 
     scrollToContact_form(); // Вызываем функцию прокрутки
