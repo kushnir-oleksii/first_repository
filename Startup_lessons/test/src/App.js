@@ -125,7 +125,7 @@ const servicesButton = document.querySelector('.navigation_bar_services');
           window.scrollTo({ top: how_we_build_section.offsetTop - offset, behavior: 'smooth' });
       }
   }
-  const how_toButton = document.querySelector('.spisok_menu_how_to');
+  const how_toButton = document.querySelector('.navigation_bar_how_to');
     if (how_toButton) {
       how_toButton.addEventListener("click", function (event) {
         event.preventDefault(); // Предотвращаем переход по ссылке

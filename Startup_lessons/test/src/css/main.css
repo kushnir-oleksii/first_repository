@@ -1,20 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
-.how_we_build_description_text, .interaction_description_text, .vr_world_description_text, .Deploy_description_text, .how_we_build_circle_inside_text2, .how_we_build_circle_inside_text, .how_we_build_text, .technologies_text, .simulation_text, .education_text, .self-care_text, .outdoor_text, .why_build_text, .about_box_text, .introduction_text, .send_us_a_message_text, .give_us_a_call_text, .pay_us_a_visit_text, .build_your_world_text, .JOIN_HYDRA_button_text, .contact_us_text, .LETS_GET_IN_TOUCH_text, .TRY_IT_NOW_text, .SEND_TO_HYDRAtext, .Virtual, .Of, .Dive, .navigation_bar {
+.SEND_TO_HYDRA_button, .join_hydra_text, .how_we_build_description_text, .interaction_description_text, .vr_world_description_text, .Deploy_description_text, .how_we_build_circle_inside_text, .how_we_build_text, .technologies_text, .simulation_text, .education_text, .self-care_text, .outdoor_text, .why_build_text, .about_box_text, .introduction_text, .send_us_a_message_text, .give_us_a_call_text, .pay_us_a_visit_text, .build_your_world_text, .JOIN_HYDRA_button_text, .contact_us_text, .LETS_GET_IN_TOUCH_text, .TRY_IT_NOW_text, .SEND_TO_HYDRAtext, .Virtual, .Of, .Dive, .navigation_bar {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
 }
 
-.Vitae_sapien_text, .Vitae_sapien_build_section_text, .Vitae_sapien_vr_text, .location_text {
+.something::placeholder, .subject::placeholder, .phone_number::placeholder, .email_text::placeholder, .last_name::placeholder, .first_name::placeholder, .Vitae_sapien_text, .Vitae_sapien_build_section_text, .Vitae_sapien_vr_text, .location_text {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
 }
 
-.with_hydra_vr_text, .used_by_text, .with_hydra_text, .eget_mi_proin_text, .hydra_vr_box_text, .to_hydra_text, .email_link, .phone_number_pctext, .Lorem_ipsum_text {
+.lets_build_text, .with_hydra_vr_text, .used_by_text, .with_hydra_text, .eget_mi_proin_text, .hydra_vr_box_text, .to_hydra_text, .email_link, .phone_number_pctext, .Lorem_ipsum_text {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
+}
+
+.subject_box, .phone_number_box, .email_box, .last_name_box {
+  width: 300px;
+  height: 53px;
+  margin: 22px 22px 0px 21px;
+}
+
+.subject, .phone_number, .email_text, .last_name, .first_name {
+  width: 300px;
+  height: 53px;
+  border: 2px solid #FFFFFF;
 }
 
 .how_we_build_button_left_box, .hydra_tech_button_right_box, .hydra_tech_button_left_box, .slider_button_right_box, .slider_button_left_box, .LETS_GET_IN_TOUCH_button, .dive_section_center_button_and_arrow_build_your_world_button {
@@ -417,7 +429,7 @@
 }
 @media (min-width: 768px) {
   .vector1 {
-    width: 27.5%;
+    width: 27.3%;
     top: 11.8vw;
     right: 0.208vw;
     left: 71vw;
@@ -516,6 +528,24 @@
   .vector3_img {
     width: 100%;
     height: 29.12vw;
+  }
+}
+
+.vector15_box {
+  display: none;
+}
+@media (min-width: 768px) {
+  .vector15_box {
+    background-image: url(../assets/img/Desctop/vector15.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 11.8vw;
+    flex-shrink: 0;
+    top: 254.9vw;
+    z-index: 1;
   }
 }
 
@@ -2325,11 +2355,11 @@
   }
 }
 
-.arrow-small-right-how-we-build, .interaction-how-we-build {
+.arrow-small-right-how-we-build, .interaction-how-we-build, .vr_world-how-we-build {
   display: none;
 }
 @media (min-width: 768px) {
-  .arrow-small-right-how-we-build, .interaction-how-we-build {
+  .arrow-small-right-how-we-build, .interaction-how-we-build, .vr_world-how-we-build {
     display: flex;
     position: relative;
     width: 4.65vw;
@@ -2365,7 +2395,6 @@
   align-items: center;
   width: 48.71vw;
   height: 48.71vw;
-  margin-left: 24.1vw;
   border-radius: 50%;
   background: rgba(13, 13, 13, 0.32);
 }
@@ -2376,6 +2405,12 @@
     height: 13.75vw;
     border-radius: 50%;
     background: rgba(13, 13, 13, 0.32);
+  }
+}
+
+@media (min-width: 768px) {
+  .how_we_build_steps_box_two {
+    margin-left: 6.18vw;
   }
 }
 
@@ -2392,51 +2427,54 @@
 
 @media (min-width: 768px) {
   .how_we_build_steps2 {
-    margin-left: 7.36vw;
+    margin-left: 1.18vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .how_we_build_steps_box_three {
+    margin-left: 7.57vw;
   }
 }
 
 @media (min-width: 768px) {
   .how_we_build_steps3 {
-    margin-left: 8.95vw;
+    margin-left: 1.38vw;
+  }
+}
+
+.how_we_build_steps_box_three_vrworld {
+  display: none;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .how_we_build_steps_box_three_vrworld {
+    display: flex;
+    margin-top: 0.486vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .how_we_build_steps_box_four {
+    margin-left: 7.43vw;
   }
 }
 
 @media (min-width: 768px) {
   .how_we_build_steps4 {
-    margin-left: 8.54vw;
+    margin-left: 1.11vw;
   }
 }
 
-.how_we_build_circle2 {
-  border-radius: 50%;
-  width: 159px;
-  height: 159px;
-  margin: 19px 19px 20px 20px;
-  background: linear-gradient(251.27deg, #C0B7E8 12.87%, #8176AF 89.33%);
+.how_we_build_steps_box_three_hydravr {
+  display: none;
+  position: relative;
 }
-
-.how_we_build_circle_inside2 {
-  width: 69px;
-  height: 78px;
-  margin: 41px 46px 40px 44px;
-}
-
-.how_we_build_circle_inside_text2 {
-  font-size: 64px;
-  line-height: 78px;
-  /* identical to box height */
-  color: #343045;
-}
-
-.interaction-how-we-build {
-  margin-top: 0.486vw;
-  margin-left: 6.18vw;
-}
-
-.vr_world-how-we-build {
-  top: 427px;
-  left: 761px;
+@media (min-width: 768px) {
+  .how_we_build_steps_box_three_hydravr {
+    display: flex;
+    margin-top: 0.486vw;
+  }
 }
 
 .deploy-how-we-build {
@@ -2460,28 +2498,24 @@
 .vr_world_description_box {
   display: none;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .vr_world_description_box {
     display: flex;
-    position: absolute;
-    width: 157px;
-    height: 64px;
-    left: 824px;
-    top: 445px;
+    position: relative;
+    margin-top: 1.25vw;
+    margin-left: -0.277vw;
   }
 }
 
 .Deploy_description_box {
   display: none;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .Deploy_description_box {
     display: flex;
-    position: absolute;
-    width: 117px;
-    height: 64px;
-    left: 1151px;
-    top: 445px;
+    position: relative;
+    margin-top: 1.25vw;
+    margin-left: -0.277vw;
   }
 }
 
@@ -2529,5 +2563,338 @@
 @media (min-width: 768px) {
   .how_we_build_button_right_box {
     display: none;
+  }
+}
+
+.contact_form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 20.77vw auto 0;
+  background: radial-gradient(50% 50% at 50% 50%, #403A5F 0%, #211E2E 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10.25vw;
+}
+@media (min-width: 768px) {
+  .contact_form {
+    border-radius: 6.94vw;
+    background: radial-gradient(50% 50% at 50% 50%, #403A5F 0%, #211E2E 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 7.77vw;
+    z-index: 5;
+  }
+}
+
+.join_hydra_box {
+  margin: 11.53vw 23.59vw 0vw 23.59vw;
+}
+@media (min-width: 768px) {
+  .join_hydra_box {
+    margin: 6.25vw 36.319vw 0vw 35.69vw;
+  }
+}
+
+.join_hydra_text {
+  font-size: 6.15vw;
+  line-height: normal;
+  text-align: center;
+  color: #FFFFFF;
+}
+@media (min-width: 768px) {
+  .join_hydra_text {
+    font-size: 2.5vw;
+  }
+}
+
+.contact_form_line {
+  width: 29.87vw;
+  height: 0px;
+  margin: 5.38vw 29.615vw 0vw 28.46vw;
+  border: 1px solid #343045;
+  border-image: linear-gradient(to right, #343045, #c0b7e8, #8176af, #343045) 1;
+  border-image-slice: 1;
+}
+@media (min-width: 768px) {
+  .contact_form_line {
+    border: 1px solid #343045;
+    border-image: linear-gradient(to right, #343045, #c0b7e8, #8176af, #343045) 1;
+    border-image-slice: 1;
+    width: 28.75vw;
+    height: 0px;
+    margin: 2.08vw 30vw 0vw 29.79vw;
+  }
+}
+
+.lets_build_box {
+  margin: 4.87vw 14.1vw 0vw 14.1vw;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .lets_build_box {
+    margin: 1.458vw 25.76vw 0vw 25.2vw;
+  }
+}
+
+.lets_build_text {
+  font-size: 6.15vw;
+  line-height: normal;
+  text-align: center;
+  color: #FFFFFF;
+}
+@media (min-width: 768px) {
+  .lets_build_text {
+    font-size: 2.5vw;
+  }
+  .lets_build_text br {
+    display: none;
+  }
+}
+
+.contact_form_firstandlast_name {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-top: 9.23vw;
+}
+@media (min-width: 992px) {
+  .contact_form_firstandlast_name {
+    flex-direction: row;
+    margin-top: 4.514vw;
+  }
+}
+
+.first_name_box {
+  width: 76.92vw;
+  height: 13.59vw;
+  margin: 9.23vw 5.64vw 0vw 5.38vw;
+}
+@media (min-width: 768px) {
+  .first_name_box {
+    width: 36.38vw;
+    height: 5vw;
+    margin: 0 0 0 7.43vw;
+  }
+}
+
+.first_name {
+  border-radius: 40px;
+  background-color: inherit;
+  padding: 4.615vw 48.718vw 4.615vw 7.43vw;
+  color: #FFFFFF;
+}
+@media (min-width: 768px) {
+  .first_name {
+    width: 36.38vw;
+    height: 5vw;
+    padding: 1.875vw 27.77vw 1.94vw 2.92vw;
+  }
+}
+
+.first_name::placeholder {
+  font-size: 3.59vw;
+  line-height: normal;
+  color: #FFFFFF;
+}
+@media (min-width: 768px) {
+  .first_name::placeholder {
+    font-size: 0.97vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .last_name_box {
+    width: 524px;
+    height: 72px;
+    top: 294px;
+    left: 641px;
+    margin: 0px;
+  }
+}
+
+.last_name {
+  border-radius: 40px;
+  background-color: inherit;
+  padding: 18px 190px 18px 29px;
+  color: #FFFFFF;
+}
+@media (min-width: 992px) {
+  .last_name {
+    width: 524px;
+    height: 72px;
+    padding: 27px 400px 28px 44px;
+  }
+}
+
+.last_name::placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+@media (min-width: 992px) {
+  .email_box {
+    position: absolute;
+    width: 524px;
+    height: 72px;
+    top: 405px;
+    left: 108px;
+    margin: 0px;
+  }
+}
+
+.email_text {
+  border-radius: 40px;
+  background-color: inherit;
+  padding: 18px 220px 18px 29px;
+  color: #FFFFFF;
+}
+@media (min-width: 992px) {
+  .email_text {
+    width: 524px;
+    height: 72px;
+    padding: 27px 430px 28px 42px;
+  }
+}
+
+.email_text::placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+@media (min-width: 992px) {
+  .phone_number_box {
+    position: absolute;
+    width: 524px;
+    height: 72px;
+    top: 405px;
+    left: 644px;
+    margin: 0px;
+  }
+}
+
+.phone_number {
+  border-radius: 40px;
+  background-color: inherit;
+  padding: 18px 155px 18px 29px;
+  color: #FFFFFF;
+}
+@media (min-width: 992px) {
+  .phone_number {
+    width: 524px;
+    height: 72px;
+    padding: 27px 360px 28px 42px;
+  }
+}
+
+.phone_number::placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+@media (min-width: 992px) {
+  .subject_box {
+    position: absolute;
+    width: 1058px;
+    height: 72px;
+    top: 510px;
+    left: 107px;
+    margin: 0px;
+  }
+}
+
+.subject {
+  border-radius: 40px;
+  background-color: inherit;
+  padding: 18px 210px 18px 29px;
+  color: #FFFFFF;
+}
+@media (min-width: 992px) {
+  .subject {
+    width: 1058px;
+    height: 72px;
+    padding: 27px 955px 28px 42px;
+  }
+}
+
+.subject::placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.something_box {
+  width: 300px;
+  height: 219px;
+  margin: 22px 25px 0px 18px;
+}
+@media (min-width: 992px) {
+  .something_box {
+    position: absolute;
+    width: 1058px;
+    height: 210px;
+    top: 615px;
+    left: 106px;
+    margin: 0px;
+  }
+}
+
+.something {
+  border: 2px solid #FFFFFF;
+  width: 300px;
+  height: 219px;
+  border-radius: 40px;
+  background-color: inherit;
+  padding: 18px 134px 184px 29px;
+  color: #FFFFFF;
+}
+@media (min-width: 992px) {
+  .something {
+    width: 1058px;
+    height: 210px;
+    padding: 27px 870px 166px 42px;
+  }
+}
+
+.something::placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.SEND_TO_HYDRA_button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+  border-radius: 40px;
+  cursor: pointer;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  line-height: 17px;
+  color: #343045;
+  width: 250px;
+  height: 48px;
+  margin-top: 52px;
+  border: none;
+  transition: background-color 0.3s ease;
+  flex-grow: 1;
+}
+.SEND_TO_HYDRA_button:hover {
+  background: linear-gradient(90deg, #C0B7E8 0%, #8176AF 100%);
+}
+@media (min-width: 992px) {
+  .SEND_TO_HYDRA_button {
+    position: absolute;
+    top: 876px;
+    left: 529px;
+    width: 214px;
+    font-size: 12px;
+    transform: none;
+    margin: 0px;
   }
 }
