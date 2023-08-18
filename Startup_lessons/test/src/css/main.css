@@ -3153,18 +3153,17 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  width: 390px;
-  height: 150px;
-  top: 4469px;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
+  height: 38.46vw;
+  top: 1150vw;
+  z-index: 1;
 }
 @media (min-width: 768px) {
   .vector18 {
     background-image: url(../assets/img/Desctop/vector18.webp);
-    width: 1440px;
-    height: 270px;
-    top: 5165px;
+    width: 100%;
+    height: 19vw;
+    top: 359.7vw;
     z-index: 1;
   }
 }
@@ -3174,18 +3173,17 @@
   background-image: url(../assets/img/Vector_19.png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 390px;
-  height: 197px;
-  top: 4317px;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
+  height: 50.51vw;
+  top: 1112vw;
+  z-index: 1;
 }
 @media (min-width: 768px) {
   .vector19 {
     background-image: url(../assets/img/Desctop/vector19.webp);
-    width: 1440px;
-    height: 363px;
-    top: 4886px;
+    width: 100%;
+    height: 25.2vw;
+    top: 340.8vw;
     z-index: 1;
   }
 }
