@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
-.contact_footer_text, .build_your_world_footer_button, .socialize_with_hydra_text, .faq_menu_footer, .spisok_menu_footer, .send_to_hydra_button, .join_hydra_text, .how_we_build_description_text, .interaction_description_text, .vr_world_description_text, .Deploy_description_text, .how_we_build_circle_inside_text, .how_we_build_text, .technologies_text, .simulation_text, .education_text, .self-care_text, .outdoor_text, .why_build_text, .about_box_text, .introduction_text, .send_us_a_message_text, .give_us_a_call_text, .pay_us_a_visit_text, .build_your_world_text, .JOIN_HYDRA_button_text, .contact_us_text, .LETS_GET_IN_TOUCH_text, .TRY_IT_NOW_text, .send_to_hydratext, .Virtual, .Of, .Dive, .navigation_bar {
+.contact_footer_text, .build_your_world_footer_button, .socialize_with_hydra_text, .faq_menu_footer, .spisok_menu_footer, button.send_to_hydra_button, .join_hydra_text, .how_we_build_description_text, .interaction_description_text, .vr_world_description_text, .Deploy_description_text, .how_we_build_circle_inside_text, .how_we_build_text, .technologies_text, .simulation_text, .education_text, .self-care_text, .outdoor_text, .why_build_text, .about_box_text, .introduction_text, .send_us_a_message_text, .give_us_a_call_text, .pay_us_a_visit_text, .build_your_world_text, .JOIN_HYDRA_button_text, .contact_us_text, .LETS_GET_IN_TOUCH_text, .TRY_IT_NOW_text, .Virtual, .Of, .Dive, .navigation_bar {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -832,22 +832,22 @@
   }
 }
 
-.build_your_world_text, .JOIN_HYDRA_button_text, .contact_us_text, .LETS_GET_IN_TOUCH_text, .TRY_IT_NOW_text, .send_to_hydratext {
+.build_your_world_text, .JOIN_HYDRA_button_text, .contact_us_text, .LETS_GET_IN_TOUCH_text, .TRY_IT_NOW_text {
   font-size: 3.59vw;
   color: #343045;
   line-height: 13.33vw;
   text-align: center;
   flex-grow: 1;
 }
-.build_your_world_text:hover, .JOIN_HYDRA_button_text:hover, .contact_us_text:hover, .LETS_GET_IN_TOUCH_text:hover, .TRY_IT_NOW_text:hover, .send_to_hydratext:hover {
+.build_your_world_text:hover, .JOIN_HYDRA_button_text:hover, .contact_us_text:hover, .LETS_GET_IN_TOUCH_text:hover, .TRY_IT_NOW_text:hover {
   font-size: 4.1vw;
 }
 @media (min-width: 768px) {
-  .build_your_world_text, .JOIN_HYDRA_button_text, .contact_us_text, .LETS_GET_IN_TOUCH_text, .TRY_IT_NOW_text, .send_to_hydratext {
+  .build_your_world_text, .JOIN_HYDRA_button_text, .contact_us_text, .LETS_GET_IN_TOUCH_text, .TRY_IT_NOW_text {
     font-size: 0.84vw;
     line-height: 3.33vw;
   }
-  .build_your_world_text:hover, .JOIN_HYDRA_button_text:hover, .contact_us_text:hover, .LETS_GET_IN_TOUCH_text:hover, .TRY_IT_NOW_text:hover, .send_to_hydratext:hover {
+  .build_your_world_text:hover, .JOIN_HYDRA_button_text:hover, .contact_us_text:hover, .LETS_GET_IN_TOUCH_text:hover, .TRY_IT_NOW_text:hover {
     font-size: 0.972vw;
   }
 }
@@ -2876,7 +2876,7 @@
   }
 }
 
-.send_to_hydra_button {
+button.send_to_hydra_button {
   position: relative;
   display: flex;
   justify-content: center;
@@ -2898,11 +2898,13 @@
   transition: background-color 0.3s ease;
   flex-grow: 1;
 }
-.send_to_hydra_button:hover {
+
+button.send_to_hydra_button:hover {
   background: linear-gradient(90deg, #C0B7E8 0%, #8176AF 100%);
 }
+
 @media (min-width: 768px) {
-  .send_to_hydra_button {
+  button.send_to_hydra_button {
     margin: 3.54vw 0 5.83vw 36.73vw;
     width: 14.86vw;
     height: 3.33vw;
@@ -2910,7 +2912,28 @@
     left: 0;
   }
 }
+button.send_to_hydra_button .send_to_hydratext {
+  font-size: 3.59vw;
+  color: #343045;
+  line-height: 13.33vw;
+  text-align: center;
+  flex-grow: 1;
+}
 
+button.send_to_hydra_button .send_to_hydratext:hover {
+  font-size: 4.1vw;
+}
+
+@media (min-width: 768px) {
+  button.send_to_hydra_button .send_to_hydratext {
+    font-size: 0.84vw;
+    line-height: 3.33vw;
+  }
+
+  button.send_to_hydra_button .send_to_hydratext:hover {
+    font-size: 0.972vw;
+  }
+}
 .contact_and_social_section {
   display: flex;
   flex-direction: column;

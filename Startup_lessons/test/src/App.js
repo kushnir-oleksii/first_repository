@@ -275,3 +275,24 @@ document.addEventListener("DOMContentLoaded", function() {
     showCurrentSliderBox();
   });
 });
+document.querySelector('.send_to_hydra_button').addEventListener('click', async (event) => {
+  event.preventDefault();
+
+  const formData = new FormData(document.getElementById('contact_form_new'));
+
+  try {
+      const response = await fetch('/send_email', {
+          method: 'POST',
+          body: formData
+      });
+
+      if (response.ok) {
+          console.log('Email sent successfully.');
+      } else {
+          console.error('Error sending email.');
+      }
+  } catch (error) {
+      console.error('An error occurred:', error);
+  }
+});
+

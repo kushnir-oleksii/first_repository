@@ -295,3 +295,42 @@ document.addEventListener("DOMContentLoaded", function () {
     showCurrentSliderBox();
   });
 });
+document.querySelector('.send_to_hydra_button').addEventListener('click', function _callee(event) {
+  var formData, response;
+  return regeneratorRuntime.async(function _callee$(_context) {
+    while (1) {
+      switch (_context.prev = _context.next) {
+        case 0:
+          event.preventDefault();
+          formData = new FormData(document.getElementById('contact_form_new'));
+          _context.prev = 2;
+          _context.next = 5;
+          return regeneratorRuntime.awrap(fetch('/send_email', {
+            method: 'POST',
+            body: formData
+          }));
+
+        case 5:
+          response = _context.sent;
+
+          if (response.ok) {
+            console.log('Email sent successfully.');
+          } else {
+            console.error('Error sending email.');
+          }
+
+          _context.next = 12;
+          break;
+
+        case 9:
+          _context.prev = 9;
+          _context.t0 = _context["catch"](2);
+          console.error('An error occurred:', _context.t0);
+
+        case 12:
+        case "end":
+          return _context.stop();
+      }
+    }
+  }, null, null, [[2, 9]]);
+});

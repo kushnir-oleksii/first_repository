@@ -753,7 +753,7 @@
 //         left: 15.625vw;
 // }
 }
-.build_your_world_text,.JOIN_HYDRA_button_text,.contact_us_text, .LETS_GET_IN_TOUCH_text, .TRY_IT_NOW_text, .send_to_hydratext{ 
+.build_your_world_text,.JOIN_HYDRA_button_text,.contact_us_text, .LETS_GET_IN_TOUCH_text, .TRY_IT_NOW_text{ 
     @extend %title_mobile_Text;
     font-size: 3.59vw;
     color: $secondColor;
@@ -2706,7 +2706,42 @@
     }
 }
 
-.send_to_hydra_button{
+// .send_to_hydra_button{
+//     position: relative;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     text-align: center;
+//     background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+//     border-radius: 40px;
+//     cursor: pointer;
+//     // transition: background-color 0.3s ease; /* Добавлен эффект плавного перехода */
+//     left: 50%;
+//     transform: translateX(-50%);
+//     @extend %title_mobile_Text;
+//     font-size: 3.59vw;
+//     line-height: normal;
+//     color: $secondColor;
+//     width: 64.1vw;
+//     height: 12.3vw;
+//     margin-top: 13.33vw;
+//     margin-bottom: 16.69vw;
+//     border: none;
+//     transition: background-color 0.3s ease;
+//     flex-grow: 1;
+//     &:hover {
+//         background: linear-gradient(90deg, #C0B7E8 0%, #8176AF 100%);
+//     }
+//     @media (min-width: 768px){
+//         margin: 3.54vw 0 5.83vw 36.73vw;
+//         width: 14.86vw;
+//         height: 3.33vw;
+//         transform: none;
+//         left: 0;
+        
+//     }
+// }
+button.send_to_hydra_button {
     position: relative;
     display: flex;
     justify-content: center;
@@ -2715,10 +2750,9 @@
     background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
     border-radius: 40px;
     cursor: pointer;
-    // transition: background-color 0.3s ease; /* Добавлен эффект плавного перехода */
+    @extend %title_mobile_Text;
     left: 50%;
     transform: translateX(-50%);
-    @extend %title_mobile_Text;
     font-size: 3.59vw;
     line-height: normal;
     color: $secondColor;
@@ -2729,18 +2763,45 @@
     border: none;
     transition: background-color 0.3s ease;
     flex-grow: 1;
-    &:hover {
-        background: linear-gradient(90deg, #C0B7E8 0%, #8176AF 100%);
-    }
-    @media (min-width: 768px){
+}
+
+button.send_to_hydra_button:hover {
+    background: linear-gradient(90deg, #C0B7E8 0%, #8176AF 100%);
+}
+
+@media (min-width: 768px) {
+    button.send_to_hydra_button {
         margin: 3.54vw 0 5.83vw 36.73vw;
         width: 14.86vw;
         height: 3.33vw;
         transform: none;
         left: 0;
-        
     }
 }
+
+button.send_to_hydra_button .send_to_hydratext {
+    font-size: 3.59vw;
+    color: $secondColor;
+    line-height: 13.33vw;
+    text-align: center;
+    flex-grow: 1;
+}
+
+button.send_to_hydra_button .send_to_hydratext:hover {
+    font-size: 4.1vw;
+}
+
+@media (min-width: 768px) {
+    button.send_to_hydra_button .send_to_hydratext {
+        font-size: 0.84vw;
+        line-height: 3.33vw;
+    }
+
+    button.send_to_hydra_button .send_to_hydratext:hover {
+        font-size: 0.972vw;
+    }
+}
+
 .contact_and_social_section{
     display: flex;
     flex-direction: column;
