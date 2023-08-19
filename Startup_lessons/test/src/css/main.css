@@ -2110,6 +2110,11 @@
 
 .hydra_tech1 {
   display: none;
+  width: 65.64vw;
+  height: 65.64vw;
+  margin-top: 0vw;
+  margin-left: 17.43vw;
+  z-index: 1;
 }
 @media (min-width: 768px) {
   .hydra_tech1 {
@@ -2124,6 +2129,11 @@
 
 .hydra_tech2 {
   display: none;
+  width: 65.64vw;
+  height: 65.64vw;
+  margin-top: 0vw;
+  margin-left: 17.43vw;
+  z-index: 1;
 }
 @media (min-width: 768px) {
   .hydra_tech2 {
@@ -2140,6 +2150,11 @@
 
 .hydra_tech3 {
   display: none;
+  width: 65.64vw;
+  height: 65.64vw;
+  margin-top: 0vw;
+  margin-left: 17.43vw;
+  z-index: 1;
 }
 @media (min-width: 768px) {
   .hydra_tech3 {
@@ -2153,6 +2168,7 @@
 }
 
 .hydra_tech4 {
+  display: flex;
   width: 65.64vw;
   height: 65.64vw;
   margin-top: 0vw;
@@ -2161,6 +2177,7 @@
 }
 @media (min-width: 768px) {
   .hydra_tech4 {
+    display: flex;
     width: 19.583vw;
     height: 19.583vw;
     margin-top: 0;
@@ -2680,14 +2697,14 @@
 .first_name {
   border-radius: 40px;
   background-color: inherit;
-  padding: 4.615vw 48.718vw 4.615vw 7.43vw;
+  padding: 4.615vw 0 4.615vw 7.43vw;
   color: #FFFFFF;
 }
 @media (min-width: 768px) {
   .first_name {
     width: 36.38vw;
     height: 5vw;
-    padding: 1.875vw 27vw 1.94vw 2.92vw;
+    padding: 1.875vw 0 1.94vw 2.92vw;
   }
 }
 
@@ -2713,14 +2730,14 @@
 .last_name {
   border-radius: 40px;
   background-color: inherit;
-  padding: 4.615vw 48.718vw 4.615vw 7.43vw;
+  padding: 4.615vw 0 4.615vw 7.43vw;
   color: #FFFFFF;
 }
 @media (min-width: 768px) {
   .last_name {
     width: 36.38vw;
     height: 5vw;
-    padding: 1.875vw 27vw 1.94vw 3.05vw;
+    padding: 1.875vw 0 1.94vw 3.05vw;
   }
 }
 
@@ -2758,14 +2775,14 @@
 .email_text {
   border-radius: 40px;
   background-color: inherit;
-  padding: 4.615vw 56.41vw 4.615vw 7.43vw;
+  padding: 4.615vw 0 4.615vw 7.43vw;
   color: #FFFFFF;
 }
 @media (min-width: 768px) {
   .email_text {
     width: 36.38vw;
     height: 5vw;
-    padding: 1.875vw 29.86vw 1.94vw 3.05vw;
+    padding: 1.875vw 0 1.94vw 3.05vw;
   }
 }
 
@@ -2791,14 +2808,14 @@
 .phone_number {
   border-radius: 40px;
   background-color: inherit;
-  padding: 4.615vw 39.74vw 4.615vw 7.43vw;
+  padding: 4.615vw 0 4.615vw 7.43vw;
   color: #FFFFFF;
 }
 @media (min-width: 768px) {
   .phone_number {
     width: 36.38vw;
     height: 5vw;
-    padding: 1.875vw 25vw 1.94vw 3.05vw;
+    padding: 1.875vw 0 1.94vw 3.05vw;
   }
 }
 
@@ -2824,14 +2841,14 @@
 .subject {
   border-radius: 40px;
   background-color: inherit;
-  padding: 4.615vw 53.84vw 4.615vw 7.43vw;
+  padding: 4.615vw 0 4.615vw 7.43vw;
   color: #FFFFFF;
 }
 @media (min-width: 768px) {
   .subject {
     width: 73.47vw;
     height: 5vw;
-    padding: 1.875vw 66vw 1.94vw 3.05vw;
+    padding: 1.875vw 0 1.94vw 3.05vw;
   }
 }
 
@@ -2865,14 +2882,14 @@
   height: 56.15vw;
   border-radius: 40px;
   background-color: inherit;
-  padding: 4.615vw 34.35vw 47.18vw 7.43vw;
+  padding: 4.615vw 0 47.18vw 7.43vw;
   color: #FFFFFF;
 }
 @media (min-width: 768px) {
   .something {
     width: 73.47vw;
     height: 14.58vw;
-    padding: 1.875vw 60.41vw 11.52vw 2.91vw;
+    padding: 1.875vw 0 11.52vw 2.91vw;
   }
 }
 
@@ -3526,4 +3543,10 @@ button.send_to_hydra_button .send_to_hydratext:hover {
   .contact_footer_text br {
     display: none;
   }
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
 }

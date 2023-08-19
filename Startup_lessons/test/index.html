@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/_null.css">
     <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script defer src="./src/App.js"></script>
     <title>Document</title>
     
@@ -446,6 +448,15 @@
                         </a>
                     </button>
                 </div>
+                
+                
+                
+                
+                
+                
+                
+                
+                
             </section>
             <section class="how_we_build_section" id="how_we_build_section">
                 <div class="how_we_build_section_header">
@@ -563,7 +574,11 @@
                         Your VR Experience
                     </span>
                 </div>
-                <form class="contact_form_new" id="contact_form_new" action="/send_email" method="post">
+                <form class="contact_form_new" 
+                    id="contact_form_new" 
+                   
+                    method="post">
+                    <!-- action="/send_email"  -->
                     <div class="contact_form_firstandlast_name" id="contact_form_firstandlast_name">
                         <div class="first_name_box">
                             <input 
@@ -572,6 +587,7 @@
                                 name="first_name"
                                 id=""
                                 placeholder="First Name">
+                                <div class="error-message" id="error_first_name"></div>
                         </div>
                         <div class="last_name_box">
                             <input 
@@ -580,6 +596,7 @@
                                 name="last_name"
                                 id=""
                                 placeholder="Last Name">
+                                <div class="error-message" id="error_last_name"></div>
                         </div>
                     </div>
                     <div class="contact_form_other_boxes">
@@ -590,6 +607,7 @@
                                 name="email"
                                 id=""
                                 placeholder="Email">
+                                <div class="error-message" id="error_email"></div>
                         </div>
                         <div class="phone_number_box">
                             <input 
@@ -598,6 +616,7 @@
                                 name="phone_number"
                                 id=""
                                 placeholder="Phone Number">
+                                <div class="error-message" id="error_phone_number"></div>
                         </div>
                     </div>
                     <div class="subject_box">
@@ -607,6 +626,7 @@
                             name="subject"
                             id=""
                             placeholder="Subject">
+                            <div class="error-message" id="error_subject"></div>
                     </div>
                     <div class="something_box">
                         <input 
@@ -615,76 +635,79 @@
                             name="something"
                             id=""
                             placeholder="Tell Us Something...">
+                            <div class="error-message" id="error_something"></div>
                     </div>
                     <button type="submit" class="send_to_hydra_button">
                         <span class="send_to_hydratext">SEND TO HYDRA</span>
                     </button>
                 </form>
-            <section class="contact_and_social_section">
-                <div class="contact_and_social_section_header">
-                    <img class="contact_hydra_img" src="./src/assets/img/Desctop/contact_hydra_img.webp" alt="">
-                
-                <img class="footer_line_left" src="./src/assets/img/Desctop/vector20.webp" alt="">
-                <div class="spisok_menu__box_footer">
-                    <ul class="spisok_menu_footer">
-                        <li class="spisok_menu_about_footer"><a class="link_spisok_menu about_footer" href="#">ABOUT</a></li>
-                        <li class="spisok_menu_services_footer"><a class="link_spisok_menu services_footer" href="#">SERVICES</a></li>
-                        <li class="spisok_menu_technologies_footer"><a class="link_spisok_menu technologies_footer" href="#">TECHNOLOGIES</a></li>
-                        <li class="spisok_menu_how_to_footer"><a class="link_spisok_menu how_to_footer" href="#">HOW TO</a></li>
-                        <li class="spisok_menu_join_footer"><a class="link_spisok_menu join_footer" href="#">JOIN HYDRA</a></li>
-                    </ul>
-                </div>
-                
-                <img class="footer_line_center" src="./src/assets/img/Desctop/vector20.webp" alt="">
-                <div class="faq_menu_box_footer">
-                    <ul class="faq_menu_footer">
-                        <li class="spisok_menu_faq_footer"><a class="link_spisok_menu faq_footer" href="#">F.A.Q</a></li>
-                        <li class="spisok_menu_sitemap_footer"><a class="link_spisok_menu sitemap_footer" href="#">SITEMAP</a></li>
-                        <li class="spisok_menu_conditions_footer"><a class="link_spisok_menu conditions_footer" href="#">CONDITIONS</a></li>
-                        <li class="spisok_menu_licenses_footer"><a class="link_spisok_menu licenses_footer" href="#">LICENSES</a></li>
-                    </ul>
-                </div>
-                <img class="footer_line_right" src="./src/assets/img/Desctop/vector20.webp" alt="">
-                <div class="socials_and_links_and_button">
-                    <div class="socialize_with_hydra_box">
-                        <span class="socialize_with_hydra_text">SOCIALIZE WITH HYDRA</span>
-                    </div>
-                    <div class="social_networks">
-                        <div class="social_facebook">
-                            <a class="social_facebook_ref" href="https://www.facebook.com/"></a>
-                        </div>
-                        <div class="social_twitter">
-                            <a class="social_twitter_ref" href="https://twitter.com/"></a>
-                        </div>
-                        <div class="social_linkedin">
-                            <a class="social_linkedin_ref" href="https://linkedin.com/"></a>
-                        </div>
-                        <div class="social_youtube">
-                            <a class="social_youtube_ref" href="https://youtube.com/"></a>
-                        </div>
-                        <div class="social_instagram">
-                            <a class="social_instagram_ref" href="https://instagram.com/"></a>
-                        </div>
-                        <div class="social_pinterest">
-                            <a class="social_pinterest_ref" href="https://pinterest.com/"></a>
-                        </div>
-                    </div>
-                    <div class="build_your_world_footer_button">
-                        <a href="#" class="build_your_world_text">BUILD YOUR WORLD</a>
-                    </div>
-
-                </div>
             </div>
-                <div class="footer_line"></div>
-                <div class="contact_footer_box">
-                    <span class="contact_footer_text">
-                        2023 © HYDRA LANDING PAGE<br> <br>
-                        BY ZINE. E. FALOUTI<br> <br>
-                        ALL RIGHTS RESERVED 
-                    </span>
+                <section class="contact_and_social_section">
+                    <div class="contact_and_social_section_header">
+                        <img class="contact_hydra_img" src="./src/assets/img/Desctop/contact_hydra_img.webp" alt="">
+                    
+                    <img class="footer_line_left" src="./src/assets/img/Desctop/vector20.webp" alt="">
+                    <div class="spisok_menu__box_footer">
+                        <ul class="spisok_menu_footer">
+                            <li class="spisok_menu_about_footer"><a class="link_spisok_menu about_footer" href="#">ABOUT</a></li>
+                            <li class="spisok_menu_services_footer"><a class="link_spisok_menu services_footer" href="#">SERVICES</a></li>
+                            <li class="spisok_menu_technologies_footer"><a class="link_spisok_menu technologies_footer" href="#">TECHNOLOGIES</a></li>
+                            <li class="spisok_menu_how_to_footer"><a class="link_spisok_menu how_to_footer" href="#">HOW TO</a></li>
+                            <li class="spisok_menu_join_footer"><a class="link_spisok_menu join_footer" href="#">JOIN HYDRA</a></li>
+                        </ul>
+                    </div>
+                    
+                    <img class="footer_line_center" src="./src/assets/img/Desctop/vector20.webp" alt="">
+                    <div class="faq_menu_box_footer">
+                        <ul class="faq_menu_footer">
+                            <li class="spisok_menu_faq_footer"><a class="link_spisok_menu faq_footer" href="#">F.A.Q</a></li>
+                            <li class="spisok_menu_sitemap_footer"><a class="link_spisok_menu sitemap_footer" href="#">SITEMAP</a></li>
+                            <li class="spisok_menu_conditions_footer"><a class="link_spisok_menu conditions_footer" href="#">CONDITIONS</a></li>
+                            <li class="spisok_menu_licenses_footer"><a class="link_spisok_menu licenses_footer" href="#">LICENSES</a></li>
+                        </ul>
+                    </div>
+                    <img class="footer_line_right" src="./src/assets/img/Desctop/vector20.webp" alt="">
+                    <div class="socials_and_links_and_button">
+                        <div class="socialize_with_hydra_box">
+                            <span class="socialize_with_hydra_text">SOCIALIZE WITH HYDRA</span>
+                        </div>
+                        <div class="social_networks">
+                            <div class="social_facebook">
+                                <a class="social_facebook_ref" href="https://www.facebook.com/"></a>
+                            </div>
+                            <div class="social_twitter">
+                                <a class="social_twitter_ref" href="https://twitter.com/"></a>
+                            </div>
+                            <div class="social_linkedin">
+                                <a class="social_linkedin_ref" href="https://linkedin.com/"></a>
+                            </div>
+                            <div class="social_youtube">
+                                <a class="social_youtube_ref" href="https://youtube.com/"></a>
+                            </div>
+                            <div class="social_instagram">
+                                <a class="social_instagram_ref" href="https://instagram.com/"></a>
+                            </div>
+                            <div class="social_pinterest">
+                                <a class="social_pinterest_ref" href="https://pinterest.com/"></a>
+                            </div>
+                        </div>
+                        <div class="build_your_world_footer_button">
+                            <a href="#" class="build_your_world_text">BUILD YOUR WORLD</a>
+                        </div>
+        
+                    </div>
                 </div>
-    
-            </section>
+                    <div class="footer_line"></div>
+                    <div class="contact_footer_box">
+                        <span class="contact_footer_text">
+                            2023 © HYDRA LANDING PAGE<br> <br>
+                            BY ZINE. E. FALOUTI<br> <br>
+                            ALL RIGHTS RESERVED 
+                        </span>
+                    </div>
+        
+                </section>
+           
         </section>
         
         

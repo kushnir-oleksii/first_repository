@@ -1,3 +1,4 @@
+src="https://unpkg.com/swiper/swiper-bundle.min.js";
 // Отображение/скрытие кнопки при прокрутке
 window.onscroll = function() {
   showScrollToTopButton();
@@ -275,24 +276,105 @@ document.addEventListener("DOMContentLoaded", function() {
     showCurrentSliderBox();
   });
 });
-document.querySelector('.send_to_hydra_button').addEventListener('click', async (event) => {
-  event.preventDefault();
+// document.querySelector('.send_to_hydra_button').addEventListener('click', async (event) => {
+//   event.preventDefault();
 
-  const formData = new FormData(document.getElementById('contact_form_new'));
+//   const formData = new FormData(document.getElementById('contact_form_new'));
 
-  try {
-      const response = await fetch('/send_email', {
-          method: 'POST',
-          body: formData
-      });
+//   try {
+//       const response = await fetch('/send_email', {
+//           method: 'POST',
+//           body: formData
+//       });
 
-      if (response.ok) {
-          console.log('Email sent successfully.');
-      } else {
-          console.error('Error sending email.');
-      }
-  } catch (error) {
-      console.error('An error occurred:', error);
-  }
+//       if (response.ok) {
+//           console.log('Email sent successfully.');
+//       } else {
+//           console.error('Error sending email.');
+//       }
+//   } catch (error) {
+//       console.error('An error occurred:', error);
+//   }
+// });
+
+document.addEventListener("DOMContentLoaded", function() {
+  var swiper = new Swiper('.swiper-container', {
+    navigation: {
+        nextEl: '.hydra_tech_button_right_box_inside',
+        prevEl: '.hydra_tech_button_left_box_inside',
+    },
 });
 
+  // Your other JavaScript code...
+});
+
+const form = document.getElementById('contact_form_new');
+
+        form.addEventListener('submit', function(event) {
+            const firstName = form.querySelector('.first_name').value.trim();
+            const lastName = form.querySelector('.last_name').value.trim();
+            const email = form.querySelector('.email_text').value.trim();
+            const phoneNumber = form.querySelector('.phone_number').value.trim();
+            const subject = form.querySelector('.subject').value.trim();
+            const something = form.querySelector('.something').value.trim();
+
+            if (firstName === '') {
+                document.getElementById('error_first_name').textContent = 'Please enter your first name.';
+                event.preventDefault();
+            } else {
+                document.getElementById('error_first_name').textContent = '';
+            }
+
+            if (lastName === '') {
+                document.getElementById('error_last_name').textContent = 'Please enter your last name.';
+                event.preventDefault();
+            } else {
+                document.getElementById('error_last_name').textContent = '';
+            }
+
+            if (email === '') {
+              document.getElementById('error_email').textContent = 'Please enter your email.';
+              event.preventDefault();
+          } else if (!isValidEmail(email)) {
+              document.getElementById('error_email').textContent = 'Please enter a valid email.';
+              event.preventDefault();
+          } else {
+              document.getElementById('error_email').textContent = '';
+          }
+
+            // Дополнительно можно добавить более сложную валидацию для email
+
+            if (phoneNumber === '') {
+              document.getElementById('error_phone_number').textContent = 'Please enter your phone number.';
+              event.preventDefault();
+          } else if (!isValidPhoneNumber(phoneNumber)) {
+              document.getElementById('error_phone_number').textContent = 'Please enter a valid phone number.';
+              event.preventDefault();
+          } else {
+              document.getElementById('error_phone_number').textContent = '';
+          }
+
+            if (subject === '') {
+                document.getElementById('error_subject').textContent = 'Please enter the subject.';
+                event.preventDefault();
+            } else {
+                document.getElementById('error_subject').textContent = '';
+            }
+
+            if (something === '') {
+                document.getElementById('error_something').textContent = 'Please tell us something.';
+                event.preventDefault();
+            } else {
+                document.getElementById('error_something').textContent = '';
+            }
+            function isValidEmail(email) {
+              const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+              return emailRegex.test(email);
+          }
+  
+          // Функция для проверки номера телефона
+          function isValidPhoneNumber(phoneNumber) {
+              const phoneRegex = /^\d{10}$/;
+              return phoneRegex.test(phoneNumber);
+          }
+        });
