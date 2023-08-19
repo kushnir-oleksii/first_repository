@@ -3547,6 +3547,12 @@ button.send_to_hydra_button .send_to_hydratext:hover {
 
 .error-message {
   color: red;
-  font-size: 12px;
-  margin-top: 4px;
+  font-size: 3.08vw;
+  margin-top: 1.025vw;
+}
+@media (min-width: 768px) {
+  .error-message {
+    font-size: 1.5vw;
+    margin-top: 0.29vw;
+  }
 }
